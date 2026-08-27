@@ -1,0 +1,786 @@
+<title>JARVIS HQ</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Outfit:wght@400;500;600&display=swap">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#020810;--bg2:#04101f;--bg3:#061424;
+  --surface:rgba(0,229,255,0.03);--surface2:rgba(0,229,255,0.06);
+  --border:rgba(0,229,255,0.12);--border2:rgba(0,229,255,0.2);
+  --cyan:#00e5ff;--blue:#3b82f6;--purple:#8b5cf6;
+  --red:#ef4444;--green:#10b981;--orange:#f97316;
+  --yellow:#eab308;--cyan-dim:rgba(0,229,255,0.15);
+  --text:#cdd6f4;--muted:rgba(205,214,244,0.45);--dim:rgba(205,214,244,0.22);
+  --sidebar-w:220px;--font-ui:'Rajdhani',sans-serif;
+  --font-mono:'Space Mono',monospace;--font-body:'Outfit',sans-serif;
+}
+html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(--text);font-family:var(--font-body)}
+
+/* LAYOUT */
+#app{display:grid;grid-template-columns:var(--sidebar-w) 1fr var(--sidebar-w);height:100vh;position:relative}
+#left-sidebar,#right-sidebar{background:var(--bg2);border-color:var(--border);display:flex;flex-direction:column;overflow:hidden}
+#left-sidebar{border-right:1px solid var(--border)}
+#right-sidebar{border-left:1px solid var(--border)}
+#center{display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden}
+
+/* SIDEBAR SHARED */
+.sidebar-header{padding:16px 14px 10px;border-bottom:1px solid var(--border);flex-shrink:0}
+.sidebar-logo{font-family:var(--font-ui);font-weight:700;font-size:17px;letter-spacing:2px;color:var(--cyan);text-transform:uppercase}
+.sidebar-sub{font-family:var(--font-mono);font-size:9px;color:var(--muted);letter-spacing:1.5px;margin-top:2px}
+.sidebar-body{flex:1;overflow-y:auto;padding:8px 0;scrollbar-width:none}
+.sidebar-body::-webkit-scrollbar{display:none}
+.sidebar-section-label{font-family:var(--font-ui);font-size:10px;font-weight:600;letter-spacing:2px;color:var(--dim);text-transform:uppercase;padding:10px 14px 4px}
+.sidebar-item{display:flex;align-items:center;gap:9px;padding:7px 14px;cursor:pointer;border-radius:0;transition:background .15s,color .15s;position:relative;font-family:var(--font-body);font-size:13px;color:var(--muted);line-height:1.2}
+.sidebar-item:hover{background:var(--surface2);color:var(--text)}
+.sidebar-item.active{background:var(--surface2);color:var(--cyan)}
+.sidebar-item.active::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--cyan)}
+.sidebar-item-icon{width:14px;height:14px;flex-shrink:0;opacity:.7}
+.sidebar-item-badge{margin-left:auto;font-family:var(--font-mono);font-size:9px;background:var(--cyan-dim);color:var(--cyan);padding:2px 5px;border-radius:3px}
+.sidebar-divider{height:1px;background:var(--border);margin:8px 14px}
+
+/* RIGHT SIDEBAR STAT */
+.stat-block{padding:10px 14px;border-bottom:1px solid var(--border)}
+.stat-label{font-family:var(--font-ui);font-size:10px;letter-spacing:2px;color:var(--dim);text-transform:uppercase;margin-bottom:5px}
+.stat-value{font-family:var(--font-mono);font-size:22px;color:var(--cyan);line-height:1}
+.stat-delta{font-family:var(--font-mono);font-size:10px;color:var(--green);margin-top:3px}
+.stat-bar{height:3px;background:rgba(0,229,255,.1);border-radius:2px;margin-top:6px;overflow:hidden}
+.stat-bar-fill{height:100%;background:var(--cyan);border-radius:2px;width:100%;transform-origin:left;transition:transform .6s ease}
+.agent-row{display:flex;align-items:center;gap:8px;padding:6px 14px;font-size:12px;color:var(--muted);cursor:pointer;transition:color .15s}
+.agent-row:hover{color:var(--text)}
+.agent-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.agent-status-text{margin-left:auto;font-family:var(--font-mono);font-size:9px}
+.agent-status-text.online{color:var(--green)}
+.agent-status-text.idle{color:var(--dim)}
+.agent-status-text.active{color:var(--cyan)}
+
+/* CENTER — SPHERE */
+#sphere-container{position:relative;width:340px;height:340px;flex-shrink:0}
+.orbit{position:absolute;border-radius:50%;border:1px solid;animation:spin linear infinite;top:50%;left:50%;transform:translate(-50%,-50%)}
+.orbit-1{width:280px;height:80px;border-color:rgba(0,229,255,.18);animation-duration:12s;margin-top:-40px}
+.orbit-2{width:360px;height:120px;border-color:rgba(59,130,246,.14);animation-duration:18s;animation-direction:reverse;margin-top:-60px}
+.orbit-3{width:420px;height:160px;border-color:rgba(139,92,246,.10);animation-duration:25s;margin-top:-80px}
+@keyframes spin{from{transform:translate(-50%,-50%) rotateX(75deg) rotateZ(0deg)}to{transform:translate(-50%,-50%) rotateX(75deg) rotateZ(360deg)}}
+#sphere-core{position:absolute;width:120px;height:120px;border-radius:50%;top:50%;left:50%;transform:translate(-50%,-50%);z-index:10;cursor:pointer;transition:transform .3s}
+#sphere-core:hover{transform:translate(-50%,-50%) scale(1.06)}
+.sphere-glow-outer{position:absolute;inset:-40px;border-radius:50%;background:radial-gradient(circle,rgba(0,229,255,.12) 0%,transparent 70%);animation:pulse-outer 3s ease-in-out infinite}
+.sphere-glow-mid{position:absolute;inset:-16px;border-radius:50%;background:radial-gradient(circle,rgba(0,229,255,.25) 0%,rgba(0,229,255,.05) 60%,transparent 80%);animation:pulse-mid 3s ease-in-out infinite .4s}
+.sphere-body{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(0,229,255,.55) 0%,rgba(0,108,184,.4) 40%,rgba(2,8,16,.8) 100%);box-shadow:0 0 40px rgba(0,229,255,.3),0 0 80px rgba(0,229,255,.1),inset 0 0 30px rgba(0,0,0,.5);border:1px solid rgba(0,229,255,.4)}
+.sphere-ring{position:absolute;inset:8px;border-radius:50%;border:1px solid rgba(0,229,255,.2)}
+.sphere-dot{position:absolute;width:4px;height:4px;border-radius:50%;background:var(--cyan);box-shadow:0 0 6px var(--cyan);top:20%;left:60%;animation:dot-float 4s ease-in-out infinite}
+@keyframes pulse-outer{0%,100%{opacity:.6;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
+@keyframes pulse-mid{0%,100%{opacity:.7;transform:scale(1)}50%{opacity:1;transform:scale(1.05)}}
+@keyframes dot-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+
+/* Speaking state */
+#sphere-core.speaking .sphere-glow-outer{animation:pulse-speak 0.6s ease-in-out infinite!important}
+#sphere-core.speaking .sphere-glow-mid{animation:pulse-speak-mid 0.6s ease-in-out infinite .1s!important}
+#sphere-core.speaking .sphere-body{box-shadow:0 0 60px rgba(0,229,255,.6),0 0 120px rgba(0,229,255,.25),inset 0 0 30px rgba(0,0,0,.3)!important}
+@keyframes pulse-speak{0%,100%{opacity:.8;transform:scale(1)}50%{opacity:1;transform:scale(1.18)}}
+@keyframes pulse-speak-mid{0%,100%{opacity:.9;transform:scale(1)}50%{opacity:1;transform:scale(1.12)}}
+
+/* Listening state */
+#sphere-core.listening .sphere-body{box-shadow:0 0 50px rgba(0,229,255,.5),0 0 100px rgba(0,229,255,.2),inset 0 0 30px rgba(0,0,0,.4)!important;animation:sphere-listen 1s ease-in-out infinite}
+@keyframes sphere-listen{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
+
+/* AGENT NODES */
+.agent-node{position:absolute;display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer;z-index:20;transition:transform .2s}
+.agent-node:hover{transform:scale(1.15)}
+.agent-node-dot{width:12px;height:12px;border-radius:50%;border:2px solid;box-shadow:0 0 8px currentColor;transition:box-shadow .2s}
+.agent-node:hover .agent-node-dot{box-shadow:0 0 16px currentColor,0 0 4px currentColor}
+.agent-node-label{font-family:var(--font-ui);font-size:9px;letter-spacing:1px;text-transform:uppercase;white-space:nowrap;opacity:.7}
+.agent-node.active-node .agent-node-dot{animation:node-pulse .8s ease-in-out infinite}
+@keyframes node-pulse{0%,100%{box-shadow:0 0 8px currentColor}50%{box-shadow:0 0 20px currentColor,0 0 6px currentColor}}
+
+/* VOICE BAR */
+#voice-bar{position:absolute;bottom:0;left:0;right:0;background:rgba(2,8,16,.9);border-top:1px solid var(--border);backdrop-filter:blur(12px);padding:14px 20px;display:flex;align-items:center;gap:12px}
+#voice-indicator{width:8px;height:8px;border-radius:50%;background:var(--dim);flex-shrink:0;transition:background .3s,box-shadow .3s}
+#voice-indicator.listening{background:var(--green);box-shadow:0 0 8px var(--green);animation:blink .8s ease-in-out infinite}
+#voice-indicator.speaking{background:var(--cyan);box-shadow:0 0 8px var(--cyan)}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.4}}
+#response-text{flex:1;font-family:var(--font-body);font-size:13px;color:var(--text);line-height:1.5;min-height:20px}
+#response-text .cursor{display:inline-block;width:2px;height:14px;background:var(--cyan);vertical-align:middle;animation:blink .7s step-end infinite}
+#mic-btn{width:36px;height:36px;border-radius:50%;border:1px solid var(--border2);background:var(--surface2);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:border-color .2s,background .2s;flex-shrink:0}
+#mic-btn:hover{border-color:var(--cyan);background:rgba(0,229,255,.1)}
+#mic-btn.active{border-color:var(--cyan);background:rgba(0,229,255,.12);box-shadow:0 0 12px rgba(0,229,255,.3)}
+#mic-btn svg{width:16px;height:16px;fill:none;stroke:var(--muted);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:stroke .2s}
+#mic-btn.active svg{stroke:var(--cyan)}
+#voice-label{font-family:var(--font-mono);font-size:10px;color:var(--dim);flex-shrink:0}
+
+/* CLOCK */
+#clock-bar{position:absolute;top:0;left:0;right:0;padding:8px 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border)}
+#clock{font-family:var(--font-mono);font-size:12px;color:var(--cyan)}
+#sys-status{font-family:var(--font-mono);font-size:10px;color:var(--green);display:flex;align-items:center;gap:6px}
+#sys-status::before{content:'';display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 6px var(--green)}
+#wake-hint{font-family:var(--font-mono);font-size:9px;color:var(--dim)}
+
+/* API KEY MODAL */
+#api-modal{position:fixed;inset:0;background:rgba(2,8,16,.92);backdrop-filter:blur(8px);z-index:1000;display:flex;align-items:center;justify-content:center}
+#api-modal.hidden{display:none}
+.modal-box{background:var(--bg2);border:1px solid var(--border2);border-radius:8px;padding:32px;width:380px;text-align:center}
+.modal-logo{font-family:var(--font-ui);font-size:28px;font-weight:700;letter-spacing:4px;color:var(--cyan);margin-bottom:4px}
+.modal-sub{font-family:var(--font-mono);font-size:10px;color:var(--muted);letter-spacing:2px;margin-bottom:24px}
+.modal-label{font-family:var(--font-ui);font-size:12px;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase;text-align:left;margin-bottom:6px;display:block}
+#api-key-input{width:100%;background:rgba(0,229,255,.04);border:1px solid var(--border2);border-radius:4px;padding:10px 12px;font-family:var(--font-mono);font-size:12px;color:var(--text);outline:none;transition:border-color .2s}
+#api-key-input:focus{border-color:var(--cyan)}
+#api-key-input::placeholder{color:var(--dim)}
+#api-save-btn{margin-top:14px;width:100%;padding:11px;background:rgba(0,229,255,.1);border:1px solid var(--cyan);border-radius:4px;color:var(--cyan);font-family:var(--font-ui);font-size:14px;font-weight:600;letter-spacing:2px;cursor:pointer;text-transform:uppercase;transition:background .2s}
+#api-save-btn:hover{background:rgba(0,229,255,.18)}
+.modal-note{font-family:var(--font-mono);font-size:9px;color:var(--dim);margin-top:12px;line-height:1.5}
+
+/* TOAST */
+#toast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--bg2);border:1px solid var(--border2);border-radius:4px;padding:8px 16px;font-family:var(--font-mono);font-size:11px;color:var(--cyan);opacity:0;transition:opacity .3s,transform .3s;pointer-events:none;z-index:500}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* INPUT BAR */
+#input-row{display:flex;gap:8px;align-items:center;padding:0 4px;flex-shrink:0}
+#text-input{flex:1;background:transparent;border:none;outline:none;font-family:var(--font-body);font-size:13px;color:var(--text);caret-color:var(--cyan)}
+#text-input::placeholder{color:var(--dim)}
+</style>
+
+<!-- API KEY MODAL -->
+<div id="api-modal">
+  <div class="modal-box">
+    <div class="modal-logo">JARVIS</div>
+    <div class="modal-sub">FASTECH.PAK · AI CONTENT HQ</div>
+    <label class="modal-label">Anthropic API Key</label>
+    <input id="api-key-input" type="password" placeholder="sk-ant-..." autocomplete="off">
+    <button id="api-save-btn">Initialize JARVIS</button>
+    <div class="modal-note">Key stored locally in your browser. Never sent anywhere except Anthropic.</div>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<div id="app">
+  <!-- LEFT SIDEBAR -->
+  <div id="left-sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-logo">JARVIS</div>
+      <div class="sidebar-sub">FASTECH.PAK · AI HQ</div>
+    </div>
+    <div class="sidebar-body">
+      <div class="sidebar-section-label">Command</div>
+      <div class="sidebar-item active" data-cmd="Hey Jarvis, give me a full system status — what's the plan today, which agents are active, and what's in the pipeline?">
+        <svg class="sidebar-item-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 2"/></svg>
+        System Status
+      </div>
+      <div class="sidebar-item" data-cmd="Hey Jarvis, what is today's content plan? Which platform are we posting on and what's the topic?">
+        <svg class="sidebar-item-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M2 6h12M6 3v3M10 3v3"/></svg>
+        Day Plan
+      </div>
+      <div class="sidebar-item" data-cmd="Hey Jarvis, open the weekly content schedule and tell me what's posted, what's pending, and what still needs to be written.">
+        <svg class="sidebar-item-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 2v12M12 2v12M2 8h12"/></svg>
+        Weekly Schedule
+      </div>
+
+      <div class="sidebar-divider"></div>
+      <div class="sidebar-section-label">Content</div>
+      <div class="sidebar-item" data-cmd="Hey Jarvis, give me the full social media plan for this week — Instagram posts, LinkedIn posts, topics, hook formats, and which content pillars we're hitting.">
+        <svg class="sidebar-item-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="5" cy="8" r="2"/><circle cx="11" cy="4" r="2"/><circle cx="11" cy="12" r="2"/><path d="M7 7l2-2M7 9l2 2"/></svg>
+        Social Media Plan
+      </div>
+      <div class="sidebar-item" data-cmd="Hey Jarvis, I want to write a post. Ask me for the topic, then run Hook Writer and Script Writer to produce a full post ready for review.">
+        <svg class="sidebar-item-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L5 9l7-7 2 2-7 7-3 3-2-2z"/><path d="M10 4l2 2"/></svg>
+        Write a Post
+      </div>
+      <div class="sidebar-item" data-cmd="Hey Jarvis, trigger the Researcher agent. Scan trends in AI, agency, and founder content. Report back with the top 5 viral angles and 10 competitor hooks.">
+        <svg class="sidebar-item-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="4"/><path d="M10 10l3 3"/></svg>
+        Research Trends
+      </div>
+      <div class="sidebar-item" data-cmd="Hey Jarvis, what are the current hooks we're working with this week? Show me the final picks from the Hook Writer.">
+        <svg class="sidebar-item-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h8M4 8h6M4 12h4"/></svg>
+        Current Hooks
+      </div>
+
+      <div class="sidebar-divider"></div>
+      <div class="sidebar-section-label">Tasks</div>
+      <div class="sidebar-item" data-cmd="Hey Jarvis, what tasks have been completed this week across all agents? Give me a summary of what's done.">
+        <svg class="sidebar-item-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l3 3 7-7"/></svg>
+        Completed Tasks
+        <span class="sidebar-item-badge" id="completed-badge">0</span>
+      </div>
+      <div class="sidebar-item" data-cmd="Hey Jarvis, what tasks are still pending or in progress? What do we need to finish this week?">
+        <svg class="sidebar-item-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v4l2 2"/></svg>
+        Pending Tasks
+      </div>
+      <div class="sidebar-item" data-cmd="Hey Jarvis, I want to add a task. What task should be added to the content pipeline today?">
+        <svg class="sidebar-item-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 3v10M3 8h10"/></svg>
+        Add Task
+      </div>
+      <div class="sidebar-item" data-cmd="Hey Jarvis, do I have any meeting invites or scheduled calls I need to be aware of today?">
+        <svg class="sidebar-item-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="10" height="10" rx="1"/><path d="M3 6h10M6 3v3M10 3v3"/></svg>
+        Meeting Invites
+      </div>
+
+      <div class="sidebar-divider"></div>
+      <div class="sidebar-section-label">Analytics</div>
+      <div class="sidebar-item" data-cmd="Hey Jarvis, pull the latest analytics. What performed best this week on Instagram and LinkedIn? Give me engagement rates, saves, and the winning hook format.">
+        <svg class="sidebar-item-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12l3-4 3 2 3-5 3 4"/></svg>
+        Performance
+      </div>
+      <div class="sidebar-item" data-cmd="Hey Jarvis, what are our best performing posts of all time? Which content pillar, hook format, and posting time wins?">
+        <svg class="sidebar-item-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2l1.5 3.5L13 6l-2.5 2.5.6 3.5L8 10.5 4.9 12l.6-3.5L3 6l3.5-.5L8 2z"/></svg>
+        Best Posts
+      </div>
+      <div class="sidebar-item" data-cmd="Hey Jarvis, how is the follower growth looking on Instagram and LinkedIn? What's the week-over-week trend?">
+        <svg class="sidebar-item-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10l4-4 3 3 5-6"/><path d="M12 4h2v2"/></svg>
+        Growth Metrics
+      </div>
+
+      <div class="sidebar-divider"></div>
+      <div class="sidebar-section-label">Agents</div>
+      <div class="sidebar-item" data-cmd="Hey Jarvis, give me a full status report on all 7 agents. Which ones are active right now, what did each one last complete, and is the pipeline healthy?">
+        <svg class="sidebar-item-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="5" r="2"/><path d="M4 12c0-2.2 1.8-4 4-4s4 1.8 4 4"/></svg>
+        Agent Status
+      </div>
+      <div class="sidebar-item" data-cmd="Hey Jarvis, run the full content pipeline right now. Start with research, then hooks, then scripts, then design brief. Report after each step.">
+        <svg class="sidebar-item-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l10-4v8L3 8z"/></svg>
+        Run Pipeline
+      </div>
+      <div class="sidebar-item" data-cmd="Hey Jarvis, check the Buffer queue. What posts are staged and waiting for approval? What's scheduled for this week?">
+        <svg class="sidebar-item-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 4h10M5 8h6M7 12h2"/></svg>
+        Buffer Queue
+        <span class="sidebar-item-badge" id="buffer-badge">0</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CENTER -->
+  <div id="center">
+    <!-- Clock bar -->
+    <div id="clock-bar">
+      <div id="clock">--:-- -- PKT</div>
+      <div id="wake-hint">Say "Hey Jarvis" or click mic</div>
+      <div id="sys-status">ONLINE</div>
+    </div>
+
+    <!-- Sphere -->
+    <div id="sphere-container">
+      <div class="orbit orbit-1"></div>
+      <div class="orbit orbit-2"></div>
+      <div class="orbit orbit-3"></div>
+
+      <!-- Agent nodes -->
+      <div class="agent-node" id="node-researcher" style="top:12%;left:50%;transform:translateX(-50%)" data-agent="researcher" data-cmd="Hey Jarvis, what is the Researcher agent currently working on? What were the most recent trends it found?">
+        <div class="agent-node-dot" style="color:#3b82f6;background:#3b82f6;border-color:#3b82f6"></div>
+        <div class="agent-node-label" style="color:#3b82f6">Researcher</div>
+      </div>
+      <div class="agent-node" id="node-hookwriter" style="top:28%;right:8%;transform:none" data-agent="hook-writer" data-cmd="Hey Jarvis, show me the Hook Writer's latest output. What are the current hook options and which one was the final pick?">
+        <div class="agent-node-dot" style="color:#f97316;background:#f97316;border-color:#f97316"></div>
+        <div class="agent-node-label" style="color:#f97316">Hook Writer</div>
+      </div>
+      <div class="agent-node" id="node-scriptwriter" style="top:50%;right:4%;transform:translateY(-50%)" data-agent="script-writer" data-cmd="Hey Jarvis, what has the Script Writer produced recently? Show me the latest post drafts in posts-ready.">
+        <div class="agent-node-dot" style="color:#eab308;background:#eab308;border-color:#eab308"></div>
+        <div class="agent-node-label" style="color:#eab308">Script Writer</div>
+      </div>
+      <div class="agent-node" id="node-designer" style="bottom:22%;right:8%" data-agent="designer" data-cmd="Hey Jarvis, what are the latest design briefs from the Designer agent? What visual direction was given for the current posts?">
+        <div class="agent-node-dot" style="color:#8b5cf6;background:#8b5cf6;border-color:#8b5cf6"></div>
+        <div class="agent-node-label" style="color:#8b5cf6">Designer</div>
+      </div>
+      <div class="agent-node" id="node-publisher" style="bottom:12%;left:50%;transform:translateX(-50%)" data-agent="publisher" data-cmd="Hey Jarvis, what is the Publisher agent's current status? Are there any posts staged in Buffer waiting for approval?">
+        <div class="agent-node-dot" style="color:#00e5ff;background:#00e5ff;border-color:#00e5ff"></div>
+        <div class="agent-node-label" style="color:#00e5ff">Publisher</div>
+      </div>
+      <div class="agent-node" id="node-analyst" style="bottom:22%;left:8%" data-agent="analyst" data-cmd="Hey Jarvis, pull the Analyst's latest report. What were the key insights and next week's recommendations?">
+        <div class="agent-node-dot" style="color:#10b981;background:#10b981;border-color:#10b981"></div>
+        <div class="agent-node-label" style="color:#10b981">Analyst</div>
+      </div>
+      <div class="agent-node" id="node-manager" style="top:28%;left:8%" data-agent="manager" data-cmd="Hey Jarvis, what is the Manager agent planning? Show me the current weekly content plan.">
+        <div class="agent-node-dot" style="color:#ef4444;background:#ef4444;border-color:#ef4444"></div>
+        <div class="agent-node-label" style="color:#ef4444">Manager</div>
+      </div>
+
+      <!-- Sphere core -->
+      <div id="sphere-core" title="Click to activate JARVIS">
+        <div class="sphere-glow-outer"></div>
+        <div class="sphere-glow-mid"></div>
+        <div class="sphere-body">
+          <div class="sphere-ring"></div>
+          <div class="sphere-dot"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Voice bar -->
+    <div id="voice-bar">
+      <div id="voice-indicator"></div>
+      <div style="flex:1;display:flex;flex-direction:column;gap:4px;min-width:0">
+        <div id="input-row">
+          <input id="text-input" placeholder='Ask Jarvis anything, or say "Hey Jarvis..."' autocomplete="off">
+        </div>
+        <div id="response-text"></div>
+      </div>
+      <button id="mic-btn" title="Toggle microphone">
+        <svg viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0014 0"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="8" y1="22" x2="16" y2="22"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- RIGHT SIDEBAR -->
+  <div id="right-sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-logo" style="font-size:13px;letter-spacing:1.5px">SYSTEM</div>
+      <div class="sidebar-sub">LIVE METRICS</div>
+    </div>
+    <div class="sidebar-body">
+      <div class="stat-block">
+        <div class="stat-label">Agents Active</div>
+        <div class="stat-value" id="stat-agents">7</div>
+        <div class="stat-delta">↑ All systems nominal</div>
+        <div class="stat-bar"><div class="stat-bar-fill" id="bar-agents" style="transform:scaleX(1)"></div></div>
+      </div>
+      <div class="stat-block" style="cursor:pointer" onclick="sendCommand('Hey Jarvis, what is the current pipeline health? Which steps are complete, pending, and blocked?')">
+        <div class="stat-label">Pipeline Health</div>
+        <div class="stat-value" id="stat-pipeline" style="font-size:16px;color:var(--green)">READY</div>
+        <div class="stat-bar"><div class="stat-bar-fill" id="bar-pipeline" style="transform:scaleX(0.85);background:var(--green)"></div></div>
+      </div>
+      <div class="stat-block" style="cursor:pointer" onclick="sendCommand('Hey Jarvis, how many posts are in the Buffer queue right now? What platform and when are they scheduled?')">
+        <div class="stat-label">Buffer Queue</div>
+        <div class="stat-value" id="stat-buffer">0</div>
+        <div class="stat-delta" style="color:var(--dim)">Posts staged</div>
+      </div>
+      <div class="stat-block" style="cursor:pointer" onclick="sendCommand('Hey Jarvis, what is the current content throughput? How many posts did we produce this week vs last week?')">
+        <div class="stat-label">This Week</div>
+        <div class="stat-value" id="stat-week">0</div>
+        <div class="stat-delta" style="color:var(--dim)">Posts produced</div>
+        <div class="stat-bar"><div class="stat-bar-fill" id="bar-week" style="transform:scaleX(0)"></div></div>
+      </div>
+
+      <div class="sidebar-divider"></div>
+      <div class="sidebar-section-label">Agent Feed</div>
+
+      <div class="agent-row" onclick="sendCommand('Hey Jarvis, what is the Researcher agent currently finding? What trends should we be writing about this week?')">
+        <div class="agent-dot" style="background:#3b82f6;box-shadow:0 0 6px #3b82f6"></div>
+        <span>Researcher</span>
+        <span class="agent-status-text idle" id="status-researcher">IDLE</span>
+      </div>
+      <div class="agent-row" onclick="sendCommand('Hey Jarvis, what is the Hook Writer working on? Show me this week\'s hook options.')">
+        <div class="agent-dot" style="background:#f97316;box-shadow:0 0 6px #f97316"></div>
+        <span>Hook Writer</span>
+        <span class="agent-status-text idle" id="status-hookwriter">IDLE</span>
+      </div>
+      <div class="agent-row" onclick="sendCommand('Hey Jarvis, what is the Script Writer\'s latest output? Show me the most recent post drafts.')">
+        <div class="agent-dot" style="background:#eab308;box-shadow:0 0 6px #eab308"></div>
+        <span>Script Writer</span>
+        <span class="agent-status-text idle" id="status-scriptwriter">IDLE</span>
+      </div>
+      <div class="agent-row" onclick="sendCommand('Hey Jarvis, what are the latest design briefs from the Designer agent?')">
+        <div class="agent-dot" style="background:#8b5cf6;box-shadow:0 0 6px #8b5cf6"></div>
+        <span>Designer</span>
+        <span class="agent-status-text idle" id="status-designer">IDLE</span>
+      </div>
+      <div class="agent-row" onclick="sendCommand('Hey Jarvis, pull the latest analytics report. What worked and what didn\'t this week?')">
+        <div class="agent-dot" style="background:#10b981;box-shadow:0 0 6px #10b981"></div>
+        <span>Analyst</span>
+        <span class="agent-status-text idle" id="status-analyst">IDLE</span>
+      </div>
+      <div class="agent-row" onclick="sendCommand('Hey Jarvis, show me the current weekly content plan from the Manager agent.')">
+        <div class="agent-dot" style="background:#ef4444;box-shadow:0 0 6px #ef4444"></div>
+        <span>Manager</span>
+        <span class="agent-status-text online" id="status-manager">ONLINE</span>
+      </div>
+      <div class="agent-row" onclick="sendCommand('Hey Jarvis, what posts are in the Buffer publishing queue right now? What needs approval?')">
+        <div class="agent-dot" style="background:#00e5ff;box-shadow:0 0 6px #00e5ff"></div>
+        <span>Publisher</span>
+        <span class="agent-status-text idle" id="status-publisher">IDLE</span>
+      </div>
+
+      <div class="sidebar-divider"></div>
+      <div class="sidebar-section-label">Project</div>
+      <div class="agent-row" onclick="sendCommand('Hey Jarvis, give me a complete status update on FASTECH.PAK. How is the agency doing, what clients are active, and what needs attention?')">
+        <div class="agent-dot" style="background:var(--cyan)"></div>
+        <span>FASTECH.PAK</span>
+        <span class="agent-status-text online">PHASE 1</span>
+      </div>
+      <div class="agent-row" onclick="sendCommand('Hey Jarvis, update me on Multiplayer AI. What is the current development status and what is the YC application progress?')">
+        <div class="agent-dot" style="background:var(--purple)"></div>
+        <span>Multiplayer AI</span>
+        <span class="agent-status-text" style="color:var(--purple)">BUILDING</span>
+      </div>
+      <div class="agent-row" onclick="sendCommand('Hey Jarvis, how is Mustafa\'s personal brand growing? Give me an Instagram and LinkedIn growth summary.')">
+        <div class="agent-dot" style="background:var(--orange)"></div>
+        <span>Personal Brand</span>
+        <span class="agent-status-text" style="color:var(--orange)">GROWING</span>
+      </div>
+
+      <div class="sidebar-divider"></div>
+      <div class="sidebar-section-label">Quick Actions</div>
+      <div class="sidebar-item" data-cmd="Hey Jarvis, I need to approve posts in Buffer. Which posts are waiting for my approval right now?">
+        <svg class="sidebar-item-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l3 3 7-7"/></svg>
+        Approve Posts
+      </div>
+      <div class="sidebar-item" data-cmd="Hey Jarvis, I want to invite Hafsa Sohail to review the latest content. What's ready for her review in the Slack #publishing channel?">
+        <svg class="sidebar-item-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="5" r="3"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6"/></svg>
+        Notify Hafsa
+      </div>
+      <div class="sidebar-item" data-cmd="Hey Jarvis, open the Slack #jarvis-hq channel and give me a summary of the latest messages and agent updates.">
+        <svg class="sidebar-item-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 5c0-1.1.9-2 2-2h8a2 2 0 012 2v5a2 2 0 01-2 2H9l-3 2v-2H4a2 2 0 01-2-2V5z"/></svg>
+        Open Slack HQ
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ─── CONFIG ────────────────────────────────────────────────────────────────
+const CLAUDE_MODEL = 'claude-sonnet-4-6';
+const SYSTEM_PROMPT = `You are JARVIS — the AI reasoning core and orchestrator for Mustafa Ghauri's personal brand content system at FASTECH.PAK.
+
+WHO YOU SERVE:
+Mustafa Ghauri — 20-year-old Founder & CEO of FASTECH.PAK (video editing & content production agency, Karachi, Pakistan). Building Multiplayer AI (live collaborative video editor, YC applicant). CS student at IoBM. 3+ years experience, 40+ global clients. AI-native content creator and brand strategist. Instagram: @mustafaghauri._ | LinkedIn: Mustafa Ghauri. ADHD — keep all responses SHORT, punchy, one idea per beat.
+
+YOUR TEAM — 7 AGENTS:
+1. RESEARCHER (Blue #3b82f6) — Scans trends every Monday 6AM PKT. Posts to Slack #research (C0BSYL7QBAA).
+2. HOOK WRITER (Orange #f97316) — Writes 10 hooks per topic, filters to 3, picks 1 final. Posts to Slack #scripts (C0BT48UPS0L).
+3. SCRIPT WRITER (Yellow #eab308) — Full IG captions, LinkedIn posts, reel scripts, carousel copy. Posts to Slack #scripts.
+4. DESIGNER (Purple #8b5cf6) — Visual direction briefs ONLY for @mustafaghauri._ personal brand. NEVER touches FASTECH agency content. Posts to Slack #design (C0BT48UMWAY).
+5. ANALYST (Green #10b981) — Weekly analytics every Sunday 8PM PKT. Posts to Slack #analytics (C0BSUB8R0GK).
+6. MANAGER (Red #ef4444) — Plans the week, 6–7 posts across IG + LinkedIn. Posts to Slack #jarvis-hq (C0BT0HT1S74).
+7. PUBLISHER (Cyan #00e5ff) — Stages posts in Buffer. Human approval REQUIRED before anything goes live. Posts to Slack #publishing (C0BSK7L8HEK).
+
+CONTENT PILLARS:
+1. AI/editing tactics (how Mustafa uses AI in workflow)
+2. Agency/systems thinking (how he runs FASTECH)
+3. Brand strategy frameworks (what he learned from 40+ clients)
+4. Build-in-public (Multiplayer AI progress, FASTECH wins + failures)
+
+VOICE RULES:
+- Never say: genuinely, honestly, straightforward, game-changer, revolutionary, leverage, unlock, empower
+- English only. Always.
+- Short sentences. One idea per line.
+- Confident. Direct. Young founder energy.
+
+WEEKLY RHYTHM:
+- Instagram: 3–4 posts/week (1–2 carousels + 2 singles), post 6–9PM PKT
+- LinkedIn: 2–3 posts/week (long-form), post 8–10AM PKT
+- Monday: Bold opinion/system post
+- Wednesday/Thursday: Value or proof post
+- Friday/Saturday: Personal story or build-in-public
+- Sunday: Rest/Repurpose
+
+SLACK WORKSPACE: Fastech AI HQ (T0BSYEZ07PY)
+DASHBOARD: https://fastech-jarvis-social.netlify.app/
+BUFFER: Connected. Human approval required before any post publishes.
+LOGGING: Every agent action logged to memory/jarvis-log.md
+
+RULES:
+- Never publish without human approval
+- Never touch FASTECH agency brand design
+- Never post in Urdu
+- Never break character — always respond as JARVIS
+
+Respond as JARVIS: confident, brief, direct, no fluff. Maximum 3–4 sentences per response unless the user explicitly asks for more detail. Give real, actionable answers, not generic advice.`;
+
+// ─── STATE ─────────────────────────────────────────────────────────────────
+let apiKey = localStorage.getItem('jarvis_api_key') || '';
+let recognition = null;
+let isListening = false;
+let isSpeaking = false;
+let activeAgent = null;
+let wakeWordMode = true;
+let conversationHistory = [];
+
+// ─── INIT ──────────────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  if (!apiKey) {
+    document.getElementById('api-modal').classList.remove('hidden');
+  } else {
+    boot();
+  }
+  document.getElementById('api-save-btn').addEventListener('click', saveApiKey);
+  document.getElementById('api-key-input').addEventListener('keydown', e => { if (e.key === 'Enter') saveApiKey(); });
+});
+
+function saveApiKey() {
+  const val = document.getElementById('api-key-input').value.trim();
+  if (!val.startsWith('sk-ant-')) { showToast('Invalid key — must start with sk-ant-'); return; }
+  apiKey = val;
+  localStorage.setItem('jarvis_api_key', val);
+  document.getElementById('api-modal').classList.add('hidden');
+  boot();
+}
+
+function boot() {
+  startClock();
+  initSpeechRecognition();
+  initEventListeners();
+  setResponse('JARVIS online. Say "Hey Jarvis" or click the mic to begin.');
+}
+
+// ─── CLOCK ─────────────────────────────────────────────────────────────────
+function startClock() {
+  function tick() {
+    const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Karachi' }));
+    const h = now.getHours(), m = now.getMinutes(), s = now.getSeconds();
+    const ampm = h >= 12 ? 'PM' : 'AM';
+    const hh = String(h % 12 || 12).padStart(2, '0');
+    const mm = String(m).padStart(2, '0');
+    const ss = String(s).padStart(2, '0');
+    document.getElementById('clock').textContent = `${hh}:${mm}:${ss} ${ampm} PKT`;
+  }
+  tick();
+  setInterval(tick, 1000);
+}
+
+// ─── SPEECH RECOGNITION ────────────────────────────────────────────────────
+function initSpeechRecognition() {
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SR) {
+    document.getElementById('wake-hint').textContent = 'Voice not supported in this browser';
+    return;
+  }
+  recognition = new SR();
+  recognition.continuous = true;
+  recognition.interimResults = true;
+  recognition.lang = 'en-US';
+
+  recognition.onresult = (e) => {
+    let interim = '', final = '';
+    for (let i = e.resultIndex; i < e.results.length; i++) {
+      const t = e.results[i][0].transcript;
+      if (e.results[i].isFinal) final += t;
+      else interim += t;
+    }
+    const text = (final || interim).trim().toLowerCase();
+    if (wakeWordMode) {
+      if (text.includes('hey jarvis') || text.includes('jarvis')) {
+        const cmd = text.replace(/hey jarvis,?\s*/i, '').replace(/jarvis,?\s*/i, '').trim();
+        if (cmd.length > 3) sendCommand(cmd);
+        else {
+          setResponse('Yes?');
+          speakText('Yes?');
+        }
+      }
+    } else if (final) {
+      sendCommand(final);
+      wakeWordMode = true;
+    }
+  };
+
+  recognition.onend = () => {
+    if (isListening) recognition.start();
+  };
+  recognition.onerror = (e) => {
+    if (e.error !== 'no-speech') { isListening = false; setMicState(false); }
+  };
+
+  startListening();
+}
+
+function startListening() {
+  if (!recognition) return;
+  try { recognition.start(); isListening = true; setMicState(true); } catch(e) {}
+}
+
+function stopListening() {
+  if (!recognition) return;
+  try { recognition.stop(); } catch(e) {}
+  isListening = false;
+  setMicState(false);
+}
+
+function setMicState(on) {
+  const ind = document.getElementById('voice-indicator');
+  const btn = document.getElementById('mic-btn');
+  if (on && !isSpeaking) {
+    ind.className = 'listening';
+    btn.classList.add('active');
+    document.getElementById('wake-hint').textContent = 'Listening… say "Hey Jarvis"';
+  } else if (!on) {
+    ind.className = '';
+    btn.classList.remove('active');
+    document.getElementById('wake-hint').textContent = 'Say "Hey Jarvis" or click mic';
+  }
+}
+
+// ─── SPEECH SYNTHESIS ──────────────────────────────────────────────────────
+function speakText(text) {
+  if (!window.speechSynthesis) return;
+  window.speechSynthesis.cancel();
+  const utter = new SpeechSynthesisUtterance(text);
+  utter.lang = 'en-US';
+  utter.rate = 1.05;
+  utter.pitch = 0.95;
+  utter.volume = 1;
+
+  // Pick a confident voice
+  const voices = window.speechSynthesis.getVoices();
+  const preferred = voices.find(v => v.name.includes('Daniel') || v.name.includes('Google UK English Male') || v.name.includes('Alex'));
+  if (preferred) utter.voice = preferred;
+
+  utter.onstart = () => {
+    isSpeaking = true;
+    document.getElementById('sphere-core').classList.add('speaking');
+    document.getElementById('sphere-core').classList.remove('listening');
+    document.getElementById('voice-indicator').className = 'speaking';
+  };
+  utter.onend = () => {
+    isSpeaking = false;
+    document.getElementById('sphere-core').classList.remove('speaking');
+    if (isListening) {
+      document.getElementById('sphere-core').classList.add('listening');
+      document.getElementById('voice-indicator').className = 'listening';
+    }
+  };
+  window.speechSynthesis.speak(utter);
+}
+
+// ─── CLAUDE API ────────────────────────────────────────────────────────────
+async function sendCommand(text) {
+  if (!text.trim()) return;
+  if (!apiKey) { showToast('No API key — click settings'); return; }
+
+  // Update sphere state
+  document.getElementById('sphere-core').classList.add('listening');
+  document.getElementById('voice-indicator').className = 'listening';
+  setResponse('Thinking…');
+
+  // Add to history
+  conversationHistory.push({ role: 'user', content: text });
+  if (conversationHistory.length > 20) conversationHistory = conversationHistory.slice(-20);
+
+  // Set active agent if triggered by agent node
+  if (activeAgent) setAgentStatus(activeAgent, 'active');
+
+  try {
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'x-api-key': apiKey,
+        'anthropic-version': '2023-06-01',
+        'content-type': 'application/json',
+        'anthropic-dangerous-direct-browser-access': 'true'
+      },
+      body: JSON.stringify({
+        model: CLAUDE_MODEL,
+        max_tokens: 512,
+        system: SYSTEM_PROMPT,
+        messages: conversationHistory
+      })
+    });
+
+    const data = await res.json();
+    if (!res.ok) { setResponse('Error: ' + (data.error?.message || res.status)); return; }
+
+    const reply = data.content?.[0]?.text || 'No response.';
+    conversationHistory.push({ role: 'assistant', content: reply });
+
+    typeResponse(reply);
+    speakText(reply);
+    if (activeAgent) { setTimeout(() => setAgentStatus(activeAgent, 'idle'), 3000); activeAgent = null; }
+
+  } catch(err) {
+    setResponse('Connection error. Check your API key and network.');
+    document.getElementById('sphere-core').classList.remove('listening');
+  }
+}
+
+// ─── RESPONSE DISPLAY ──────────────────────────────────────────────────────
+function setResponse(text) {
+  const el = document.getElementById('response-text');
+  el.textContent = text;
+  document.getElementById('sphere-core').classList.remove('listening', 'speaking');
+}
+
+function typeResponse(text) {
+  const el = document.getElementById('response-text');
+  el.innerHTML = '';
+  document.getElementById('sphere-core').classList.remove('listening');
+  let i = 0;
+  const cursor = document.createElement('span');
+  cursor.className = 'cursor';
+  el.appendChild(cursor);
+  const interval = setInterval(() => {
+    if (i < text.length) {
+      el.insertBefore(document.createTextNode(text[i]), cursor);
+      i++;
+    } else {
+      clearInterval(interval);
+      cursor.remove();
+    }
+  }, 18);
+}
+
+// ─── AGENT STATUS ──────────────────────────────────────────────────────────
+function setAgentStatus(agentName, state) {
+  const idMap = {
+    'researcher': 'status-researcher', 'hook-writer': 'status-hookwriter',
+    'script-writer': 'status-scriptwriter', 'designer': 'status-designer',
+    'analyst': 'status-analyst', 'manager': 'status-manager', 'publisher': 'status-publisher'
+  };
+  const nodeMap = {
+    'researcher': 'node-researcher', 'hook-writer': 'node-hookwriter',
+    'script-writer': 'node-scriptwriter', 'designer': 'node-designer',
+    'analyst': 'node-analyst', 'manager': 'node-manager', 'publisher': 'node-publisher'
+  };
+  const el = document.getElementById(idMap[agentName]);
+  const node = document.getElementById(nodeMap[agentName]);
+  if (el) {
+    el.className = 'agent-status-text ' + state;
+    el.textContent = state.toUpperCase();
+  }
+  if (node) {
+    if (state === 'active') node.classList.add('active-node');
+    else node.classList.remove('active-node');
+  }
+}
+
+// ─── EVENT LISTENERS ───────────────────────────────────────────────────────
+function initEventListeners() {
+  // Mic button
+  document.getElementById('mic-btn').addEventListener('click', () => {
+    if (isListening) { stopListening(); wakeWordMode = true; }
+    else { wakeWordMode = false; startListening(); }
+  });
+
+  // Sphere click
+  document.getElementById('sphere-core').addEventListener('click', () => {
+    wakeWordMode = false;
+    if (!isListening) startListening();
+    setResponse('Listening… speak now.');
+    document.getElementById('sphere-core').classList.add('listening');
+    setTimeout(() => { wakeWordMode = true; }, 8000);
+  });
+
+  // Text input
+  const input = document.getElementById('text-input');
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && input.value.trim()) {
+      sendCommand(input.value.trim());
+      input.value = '';
+    }
+  });
+
+  // Sidebar items
+  document.querySelectorAll('.sidebar-item[data-cmd]').forEach(el => {
+    el.addEventListener('click', () => {
+      document.querySelectorAll('.sidebar-item').forEach(i => i.classList.remove('active'));
+      el.classList.add('active');
+      sendCommand(el.dataset.cmd);
+    });
+  });
+
+  // Agent nodes
+  document.querySelectorAll('.agent-node[data-cmd]').forEach(el => {
+    el.addEventListener('click', () => {
+      activeAgent = el.dataset.agent;
+      setAgentStatus(activeAgent, 'active');
+      sendCommand(el.dataset.cmd);
+    });
+  });
+
+  // Right sidebar rows (already have onclick inline)
+
+  // Voices load asynchronously in some browsers
+  if (window.speechSynthesis) {
+    window.speechSynthesis.onvoiceschanged = () => {};
+  }
+}
+
+// ─── TOAST ─────────────────────────────────────────────────────────────────
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 3000);
+}
+</script>

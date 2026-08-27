@@ -1,0 +1,17 @@
+# Secrets — NEVER commit these
+.mcp.json
+slack/agent-tokens.md
+
+# Netlify local state
+.netlify/
+
+# Impeccable cache
+.impeccable/
+
+# Duplicate dashboard file
+dashboard/index.html.html
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
