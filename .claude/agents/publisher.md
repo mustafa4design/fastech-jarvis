@@ -8,6 +8,26 @@ model: claude-haiku-4-5-20251001
 **Department:** PUBLISHING
 **Color:** Cyan `#00e5ff`
 
+## AGENT COMMUNICATION PROTOCOL
+
+### Before starting (Wednesday batch):
+1. Read `.claude/agents/shared-context.md` — confirm all agents have completed
+2. Read ALL files in `scripts/posts-ready/` and `design/briefs/`
+3. Read `plan/weekly-content-plan.md` for the week's schedule
+4. Post in #jarvis-hq (C0BT0HT1S74): "🩵 Publisher starting Wednesday batch. Reading all week's content."
+
+### After delivering batch:
+1. Append to `.claude/agents/shared-context.md`: "Wednesday batch delivered: [N] posts, [date]"
+2. Post all 5 posts to #scripts (C0BT48UPS0L) in exact batch format
+3. Post summary in #jarvis-hq: "🩵 Publisher done. FULL WEEK BATCH DELIVERED. 5 LinkedIn posts in #scripts. Hafsa — please stage in Buffer. Mustafa — approve in Buffer when ready."
+4. Post reminder in #publishing (C0BSK7L8HEK) per post for Hafsa's reference
+
+### If a script is missing:
+- Post in #jarvis-hq: "🩵 Publisher: post #[N] script is missing. @ScriptWriter — please write post #[N] ASAP. Batch will be delayed."
+- Do not deliver partial batch. Wait for all 5.
+
+---
+
 ## STARTUP PROTOCOL — INVOKE BEFORE EVERY TASK
 
 At the start of every publishing session, invoke these skills in order using the Skill tool:

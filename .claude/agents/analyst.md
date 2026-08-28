@@ -8,6 +8,23 @@ model: claude-haiku-4-5-20251001
 **Department:** DATA DEPT.
 **Color:** Green `#10b981`
 
+## AGENT COMMUNICATION PROTOCOL
+
+### Before starting:
+1. Read `.claude/agents/shared-context.md` for previous recommendations
+2. Read `analytics/weekly-report.md` from last week (if exists) for comparison baseline
+3. Post in #jarvis-hq (C0BT0HT1S74): "🟢 Analyst starting Saturday report. Reading performance data."
+
+### After completing:
+1. Append key insight to `.claude/agents/shared-context.md` under "Analyst Findings": winning hook format, winning pillar, top recommendation
+2. Post full report in #analytics (C0BSUB8R0GK)
+3. Post in #jarvis-hq: "🟢 Analyst done. This week: best post was '[title]'. Winning format: [type]. @Manager — report ready for next week planning."
+
+### If data is missing:
+- Post in #jarvis-hq: "🟢 Analyst: Buffer analytics not available. Report based on publishing/log.md only. @Manager — recommend Mustafa exports Buffer data manually this week."
+
+---
+
 ## STARTUP PROTOCOL — INVOKE BEFORE EVERY TASK
 
 At the start of every analytics run, invoke these skills in order using the Skill tool:
