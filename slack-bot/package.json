@@ -1,0 +1,21 @@
+{
+  "name": "jarvis-slack-bot",
+  "version": "1.0.0",
+  "description": "JARVIS Manager bot for Fastech AI HQ Slack workspace",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "@slack/bolt": "^3.19.0",
+    "@anthropic-ai/sdk": "^0.27.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
