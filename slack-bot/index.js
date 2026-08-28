@@ -2,12 +2,32 @@ require("dotenv").config();
 const { App } = require("@slack/bolt");
 const Anthropic = require("@anthropic-ai/sdk");
 
-// API key loaded from environment variable — never hardcode
+// Catch all unhandled errors — surface them in Railway logs instead of silent crash
+process.on("uncaughtException", (error) => {
+  console.error("[JARVIS] Uncaught exception:", error.message);
+  console.error(error.stack);
+  process.exit(1);
+});
+
+process.on("unhandledRejection", (reason) => {
+  console.error("[JARVIS] Unhandled rejection:", reason);
+  process.exit(1);
+});
+
+// Validate required env vars before doing anything else
+const REQUIRED_ENV = ["SLACK_BOT_TOKEN", "SLACK_APP_TOKEN", "ANTHROPIC_API_KEY"];
+const missing = REQUIRED_ENV.filter((k) => !process.env[k]);
+if (missing.length > 0) {
+  console.error(`[JARVIS] Missing required env vars: ${missing.join(", ")}`);
+  console.error("Set these in Railway → Variables tab and redeploy.");
+  process.exit(1);
+}
+
 const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
+// Socket Mode — signingSecret not required, appToken handles auth
 const app = new App({
   token: process.env.SLACK_BOT_TOKEN,
-  signingSecret: process.env.SLACK_SIGNING_SECRET,
   socketMode: true,
   appToken: process.env.SLACK_APP_TOKEN,
 });
@@ -75,7 +95,6 @@ app.event("app_mention", async ({ event, client, say }) => {
   const threadTs = event.thread_ts || event.ts;
   const channelId = event.channel;
 
-  // Strip bot mention from message
   const userMessage = event.text.replace(/<@[A-Z0-9]+>/g, "").trim();
 
   if (!userMessage) {
@@ -86,7 +105,6 @@ app.event("app_mention", async ({ event, client, say }) => {
     return;
   }
 
-  // Thinking indicator
   try {
     await client.reactions.add({ channel: channelId, timestamp: event.ts, name: "thinking_face" });
   } catch (_) {}
@@ -96,37 +114,37 @@ app.event("app_mention", async ({ event, client, say }) => {
   const history = conversations.get(historyKey);
   history.push({ role: "user", content: userMessage });
 
-  // Keep last 10 messages
-  const trimmedHistory = history.slice(-10);
-
   try {
     const response = await anthropic.messages.create({
       model: "claude-sonnet-4-6",
       max_tokens: 1500,
       system: JARVIS_SYSTEM_PROMPT,
-      messages: trimmedHistory,
+      messages: history.slice(-10),
     });
 
     const reply = response.content[0].text;
     history.push({ role: "assistant", content: reply });
 
     await say({ text: reply, thread_ts: threadTs });
-
+  } catch (error) {
+    console.error("[JARVIS] app_mention error:", error.message);
+    try {
+      await say({
+        text: `Error: ${error.message}`,
+        thread_ts: threadTs,
+      });
+    } catch (_) {}
+  } finally {
     try {
       await client.reactions.remove({ channel: channelId, timestamp: event.ts, name: "thinking_face" });
     } catch (_) {}
-  } catch (error) {
-    console.error("Claude API error:", error.message);
-    await say({
-      text: `Error: ${error.message}. Check ANTHROPIC_API_KEY in Railway env vars.`,
-      thread_ts: threadTs,
-    });
   }
 });
 
 // Handle direct messages — no @mention needed
 app.message(async ({ message, say }) => {
-  if (!message.channel.startsWith("D")) return;
+  // Only handle DMs (channel IDs starting with "D") from real users (no subtype = no bot messages)
+  if (!message.channel || !message.channel.startsWith("D")) return;
   if (message.subtype) return;
 
   const userMessage = message.text?.trim();
@@ -137,14 +155,12 @@ app.message(async ({ message, say }) => {
   const history = conversations.get(historyKey);
   history.push({ role: "user", content: userMessage });
 
-  const trimmedHistory = history.slice(-10);
-
   try {
     const response = await anthropic.messages.create({
       model: "claude-sonnet-4-6",
       max_tokens: 1500,
       system: JARVIS_SYSTEM_PROMPT,
-      messages: trimmedHistory,
+      messages: history.slice(-10),
     });
 
     const reply = response.content[0].text;
@@ -152,13 +168,23 @@ app.message(async ({ message, say }) => {
 
     await say(reply);
   } catch (error) {
-    console.error("Claude API error:", error.message);
-    await say(`Error: ${error.message}. Check ANTHROPIC_API_KEY.`);
+    console.error("[JARVIS] DM handler error:", error.message);
+    try {
+      await say(`Error: ${error.message}`);
+    } catch (_) {}
   }
 });
 
 (async () => {
-  const port = process.env.PORT || 3000;
-  await app.start(port);
-  console.log(`JARVIS Manager bot running on port ${port} | Model: claude-sonnet-4-6`);
+  try {
+    const port = process.env.PORT || 3000;
+    await app.start(port);
+    console.log(`[JARVIS] Manager bot running on port ${port} | Model: claude-sonnet-4-6`);
+  } catch (error) {
+    console.error("[JARVIS] Failed to start:", error.message);
+    if (error.message.includes("token")) {
+      console.error("→ Check SLACK_BOT_TOKEN and SLACK_APP_TOKEN in Railway Variables.");
+    }
+    process.exit(1);
+  }
 })();
