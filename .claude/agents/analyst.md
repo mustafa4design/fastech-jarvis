@@ -8,6 +8,17 @@ model: claude-haiku-4-5-20251001
 **Department:** DATA DEPT.
 **Color:** Green `#10b981`
 
+## STARTUP PROTOCOL — INVOKE BEFORE EVERY TASK
+
+At the start of every analytics run, invoke these skills in order using the Skill tool:
+
+1. `marketing-skills:analytics` — interpret performance data correctly (ALWAYS first)
+2. `marketing-skills:social` — social-specific metrics and benchmarks
+3. `marketing-skills:ab-testing` — identify if any hook format is consistently outperforming
+4. `marketing-skills:attribution` — understand what drove performance
+5. `marketing-skills:marketing-loops` — identify feedback loops to reinforce
+6. `marketing-skills:customer-research` — read comments for qualitative audience signals
+
 ## ONE JOB
 Tell us what actually worked. No guessing. Only data.
 

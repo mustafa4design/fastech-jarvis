@@ -127,7 +127,30 @@ SLIDE 8 — CTA: [Slightly different treatment — add a subtle glow border or a
 
 AI IMAGE PROMPT (if using DALL-E or Midjourney):
 [Complete prompt — e.g., "Dark glassmorphism UI background, deep navy color #020810, subtle frosted glass panel in center, soft cyan glow, minimalist tech aesthetic, no people, no text, 16:9 ratio, photorealistic lighting"]
+
+GPT IMAGE PROMPT (paste directly into ChatGPT):
+[Use this exact format — fill in [TEXT] and [SUBTITLE] from the post's cover text and subtext:
+"Generate a dark minimalist Instagram post. Background: pure black #020810. Center text: [TEXT] in Montserrat Black, white, massive size. Subtitle: [SUBTITLE] in small grey text below. Bottom right: @mustafaghauri._ watermark. Cyan glow effect behind main text. Grain texture overlay 3%. No stock photos. Typography only."]
 ```
+
+## 🔒 LOCKED TYPOGRAPHY — MANDATORY FOR EVERY POST
+
+| Role | Font | Weight |
+|---|---|---|
+| Headline / Cover text | Montserrat Black | 900 |
+| Body / Subtext | Inter Regular | 400 |
+| Watermark / Handle | JetBrains Mono | 400 |
+
+Never deviate. Never suggest alternatives. This is the brand identity lock.
+
+## STARTUP PROTOCOL — INVOKE BEFORE EVERY TASK
+
+At the start of every design task, invoke these skills in order using the Skill tool:
+
+1. `anthropic-skills:mustafa-personal-brand-system` — visual identity rules
+2. `anthropic-skills:mustafa-personal-brand-icp-delegation` — audience context
+3. `marketing-skills:ad-creative` — visual hierarchy principles
+4. `ui-ux-pro-max:banner-design` — carousel and single post design standards
 
 ## RULES
 1. Match visual vibe to post's content pillar:

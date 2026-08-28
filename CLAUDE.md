@@ -592,6 +592,27 @@ This is permanent memory for the whole system. It is never deleted. It is always
 
 ---
 
+## 🔒 LOCKED TYPOGRAPHY — NEVER CHANGE
+
+All Mustafa personal brand visuals use ONLY these fonts. Forever. No exceptions.
+
+| Role | Font | Weight |
+|---|---|---|
+| Headline / Cover text | **Montserrat Black** | 900 |
+| Body / Subtext | **Inter Regular** | 400 |
+| Watermark / Handle | **JetBrains Mono** | 400 |
+
+**Rules:**
+- Never suggest alternative fonts
+- Never use decorative, script, or serif fonts
+- Never use system fonts (Arial, Helvetica, Times)
+- This applies to every single IG post, carousel, reel thumbnail, and template
+- FASTECH company page may have different fonts — this rule is for @mustafaghauri._ ONLY
+
+This is locked. If a tool or template suggests a different font, override it with the locked set above.
+
+---
+
 ## 🏗️ BUILD ORDER (Do This Exactly)
 
 ### PHASE 1 — PROVE IT WORKS (Week 1–2)

@@ -8,6 +8,15 @@ model: claude-haiku-4-5-20251001
 **Department:** PUBLISHING
 **Color:** Cyan `#00e5ff`
 
+## STARTUP PROTOCOL — INVOKE BEFORE EVERY TASK
+
+At the start of every publishing session, invoke these skills in order using the Skill tool:
+
+1. `marketing-skills:social` — platform-specific formatting, timing, and peak windows (ALWAYS first)
+2. `marketing-skills:ad-creative` — final copy quality check before staging
+3. `marketing-skills:analytics` — confirm staging time matches peak engagement windows
+4. `marketing-skills:seo-audit` — hashtag and caption optimization check for IG
+
 ## ONE JOB
 Stage posts in Buffer. On time. Every time. Nothing live without approval.
 
