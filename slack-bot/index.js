@@ -32,34 +32,52 @@ const app = new App({
   appToken: process.env.SLACK_APP_TOKEN,
 });
 
-// ─── GitHub raw file fetcher ───────────────────────────────────────────────
+// ─── GitHub fetchers ───────────────────────────────────────────────────────
 const REPO_RAW = "https://raw.githubusercontent.com/mustafa4design/fastech-jarvis/main";
+const REPO_API = "https://api.github.com/repos/mustafa4design/fastech-jarvis/contents";
 
-function fetchRaw(path) {
+function fetchUrl(url, isJson) {
   return new Promise((resolve) => {
-    const url = `${REPO_RAW}/${path}`;
-    https.get(url, (res) => {
+    const opts = { headers: { "User-Agent": "jarvis-manager-bot" } };
+    https.get(url, opts, (res) => {
       let data = "";
       res.on("data", (chunk) => (data += chunk));
       res.on("end", () => {
         if (res.statusCode === 200) {
-          resolve(data);
+          resolve(isJson ? JSON.parse(data) : data);
         } else {
-          resolve(`[unavailable — ${res.statusCode}]`);
+          resolve(isJson ? [] : `[unavailable — ${res.statusCode}]`);
         }
       });
-    }).on("error", () => resolve("[fetch error]"));
+    }).on("error", () => resolve(isJson ? [] : "[fetch error]"));
   });
 }
 
-// Fetch all 5 live files and build the dynamic system prompt
+function fetchRaw(path) {
+  return fetchUrl(`${REPO_RAW}/${path}`, false);
+}
+
+// List all files in a repo folder via GitHub API and fetch each one's content
+async function fetchFolder(folderPath) {
+  const files = await fetchUrl(`${REPO_API}/${folderPath}`, true);
+  if (!Array.isArray(files) || files.length === 0) return "[no files found]";
+  const contents = await Promise.all(
+    files
+      .filter((f) => f.type === "file")
+      .map((f) => fetchUrl(f.download_url, false).then((text) => `### ${f.name}\n${text}`))
+  );
+  return contents.join("\n\n---\n\n");
+}
+
+// Fetch all live context files and build the dynamic system prompt
 async function buildSystemPrompt() {
-  const [weeklyPlan, brandVoice, claudeMd, jarvisLog, sharedContext] = await Promise.all([
+  const [weeklyPlan, brandVoice, claudeMd, jarvisLog, sharedContext, postsReady] = await Promise.all([
     fetchRaw("plan/weekly-content-plan.md"),
     fetchRaw("brand/mustafa-brand-voice.md"),
     fetchRaw("CLAUDE.md"),
     fetchRaw("memory/jarvis-log.md"),
     fetchRaw(".claude/agents/shared-context.md"),
+    fetchFolder("scripts/posts-ready"),
   ]);
 
   return `You are the JARVIS Manager bot — the real-time Slack interface for Mustafa Ghauri's personal brand content system at FASTECH.PAK.
@@ -141,6 +159,11 @@ ${sharedContext}
 LIVE: JARVIS LOG (last 50 entries — most recent activity)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ${jarvisLog.split("\n").slice(-50).join("\n")}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LIVE: READY POSTS (scripts/posts-ready/ — full content of every approved post)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+${postsReady}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 LIVE: SYSTEM RULES (CLAUDE.md — key sections)
