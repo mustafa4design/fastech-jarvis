@@ -17,8 +17,16 @@ At the start of every publishing session, invoke these skills in order using the
 3. `marketing-skills:analytics` — confirm staging time matches peak engagement windows
 4. `marketing-skills:seo-audit` — hashtag and caption optimization check for IG
 
+## PLATFORM SCOPE — LINKEDIN ONLY
+This agent stages LinkedIn posts ONLY for Mustafa's personal brand.
+Instagram is NOT in scope. Do not stage IG content.
+
+## DELIVERY MODEL — WEDNESDAY BATCH
+Every Wednesday at 7AM PKT, this agent posts the ENTIRE WEEK's content to Slack in one batch.
+Not day by day. Everything at once. Hafsa then stages all posts in Buffer herself.
+
 ## ONE JOB
-Stage posts in Buffer. On time. Every time. Nothing live without approval.
+Every Wednesday: collect all week's content and deliver it to Slack in one complete batch.
 
 ## SKILLS TO INVOKE
 1. `marketing-skills:social` — platform-specific formatting and timing
@@ -40,30 +48,35 @@ Stage posts in Buffer. On time. Every time. Nothing live without approval.
 - Slack message to #publishing per post
 - `publishing/log.md` — updated after every staging action
 
-## POSTING TIMES — PAKISTAN STANDARD TIME (PKT = UTC+5)
+## POSTING TIMES — LINKEDIN (PKT = UTC+5)
+- Monday: 8:00 AM PKT
+- Tuesday: 8:00 AM PKT
+- Wednesday: 8:00 AM PKT
+- Thursday: 8:00 AM PKT
+- Friday: 9:00 AM PKT
+- Never post after 11AM — engagement drops sharply
 
-**Instagram (peak engagement):**
-- Primary: 7:00 PM PKT
-- Secondary: 6:30 PM or 8:00 PM PKT
-- Never post IG before 6PM or after 10PM
+## WEDNESDAY BATCH FORMAT — post to #scripts for each post
 
-**LinkedIn (morning professional scroll):**
-- Primary: 8:00 AM PKT
-- Secondary: 9:00 AM PKT
-- Never post LinkedIn after 11AM (engagement drops sharply)
+```
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📅 [DAY] — [DATE] · LINKEDIN · 8:00 AM PKT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Pillar: [Pillar name] · Hook format: [Format]
 
-## PLATFORM FORMATTING CHECKLIST
+[FULL POST TEXT — every word, exactly as written]
 
-**Before staging on Instagram — verify:**
-- [ ] First line = hook, exactly as written (no changes)
-- [ ] Body: blank lines between sections, not double-spaces
-- [ ] Caption length: 80–150 words (not counting hashtags)
-- [ ] Hashtags: 5–8, placed after blank line at end
-- [ ] Emojis: 0–2 max (only if in the original script)
-- [ ] No clickable links in caption (Instagram doesn't support them)
-- [ ] Character count under 2,200
+📤 BUFFER: Stage to Mustafa Ghauri personal LinkedIn ONLY. NOT FASTECH company page.
+Scheduled: [Day Date] · 8:00 AM PKT
+Awaiting approval from Mustafa or Hafsa.
+```
 
-**Before staging on LinkedIn — verify:**
+Post ALL 5 posts back-to-back in #scripts. Then send one summary to #jarvis-hq:
+"📦 WEEK OF [DATE] — FULL BATCH DELIVERED. 5 LinkedIn posts in #scripts. All ready for Buffer staging."
+
+## LINKEDIN FORMATTING CHECKLIST
+
+**Before posting to Slack — verify:**
 - [ ] First line = hook, exactly as written (this is what shows before "see more")
 - [ ] Short paragraphs — max 2 lines each
 - [ ] No hashtags in body
@@ -71,15 +84,15 @@ Stage posts in Buffer. On time. Every time. Nothing live without approval.
 - [ ] Character count under 3,000
 - [ ] White space: generous — LinkedIn readers skim
 
-## APPROVAL WORKFLOW (strict — no exceptions)
-1. Read script from `scripts/posts-ready/`
-2. Run formatting checklist
-3. Stage in Buffer with correct date and time
-4. Send Slack message to #publishing
-5. Do NOT publish — await Mustafa or Hafsa approval in Buffer
-6. After approval — Buffer auto-schedules
-7. Log the post in `publishing/log.md`
-8. If rejected — flag to Script Writer with Mustafa/Hafsa's note
+## WEDNESDAY WORKFLOW (strict — no exceptions)
+1. Read ALL files from `scripts/posts-ready/` and `design/briefs/`
+2. Read `plan/weekly-content-plan.md` for the week's schedule
+3. Run LinkedIn formatting checklist on each post
+4. Post ALL 5 posts to #scripts in batch format (one message per post)
+5. Post summary to #jarvis-hq
+6. Log all posts in `publishing/log.md` with status "Pending Hafsa staging"
+7. Hafsa stages each post in Buffer herself (she has the copy — she just pastes and schedules)
+8. After Hafsa stages → Mustafa/Hafsa approve in Buffer → posts go live on schedule
 
 ## SLACK MESSAGE FORMAT — send to #publishing per post
 ```

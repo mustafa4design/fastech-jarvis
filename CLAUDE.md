@@ -19,7 +19,7 @@ All agents MUST reference `knowledge/` before any task. This folder is the groun
 - `knowledge/FASTECH_Content_Brief.md.docx` — FASTECH content brief
 - `knowledge/Designer_Brief_Template.docx` — Designer brief template
 
-**Buffer Rule:** Buffer is connected to Mustafa's personal LinkedIn AND FASTECH company LinkedIn. ALL content produced goes to Mustafa's PERSONAL accounts only (personal LinkedIn + personal Instagram). FASTECH company page gets NOTHING without explicit instruction. NOTHING auto-publishes — every post waits for human approval from Mustafa or Hafsa.
+**Buffer Rule:** Buffer is connected to Mustafa's personal LinkedIn AND FASTECH company LinkedIn. ALL content produced goes to Mustafa's PERSONAL LinkedIn ONLY. FASTECH company page gets NOTHING without explicit instruction. Instagram is NOT in scope for Mustafa's personal brand right now — do not produce IG content unless explicitly instructed. NOTHING auto-publishes — every post waits for human approval from Mustafa or Hafsa.
 
 ---
 
@@ -54,10 +54,10 @@ When Mustafa or Hafsa talks to you, you respond as Jarvis. Confident. Brief. Dir
 
 **Phase 1 Goal (Active Now):**
 Automate Mustafa's PERSONAL BRAND content for:
-- Instagram (@mustafaghauri._) — short posts, carousels, reels captions
-- LinkedIn — long-form personal narrative posts
+- **LinkedIn ONLY** — long-form personal narrative posts (5 per week)
 
 **NOT in scope right now:**
+- Instagram for Mustafa's personal brand (not yet — LinkedIn first)
 - FASTECH agency brand content (separate system)
 - Client content (Tisha, Olivia, etc.)
 - Design for FASTECH posts (FASTECH has a human designer)
@@ -362,8 +362,12 @@ STATUS: [Pipeline health check]
 5. After approval — Buffer auto-schedules
 
 **Posting times (Pakistan Standard Time):**
-- Instagram: 6:00 PM – 9:00 PM (peak engagement)
 - LinkedIn: 8:00 AM – 10:00 AM (morning scroll)
+
+**Delivery schedule:**
+- ALL content for next week is posted to Slack every WEDNESDAY in one complete batch
+- Hafsa uses Thursday–Friday to build any visuals in Canva and stage posts in Buffer
+- Posts go live Mon–Fri the following week from Buffer (auto-scheduled after approval)
 
 **Human approval required before anything goes live.**
 This is a feature, not a bug. Hafsa reviews in Slack. Mustafa can approve via voice.
@@ -371,7 +375,7 @@ This is a feature, not a bug. Hafsa reviews in Slack. Mustafa can approve via vo
 **Output format (Slack message):**
 ```
 📤 POST READY FOR APPROVAL
-Platform: [IG/LinkedIn]
+Platform: LinkedIn
 Scheduled: [Day · Time PKT]
 Hook: [First line of post]
 [View in Buffer] [Approve] [Edit]
@@ -455,18 +459,32 @@ Action: Scan trends → write research files → notify #research
 ROUTINE 02 — Weekly Planning
 Schedule: Every Monday · 7:00 AM PKT (after Research)
 Trigger: Manager agent
-Action: Read research → create weekly plan → notify #jarvis-hq
+Action: Read research → create weekly plan for 5 LinkedIn posts → notify #jarvis-hq
 
-ROUTINE 03 — Daily Content Production
-Schedule: Mon–Sat · 8:00 AM PKT
-Trigger: Hook Writer → Script Writer → Designer → Publisher (pipeline)
-Action: Produce today's content → stage in Buffer → notify #publishing
+ROUTINE 03 — Weekly Content Writing
+Schedule: Monday + Tuesday · 8:00 AM PKT
+Trigger: Hook Writer → Script Writer → Designer (writing only, no publishing)
+Action: Write all 5 LinkedIn posts for the week → save to scripts/posts-ready/
 
-ROUTINE 04 — Weekly Analytics
-Schedule: Every Sunday · 8:00 PM PKT
+ROUTINE 04 — Wednesday Batch Delivery
+Schedule: Every Wednesday · 7:00 AM PKT
+Trigger: Publisher agent
+Action: Read ALL week's content → post EVERYTHING to Slack in one batch (#scripts + #design + #publishing) → Buffer staging instructions for Hafsa
+
+ROUTINE 05 — Weekly Analytics
+Schedule: Every Saturday · 8:00 PM PKT
 Trigger: Analyst agent
-Action: Pull Buffer analytics → write report → feed back to Manager
+Action: Pull Buffer analytics → write report → feed back to Manager + Researcher
 ```
+
+**Weekly Workflow Summary:**
+- Monday 6AM: Research scans trends
+- Monday 7AM: Manager plans 5 LinkedIn posts for the week
+- Monday–Tuesday 8AM: Agents write all 5 posts (hooks → scripts → design briefs)
+- Wednesday 7AM: Publisher delivers EVERYTHING to Slack in one batch
+- Thursday–Friday: Hafsa builds visuals in Canva, stages all posts in Buffer
+- Weekend: Free
+- Following Mon–Fri: Posts go live from Buffer queue (after human approval)
 
 ---
 

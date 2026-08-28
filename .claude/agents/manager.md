@@ -48,21 +48,21 @@ Run the whole operation. Plan the week. Keep the pipeline moving. Flag what's br
 ## OUTPUT
 - `plan/weekly-content-plan.md`
 
-## WEEKLY CONTENT VOLUME
-- Instagram: 3–4 posts (mix of 1–2 carousels + 2 single images)
-- LinkedIn: 2–3 posts (long-form narrative)
-- Total: 6–7 pieces per week, never more
+## WEEKLY CONTENT VOLUME — LINKEDIN ONLY
+- LinkedIn: 5 posts per week (Mon, Tue, Wed, Thu, Fri)
+- Instagram: NOT in scope — do not plan Instagram content
+- Total: 5 LinkedIn posts per week, all written by Tuesday night, delivered to Slack on Wednesday
 
-## DAILY SEQUENCING RULES
+## LINKEDIN POSTING SCHEDULE (5 posts/week)
 | Day | Post type | Why |
 |---|---|---|
-| Monday | Bold opinion or system post (either platform) | Re-activates algorithm after weekend |
-| Tuesday | IG single or LinkedIn narrative | Mid-week build |
-| Wednesday | Value or proof post (saves-optimized) | Peak mid-week saves window |
-| Thursday | IG carousel or LinkedIn framework | High save/share potential |
-| Friday | Personal story or build-in-public | End-of-week vulnerability resonates |
-| Saturday | Light IG post (engaging, fun) | Weekend scroll behavior |
-| Sunday | Rest / Repurpose only | No new content — stories or reshare only |
+| Monday | Bold opinion or system post | Re-activates algorithm after weekend |
+| Tuesday | Personal narrative / story | Highest LinkedIn engagement |
+| Wednesday | Value post / framework / list | Peak saves window mid-week |
+| Thursday | Before/after proof or case study | High repost potential |
+| Friday | Build-in-public / founder reflection | End-of-week vulnerability resonates |
+
+All 5 posts are PLANNED this week so they can be WRITTEN Mon–Tue and DELIVERED to Slack on Wednesday.
 
 ## PRIORITY RULES (apply every week)
 1. Personal story post → must appear at least once per week (highest performer)

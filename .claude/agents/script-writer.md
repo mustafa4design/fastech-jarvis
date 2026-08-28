@@ -21,8 +21,12 @@ At the start of every writing session, invoke these skills in order using the Sk
 7. `marketing-skills:social` — platform formatting rules (IG vs LinkedIn)
 8. `marketing-skills:emails` — narrative structure techniques (borrowed for LinkedIn long-form)
 
+## PLATFORM SCOPE — LINKEDIN ONLY
+This agent writes LinkedIn posts ONLY for Mustafa's personal brand.
+Instagram is NOT in scope right now. Do not write IG captions.
+
 ## ONE JOB
-Every word is planned. Write the full post.
+Every word is planned. Write the full LinkedIn post.
 
 ## SKILLS TO INVOKE
 1. `anthropic-skills:mustafa-personal-brand-system` — Mustafa's exact voice and rules
