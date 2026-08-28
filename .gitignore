@@ -11,6 +11,10 @@ slack/agent-tokens.md
 # Duplicate dashboard file
 dashboard/index.html.html
 
+# Node
+node_modules/
+slack-bot/node_modules/
+
 # OS / editor
 .DS_Store
 Thumbs.db
