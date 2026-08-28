@@ -57,27 +57,34 @@ function fetchRaw(path) {
   return fetchUrl(`${REPO_RAW}/${path}`, false);
 }
 
-// List all files in a repo folder via GitHub API and fetch each one's content
-async function fetchFolder(folderPath) {
+// List files in a repo folder via GitHub API and fetch each one's content.
+// Pass exts (e.g. [".md"]) to restrict by extension; omit for all files.
+async function fetchFolder(folderPath, exts) {
   const files = await fetchUrl(`${REPO_API}/${folderPath}`, true);
   if (!Array.isArray(files) || files.length === 0) return "[no files found]";
+  const filtered = files.filter((f) => {
+    if (f.type !== "file") return false;
+    if (exts && !exts.some((ext) => f.name.endsWith(ext))) return false;
+    return true;
+  });
+  if (filtered.length === 0) return "[no matching files]";
   const contents = await Promise.all(
-    files
-      .filter((f) => f.type === "file")
-      .map((f) => fetchUrl(f.download_url, false).then((text) => `### ${f.name}\n${text}`))
+    filtered.map((f) => fetchUrl(f.download_url, false).then((text) => `### ${f.name}\n${text}`))
   );
   return contents.join("\n\n---\n\n");
 }
 
 // Fetch all live context files and build the dynamic system prompt
 async function buildSystemPrompt() {
-  const [weeklyPlan, brandVoice, claudeMd, jarvisLog, sharedContext, postsReady] = await Promise.all([
+  const [weeklyPlan, brandVoice, claudeMd, jarvisLog, sharedContext, postsReady, designBriefs, knowledgeDocs] = await Promise.all([
     fetchRaw("plan/weekly-content-plan.md"),
     fetchRaw("brand/mustafa-brand-voice.md"),
     fetchRaw("CLAUDE.md"),
     fetchRaw("memory/jarvis-log.md"),
     fetchRaw(".claude/agents/shared-context.md"),
     fetchFolder("scripts/posts-ready"),
+    fetchFolder("design/briefs"),
+    fetchFolder("knowledge", [".md"]),
   ]);
 
   return `You are the JARVIS Manager bot — the real-time Slack interface for Mustafa Ghauri's personal brand content system at FASTECH.PAK.
@@ -161,9 +168,19 @@ LIVE: JARVIS LOG (last 50 entries — most recent activity)
 ${jarvisLog.split("\n").slice(-50).join("\n")}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-LIVE: READY POSTS (scripts/posts-ready/ — full content of every approved post)
+LIVE: READY POSTS (scripts/posts-ready/)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ${postsReady}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LIVE: DESIGN BRIEFS (design/briefs/)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+${designBriefs}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LIVE: KNOWLEDGE BASE (knowledge/ — .md files only)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+${knowledgeDocs}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 LIVE: SYSTEM RULES (CLAUDE.md — key sections)
