@@ -36,20 +36,49 @@ const app = new App({
 const REPO_RAW = "https://raw.githubusercontent.com/mustafa4design/fastech-jarvis/main";
 const REPO_API = "https://api.github.com/repos/mustafa4design/fastech-jarvis/contents";
 
-function fetchUrl(url, isJson) {
+// Fetch a URL, following redirects, returning text or parsed JSON.
+// Never throws — always resolves with a fallback on any error.
+function fetchUrl(url, isJson, _redirectCount = 0) {
   return new Promise((resolve) => {
-    const opts = { headers: { "User-Agent": "jarvis-manager-bot" } };
+    if (_redirectCount > 5) {
+      resolve(isJson ? null : "[too many redirects]");
+      return;
+    }
+    const opts = { headers: { "User-Agent": "jarvis-manager-bot", "Accept": "application/vnd.github+json" } };
     https.get(url, opts, (res) => {
+      // Follow redirects (301, 302, 307, 308)
+      if ([301, 302, 307, 308].includes(res.statusCode) && res.headers.location) {
+        res.resume(); // drain the response
+        resolve(fetchUrl(res.headers.location, isJson, _redirectCount + 1));
+        return;
+      }
       let data = "";
       res.on("data", (chunk) => (data += chunk));
       res.on("end", () => {
         if (res.statusCode === 200) {
-          resolve(isJson ? JSON.parse(data) : data);
+          if (isJson) {
+            try {
+              resolve(JSON.parse(data));
+            } catch (e) {
+              console.error(`[JARVIS] JSON parse error for ${url}:`, e.message, "| raw:", data.slice(0, 200));
+              resolve(null);
+            }
+          } else {
+            resolve(data);
+          }
         } else {
-          resolve(isJson ? [] : `[unavailable — ${res.statusCode}]`);
+          console.error(`[JARVIS] fetchUrl ${res.statusCode} for ${url} | body: ${data.slice(0, 200)}`);
+          resolve(isJson ? null : `[unavailable — ${res.statusCode}]`);
         }
       });
-    }).on("error", () => resolve(isJson ? [] : "[fetch error]"));
+      res.on("error", (e) => {
+        console.error(`[JARVIS] response error for ${url}:`, e.message);
+        resolve(isJson ? null : "[response error]");
+      });
+    }).on("error", (e) => {
+      console.error(`[JARVIS] request error for ${url}:`, e.message);
+      resolve(isJson ? null : "[fetch error]");
+    });
   });
 }
 
@@ -60,14 +89,20 @@ function fetchRaw(path) {
 // List files in a repo folder via GitHub API and fetch each one's content.
 // Pass exts (e.g. [".md"]) to restrict by extension; omit for all files.
 async function fetchFolder(folderPath, exts) {
-  const files = await fetchUrl(`${REPO_API}/${folderPath}`, true);
-  if (!Array.isArray(files) || files.length === 0) return "[no files found]";
+  const apiUrl = `${REPO_API}/${folderPath}`;
+  const files = await fetchUrl(apiUrl, true);
+  if (!Array.isArray(files)) {
+    console.error(`[JARVIS] fetchFolder(${folderPath}): API did not return array, got:`, JSON.stringify(files)?.slice(0, 200));
+    return "[folder listing failed — check Railway logs]";
+  }
+  if (files.length === 0) return "[folder is empty]";
   const filtered = files.filter((f) => {
     if (f.type !== "file") return false;
     if (exts && !exts.some((ext) => f.name.endsWith(ext))) return false;
     return true;
   });
   if (filtered.length === 0) return "[no matching files]";
+  console.log(`[JARVIS] fetchFolder(${folderPath}): fetching ${filtered.length} file(s):`, filtered.map((f) => f.name).join(", "));
   const contents = await Promise.all(
     filtered.map((f) => fetchUrl(f.download_url, false).then((text) => `### ${f.name}\n${text}`))
   );
