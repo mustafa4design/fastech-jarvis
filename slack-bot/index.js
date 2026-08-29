@@ -266,43 +266,36 @@ const CHANNELS = {
   general:     "C0BT0HUMAPL",
 };
 
-// ─── Google Drive client ──────────────────────────────────────────────────
-function getDriveClient() {
-  const hasSA = !!process.env.GOOGLE_SERVICE_ACCOUNT_JSON;
+// ─── Google auth (shared by Drive + Docs clients) ────────────────────────
+function getGoogleAuth() {
+  const hasSA    = !!process.env.GOOGLE_SERVICE_ACCOUNT_JSON;
   const hasOAuth = !!(process.env.GOOGLE_REFRESH_TOKEN && process.env.GOOGLE_CLIENT_ID && process.env.GOOGLE_CLIENT_SECRET);
-  console.log(`[DRIVE] getDriveClient: GOOGLE_SERVICE_ACCOUNT_JSON=${hasSA}, OAuth vars=${hasOAuth}`);
+  console.log(`[DRIVE] getGoogleAuth: service_account=${hasSA}, oauth=${hasOAuth}`);
+
+  const SCOPES = [
+    "https://www.googleapis.com/auth/drive",
+    "https://www.googleapis.com/auth/documents",
+  ];
 
   if (hasSA) {
     let creds;
     try {
       creds = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_JSON);
-      console.log(`[DRIVE] Service account parsed OK — client_email: ${creds.client_email || "(missing)"}, project_id: ${creds.project_id || "(missing)"}`);
+      console.log(`[DRIVE] SA parsed — client_email: ${creds.client_email || "(missing)"}`);
     } catch (e) {
-      console.error(`[DRIVE] GOOGLE_SERVICE_ACCOUNT_JSON parse FAILED: ${e.message}`);
-      console.error(`[DRIVE] First 100 chars of env var: ${process.env.GOOGLE_SERVICE_ACCOUNT_JSON?.slice(0, 100)}`);
+      console.error(`[DRIVE] SA JSON parse FAILED: ${e.message}`);
       return null;
     }
-    try {
-      const auth = new google.auth.GoogleAuth({
-        credentials: creds,
-        scopes: ["https://www.googleapis.com/auth/drive"],
-      });
-      console.log("[DRIVE] GoogleAuth created with service account.");
-      return google.drive({ version: "v3", auth });
-    } catch (e) {
-      console.error(`[DRIVE] GoogleAuth creation FAILED: ${e.message}`);
-      return null;
-    }
+    return new google.auth.GoogleAuth({ credentials: creds, scopes: SCOPES });
   }
 
   if (hasOAuth) {
-    console.log(`[DRIVE] Using OAuth2 — client_id: ${process.env.GOOGLE_CLIENT_ID?.slice(0, 20)}...`);
     const auth = new google.auth.OAuth2(process.env.GOOGLE_CLIENT_ID, process.env.GOOGLE_CLIENT_SECRET);
     auth.setCredentials({ refresh_token: process.env.GOOGLE_REFRESH_TOKEN });
-    return google.drive({ version: "v3", auth });
+    return auth;
   }
 
-  console.error("[DRIVE] No credentials found. Add GOOGLE_SERVICE_ACCOUNT_JSON to Railway Variables.");
+  console.error("[DRIVE] No credentials. Add GOOGLE_SERVICE_ACCOUNT_JSON to Railway Variables.");
   return null;
 }
 
@@ -355,16 +348,15 @@ async function findOrCreateFolder(drive, name, parentId) {
   return createRes.data.id;
 }
 
-// Build the doc body as HTML so Drive renders it with heading styles.
-function buildDocHtml({ postCaption, designBrief, gptImagePrompt, bufferInstructions }) {
-  const section = (title, body) =>
-    `<h1>${title}</h1><p>${(body || "(none)").replace(/\n/g, "<br>")}</p>`;
+// Build doc body as plain text for Docs API insertText.
+function buildDocText({ postCaption, designBrief, gptImagePrompt, bufferInstructions }) {
+  const section = (title, body) => `=== ${title} ===\n\n${body || "(none)"}\n\n`;
   return [
     section("POST CAPTION", postCaption),
     section("DESIGN BRIEF", designBrief),
     section("GPT IMAGE PROMPT", gptImagePrompt),
     section("BUFFER INSTRUCTIONS", bufferInstructions),
-  ].join("<hr>");
+  ].join("---\n\n");
 }
 
 // Auto-generate a week label like "Sep-01-2026" from today's date.
@@ -374,50 +366,71 @@ function currentWeekLabel() {
   return `${months[now.getMonth()]}-${String(now.getDate()).padStart(2,"0")}-${now.getFullYear()}`;
 }
 
-// Create subfolders inside Mustafa's shared FASTECH-JARVIS folder and upload the doc there.
+// Create subfolders inside Mustafa's shared FASTECH-JARVIS folder, then write the doc via
+// the Docs API (no file upload — avoids the Buffer/stream media-body error).
 async function createDriveDoc({ weekLabel, docTitle, postCaption, designBrief, gptImagePrompt, bufferInstructions }) {
-  // Bug fix: Claude sometimes omits week_label — fall back to today's date.
   const resolvedLabel = (weekLabel && weekLabel !== "undefined") ? weekLabel : currentWeekLabel();
-  console.log(`[DRIVE] createDriveDoc START — "${docTitle}" | week: ${resolvedLabel} (raw input: ${weekLabel})`);
+  console.log(`[DRIVE] createDriveDoc START — "${docTitle}" | week: ${resolvedLabel}`);
   console.log(`[DRIVE] Root folder (Mustafa's): ${FASTECH_JARVIS_FOLDER_ID}`);
 
-  const drive = getDriveClient();
-  if (!drive) throw new Error("Google Drive not configured. Add GOOGLE_SERVICE_ACCOUNT_JSON to Railway Variables.");
+  const auth = getGoogleAuth();
+  if (!auth) throw new Error("Google Drive not configured. Add GOOGLE_SERVICE_ACCOUNT_JSON to Railway Variables.");
 
-  // Build Weekly-Content → Week-of-[label] inside the shared root folder.
-  // All folders created here live inside Mustafa's Drive, using his storage quota.
+  const drive = google.drive({ version: "v3", auth });
+  const docs  = google.docs({ version: "v1", auth });
+
+  // Build folder hierarchy inside Mustafa's Drive.
   const weeklyId = await findOrCreateFolder(drive, "Weekly-Content", FASTECH_JARVIS_FOLDER_ID);
   const weekId   = await findOrCreateFolder(drive, `Week-of-${resolvedLabel}`, weeklyId);
 
-  const html = buildDocHtml({ postCaption, designBrief, gptImagePrompt, bufferInstructions });
-  // Use Buffer (not Readable stream) — more reliable for googleapis multipart boundary framing.
-  const htmlBuf = Buffer.from(html, "utf-8");
-  console.log(`[DRIVE] HTML built (${html.length} chars). Uploading doc into folder: ${weekId}`);
-
-  let file;
+  // Step 1 — create an empty Google Doc (lands in service account root by default).
+  let docId;
   try {
-    file = await drive.files.create({
-      requestBody: {
-        name: docTitle,
-        mimeType: "application/vnd.google-apps.document",
-        parents: [weekId],          // must be inside Mustafa's folder or quota fails
-      },
-      media: {
-        mimeType: "text/html",
-        body: htmlBuf,
-      },
-      fields: "id, name, webViewLink",
-      supportsAllDrives: true,
-    });
+    const createRes = await docs.documents.create({ requestBody: { title: docTitle } });
+    docId = createRes.data.documentId;
+    console.log(`[DRIVE] Doc created — id: ${docId}`);
   } catch (e) {
     const apiErr = e.response?.data || e.message;
-    console.error(`[DRIVE] doc create FAILED — parent folder was: ${weekId}`);
-    console.error(`[DRIVE] Google API error:`, JSON.stringify(apiErr));
-    throw new Error(`Drive doc create error: ${JSON.stringify(apiErr)}`);
+    console.error(`[DRIVE] docs.create FAILED:`, JSON.stringify(apiErr));
+    throw new Error(`Docs create error: ${JSON.stringify(apiErr)}`);
   }
 
-  const url = file.data.webViewLink;
-  console.log(`[DRIVE] Doc created OK — id: ${file.data.id} | url: ${url}`);
+  // Step 2 — move the doc into the correct week folder in Mustafa's Drive.
+  try {
+    const meta = await drive.files.get({ fileId: docId, fields: "parents" });
+    const prevParents = (meta.data.parents || []).join(",");
+    await drive.files.update({
+      fileId: docId,
+      addParents: weekId,
+      removeParents: prevParents,
+      supportsAllDrives: true,
+      fields: "id, parents",
+    });
+    console.log(`[DRIVE] Doc moved to week folder: ${weekId}`);
+  } catch (e) {
+    const apiErr = e.response?.data || e.message;
+    console.error(`[DRIVE] files.update (move) FAILED:`, JSON.stringify(apiErr));
+    throw new Error(`Drive move error: ${JSON.stringify(apiErr)}`);
+  }
+
+  // Step 3 — insert content using Docs API (no media upload needed).
+  const text = buildDocText({ postCaption, designBrief, gptImagePrompt, bufferInstructions });
+  try {
+    await docs.documents.batchUpdate({
+      documentId: docId,
+      requestBody: {
+        requests: [{ insertText: { location: { index: 1 }, text } }],
+      },
+    });
+    console.log(`[DRIVE] Content inserted (${text.length} chars)`);
+  } catch (e) {
+    const apiErr = e.response?.data || e.message;
+    console.error(`[DRIVE] batchUpdate FAILED:`, JSON.stringify(apiErr));
+    throw new Error(`Docs batchUpdate error: ${JSON.stringify(apiErr)}`);
+  }
+
+  const url = `https://docs.google.com/document/d/${docId}/edit`;
+  console.log(`[DRIVE] Doc ready — ${url}`);
   return url;
 }
 
