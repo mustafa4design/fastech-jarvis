@@ -2,6 +2,7 @@ require("dotenv").config();
 const { App } = require("@slack/bolt");
 const Anthropic = require("@anthropic-ai/sdk");
 const https = require("https");
+const { google } = require("googleapis");
 
 // Catch all unhandled errors — surface them in Railway logs instead of silent crash
 process.on("uncaughtException", (error) => {
@@ -171,6 +172,36 @@ If Mustafa or Hafsa requests URGENT changes to a post that was already delivered
 Never shortcut this process. Every urgent revision goes through the full pipeline.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TOOLS YOU CAN USE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+create_drive_doc — creates one Google Doc per post inside:
+  Drive → FASTECH-JARVIS → Weekly-Content → Week-of-[label]
+  Call once per post. Returns the Drive URL.
+
+post_to_channel — posts a message to any JARVIS Slack channel by name.
+
+WEEKLY BATCH DELIVERY WORKFLOW (Wednesday 7AM PKT):
+1. For every post in the week's plan, call create_drive_doc with:
+   - week_label: e.g. "Sep-01-2026"
+   - doc_title: "[Date] · [Platform] · [Post-NN] · [Topic]"
+   - post_caption: full caption from scripts/posts-ready/
+   - design_brief: full brief from design/briefs/
+   - gpt_image_prompt: ready-to-paste image generation prompt
+   - buffer_instructions: platform + scheduled time PKT
+2. Collect ALL Drive URLs returned from each create_drive_doc call.
+3. Call post_to_channel(channel: "publishing") with ONE clean summary:
+   📦 WEEK OF [dates] — CONTENT BATCH READY
+   ━━━━━━━━━━━━━━━━━━━
+   Mon Sep 01 · LinkedIn · Post-01
+   [Drive URL]
+   Wed Sep 03 · Instagram · Post-02
+   [Drive URL]
+   ...
+   ━━━━━━━━━━━━━━━━━━━
+   All posts staged and ready for Buffer. Tag @Hafsa to begin staging.
+4. Reply in the original thread: "Batch delivered. [N] docs created in Drive. Summary posted to #publishing."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 HOW TO RESPOND
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Content request → produce it immediately using correct format from brand voice below
@@ -179,6 +210,7 @@ Status request → give pipeline status using live data (shared-context + log + 
 Revision request (no URGENT) → check if routine will handle it → if yes, defer to routine with time
 Revision request (URGENT) → follow the URGENT CHANGE PROTOCOL above
 Plan question → answer from the live weekly plan below
+"Deliver batch" / "post to Drive" → follow WEEKLY BATCH DELIVERY WORKFLOW above
 
 Be concise. No filler. No repeating yourself. Output only what is needed.
 
@@ -234,8 +266,113 @@ const CHANNELS = {
   general:     "C0BT0HUMAPL",
 };
 
+// ─── Google Drive client ──────────────────────────────────────────────────
+function getDriveClient() {
+  if (process.env.GOOGLE_SERVICE_ACCOUNT_JSON) {
+    try {
+      const creds = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_JSON);
+      const auth = new google.auth.GoogleAuth({
+        credentials: creds,
+        scopes: ["https://www.googleapis.com/auth/drive"],
+      });
+      return google.drive({ version: "v3", auth });
+    } catch (e) {
+      console.error("[JARVIS] Failed to parse GOOGLE_SERVICE_ACCOUNT_JSON:", e.message);
+    }
+  }
+  if (process.env.GOOGLE_REFRESH_TOKEN && process.env.GOOGLE_CLIENT_ID && process.env.GOOGLE_CLIENT_SECRET) {
+    const auth = new google.auth.OAuth2(process.env.GOOGLE_CLIENT_ID, process.env.GOOGLE_CLIENT_SECRET);
+    auth.setCredentials({ refresh_token: process.env.GOOGLE_REFRESH_TOKEN });
+    return google.drive({ version: "v3", auth });
+  }
+  console.warn("[JARVIS] No Google Drive credentials found — Drive tools will be unavailable.");
+  return null;
+}
+
+// Find an existing folder by name inside a parent, or create it.
+async function findOrCreateFolder(drive, name, parentId) {
+  const q = parentId
+    ? `name = '${name.replace(/'/g, "\\'")}' and mimeType = 'application/vnd.google-apps.folder' and '${parentId}' in parents and trashed = false`
+    : `name = '${name.replace(/'/g, "\\'")}' and mimeType = 'application/vnd.google-apps.folder' and trashed = false`;
+
+  const res = await drive.files.list({ q, fields: "files(id, name)", spaces: "drive" });
+  if (res.data.files.length > 0) return res.data.files[0].id;
+
+  const meta = { name, mimeType: "application/vnd.google-apps.folder" };
+  if (parentId) meta.parents = [parentId];
+  const created = await drive.files.create({ resource: meta, fields: "id" });
+  return created.data.id;
+}
+
+// Build the doc body as HTML so Drive renders it with heading styles.
+function buildDocHtml({ postCaption, designBrief, gptImagePrompt, bufferInstructions }) {
+  const section = (title, body) =>
+    `<h1>${title}</h1><p>${(body || "").replace(/\n/g, "<br>")}</p>`;
+  return [
+    section("POST CAPTION", postCaption),
+    section("DESIGN BRIEF", designBrief),
+    section("GPT IMAGE PROMPT", gptImagePrompt || "No GPT image prompt provided"),
+    section("BUFFER INSTRUCTIONS", bufferInstructions),
+  ].join("<hr>");
+}
+
+// Create the full folder path and return the Google Doc URL.
+async function createDriveDoc({ weekLabel, docTitle, postCaption, designBrief, gptImagePrompt, bufferInstructions }) {
+  const drive = getDriveClient();
+  if (!drive) throw new Error("Google Drive is not configured. Add GOOGLE_SERVICE_ACCOUNT_JSON (or GOOGLE_CLIENT_ID + GOOGLE_CLIENT_SECRET + GOOGLE_REFRESH_TOKEN) to Railway Variables.");
+
+  const rootId   = await findOrCreateFolder(drive, "FASTECH-JARVIS", null);
+  const weeklyId = await findOrCreateFolder(drive, "Weekly-Content", rootId);
+  const weekId   = await findOrCreateFolder(drive, `Week-of-${weekLabel}`, weeklyId);
+
+  const html = buildDocHtml({ postCaption, designBrief, gptImagePrompt, bufferInstructions });
+
+  const { Readable } = require("stream");
+  const file = await drive.files.create({
+    resource: { name: docTitle, mimeType: "application/vnd.google-apps.document", parents: [weekId] },
+    media: { mimeType: "text/html", body: Readable.from([html]) },
+    fields: "id, webViewLink",
+  });
+  return file.data.webViewLink;
+}
+
 // ─── Tool definition — post_to_channel ───────────────────────────────────
 const TOOLS = [
+  {
+    name: "create_drive_doc",
+    description:
+      "Create a Google Doc in Drive for a single post. Call once per post. Returns the Drive URL. After all docs are created, call post_to_channel to post the summary to #publishing.",
+    input_schema: {
+      type: "object",
+      properties: {
+        week_label: {
+          type: "string",
+          description: "Week label used for the folder name, e.g. 'Sep-01-2026'",
+        },
+        doc_title: {
+          type: "string",
+          description: "Exact doc name: '[Date] · [Platform] · [Post-NN] · [Topic]', e.g. 'Sep-01 · LinkedIn · Post-01 · AI Agency System'",
+        },
+        post_caption: {
+          type: "string",
+          description: "Full post caption / copy",
+        },
+        design_brief: {
+          type: "string",
+          description: "Full visual direction brief from the Designer agent",
+        },
+        gpt_image_prompt: {
+          type: "string",
+          description: "Ready-to-paste ChatGPT/Midjourney image generation prompt",
+        },
+        buffer_instructions: {
+          type: "string",
+          description: "Platform, scheduled date/time PKT, and any Buffer staging notes",
+        },
+      },
+      required: ["week_label", "doc_title", "post_caption", "design_brief", "buffer_instructions"],
+    },
+  },
   {
     name: "post_to_channel",
     description:
@@ -263,6 +400,25 @@ const conversations = new Map();
 
 // ─── Execute a tool call and return the result string ─────────────────────
 async function executeTool(toolName, toolInput, slackClient) {
+  if (toolName === "create_drive_doc") {
+    const { week_label, doc_title, post_caption, design_brief, gpt_image_prompt, buffer_instructions } = toolInput;
+    try {
+      const url = await createDriveDoc({
+        weekLabel: week_label,
+        docTitle: doc_title,
+        postCaption: post_caption,
+        designBrief: design_brief,
+        gptImagePrompt: gpt_image_prompt,
+        bufferInstructions: buffer_instructions,
+      });
+      console.log(`[JARVIS] Drive doc created: ${doc_title} → ${url}`);
+      return `Created: ${doc_title}\nURL: ${url}`;
+    } catch (err) {
+      console.error(`[JARVIS] create_drive_doc error:`, err.message);
+      return `Error creating Drive doc "${doc_title}": ${err.message}`;
+    }
+  }
+
   if (toolName === "post_to_channel") {
     const { channel, message } = toolInput;
     const channelId = CHANNELS[channel];
@@ -276,6 +432,7 @@ async function executeTool(toolName, toolInput, slackClient) {
       return `Error posting to #${channel}: ${err.message}`;
     }
   }
+
   return `Error: unknown tool "${toolName}"`;
 }
 
