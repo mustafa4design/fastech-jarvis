@@ -223,16 +223,68 @@ LIVE: SYSTEM RULES (CLAUDE.md — key sections)
 ${claudeMd.slice(0, 3000)}`;
 }
 
-// ─── Conversation history ──────────────────────────────────────────────────
+// ─── Slack channel IDs ────────────────────────────────────────────────────
+const CHANNELS = {
+  publishing:  "C0BSK7L8HEK",
+  design:      "C0BT48UMWAY",
+  scripts:     "C0BT48UPS0L",
+  research:    "C0BSYL7QBAA",
+  analytics:   "C0BSUB8R0GK",
+  "jarvis-hq": "C0BT0HT1S74",
+  general:     "C0BT0HUMAPL",
+};
+
+// ─── Tool definition — post_to_channel ───────────────────────────────────
+const TOOLS = [
+  {
+    name: "post_to_channel",
+    description:
+      "Post a message to a specific JARVIS Slack channel. Use this when you need to notify a channel, deliver content to #scripts, flag something in #publishing, or route any message to the correct team channel.",
+    input_schema: {
+      type: "object",
+      properties: {
+        channel: {
+          type: "string",
+          enum: Object.keys(CHANNELS),
+          description: "The channel name to post to (e.g. 'scripts', 'publishing', 'design')",
+        },
+        message: {
+          type: "string",
+          description: "The full message text to post in that channel",
+        },
+      },
+      required: ["channel", "message"],
+    },
+  },
+];
+
+// ─── Conversation history ─────────────────────────────────────────────────
 const conversations = new Map();
 
-// ─── Core handler — builds fresh system prompt, then calls Claude ──────────
-async function handleMessage({ userMessage, historyKey, replyFn }) {
+// ─── Execute a tool call and return the result string ─────────────────────
+async function executeTool(toolName, toolInput, slackClient) {
+  if (toolName === "post_to_channel") {
+    const { channel, message } = toolInput;
+    const channelId = CHANNELS[channel];
+    if (!channelId) return `Error: unknown channel "${channel}"`;
+    try {
+      await slackClient.chat.postMessage({ channel: channelId, text: message });
+      console.log(`[JARVIS] Posted to #${channel} (${channelId})`);
+      return `Posted successfully to #${channel}`;
+    } catch (err) {
+      console.error(`[JARVIS] post_to_channel error:`, err.message);
+      return `Error posting to #${channel}: ${err.message}`;
+    }
+  }
+  return `Error: unknown tool "${toolName}"`;
+}
+
+// ─── Core handler — agentic loop with tool use ───────────────────────────
+async function handleMessage({ userMessage, historyKey, replyFn, slackClient }) {
   if (!conversations.has(historyKey)) conversations.set(historyKey, []);
   const history = conversations.get(historyKey);
   history.push({ role: "user", content: userMessage });
 
-  // Always fetch live context before responding
   let systemPrompt;
   try {
     systemPrompt = await buildSystemPrompt();
@@ -241,19 +293,53 @@ async function handleMessage({ userMessage, historyKey, replyFn }) {
     systemPrompt = "You are JARVIS Manager. Live context fetch failed — answer from memory only.";
   }
 
-  const response = await anthropic.messages.create({
-    model: "claude-sonnet-4-6",
-    max_tokens: 1500,
-    system: systemPrompt,
-    messages: history.slice(-10),
-  });
+  // Agentic loop — keep going until Claude stops calling tools
+  let finalReply = null;
+  const loopMessages = [...history.slice(-10)];
 
-  const reply = response.content[0].text;
-  history.push({ role: "assistant", content: reply });
-  await replyFn(reply);
+  for (let turn = 0; turn < 5; turn++) {
+    const response = await anthropic.messages.create({
+      model: "claude-sonnet-4-6",
+      max_tokens: 1500,
+      system: systemPrompt,
+      tools: TOOLS,
+      messages: loopMessages,
+    });
+
+    // Collect any text blocks for the final reply
+    const textBlocks = response.content.filter((b) => b.type === "text");
+    const toolBlocks = response.content.filter((b) => b.type === "tool_use");
+
+    if (toolBlocks.length === 0) {
+      // No tool calls — we're done
+      finalReply = textBlocks.map((b) => b.text).join("\n").trim();
+      break;
+    }
+
+    // Execute all tool calls in parallel
+    loopMessages.push({ role: "assistant", content: response.content });
+    const toolResults = await Promise.all(
+      toolBlocks.map(async (block) => {
+        const result = await executeTool(block.name, block.input, slackClient);
+        return { type: "tool_result", tool_use_id: block.id, content: result };
+      })
+    );
+    loopMessages.push({ role: "user", content: toolResults });
+
+    // If there was text alongside the tool calls, capture it as a partial reply
+    if (textBlocks.length > 0) {
+      finalReply = textBlocks.map((b) => b.text).join("\n").trim();
+    }
+
+    if (response.stop_reason === "end_turn") break;
+  }
+
+  if (!finalReply) finalReply = "Done.";
+  history.push({ role: "assistant", content: finalReply });
+  await replyFn(finalReply);
 }
 
-// ─── @Manager mention in any channel ──────────────────────────────────────
+// ─── @Manager mention in any channel ─────────────────────────────────────
 app.event("app_mention", async ({ event, client, say }) => {
   const threadTs = event.thread_ts || event.ts;
   const channelId = event.channel;
@@ -273,6 +359,7 @@ app.event("app_mention", async ({ event, client, say }) => {
       userMessage,
       historyKey: `${channelId}:${threadTs}`,
       replyFn: (text) => say({ text, thread_ts: threadTs }),
+      slackClient: client,
     });
   } catch (error) {
     console.error("[JARVIS] app_mention error:", error.message);
@@ -286,8 +373,8 @@ app.event("app_mention", async ({ event, client, say }) => {
   }
 });
 
-// ─── Direct messages — no @mention needed ─────────────────────────────────
-app.message(async ({ message, say }) => {
+// ─── Direct messages — no @mention needed ────────────────────────────────
+app.message(async ({ message, say, client }) => {
   if (!message.channel || !message.channel.startsWith("D")) return;
   if (message.subtype) return;
   const userMessage = message.text?.trim();
@@ -298,6 +385,7 @@ app.message(async ({ message, say }) => {
       userMessage,
       historyKey: `dm:${message.channel}`,
       replyFn: (text) => say(text),
+      slackClient: client,
     });
   } catch (error) {
     console.error("[JARVIS] DM error:", error.message);
