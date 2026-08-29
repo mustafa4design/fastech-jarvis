@@ -367,10 +367,19 @@ function buildDocHtml({ postCaption, designBrief, gptImagePrompt, bufferInstruct
   ].join("<hr>");
 }
 
+// Auto-generate a week label like "Sep-01-2026" from today's date.
+function currentWeekLabel() {
+  const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  const now = new Date();
+  return `${months[now.getMonth()]}-${String(now.getDate()).padStart(2,"0")}-${now.getFullYear()}`;
+}
+
 // Create subfolders inside Mustafa's shared FASTECH-JARVIS folder and upload the doc there.
 async function createDriveDoc({ weekLabel, docTitle, postCaption, designBrief, gptImagePrompt, bufferInstructions }) {
-  console.log(`[DRIVE] createDriveDoc START — "${docTitle}" | week: ${weekLabel}`);
-  console.log(`[DRIVE] Root folder: ${FASTECH_JARVIS_FOLDER_ID}`);
+  // Bug fix: Claude sometimes omits week_label — fall back to today's date.
+  const resolvedLabel = (weekLabel && weekLabel !== "undefined") ? weekLabel : currentWeekLabel();
+  console.log(`[DRIVE] createDriveDoc START — "${docTitle}" | week: ${resolvedLabel} (raw input: ${weekLabel})`);
+  console.log(`[DRIVE] Root folder (Mustafa's): ${FASTECH_JARVIS_FOLDER_ID}`);
 
   const drive = getDriveClient();
   if (!drive) throw new Error("Google Drive not configured. Add GOOGLE_SERVICE_ACCOUNT_JSON to Railway Variables.");
@@ -378,32 +387,32 @@ async function createDriveDoc({ weekLabel, docTitle, postCaption, designBrief, g
   // Build Weekly-Content → Week-of-[label] inside the shared root folder.
   // All folders created here live inside Mustafa's Drive, using his storage quota.
   const weeklyId = await findOrCreateFolder(drive, "Weekly-Content", FASTECH_JARVIS_FOLDER_ID);
-  const weekId   = await findOrCreateFolder(drive, `Week-of-${weekLabel}`, weeklyId);
+  const weekId   = await findOrCreateFolder(drive, `Week-of-${resolvedLabel}`, weeklyId);
 
   const html = buildDocHtml({ postCaption, designBrief, gptImagePrompt, bufferInstructions });
-  console.log(`[DRIVE] HTML built (${html.length} chars). Creating doc in folder ${weekId}...`);
+  // Use Buffer (not Readable stream) — more reliable for googleapis multipart boundary framing.
+  const htmlBuf = Buffer.from(html, "utf-8");
+  console.log(`[DRIVE] HTML built (${html.length} chars). Uploading doc into folder: ${weekId}`);
 
-  const { Readable } = require("stream");
   let file;
   try {
     file = await drive.files.create({
-      uploadType: "multipart",
       requestBody: {
         name: docTitle,
         mimeType: "application/vnd.google-apps.document",
-        parents: [weekId],
+        parents: [weekId],          // must be inside Mustafa's folder or quota fails
       },
       media: {
         mimeType: "text/html",
-        body: Readable.from([html]),
+        body: htmlBuf,
       },
       fields: "id, name, webViewLink",
       supportsAllDrives: true,
-      enforceSingleParent: false,
     });
   } catch (e) {
     const apiErr = e.response?.data || e.message;
-    console.error(`[DRIVE] doc create FAILED for "${docTitle}":`, JSON.stringify(apiErr));
+    console.error(`[DRIVE] doc create FAILED — parent folder was: ${weekId}`);
+    console.error(`[DRIVE] Google API error:`, JSON.stringify(apiErr));
     throw new Error(`Drive doc create error: ${JSON.stringify(apiErr)}`);
   }
 
