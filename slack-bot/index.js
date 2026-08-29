@@ -306,84 +306,109 @@ function getDriveClient() {
   return null;
 }
 
-// Find an existing folder by name inside a parent, or create it.
-async function findOrCreateFolder(drive, name, parentId) {
-  const q = parentId
-    ? `name = '${name.replace(/'/g, "\\'")}' and mimeType = 'application/vnd.google-apps.folder' and '${parentId}' in parents and trashed = false`
-    : `name = '${name.replace(/'/g, "\\'")}' and mimeType = 'application/vnd.google-apps.folder' and trashed = false`;
+// Root folder owned by Mustafa's Google account — service account has Editor access.
+// Files created inside this folder use Mustafa's storage quota, not the service account's.
+const FASTECH_JARVIS_FOLDER_ID = "1QgQXhE3t6RGLOp30jbAvN5StNh2FqE8x";
 
-  console.log(`[DRIVE] findOrCreateFolder: searching for "${name}" (parentId=${parentId || "root"})`);
+// Find a subfolder by name inside a known parent, or create it there.
+// Always scopes the search to parentId so nothing lands in the service account's own Drive.
+async function findOrCreateFolder(drive, name, parentId) {
+  const escapedName = name.replace(/\\/g, "\\\\").replace(/'/g, "\\'");
+  const q = `name = '${escapedName}' and mimeType = 'application/vnd.google-apps.folder' and '${parentId}' in parents and trashed = false`;
+
+  console.log(`[DRIVE] findOrCreateFolder: searching for "${name}" inside ${parentId}`);
   let listRes;
   try {
-    listRes = await drive.files.list({ q, fields: "files(id, name)", spaces: "drive" });
+    listRes = await drive.files.list({
+      q,
+      fields: "files(id, name)",
+      spaces: "drive",
+      includeItemsFromAllDrives: true,
+      supportsAllDrives: true,
+    });
   } catch (e) {
     const apiErr = e.response?.data || e.message;
     console.error(`[DRIVE] files.list FAILED for "${name}":`, JSON.stringify(apiErr));
-    throw new Error(`Drive API list error for folder "${name}": ${JSON.stringify(apiErr)}`);
+    throw new Error(`Drive list error for "${name}": ${JSON.stringify(apiErr)}`);
   }
 
   if (listRes.data.files.length > 0) {
-    console.log(`[DRIVE] Found existing folder "${name}" → id: ${listRes.data.files[0].id}`);
-    return listRes.data.files[0].id;
+    const id = listRes.data.files[0].id;
+    console.log(`[DRIVE] Found existing folder "${name}" → ${id}`);
+    return id;
   }
 
-  console.log(`[DRIVE] Folder "${name}" not found — creating it.`);
-  const meta = { name, mimeType: "application/vnd.google-apps.folder" };
-  if (parentId) meta.parents = [parentId];
+  console.log(`[DRIVE] Creating folder "${name}" inside ${parentId}`);
   let createRes;
   try {
-    createRes = await drive.files.create({ resource: meta, fields: "id" });
+    createRes = await drive.files.create({
+      requestBody: { name, mimeType: "application/vnd.google-apps.folder", parents: [parentId] },
+      fields: "id",
+      supportsAllDrives: true,
+    });
   } catch (e) {
     const apiErr = e.response?.data || e.message;
-    console.error(`[DRIVE] files.create (folder "${name}") FAILED:`, JSON.stringify(apiErr));
-    throw new Error(`Drive API create error for folder "${name}": ${JSON.stringify(apiErr)}`);
+    console.error(`[DRIVE] folder create FAILED for "${name}":`, JSON.stringify(apiErr));
+    throw new Error(`Drive create error for "${name}": ${JSON.stringify(apiErr)}`);
   }
-  console.log(`[DRIVE] Created folder "${name}" → id: ${createRes.data.id}`);
+  console.log(`[DRIVE] Created folder "${name}" → ${createRes.data.id}`);
   return createRes.data.id;
 }
 
 // Build the doc body as HTML so Drive renders it with heading styles.
 function buildDocHtml({ postCaption, designBrief, gptImagePrompt, bufferInstructions }) {
   const section = (title, body) =>
-    `<h1>${title}</h1><p>${(body || "").replace(/\n/g, "<br>")}</p>`;
+    `<h1>${title}</h1><p>${(body || "(none)").replace(/\n/g, "<br>")}</p>`;
   return [
     section("POST CAPTION", postCaption),
     section("DESIGN BRIEF", designBrief),
-    section("GPT IMAGE PROMPT", gptImagePrompt || "No GPT image prompt provided"),
+    section("GPT IMAGE PROMPT", gptImagePrompt),
     section("BUFFER INSTRUCTIONS", bufferInstructions),
   ].join("<hr>");
 }
 
-// Create the full folder path and return the Google Doc URL.
+// Create subfolders inside Mustafa's shared FASTECH-JARVIS folder and upload the doc there.
 async function createDriveDoc({ weekLabel, docTitle, postCaption, designBrief, gptImagePrompt, bufferInstructions }) {
-  console.log(`[DRIVE] createDriveDoc START — doc: "${docTitle}", week: "${weekLabel}"`);
+  console.log(`[DRIVE] createDriveDoc START — "${docTitle}" | week: ${weekLabel}`);
+  console.log(`[DRIVE] Root folder: ${FASTECH_JARVIS_FOLDER_ID}`);
 
   const drive = getDriveClient();
-  if (!drive) throw new Error("Google Drive is not configured. Add GOOGLE_SERVICE_ACCOUNT_JSON to Railway Variables.");
+  if (!drive) throw new Error("Google Drive not configured. Add GOOGLE_SERVICE_ACCOUNT_JSON to Railway Variables.");
 
-  const rootId   = await findOrCreateFolder(drive, "FASTECH-JARVIS", null);
-  const weeklyId = await findOrCreateFolder(drive, "Weekly-Content", rootId);
+  // Build Weekly-Content → Week-of-[label] inside the shared root folder.
+  // All folders created here live inside Mustafa's Drive, using his storage quota.
+  const weeklyId = await findOrCreateFolder(drive, "Weekly-Content", FASTECH_JARVIS_FOLDER_ID);
   const weekId   = await findOrCreateFolder(drive, `Week-of-${weekLabel}`, weeklyId);
 
   const html = buildDocHtml({ postCaption, designBrief, gptImagePrompt, bufferInstructions });
-  console.log(`[DRIVE] HTML built — ${html.length} chars. Uploading doc...`);
+  console.log(`[DRIVE] HTML built (${html.length} chars). Creating doc in folder ${weekId}...`);
 
   const { Readable } = require("stream");
   let file;
   try {
     file = await drive.files.create({
-      resource: { name: docTitle, mimeType: "application/vnd.google-apps.document", parents: [weekId] },
-      media: { mimeType: "text/html", body: Readable.from([html]) },
-      fields: "id, webViewLink",
+      uploadType: "multipart",
+      requestBody: {
+        name: docTitle,
+        mimeType: "application/vnd.google-apps.document",
+        parents: [weekId],
+      },
+      media: {
+        mimeType: "text/html",
+        body: Readable.from([html]),
+      },
+      fields: "id, name, webViewLink",
+      supportsAllDrives: true,
+      enforceSingleParent: false,
     });
   } catch (e) {
     const apiErr = e.response?.data || e.message;
-    console.error(`[DRIVE] files.create (doc "${docTitle}") FAILED:`, JSON.stringify(apiErr));
-    throw new Error(`Drive API doc create error: ${JSON.stringify(apiErr)}`);
+    console.error(`[DRIVE] doc create FAILED for "${docTitle}":`, JSON.stringify(apiErr));
+    throw new Error(`Drive doc create error: ${JSON.stringify(apiErr)}`);
   }
 
   const url = file.data.webViewLink;
-  console.log(`[DRIVE] Doc created OK — id: ${file.data.id}, url: ${url}`);
+  console.log(`[DRIVE] Doc created OK — id: ${file.data.id} | url: ${url}`);
   return url;
 }
 
