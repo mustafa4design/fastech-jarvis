@@ -268,24 +268,41 @@ const CHANNELS = {
 
 // ─── Google Drive client ──────────────────────────────────────────────────
 function getDriveClient() {
-  if (process.env.GOOGLE_SERVICE_ACCOUNT_JSON) {
+  const hasSA = !!process.env.GOOGLE_SERVICE_ACCOUNT_JSON;
+  const hasOAuth = !!(process.env.GOOGLE_REFRESH_TOKEN && process.env.GOOGLE_CLIENT_ID && process.env.GOOGLE_CLIENT_SECRET);
+  console.log(`[DRIVE] getDriveClient: GOOGLE_SERVICE_ACCOUNT_JSON=${hasSA}, OAuth vars=${hasOAuth}`);
+
+  if (hasSA) {
+    let creds;
     try {
-      const creds = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_JSON);
+      creds = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_JSON);
+      console.log(`[DRIVE] Service account parsed OK — client_email: ${creds.client_email || "(missing)"}, project_id: ${creds.project_id || "(missing)"}`);
+    } catch (e) {
+      console.error(`[DRIVE] GOOGLE_SERVICE_ACCOUNT_JSON parse FAILED: ${e.message}`);
+      console.error(`[DRIVE] First 100 chars of env var: ${process.env.GOOGLE_SERVICE_ACCOUNT_JSON?.slice(0, 100)}`);
+      return null;
+    }
+    try {
       const auth = new google.auth.GoogleAuth({
         credentials: creds,
         scopes: ["https://www.googleapis.com/auth/drive"],
       });
+      console.log("[DRIVE] GoogleAuth created with service account.");
       return google.drive({ version: "v3", auth });
     } catch (e) {
-      console.error("[JARVIS] Failed to parse GOOGLE_SERVICE_ACCOUNT_JSON:", e.message);
+      console.error(`[DRIVE] GoogleAuth creation FAILED: ${e.message}`);
+      return null;
     }
   }
-  if (process.env.GOOGLE_REFRESH_TOKEN && process.env.GOOGLE_CLIENT_ID && process.env.GOOGLE_CLIENT_SECRET) {
+
+  if (hasOAuth) {
+    console.log(`[DRIVE] Using OAuth2 — client_id: ${process.env.GOOGLE_CLIENT_ID?.slice(0, 20)}...`);
     const auth = new google.auth.OAuth2(process.env.GOOGLE_CLIENT_ID, process.env.GOOGLE_CLIENT_SECRET);
     auth.setCredentials({ refresh_token: process.env.GOOGLE_REFRESH_TOKEN });
     return google.drive({ version: "v3", auth });
   }
-  console.warn("[JARVIS] No Google Drive credentials found — Drive tools will be unavailable.");
+
+  console.error("[DRIVE] No credentials found. Add GOOGLE_SERVICE_ACCOUNT_JSON to Railway Variables.");
   return null;
 }
 
@@ -295,13 +312,34 @@ async function findOrCreateFolder(drive, name, parentId) {
     ? `name = '${name.replace(/'/g, "\\'")}' and mimeType = 'application/vnd.google-apps.folder' and '${parentId}' in parents and trashed = false`
     : `name = '${name.replace(/'/g, "\\'")}' and mimeType = 'application/vnd.google-apps.folder' and trashed = false`;
 
-  const res = await drive.files.list({ q, fields: "files(id, name)", spaces: "drive" });
-  if (res.data.files.length > 0) return res.data.files[0].id;
+  console.log(`[DRIVE] findOrCreateFolder: searching for "${name}" (parentId=${parentId || "root"})`);
+  let listRes;
+  try {
+    listRes = await drive.files.list({ q, fields: "files(id, name)", spaces: "drive" });
+  } catch (e) {
+    const apiErr = e.response?.data || e.message;
+    console.error(`[DRIVE] files.list FAILED for "${name}":`, JSON.stringify(apiErr));
+    throw new Error(`Drive API list error for folder "${name}": ${JSON.stringify(apiErr)}`);
+  }
 
+  if (listRes.data.files.length > 0) {
+    console.log(`[DRIVE] Found existing folder "${name}" → id: ${listRes.data.files[0].id}`);
+    return listRes.data.files[0].id;
+  }
+
+  console.log(`[DRIVE] Folder "${name}" not found — creating it.`);
   const meta = { name, mimeType: "application/vnd.google-apps.folder" };
   if (parentId) meta.parents = [parentId];
-  const created = await drive.files.create({ resource: meta, fields: "id" });
-  return created.data.id;
+  let createRes;
+  try {
+    createRes = await drive.files.create({ resource: meta, fields: "id" });
+  } catch (e) {
+    const apiErr = e.response?.data || e.message;
+    console.error(`[DRIVE] files.create (folder "${name}") FAILED:`, JSON.stringify(apiErr));
+    throw new Error(`Drive API create error for folder "${name}": ${JSON.stringify(apiErr)}`);
+  }
+  console.log(`[DRIVE] Created folder "${name}" → id: ${createRes.data.id}`);
+  return createRes.data.id;
 }
 
 // Build the doc body as HTML so Drive renders it with heading styles.
@@ -318,22 +356,35 @@ function buildDocHtml({ postCaption, designBrief, gptImagePrompt, bufferInstruct
 
 // Create the full folder path and return the Google Doc URL.
 async function createDriveDoc({ weekLabel, docTitle, postCaption, designBrief, gptImagePrompt, bufferInstructions }) {
+  console.log(`[DRIVE] createDriveDoc START — doc: "${docTitle}", week: "${weekLabel}"`);
+
   const drive = getDriveClient();
-  if (!drive) throw new Error("Google Drive is not configured. Add GOOGLE_SERVICE_ACCOUNT_JSON (or GOOGLE_CLIENT_ID + GOOGLE_CLIENT_SECRET + GOOGLE_REFRESH_TOKEN) to Railway Variables.");
+  if (!drive) throw new Error("Google Drive is not configured. Add GOOGLE_SERVICE_ACCOUNT_JSON to Railway Variables.");
 
   const rootId   = await findOrCreateFolder(drive, "FASTECH-JARVIS", null);
   const weeklyId = await findOrCreateFolder(drive, "Weekly-Content", rootId);
   const weekId   = await findOrCreateFolder(drive, `Week-of-${weekLabel}`, weeklyId);
 
   const html = buildDocHtml({ postCaption, designBrief, gptImagePrompt, bufferInstructions });
+  console.log(`[DRIVE] HTML built — ${html.length} chars. Uploading doc...`);
 
   const { Readable } = require("stream");
-  const file = await drive.files.create({
-    resource: { name: docTitle, mimeType: "application/vnd.google-apps.document", parents: [weekId] },
-    media: { mimeType: "text/html", body: Readable.from([html]) },
-    fields: "id, webViewLink",
-  });
-  return file.data.webViewLink;
+  let file;
+  try {
+    file = await drive.files.create({
+      resource: { name: docTitle, mimeType: "application/vnd.google-apps.document", parents: [weekId] },
+      media: { mimeType: "text/html", body: Readable.from([html]) },
+      fields: "id, webViewLink",
+    });
+  } catch (e) {
+    const apiErr = e.response?.data || e.message;
+    console.error(`[DRIVE] files.create (doc "${docTitle}") FAILED:`, JSON.stringify(apiErr));
+    throw new Error(`Drive API doc create error: ${JSON.stringify(apiErr)}`);
+  }
+
+  const url = file.data.webViewLink;
+  console.log(`[DRIVE] Doc created OK — id: ${file.data.id}, url: ${url}`);
+  return url;
 }
 
 // ─── Tool definition — post_to_channel ───────────────────────────────────
