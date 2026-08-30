@@ -462,7 +462,57 @@ async function createDriveDoc({ weekLabel, docTitle, postCaption, designBrief, g
   return url;
 }
 
-// ─── Tool definition — post_to_channel ───────────────────────────────────
+// ─── Auto-build the #publishing message from GitHub content ──────────────
+// Called when post_to_channel(channel:"publishing") fires — the bot fetches
+// and formats the content itself so Claude never has to pass it as a parameter.
+async function buildPublishingMessage(driveLinks = [], note = "") {
+  console.log("[JARVIS] buildPublishingMessage: fetching posts-ready + design/briefs from GitHub");
+
+  const [postsReady, designBriefs] = await Promise.all([
+    fetchFolder("scripts/posts-ready"),
+    fetchFolder("design/briefs"),
+  ]);
+
+  console.log(`[JARVIS] buildPublishingMessage: postsReady=${postsReady.length} chars, designBriefs=${designBriefs.length} chars`);
+
+  const now = new Date();
+  const weekLabel = currentWeekLabel();
+
+  let msg = `📦 *WEEK OF ${weekLabel} — CONTENT BATCH READY*\n`;
+  msg += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n`;
+
+  if (note) msg += `📝 ${note}\n\n`;
+
+  if (driveLinks.length > 0) {
+    msg += `*🗂 GOOGLE DRIVE DOCS*\n`;
+    driveLinks.forEach(({ title, url }) => {
+      msg += `• <${url}|${title}>\n`;
+    });
+    msg += `\n`;
+  }
+
+  msg += `*📄 SCRIPTS (scripts/posts-ready/)*\n`;
+  if (!postsReady.startsWith("[")) {
+    msg += `\`\`\`${postsReady.slice(0, 2800)}\`\`\`\n\n`;
+  } else {
+    msg += `_(${postsReady})_\n\n`;
+  }
+
+  msg += `*🎨 DESIGN BRIEFS (design/briefs/)*\n`;
+  if (!designBriefs.startsWith("[")) {
+    msg += `\`\`\`${designBriefs.slice(0, 2800)}\`\`\`\n\n`;
+  } else {
+    msg += `_(${designBriefs})_\n\n`;
+  }
+
+  msg += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
+  msg += `✅ *Awaiting Mustafa / Hafsa approval before anything goes live.*`;
+
+  console.log(`[JARVIS] buildPublishingMessage: final message ${msg.length} chars`);
+  return msg;
+}
+
+// ─── Tool definitions ─────────────────────────────────────────────────────
 const TOOLS = [
   {
     name: "create_drive_doc",
@@ -502,21 +552,37 @@ const TOOLS = [
   {
     name: "post_to_channel",
     description:
-      "Post a message to a specific JARVIS Slack channel. Use this when you need to notify a channel, deliver content to #scripts, flag something in #publishing, or route any message to the correct team channel.",
+      "Post a message to a JARVIS Slack channel. For channel='publishing': the bot automatically fetches scripts/posts-ready/ and design/briefs/ from GitHub and formats the full batch delivery message — do NOT pass a message parameter, just pass the channel name and any drive_links collected from create_drive_doc calls. For all other channels: pass the message text you want to send.",
     input_schema: {
       type: "object",
       properties: {
         channel: {
           type: "string",
           enum: Object.keys(CHANNELS),
-          description: "The channel name to post to (e.g. 'scripts', 'publishing', 'design')",
+          description: "The channel name to post to",
         },
         message: {
           type: "string",
-          description: "The full message text to post in that channel",
+          description: "Message text — required for non-publishing channels. Omit for channel='publishing' (content is auto-fetched from GitHub).",
+        },
+        drive_links: {
+          type: "array",
+          description: "For channel='publishing' only: array of Drive docs created this session. Each item: { title: string, url: string }.",
+          items: {
+            type: "object",
+            properties: {
+              title: { type: "string" },
+              url: { type: "string" },
+            },
+            required: ["title", "url"],
+          },
+        },
+        note: {
+          type: "string",
+          description: "For channel='publishing' only: optional short note to prepend to the batch message.",
         },
       },
-      required: ["channel", "message"],
+      required: ["channel"],
     },
   },
 ];
@@ -546,12 +612,25 @@ async function executeTool(toolName, toolInput, slackClient) {
   }
 
   if (toolName === "post_to_channel") {
-    const { channel, message } = toolInput;
-    console.log(`[JARVIS] post_to_channel called — channel: "${channel}", message length: ${message ? message.length : 0}`);
-    console.log(`[JARVIS] post_to_channel message preview: "${String(message || "").slice(0, 200)}"`);
+    const { channel, message, drive_links, note } = toolInput;
+    console.log(`[JARVIS] post_to_channel called — channel: "${channel}", has message: ${!!message}, drive_links: ${(drive_links || []).length}`);
     const channelId = CHANNELS[channel];
     if (!channelId) return `Error: unknown channel "${channel}"`;
-    const text = message || "(no message body — Claude sent an empty message parameter)";
+
+    let text;
+    if (channel === "publishing") {
+      // Auto-build the full batch delivery message from GitHub — never rely on Claude passing text.
+      console.log("[JARVIS] post_to_channel: publishing channel — auto-building message from GitHub");
+      text = await buildPublishingMessage(drive_links || [], note || "");
+    } else {
+      text = message;
+      console.log(`[JARVIS] post_to_channel message preview: "${String(text || "").slice(0, 200)}"`);
+      if (!text) {
+        console.error(`[JARVIS] post_to_channel: no message provided for #${channel}`);
+        return `Error: message is required for #${channel}`;
+      }
+    }
+
     try {
       await slackClient.chat.postMessage({ channel: channelId, text });
       console.log(`[JARVIS] Posted to #${channel} (${channelId}) — ${text.length} chars`);
