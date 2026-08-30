@@ -499,11 +499,14 @@ async function executeTool(toolName, toolInput, slackClient) {
 
   if (toolName === "post_to_channel") {
     const { channel, message } = toolInput;
+    console.log(`[JARVIS] post_to_channel called — channel: "${channel}", message length: ${message ? message.length : 0}`);
+    console.log(`[JARVIS] post_to_channel message preview: "${String(message || "").slice(0, 200)}"`);
     const channelId = CHANNELS[channel];
     if (!channelId) return `Error: unknown channel "${channel}"`;
+    const text = message || "(no message body — Claude sent an empty message parameter)";
     try {
-      await slackClient.chat.postMessage({ channel: channelId, text: message });
-      console.log(`[JARVIS] Posted to #${channel} (${channelId})`);
+      await slackClient.chat.postMessage({ channel: channelId, text });
+      console.log(`[JARVIS] Posted to #${channel} (${channelId}) — ${text.length} chars`);
       return `Posted successfully to #${channel}`;
     } catch (err) {
       console.error(`[JARVIS] post_to_channel error:`, err.message);
