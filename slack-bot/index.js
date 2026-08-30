@@ -46,7 +46,9 @@ function fetchUrl(url, isJson, _redirectCount = 0) {
       resolve(isJson ? null : "[too many redirects]");
       return;
     }
-    const opts = { headers: { "User-Agent": "jarvis-manager-bot", "Accept": "application/vnd.github+json" } };
+    const headers = { "User-Agent": "jarvis-manager-bot", "Accept": "application/vnd.github+json" };
+    if (process.env.GITHUB_TOKEN) headers["Authorization"] = `Bearer ${process.env.GITHUB_TOKEN}`;
+    const opts = { headers };
     https.get(url, opts, (res) => {
       // Follow redirects (301, 302, 307, 308)
       if ([301, 302, 307, 308].includes(res.statusCode) && res.headers.location) {
@@ -88,27 +90,73 @@ function fetchRaw(path) {
   return fetchUrl(`${REPO_RAW}/${path}`, false);
 }
 
+// Known fallback files per folder — used when the GitHub API listing fails
+// (rate-limit, auth error, or intermittent 403/404).
+const FOLDER_FALLBACKS = {
+  "scripts/posts-ready": [
+    `${REPO_RAW}/scripts/posts-ready/post-01-linkedin.md`,
+    `${REPO_RAW}/scripts/posts-ready/post-01-ig.md`,
+  ],
+};
+
 // List files in a repo folder via GitHub API and fetch each one's content.
+// Falls back to FOLDER_FALLBACKS direct URLs if the API listing fails.
 // Pass exts (e.g. [".md"]) to restrict by extension; omit for all files.
 async function fetchFolder(folderPath, exts) {
   const apiUrl = `${REPO_API}/${folderPath}`;
+  console.log(`[JARVIS] fetchFolder: listing ${apiUrl}`);
   const files = await fetchUrl(apiUrl, true);
-  if (!Array.isArray(files)) {
-    console.error(`[JARVIS] fetchFolder(${folderPath}): API did not return array, got:`, JSON.stringify(files)?.slice(0, 200));
-    return "[folder listing failed — check Railway logs]";
+
+  // If the API listing worked, fetch each file normally.
+  if (Array.isArray(files) && files.length > 0) {
+    const filtered = files.filter((f) => {
+      if (f.type !== "file") return false;
+      if (exts && !exts.some((ext) => f.name.endsWith(ext))) return false;
+      return true;
+    });
+    if (filtered.length === 0) {
+      console.log(`[JARVIS] fetchFolder(${folderPath}): no matching files after extension filter`);
+      return "[no matching files]";
+    }
+    console.log(`[JARVIS] fetchFolder(${folderPath}): fetching ${filtered.length} file(s):`, filtered.map((f) => f.name).join(", "));
+    const contents = await Promise.all(
+      filtered.map(async (f) => {
+        const text = await fetchUrl(f.download_url, false);
+        console.log(`[JARVIS]   ${f.name}: ${text.length} chars fetched`);
+        return `### ${f.name}\n${text}`;
+      })
+    );
+    const result = contents.join("\n\n---\n\n");
+    console.log(`[JARVIS] fetchFolder(${folderPath}): total content ${result.length} chars`);
+    return result;
   }
-  if (files.length === 0) return "[folder is empty]";
-  const filtered = files.filter((f) => {
-    if (f.type !== "file") return false;
-    if (exts && !exts.some((ext) => f.name.endsWith(ext))) return false;
-    return true;
-  });
-  if (filtered.length === 0) return "[no matching files]";
-  console.log(`[JARVIS] fetchFolder(${folderPath}): fetching ${filtered.length} file(s):`, filtered.map((f) => f.name).join(", "));
-  const contents = await Promise.all(
-    filtered.map((f) => fetchUrl(f.download_url, false).then((text) => `### ${f.name}\n${text}`))
+
+  // API listing failed — log why and try fallback URLs.
+  console.error(`[JARVIS] fetchFolder(${folderPath}): API listing failed (got ${JSON.stringify(files)?.slice(0, 200)})`);
+  const fallbackUrls = FOLDER_FALLBACKS[folderPath];
+  if (!fallbackUrls) {
+    console.error(`[JARVIS] fetchFolder(${folderPath}): no fallback URLs configured`);
+    return "[folder listing failed — no fallback configured]";
+  }
+
+  console.log(`[JARVIS] fetchFolder(${folderPath}): trying ${fallbackUrls.length} fallback URL(s)`);
+  const fallbackContents = await Promise.all(
+    fallbackUrls.map(async (url) => {
+      const filename = url.split("/").pop();
+      const text = await fetchUrl(url, false);
+      console.log(`[JARVIS]   fallback ${filename}: ${text.length} chars`);
+      if (text.startsWith("[") && text.endsWith("]")) return null; // error sentinel
+      return `### ${filename}\n${text}`;
+    })
   );
-  return contents.join("\n\n---\n\n");
+  const valid = fallbackContents.filter(Boolean);
+  if (valid.length === 0) {
+    console.error(`[JARVIS] fetchFolder(${folderPath}): all fallback fetches failed`);
+    return "[folder listing failed — fallback also failed]";
+  }
+  const result = valid.join("\n\n---\n\n");
+  console.log(`[JARVIS] fetchFolder(${folderPath}): fallback OK — ${result.length} chars from ${valid.length} file(s)`);
+  return result;
 }
 
 // Fetch all live context files and build the dynamic system prompt
