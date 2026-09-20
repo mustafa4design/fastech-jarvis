@@ -1,0 +1,88 @@
+{
+  "campaign_id": "campaign-2-personal-brand",
+  "campaign_name": "Personal Brand / Niche",
+  "priority": 2,
+  "expected_reply_rate": "5-8%",
+  "run_day": "Wednesday",
+
+  "description": "Volume play targeting founders, coaches, creators, and ecommerce brand owners who are actively creating video content. Core FASTECH ICP. Deeply personalized emails via Firecrawl.",
+
+  "apify": {
+    "actors": [
+      "apify/instagram-profile-scraper",
+      "apify/linkedin-profile-scraper"
+    ],
+    "bio_keywords": [
+      "founder",
+      "coach",
+      "CEO",
+      "creator",
+      "content",
+      "personal brand",
+      "ecommerce",
+      "ads",
+      "entrepreneur",
+      "YouTuber",
+      "podcaster"
+    ],
+    "filters": {
+      "locations": ["US", "UK"],
+      "exclude_locations": ["Pakistan", "India"],
+      "active_within_days": 30,
+      "company_size_max": 50
+    },
+    "max_leads": 40
+  },
+
+  "target_niches": [
+    "Personal branding",
+    "Meta ads / paid advertising",
+    "YouTube / podcast content",
+    "Ecommerce product videos",
+    "Business coaching",
+    "Online courses / education"
+  ],
+
+  "target_decision_maker": {
+    "note": "The account owner IS the decision maker. Direct outreach only.",
+    "titles_to_target": [
+      "Founder",
+      "CEO",
+      "Owner",
+      "Coach",
+      "Creator",
+      "Content Creator",
+      "YouTuber",
+      "Consultant"
+    ]
+  },
+
+  "email_framework_preference": "EGO_BOOST or PAIN_POINT",
+  "email_angle": "Hyper-personalized. Reference something specific from their website or recent content. Connect their content creation to FASTECH's ability to produce more, faster, better — so they can focus on strategy and showing up, not editing.",
+
+  "subject_line_examples": [
+    "your [specific content piece] — quick thought",
+    "what I noticed about your [niche] content",
+    "helping [niche] founders scale their video output"
+  ],
+
+  "firecrawl": {
+    "enabled": true,
+    "extract_fields": [
+      "what they do / their offer",
+      "content niche or industry",
+      "tone of writing",
+      "recent launches or campaigns",
+      "any social proof or client results they mention",
+      "pain points visible (small team, lots of content, etc.)"
+    ]
+  },
+
+  "filtering_rules": {
+    "skip_if_pakistan": true,
+    "skip_if_india": true,
+    "skip_if_generic_email": true,
+    "skip_if_no_website": true,
+    "skip_if_inactive_30_days": true
+  }
+}

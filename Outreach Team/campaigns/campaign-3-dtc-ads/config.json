@@ -1,0 +1,111 @@
+{
+  "campaign_id": "campaign-3-dtc-ads",
+  "campaign_name": "DTC / Ecommerce Ads Niche",
+  "priority": 3,
+  "expected_reply_rate": "8-12%",
+  "run_day": "Thursday",
+
+  "description": "Laser-focused on DTC ecommerce and paid ads world. Every DTC brand needs constant video ad creatives. High budget. High volume. Recurring need. Perfect FASTECH fit.",
+
+  "apify": {
+    "actors": [
+      "apify/twitter-scraper",
+      "apify/linkedin-post-scraper",
+      "apify/instagram-hashtag-scraper"
+    ],
+    "search_keywords": [
+      "DTC ads",
+      "Meta ads",
+      "TikTok ads",
+      "AI ads",
+      "ad creative",
+      "ecommerce video",
+      "UGC ads",
+      "video ads ROAS",
+      "Shopify brand",
+      "DTC founder",
+      "performance creative",
+      "AI video ads",
+      "creative testing"
+    ],
+    "hashtags": [
+      "#DTCads",
+      "#MetaAds",
+      "#TikTokAds",
+      "#adcreative",
+      "#ecommerceads",
+      "#UGCads",
+      "#performancecreative",
+      "#DTCfounder",
+      "#Shopifybrand"
+    ],
+    "filters": {
+      "locations": ["US", "UK"],
+      "exclude_locations": ["Pakistan", "India"],
+      "posted_within_days": 14,
+      "company_size_max": 50
+    },
+    "max_leads": 40
+  },
+
+  "target_personas": [
+    "Ecommerce brand owners running Meta/TikTok/YouTube ads",
+    "DTC founders posting about ad performance, ROAS, scaling",
+    "People posting about AI ads, AI creative, AI video for ads",
+    "Brands actively spending on video ad creatives",
+    "UGC agencies and ad creative agencies serving ecommerce",
+    "People talking about DTC, dropshipping, Shopify brands, product launches"
+  ],
+
+  "target_decision_maker": {
+    "titles_to_target": [
+      "Founder",
+      "CEO",
+      "Owner",
+      "Head of Marketing",
+      "CMO",
+      "Brand Owner",
+      "DTC Founder"
+    ],
+    "note": "The person posting about ads is usually the decision maker. Go direct."
+  },
+
+  "email_framework_preference": "PAIN_POINT or TROJAN_HORSE",
+  "email_angle": "Lead with their specific pain — ad creative fatigue, needing more video variations, scaling creative output. Reference their niche (DTC, Shopify, Meta ads) specifically. NEVER send a generic video editing pitch. Speak their language: ROAS, creative fatigue, testing velocity, UGC.",
+
+  "pain_points_to_reference": [
+    "Running out of video ad creatives to test",
+    "Creative fatigue killing their ROAS",
+    "Needing more video variations at speed",
+    "Scaling ad spend but creative output can't keep up",
+    "UGC costs too high / too slow",
+    "AI-powered creative is the next competitive edge"
+  ],
+
+  "subject_line_examples": [
+    "your Meta ad creatives — quick thought",
+    "how DTC brands are solving creative fatigue",
+    "more video variations without hiring a team"
+  ],
+
+  "firecrawl": {
+    "enabled": true,
+    "extract_fields": [
+      "their product or brand",
+      "advertising platforms they mention",
+      "ad spend signals (ROAS, scaling language)",
+      "current creative production setup hints",
+      "recent campaigns or launches",
+      "tone — casual DTC founder or professional marketer"
+    ]
+  },
+
+  "filtering_rules": {
+    "skip_if_pakistan": true,
+    "skip_if_india": true,
+    "skip_if_generic_email": true,
+    "skip_if_no_website": true,
+    "skip_if_no_ad_signals": true,
+    "skip_if_large_corporation": true
+  }
+}

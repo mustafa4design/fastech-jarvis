@@ -1,0 +1,82 @@
+{
+  "campaign_id": "campaign-1-hiring-signal",
+  "campaign_name": "Hiring Signal",
+  "priority": 1,
+  "expected_reply_rate": "15-25%",
+  "run_day": "Tuesday",
+
+  "description": "Targets companies actively posting jobs for video editor / content manager / social media manager. These companies have budget, urgent need, and are already looking for what FASTECH does.",
+
+  "apify": {
+    "actors": [
+      "apify/linkedin-jobs-scraper",
+      "apify/indeed-scraper"
+    ],
+    "search_keywords": [
+      "video editor",
+      "content manager",
+      "social media manager",
+      "YouTube editor",
+      "content creator",
+      "video producer",
+      "reels editor"
+    ],
+    "filters": {
+      "locations": ["US", "UK"],
+      "exclude_locations": ["Pakistan", "India"],
+      "company_size_max": 200,
+      "posted_within_days": 7,
+      "job_type": "any"
+    },
+    "max_leads": 40
+  },
+
+  "target_decision_maker": {
+    "titles_to_target": [
+      "Founder",
+      "CEO",
+      "Owner",
+      "Co-founder",
+      "Chief Executive Officer",
+      "Managing Director"
+    ],
+    "titles_to_exclude": [
+      "HR Manager",
+      "HR Director",
+      "Recruiter",
+      "Talent Acquisition",
+      "People Operations",
+      "Marketing Coordinator",
+      "Social Media Coordinator"
+    ]
+  },
+
+  "email_framework_preference": "SIGNAL-BASED",
+  "email_angle": "Reference the specific job posting. Position FASTECH as a faster, better alternative to hiring full-time. Emphasize speed (can start this week), cost savings vs full-time hire, and AI-powered output.",
+
+  "subject_line_examples": [
+    "re: your video editor search",
+    "alternative to hiring a video editor in-house",
+    "saw your [platform] post for a video editor"
+  ],
+
+  "firecrawl": {
+    "enabled": true,
+    "extract_fields": [
+      "what the company does",
+      "content niche",
+      "team size hints",
+      "any video content visible on site",
+      "social media links"
+    ]
+  },
+
+  "filtering_rules": {
+    "skip_if_pakistan": true,
+    "skip_if_india": true,
+    "skip_if_generic_email": true,
+    "skip_if_no_website": true,
+    "skip_if_large_company": true,
+    "skip_if_hr_is_poster": true
+  }
+}
