@@ -43,6 +43,7 @@ SKIP if: email contains "admin@"
 SKIP if: location = Pakistan OR India
 SKIP if: no website URL available
 SKIP if: employee count > 200
+SKIP if: decision maker first name not found — mark RED, Notes: "No name — skipped."
 ```
 
 ### PHASE 3 — ENRICH VIA FIRECRAWL
@@ -83,13 +84,15 @@ For each valid lead, write ONE cold email using this exact process:
 **Step 2 — Write the email using this exact structure:**
 
 ```
-[Line 1: Opening framework — 1 sentence, specific, NEVER generic]
+[Line 1: First name greeting — "Hey [Name]," or "Hi [Name],"]
 
-[Lines 2–3: What FASTECH solves, tied to their specific situation]
+[Line 2: Opening framework — 1 sentence, specific, NEVER generic]
 
-[Line 4: One proof point — result FASTECH got for a similar client]
+[Lines 3–4: What FASTECH solves, tied to their specific situation]
 
-[Line 5: CTA — simple, low-commitment]
+[Line 5: One proof point — result FASTECH got for a similar client]
+
+[Line 6: CTA — simple, low-commitment]
 
 Best,
 Mustafa Ghauri
@@ -98,7 +101,9 @@ Founder, FASTECH.PAK
 ```
 
 **HARD RULES for every email:**
-- Max 120 words total. Count them.
+- MUST start with decision maker's first name: "Hey [Name]," or "Hi [Name],"
+- If no first name found — SKIP this lead entirely. Mark RED. Notes: "No name — skipped."
+- Max 120 words total (greeting line counts). Count them.
 - Must reference something SPECIFIC from their website or content
 - NEVER use: "Hope this finds you well", "I wanted to reach out", "Quick question", "Just following up", "Touching base", "Circling back"
 - CTA options: "Worth a 10-minute call this week?" OR "Want me to send over an example?"

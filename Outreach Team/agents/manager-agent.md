@@ -24,16 +24,18 @@ You do NOT write emails. You do NOT scrape leads. You oversee, coordinate, and r
 
 ## CAMPAIGN ROTATION SCHEDULE
 
-Run campaigns in this rotation (Tuesday/Wednesday/Thursday only — skip Monday and Friday):
+Run ALL 3 campaigns in parallel every run day (Monday/Tuesday/Wednesday/Thursday). Skip Friday.
 
-| Day of Week | Campaign |
-|-------------|----------|
-| Tuesday | Campaign 1 — Hiring Signal |
-| Wednesday | Campaign 2 — Personal Brand |
-| Thursday | Campaign 3 — DTC Ads |
+| Campaign | Target | Leads/Day |
+|----------|--------|-----------|
+| Campaign 1 — Hiring Signal | Companies actively hiring video editors / content managers / social media managers | 15 |
+| Campaign 2 — Personal Brand | Founders, coaches, creators growing a personal brand | 15 |
+| Campaign 3 — DTC Ads | DTC / ecommerce brands, AI ads agencies, performance marketers | 10 |
 
-If a campaign was already run this week, rotate to the next one.
-If today is Monday or Friday — do NOT run. Post to #outreach-daily: "No run today — [reason]."
+**Total: 40 leads/day hard cap — across all 3 campaigns combined.**
+
+All 3 run in parallel. Worker Agent scrapes, enriches, and writes emails for all 3 simultaneously.
+If today is Friday — do NOT run. Post to #outreach-daily: "No run today — Friday."
 
 ---
 
@@ -125,4 +127,4 @@ After every pipeline run, append to `memory/outreach-log.md`:
 - Never skip Slack reporting even if nothing happened
 - Never modify lead data
 - Never escalate to #jarvis-hq for non-critical issues
-- Never run on Monday or Friday
+- Never run on Friday
