@@ -46,12 +46,18 @@ SKIP if: employee count > 200
 SKIP if: decision maker first name not found — mark RED, Notes: "No name — skipped."
 ```
 
-### PHASE 3 — ENRICH VIA FIRECRAWL
+### PHASE 3 — ENRICH VIA FIRECRAWL (Composio MCP)
 
 For each valid (GREEN) lead:
-1. Use Firecrawl to scrape their website
-2. Extract: what they do, their niche, their tone, any visible pain points
+1. Use Composio MCP tool `FIRECRAWL_SCRAPE` with the lead's website URL
+   - Set `formats: ["markdown"]` and `onlyMainContent: true`
+2. Extract from the scraped markdown: what they do, their niche, their tone, any visible pain points
 3. Store enrichment data in the lead object inside `enriched-leads.json`
+
+**Composio tool call:**
+```
+FIRECRAWL_SCRAPE(url: [lead.website], formats: ["markdown"], onlyMainContent: true)
+```
 
 **If Firecrawl fails on a lead:**
 - Mark lead YELLOW
