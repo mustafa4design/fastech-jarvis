@@ -10,3 +10,5 @@
 
 ---
 <!-- Append new log entries below this line -->
+
+[2026-09-22 21:30 PKT] | Worker | Phase 4 blocked — no data | Task claimed Phases 1-3 already completed today (C1/C2/C3 scraped, US East + UK sent), but leads/2026-09-22/ and emails/2026-09-22/ do not exist, outreach-log.md had zero entries since the 2026-09-20 build, and the Google Sheet is empty (0 rows, 0 date tabs) since creation. Apify and Firecrawl are not connected in this session. 0 emails sent, 0 leads processed. Posted to #outreach-errors. | Files: none written (no real lead/email data to act on)
