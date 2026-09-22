@@ -1,0 +1,112 @@
+[
+ {
+  "lead_id": "C1-01",
+  "campaign": "campaign-1-hiring-signal",
+  "name": "Gabe Yeh",
+  "company": "Colorblind Creative Agency",
+  "website": "http://www.staycolorblind.com",
+  "email": null,
+  "firecrawl_status": "success",
+  "firecrawl_summary": "Boutique creative agency (23 employees, Irvine CA), photo/video production + social media, clients include Mercedes, Lexus, Harley-Davidson, PGA Tour, XBOX. Site is a portfolio showcase with no published contact email.",
+  "email_written": false,
+  "reason_not_sent": "No email found on website — do not guess (per rule)"
+ },
+ {
+  "lead_id": "C2-09",
+  "campaign": "campaign-2-personal-brand",
+  "name": "Grace Lancer",
+  "company": "gracelancer.com",
+  "website": "http://www.gracelancer.com",
+  "email": null,
+  "firecrawl_status": "success",
+  "firecrawl_summary": "LinkedIn ghostwriting/personal-brand strategist for expert coaches & consultants. Site is a lead-gen landing page, contact via form only, no published email.",
+  "email_written": false,
+  "reason_not_sent": "No email found on website — do not guess (per rule)"
+ },
+ {
+  "lead_id": "C2-19",
+  "campaign": "campaign-2-personal-brand",
+  "name": "Steve Hulford",
+  "company": "Underknown",
+  "website": "http://www.underknown.com",
+  "email": null,
+  "firecrawl_status": "success",
+  "firecrawl_summary": "Co-Founder & CEO of Underknown, a Webby/Telly/Shorty award-winning creator-led factual video media company (80M+ monthly viewers, shows: What If, Animalogic, How to Survive). Contact only via /contact page, no published email.",
+  "email_written": false,
+  "reason_not_sent": "No email found on website — do not guess (per rule)"
+ },
+ {
+  "lead_id": "C2-20",
+  "campaign": "campaign-2-personal-brand",
+  "name": "Kane K. (Kane Kallaway)",
+  "company": "Short Form System / sandcastles.ai",
+  "website": "https://shortformsystem.co",
+  "email": null,
+  "firecrawl_status": "failed",
+  "firecrawl_summary": "Firecrawl error: SCRAPE_ALL_ENGINES_FAILED (site blocked automated access or unreachable). No enrichment possible.",
+  "email_written": false,
+  "reason_not_sent": "Firecrawl failed AND no email found via LinkedIn data — skipped"
+ },
+ {
+  "lead_id": "C3-01",
+  "campaign": "campaign-3-dtc-ads",
+  "name": "Max Gerasichev",
+  "company": "Uboros",
+  "website": "https://get.viraldrop.ai/6hp4",
+  "email": null,
+  "firecrawl_status": "success_mismatch",
+  "firecrawl_summary": "The website link on his LinkedIn profile resolved to ViralDrop, an unrelated third-party video-analysis SaaS tool (likely an old affiliate link), not his own company Uboros. No usable business content or email.",
+  "email_written": false,
+  "reason_not_sent": "Website did not match lead's actual company — no email found"
+ },
+ {
+  "lead_id": "C3-05",
+  "campaign": "campaign-3-dtc-ads",
+  "name": "Curtis Howland",
+  "company": "Misfit Marketing",
+  "website": "https://misfitmarketing.co",
+  "email": "curtis@misfitmarketing.co",
+  "firecrawl_status": "success",
+  "firecrawl_summary": "Founder-led media buying + creative agency for DTC brands doing $250K-$1M/mo on paid media. 9-client hard cap, $150M+ lifetime spend managed, 329% avg Y1 revenue growth. Explicitly needs new ad creative every week to fight fatigue.",
+  "email_written": true,
+  "email_file": "emails/2026-09-22/C3-05-email.md",
+  "framework": "PAIN_POINT"
+ },
+ {
+  "lead_id": "C3-12",
+  "campaign": "campaign-3-dtc-ads",
+  "name": "Eugenio Zabell",
+  "company": "Huecco Incubator",
+  "website": "http://hueccoincubator.com",
+  "email": null,
+  "firecrawl_status": "success",
+  "firecrawl_summary": "AI creative strategy + performance marketing agency for DTC brands (UGC performance creatives, AI high-production video, static creatives). Strong ICP overlap with FASTECH but no published email — only Calendly booking links.",
+  "email_written": false,
+  "reason_not_sent": "No email found on website — do not guess (per rule)"
+ },
+ {
+  "lead_id": "C3-17",
+  "campaign": "campaign-3-dtc-ads",
+  "name": "Justin Green",
+  "company": "GrowthFactor",
+  "website": "http://www.justingreen.io",
+  "email": null,
+  "firecrawl_status": "success_thin",
+  "firecrawl_summary": "Personal bio-link page only (@JustinInATX) — Founder/CEO GrowthFactor, Founding Member ShotPay, Founder Bloc Fit App. No business content or email on this URL.",
+  "email_written": false,
+  "reason_not_sent": "No email found on website — do not guess (per rule)"
+ },
+ {
+  "lead_id": "C3-19",
+  "campaign": "campaign-3-dtc-ads",
+  "name": "Delamon Rego",
+  "company": "Forge Operators",
+  "website": "http://forgeoperators.com",
+  "email": "delamon@forgeoperators.com",
+  "firecrawl_status": "success",
+  "firecrawl_summary": "DTC growth operator (ex-SVP Sales & Marketing at DECKED, $15M to 9-figures). Runs Meta/Google ad accounts tied to client P&L for $20M+ DTC brands spending $50K+/mo. Lists 'creative volume quota' and 'iterate creative quickly' as core profit levers.",
+  "email_written": true,
+  "email_file": "emails/2026-09-22/C3-19-email.md",
+  "framework": "PAIN_POINT"
+ }
+]

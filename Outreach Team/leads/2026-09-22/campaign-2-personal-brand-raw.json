@@ -1,0 +1,23 @@
+[
+ {"lead_id":"C2-01","status":"RED","notes":"No website found","name":"Geni Cor","website":null,"headline":"Host of House of Impact - Personal Brand + Podcast ecosystem for leaders"},
+ {"lead_id":"C2-02","status":"RED","notes":"No website found","name":"Zach Muchnick","website":null,"headline":"Founder, CRO & COO, Positive Beverage (Exited 2026) | CPG Operator & Category Builder"},
+ {"lead_id":"C2-03","status":"RED","notes":"No website found","name":"Randy Pulayya","website":null,"headline":"Founder of WIPS - Featured on Hot Ones Caribbean Edition"},
+ {"lead_id":"C2-04","status":"RED","notes":"No website found","name":"Sulagna Karmakar","website":null,"headline":"Your Branding Girl | $2.5M+ with Organic Marketing | Social Media Pro"},
+ {"lead_id":"C2-05","status":"RED","notes":"No website found","name":"Elena Bezborodova","website":null,"headline":"I turn B2B content into pipeline | LinkedIn, newsletters, YouTube"},
+ {"lead_id":"C2-06","status":"RED","notes":"No website found","name":"Shakeeb SA","website":null,"headline":"Personal Branding Expert | LinkedIn Growth Strategist"},
+ {"lead_id":"C2-07","status":"RED","notes":"No website found","name":"Alon Barak","website":null,"headline":"Head of Brand & Marketing at Urecsys | Founder & CEO at Ghost Agency"},
+ {"lead_id":"C2-08","status":"RED","notes":"No website found","name":"Jasely Molina","website":null,"headline":"Brand strategist, journalist, speaker | strategy + ghostwriting for founders"},
+ {"lead_id":"C2-09","status":"GREEN","notes":"Founder/creator with real website, personal-brand content niche fit — Firecrawl enriched, no direct email found on site (contact form only)","name":"Grace Lancer.","website":"http://www.gracelancer.com","headline":"Dominate TF outta LinkedIn | LinkedIn Strategist for expert coaches & consultants","linkedinUrl":"https://www.linkedin.com/in/gracelancer"},
+ {"lead_id":"C2-10","status":"RED","notes":"No website found","name":"Peace Akerele","website":null,"headline":"Beauty Entrepreneur & Consultant / Growth & Mindset Coach"},
+ {"lead_id":"C2-11","status":"RED","notes":"No website found","name":"Joyce Serwaa","website":null,"headline":"Virtual Assistant / Social Media Manager"},
+ {"lead_id":"C2-12","status":"RED","notes":"No website found","name":"Greg Styan","website":null,"headline":"Coaching marketing / LinkedIn growth"},
+ {"lead_id":"C2-13","status":"RED","notes":"No website found","name":"Coach Evelyn Ogboe","website":null,"headline":"Career Growth Coach"},
+ {"lead_id":"C2-14","status":"RED","notes":"No real business website (booking link only) — treated as no website","name":"Shalinni Billar (Lead Generation Coach)","website":"https://calendly.com/shalinidigitalmarketer004/30min","headline":"Growth Marketing & AI Automation Coach"},
+ {"lead_id":"C2-15","status":"RED","notes":"No website found","name":"Nadia Afnan","website":null,"headline":"HR & Business Development Consultant at Envision Greatness"},
+ {"lead_id":"C2-16","status":"RED","notes":"No website found","name":"Dr. Kerri B. Stroka","website":null,"headline":"Deputy Superintendent | Founder, Stroka Leadership Advisory"},
+ {"lead_id":"C2-17","status":"RED","notes":"Unclear identity, hiring-style spam post — not ICP fit","name":"Most Lost","website":null,"headline":"Student at GCUH"},
+ {"lead_id":"C2-18","status":"RED","notes":"No website found / niche mismatch (AI engineer, not content)","name":"Muhammad Ibrar","website":null,"headline":"AI Engineer | Cybersecurity Engineer | Data Scientist"},
+ {"lead_id":"C2-19","status":"GREEN","notes":"Founder/creator with real website, personal-brand content niche fit — Firecrawl enriched, no direct email found on site (contact form only)","name":"Steve Hulford","website":"http://www.underknown.com","headline":"Co-Founder & CEO @ Underknown | Popular Science TV","linkedinUrl":"https://www.linkedin.com/in/stevehulford"},
+ {"lead_id":"C2-20","status":"GREEN","notes":"Founder/creator with real website, personal-brand content niche fit — Firecrawl failed (SCRAPE_ALL_ENGINES_FAILED), no email found","name":"Kane K.","website":"https://shortformsystem.co","headline":"Co-Founder sandcastles.ai | Helping businesses scale faster on social media (2M+ followers)","linkedinUrl":"https://www.linkedin.com/in/kanekallaway"},
+ {"lead_id":"C2-21","status":"RED","notes":"No real business website (booking link only) — treated as no website","name":"Rafi Ullah","website":"https://calendly.com/kakarrafi312/book-a-tiktok-shop-strategy-call-3","headline":"Scaling TikTok Shop Brands Through Affiliates + GMV Max"}
+]
