@@ -2,6 +2,9 @@
 .mcp.json
 slack/agent-tokens.md
 
+# Outreach lead emails — contain PII, never push to public repo
+Outreach Team/emails/
+
 # Netlify local state
 .netlify/
 
