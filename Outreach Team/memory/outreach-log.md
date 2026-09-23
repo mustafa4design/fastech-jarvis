@@ -12,6 +12,8 @@
 ---
 <!-- Append new log entries below this line -->
 
+[2026-09-23 20:07 PKT] | Worker | vulnv/linkedin-email-finder integration — spec added, live test blocked | Actor verified (exists, 102K+ runs/month, input schema confirmed: {"urls": [...]}). Attempted live test on 5 candidate leads (C1-06, C1-10, C1-16, C1-17, C1-21) — blocked by Apify 403: monthly $5 free-plan credit exhausted. worker-agent.md updated with Phase 3a spec (input format confirmed, output field names marked TBD — verify on first successful run). Full rollout deferred until: (a) Oct 1 credit reset, or (b) Apify plan upgrade. 0 emails found | 0 leads upgraded | Files: agents/worker-agent.md
+
 [2026-09-23 16:30 PKT] | Worker | YELLOW leads approved and sent — Mustafa manual approval | 2 role emails sent via Gmail after Mustafa approved YELLOW leads 20260923-006 and 20260923-021. Emails written (PAIN_POINT and SIGNAL-BASED frameworks), sent, sheet rows marked GREEN. Running daily total: 19 sent. Files: emails/2026-09-23/20260923-006-email.md, emails/2026-09-23/20260923-021-email.md (gitignored).
 
 [2026-09-22 21:30 PKT] | Worker | Phase 4 blocked — no data | Task claimed Phases 1-3 already completed today (C1/C2/C3 scraped, US East + UK sent), but leads/2026-09-22/ and emails/2026-09-22/ do not exist, outreach-log.md had zero entries since the 2026-09-20 build, and the Google Sheet is empty (0 rows, 0 date tabs) since creation. Apify and Firecrawl are not connected in this session. 0 emails sent, 0 leads processed. Posted to #outreach-errors. | Files: none written (no real lead/email data to act on)

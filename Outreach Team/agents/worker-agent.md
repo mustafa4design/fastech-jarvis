@@ -75,6 +75,8 @@ SKIP if: decision maker first name not found — mark RED, Notes: "No name — s
 
 ### PHASE 3 — ENRICH VIA FIRECRAWL + EXTRACT EMAIL (Composio MCP)
 
+> **Phase 3a** runs after Phase 3 for leads that still have no personal email — see Phase 3a below.
+
 For each GREEN or YELLOW lead from Phase 2:
 1. Use Composio MCP tool `FIRECRAWL_SCRAPE` with the lead's website URL
    - Set `formats: ["markdown"]` and `onlyMainContent: true`
@@ -107,6 +109,32 @@ Save enrichment + email data to `leads/[YYYY-MM-DD]/enriched-leads.json`
 - Visible pain points
 - Notable achievements, clients, social proof
 - Recent launches, products, or campaigns
+
+### PHASE 3a — LINKEDIN EMAIL FINDER (for RED leads with profile URLs)
+
+Run this AFTER Phase 3, BEFORE Phase 4. Only for leads that are still RED (no email from Firecrawl) but have a LinkedIn profile URL (`decision_maker_url` contains `/in/`).
+
+**Actor:** `vulnv/linkedin-email-finder`
+**Input schema:** `{"urls": ["https://linkedin.com/in/...", ...]}`
+**Pricing:** $0.029 per email found + $0.00005 actor start
+
+**Steps:**
+1. Collect all RED leads from Phase 3 that have `decision_maker_url` matching `/linkedin.com/in/` (profile URL — not a post URL)
+2. Run the actor via Composio `APIFY_RUN_ACTOR_SYNC_GET_DATASET_ITEMS`:
+   ```
+   actorId: "vulnv/linkedin-email-finder"
+   input: {"urls": [lead.decision_maker_url, ...]}
+   memory: 4096
+   waitForFinish: 120
+   ```
+3. For each result from the actor:
+   - If email found and it is a personal email (firstname@domain or name@domain): upgrade lead to GREEN, write email in Phase 4
+   - If email found but it is a role/generic address (info@, hello@, etc.): upgrade lead to YELLOW, hold for manual approval
+   - If no email found: keep lead RED, skip
+
+**Output field names:** Verify on first successful run — actor returns per-profile records with email, contact name, company, and corporate domain. Key fields likely include `email`, `url`, and `status`. Check actual dataset output and update this section with confirmed field names.
+
+**Hard rule:** Only pass profile URLs (`/in/` pattern). Never pass post URLs (`/posts/` or `/feed/`). Skip leads where `decision_maker_url` is empty or is not a profile URL.
 
 ### PHASE 4 — WRITE EMAILS
 
