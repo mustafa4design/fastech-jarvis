@@ -170,6 +170,7 @@ For each GREEN lead (personal email found), write ONE cold email:
 Best,
 Mustafa Ghauri
 Founder, FASTECH.PAK
+https://fastechpak.netlify.app
 ```
 
 **HARD RULES for every email:**
