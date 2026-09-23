@@ -16,7 +16,7 @@ You do the work. You do NOT make strategic decisions. When in doubt — skip the
 
 ### PHASE 1 — SCRAPE (6:00 AM PKT)
 
-Run multiple Apify actors per campaign to maximize lead volume. Target: 220 leads scraped → 40+ valid emails sent.
+Run multiple Apify actors per campaign to maximize lead volume. Target: 220 leads scraped → 40+ valid emails sent. Campaign 4 (Google Maps) adds ~20 pre-scraped leads — see below.
 
 **CAMPAIGN 1 — Hiring Signal (target: 80 leads)**
 
@@ -51,6 +51,16 @@ Actor B: `harvestapi/linkedin-post-search`
 - Keywords: "DTC ads", "ad creative", "Meta ads", "ecommerce video", "TikTok ads"
 - maxItems: 40
 
+**CAMPAIGN 4 — Local Businesses / Google Maps (target: ~20 leads, pre-scraped — do NOT scrape in the cloud)**
+
+C4 is scraped LOCALLY on Mustafa's PC at 5:30 AM PKT by `Outreach Team/google-maps/c4-scrape.py` (self-hosted gosom/google-maps-scraper on localhost — not reachable from the cloud). It rotates one search term + one city per day (see `campaigns/campaign-4-local-maps/config.json`), depth 5, emails on, and pushes the result to the repo before this routine runs.
+
+1. `git pull` to make sure you have the latest commits.
+2. Read `leads/[YYYY-MM-DD]/campaign-4-local-maps-raw.json`.
+3. If the file is missing → post to #outreach-errors (C0C380ZRCGH): "⚠️ C4 Google Maps pre-scrape missing for [date] — Mustafa's PC/Docker was probably off." Skip C4, continue with C1–C3.
+4. If `status` = "failed" → post the `error` field to #outreach-errors. Skip C4, continue with C1–C3.
+5. If `status` = "ok" → the `leads` array is C4's raw leads. Each already has `title`, `emails` (list), `phone`, `website`, `category`, `address`. Do not re-scrape. Carry `send_bucket`, `city`, and `search_term` from the file header onto every C4 lead.
+
 Save all raw scrape output combined to `leads/[YYYY-MM-DD]/[campaign-id]-raw.json`.
 Deduplicate by website domain or profile URL.
 
@@ -72,6 +82,18 @@ SKIP if: no website URL available
 SKIP if: employee count > 200
 SKIP if: decision maker first name not found — mark RED, Notes: "No name — skipped."
 ```
+
+**CAMPAIGN 4 extra skip rules (on top of the above):**
+```
+SKIP if: country = Pakistan OR India OR Bangladesh — Notes: "Pakistan/India/Bangladesh — excluded"
+SKIP if: competitor — category or name contains video production, videographer, videography,
+         film production, production company/studio, video editing, video agency, animation studio,
+         post-production, media production, cinematography — Notes: "Competitor (video/production) — skipped"
+SKIP if: only generic emails — info@, marketing@, support@, hello@ (and contact@, admin@, sales@,
+         team@, office@, enquiries@, inquiries@, help@, noreply@) — Notes: "Generic email only"
+         → C4 role emails are RED, NOT YELLOW. No manual-approval queue for C4.
+```
+C4 first names: Google Maps doesn't list people. Take the first name from the personal email (jane@brand.com → Jane) or from the About/Team/Our Story page via Firecrawl in Phase 3. No first name → RED.
 
 ### PHASE 3 — ENRICH VIA FIRECRAWL + EXTRACT EMAIL (Composio MCP)
 
@@ -99,6 +121,13 @@ FIRECRAWL_SCRAPE(url: [lead.website], formats: ["markdown"], onlyMainContent: tr
 - If Firecrawl finds only a role address (info@, hello@, contact@, support@, marketing@, admin@, noreply@): mark YELLOW. Note: "Role email only — [email found]." Still write the email but DO NOT send until Mustafa manually approves.
 - If Firecrawl finds no email at all: mark RED. Note: "No email found on website." Skip.
 - If Firecrawl itself fails on a lead: mark RED. Note: "Firecrawl failed — no website data." Skip.
+
+**Campaign 4 (Google Maps) in Phase 3:**
+- Start from the `emails` list the Maps scraper already found. Drop any generic/role address.
+- If a personal/direct email remains (firstname@domain, name.surname@domain, or a founder's personal Gmail/Outlook) → GREEN.
+- Still run Firecrawl on the website (the homepage, plus the About/Team page if the homepage has no founder name). You need it for the founder's first name and for something specific to reference in the email. If Firecrawl finds a personal email the scraper missed, use it → GREEN.
+- Only role emails, or none at all → RED ("Generic email only" / "No email found on website"). Never YELLOW for C4.
+- Set the lead's `timezone` field to its `send_bucket` (US-East / UK / US-West) so the Phase 2/3/4 send routines pick it up. Put the real city in Location (column E).
 
 Save enrichment + email data to `leads/[YYYY-MM-DD]/enriched-leads.json`
 
@@ -227,6 +256,9 @@ For each GREEN lead (personal email only — never send to role addresses):
 | London (BST, Apr–Sep) | 12:30 PM PKT |
 | Dubai / UAE | 7:30 AM PKT |
 | Unknown | Default to 6:30 PM PKT (EST) |
+| C4: Chicago / Austin / Houston / Toronto | US-East bucket — 6:30 PM PKT |
+| C4: Seattle / Denver / Sydney | US-West bucket — 9:30 PM PKT |
+| C4: EU cities / Dublin / Dubai | UK bucket — UK send phase |
 
 **Gmail send rules:**
 - From: mustafaghauri218@gmail.com
@@ -247,7 +279,7 @@ For each lead (sent OR skipped), write a row to today's Google Sheets tab:
 | E | Location |
 | F | Timezone |
 | G | Niche / What They Do |
-| H | Campaign (1-Hiring / 2-PersonalBrand / 3-DTCAds) |
+| H | Campaign (1-Hiring / 2-PersonalBrand / 3-DTCAds / Campaign 4 — Local Business (Google Maps)) |
 | I | Email Framework Used |
 | J | Email Sent? (Yes/No) |
 | K | Send Time (local time) |
@@ -306,7 +338,8 @@ After every pipeline run, append to `memory/outreach-log.md`:
 
 - Never send an email if column J (Email Sent?) = "Yes" in today's Google Sheet tab — sheet is source of truth
 - Never email info@, marketing@, support@, contact@, hello@, admin@ addresses without manual approval
-- Never email leads from Pakistan or India
+- Never email leads from Pakistan or India (C4: also Bangladesh)
+- Never email video/production agencies (C4) — they are competitors
 - Never send more than 40 emails in one day
 - Never guess an email address
 - Never send an email longer than 120 words

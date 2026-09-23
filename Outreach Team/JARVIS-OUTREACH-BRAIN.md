@@ -78,8 +78,12 @@ fastech-jarvis/
     │   │   └── config.json
     │   ├── campaign-2-personal-brand/
     │   │   └── config.json
-    │   └── campaign-3-dtc-ads/
+    │   ├── campaign-3-dtc-ads/
+    │   │   └── config.json
+    │   └── campaign-4-local-maps/
     │       └── config.json
+    ├── google-maps/
+    │   └── c4-scrape.py             ← local Google Maps pre-scrape (C4)
     ├── leads/
     │   └── [date]/
     │       ├── raw-leads.json
@@ -96,7 +100,7 @@ fastech-jarvis/
 
 ---
 
-## THE THREE CAMPAIGNS
+## THE FOUR CAMPAIGNS
 
 ### CAMPAIGN 1 — HIRING SIGNAL (Highest Priority)
 **What it targets:** Companies actively posting jobs for video editor / content manager / social media manager / YouTube editor / content creator
@@ -189,10 +193,57 @@ Lead with their specific pain — ad creative fatigue, needing more video variat
 
 ---
 
+### CAMPAIGN 4 — LOCAL BUSINESSES (Google Maps)
+**What it targets:** Ecommerce, DTC, coaching, fitness, wellness and lifestyle brands that are listed on Google Maps in major US, UK, EU and other cities.
+
+**Why:** A steady supply of new brand owners that the LinkedIn/Instagram scrapers miss. It's free: the scraper is self-hosted and doesn't use Apify credit.
+
+**Expected reply rate:** 3–6%
+
+**Scraper:** Self-hosted `gosom/google-maps-scraper` (v1.18.1) in Docker on Mustafa's PC (`localhost:8080`). The cloud Phase 1 routine can't reach localhost, so C4 is **pre-scraped locally at 5:30 AM PKT (Mon–Thu)** by `google-maps/c4-scrape.py`. The script pushes `leads/[date]/campaign-4-local-maps-raw.json` to GitHub. Cloud Phase 1 picks it up at 6:00 AM PKT and filters, enriches, writes and logs it like C1–C3.
+**Requirement:** Mustafa's PC must be on with Docker Desktop running at 5:30 AM PKT. If it isn't, Phase 1 reports "C4 pre-scrape missing" to #outreach-errors and runs C1–C3 as normal.
+
+**Settings:** Depth 5, emails on, one search term + one city per day.
+
+**Search terms (rotate daily):**
+- "ecommerce beauty brands"
+- "personal brand coaches"
+- "DTC skincare brands"
+- "online fitness coaches"
+- "lifestyle brands"
+- "ecommerce fashion brands"
+- "wellness brands"
+- "content creators agency"
+
+**Cities (rotate daily):**
+- US: New York, Los Angeles, Chicago, Miami, Austin, Seattle, Denver, Atlanta, Boston, Houston
+- UK: London, Manchester, Birmingham, Edinburgh, Bristol
+- EU: Amsterdam, Berlin, Paris, Barcelona, Rome, Stockholm, Copenhagen, Dublin, Zurich
+- OTHER: Dubai, Toronto, Sydney
+
+Rotation: term = day % 8, city = day % 27. Every term × city pair (216) gets used before any pair repeats.
+
+**Rules:**
+- Skip info@, marketing@, support@, hello@ (and other role inboxes). **C4 role emails are RED, not YELLOW.**
+- Skip Pakistan, India, Bangladesh
+- Skip competitors (video agencies, production companies, videographers, film/animation studios)
+- Only leads with a direct/personal email go GREEN
+- First name must come from the personal email or the website's About/Team page. No name → RED.
+- Logged to the same Google Sheet, in the same daily tab. **Column H = "Campaign 4 — Local Business (Google Maps)"**
+
+**Send timing:** each city maps to an existing send phase. US-East takes NY, Chicago, Miami, Austin, Atlanta, Boston, Houston and Toronto. UK takes the UK and EU cities plus Dubai. US-West takes LA, Seattle, Denver and Sydney.
+
+**Decision maker:** Founder / Owner / CEO / the coach themselves.
+
+**Email angle:** Reference their actual brand, products or coaching offer. Brands like theirs live on short-form video (Reels, TikTok, product videos, ads), and small teams can't produce enough of it. Never send a generic "video editing services" pitch.
+
+---
+
 ## THE FULL AUTOMATION PIPELINE
 
 ```
-STEP 1: APIFY scrapes leads based on campaign config
+STEP 1: APIFY scrapes leads based on campaign config (C1–C3)
+         + C4 Google Maps leads pre-scraped locally at 5:30 AM PKT (read from repo)
          ↓
 STEP 2: Filter leads — remove Pakistan, India, info@, marketing@, no-website leads
          ↓
@@ -376,7 +427,7 @@ Max **3 follow-ups** per lead. Then stop. Never contact again.
 | E | Location |
 | F | Timezone |
 | G | Niche / What They Do |
-| H | Campaign (1-Hiring / 2-PersonalBrand / 3-DTCAds) |
+| H | Campaign (1-Hiring / 2-PersonalBrand / 3-DTCAds / Campaign 4 — Local Business (Google Maps)) |
 | I | Email Framework Used |
 | J | Email Sent? (Yes/No) |
 | K | Send Time (local time of lead) |
@@ -494,6 +545,7 @@ The system does NOT run at one fixed time. It runs in **phases** timed to US/UK 
 | Tool | Purpose | MCP / API |
 |------|---------|-----------|
 | **Apify** | Scrape leads | Apify MCP (OAuth) |
+| **Google Maps Scraper** | Scrape C4 local-business leads | Self-hosted gosom/google-maps-scraper v1.18.1 (Docker, localhost:8080 on Mustafa's PC) |
 | **Firecrawl** | Read lead websites | Firecrawl API (free tier — 1,000 credits/month) |
 | **Gmail** | Send emails | Gmail MCP (already connected) |
 | **Google Sheets** | Log leads + color code | Google Sheets API or Google Drive MCP |
@@ -583,6 +635,7 @@ When Claude Code reads this file, build in this exact order:
 4. Create `campaigns/campaign-1-hiring-signal/config.json` — Campaign 1 config
 5. Create `campaigns/campaign-2-personal-brand/config.json` — Campaign 2 config
 5b. Create `campaigns/campaign-3-dtc-ads/config.json` — Campaign 3 config
+5c. Create `campaigns/campaign-4-local-maps/config.json` + `google-maps/c4-scrape.py` — Campaign 4 config + local pre-scrape (local scheduled task, 5:30 AM PKT Mon–Thu)
 6. Create `google-sheets/sheets-sync.js` — Google Sheets logging script
 7. Create `memory/outreach-log.md` — empty log file with header
 8. Set up Claude Routines for all 5 phases (times listed above)
@@ -600,7 +653,7 @@ Do not skip steps. Do not reorder. Build in sequence.
 3. Every email is under 120 words.
 4. Every email references something SPECIFIC from the lead's website.
 5. Never email info@, marketing@, support@ addresses.
-6. Never email Pakistan or India leads.
+6. Never email Pakistan or India leads (Campaign 4: also Bangladesh).
 7. Never send more than 40 emails per day.
 8. Never use "just following up" or any lazy follow-up opener.
 9. Always give value before asking for anything.
