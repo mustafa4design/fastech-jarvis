@@ -50,7 +50,7 @@ Every single email comes FROM:
 ```
 Mustafa Ghauri
 Founder, FASTECH.PAK
-[website URL]
+https://fastechpak.netlify.app
 ```
 
 Never from "FASTECH team" or "FASTECH.PAK." Always from Mustafa personally.
@@ -321,7 +321,7 @@ Mirror the prospect's age, tone, and style.
 Best,
 Mustafa Ghauri
 Founder, FASTECH.PAK
-[website]
+https://fastechpak.netlify.app
 ```
 
 **Length:** Max 120 words. Short. Punchy. One idea per sentence. ADHD-friendly.

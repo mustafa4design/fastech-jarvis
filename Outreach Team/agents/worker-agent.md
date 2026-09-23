@@ -165,6 +165,8 @@ For each GREEN lead (personal email found), write ONE cold email:
 
 [Line 6: CTA — simple, low-commitment]
 
+🎬 Quick intro from me: https://drive.google.com/file/d/1PZxUyayqrYkYIE_NxW34dOl3SNakc8nV/view
+
 Best,
 Mustafa Ghauri
 Founder, FASTECH.PAK
