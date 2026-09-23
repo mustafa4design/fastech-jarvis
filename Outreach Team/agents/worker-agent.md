@@ -165,6 +165,21 @@ Founder, FASTECH.PAK
 
 Save each email to `emails/[YYYY-MM-DD]/[lead-id]-email.md`
 
+### DEDUPLICATION — PRE-SEND CHECK (run before EVERY send)
+
+**The Google Sheet is the single source of truth. The leads/ and emails/ files are NOT.**
+
+Before sending any email:
+1. Read today's Google Sheet tab (Spreadsheet ID: `107hqHj-Q-8e1oph76wf0kew5xzs_gbnGMaOBcHLGCyE`)
+2. Find the row for this lead ID
+3. Check column J (Email Sent?)
+4. If column J = **"Yes"** → **SKIP. Do not send. Log "skipped — already sent per Sheet".**
+5. Only proceed with the send if column J = "No" or is blank
+
+This prevents duplicate sends when multiple phases run on the same day or when Mustafa manually sends emails outside the pipeline.
+
+---
+
 ### PHASE 5 — SCHEDULE & SEND (via Gmail MCP)
 
 For each GREEN lead (personal email only — never send to role addresses):
@@ -258,6 +273,7 @@ After every pipeline run, append to `memory/outreach-log.md`:
 
 ## WHAT YOU NEVER DO
 
+- Never send an email if column J (Email Sent?) = "Yes" in today's Google Sheet tab — sheet is source of truth
 - Never email info@, marketing@, support@, contact@, hello@, admin@ addresses without manual approval
 - Never email leads from Pakistan or India
 - Never send more than 40 emails in one day
