@@ -1,0 +1,16 @@
+{
+  "campaign_id": "campaign-4-local-maps",
+  "campaign_label": "Campaign 4 — Local Business (Google Maps)",
+  "date": "2026-09-26",
+  "scraped_at_pkt": "2026-09-26 00:15",
+  "search_term": "ecommerce fashion brands",
+  "city": "Austin",
+  "region": "US",
+  "send_bucket": "US-East",
+  "depth": 5,
+  "email": true,
+  "status": "failed",
+  "error": "Job 3f824330-57f7-463d-9c69-ea09d87ec6b0 ended with status=working",
+  "count": 0,
+  "leads": []
+}
