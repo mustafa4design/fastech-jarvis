@@ -27,3 +27,8 @@ OPPORTUNITY 05: AI tools specifically for video agencies (not just generic AI co
 Gap: Most AI content is generic. Niche-specific AI content (video editing + AI) is wide open.
 Angle: "The exact AI stack I use to run a video editing agency without a full team."
 Platform: Instagram Carousel (saves-optimized) + LinkedIn
+
+---
+
+## Analyst Recommendations
+[2026-09-26] Analytics rec: Bold number hook format (40 clients + 0 employees) is proving strong. Continue this format for Post #2 in parallel with Post #1 publishing. Focus on Agency/systems pillar for next 2 posts until live performance data arrives.

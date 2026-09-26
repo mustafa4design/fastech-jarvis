@@ -92,10 +92,10 @@ Buffer staging status: [Pending Hafsa / Staged / Approved]
 ## Analyst Findings
 *Updated by: Analyst agent (every Saturday 8PM PKT)*
 
-Winning hook format last week: [format]
-Winning pillar last week: [pillar]
-Top post: [hook/title]
-Key recommendation for next week: [1 line]
+Winning hook format last week: Bold number format (40 clients + 0 employees)
+Winning pillar last week: Agency/systems thinking
+Top post: "I had 40 clients and 0 employees. Not by accident." (213 words)
+Key recommendation for next week: Unblock Post #1 publishing in Buffer to get baseline performance data. Use same Bold number hook format for Post #2. Track reposts/comments/impressions as North Star metrics.
 
 ---
 
