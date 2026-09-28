@@ -11,19 +11,19 @@ description: Shared working memory for all JARVIS agents. Every agent reads and 
 ---
 
 ## Active Week
-Week of: [update every Monday]
+Week of: Sep 28 - Oct 4, 2026
 Posts planned: 5 LinkedIn posts (Mon–Fri)
-Status: [ ] Research → [ ] Plan → [ ] Hooks → [ ] Scripts → [ ] Design → [ ] Published
+Status: [✅] Research → [ ] Plan → [ ] Hooks → [ ] Scripts → [ ] Design → [ ] Published
 
 ---
 
 ## Researcher Decisions
-*Updated by: Researcher agent (every Monday 6AM PKT)*
+*Updated by: Researcher agent (every Monday 6AM PKT)* — COMPLETED 2026-09-28 06:19 UTC
 
-Top angle this week: [fill in]
-Best competitor hook spotted: [fill in]
-Content gap to exploit: [fill in]
-Avoid this week (too stale): [fill in]
+Top angle this week: **Agentic AI video editing** (30min footage → 5min reel in seconds, 36% YoY growth)
+Best competitor hook spotted: **"From 0 to 40 clients. Here's the unfair advantage I used."** (Journey + proof + age specificity)
+Content gap to exploit: **AI video workflows for agencies** (nobody connecting agentic editing + agency production at scale)
+Avoid this week (too stale): Old LinkedIn engagement pods & poll formats (360Brew algorithm penalizes)
 
 ---
 
