@@ -13,7 +13,7 @@ description: Shared working memory for all JARVIS agents. Every agent reads and 
 ## Active Week
 Week of: Sep 28 - Oct 2, 2026
 Posts planned: 5 LinkedIn posts (Mon–Fri)
-Status: [✅] Research → [✅] Plan → [ ] Hooks → [ ] Scripts → [ ] Design → [ ] Published
+Status: [✅] Research → [✅] Plan → [✅] Hooks (Mon) → [✅] Scripts (Mon) → [✅] Design (Mon) → [ ] Published
 
 ---
 
@@ -45,39 +45,39 @@ Pillar to push this week (highest performer): Build-in-public (Mon + Fri) · Per
 ---
 
 ## Hook Writer Decisions
-*Updated by: Hook Writer agent (Monday–Tuesday)*
+*Updated by: Hook Writer agent — COMPLETED 2026-09-28 08:XX PKT (Monday)*
 
 Final hooks chosen:
-- Post 1: [hook text]
-- Post 2: [hook text]
-- Post 3: [hook text]
-- Post 4: [hook text]
-- Post 5: [hook text]
+- Post 1: "I'm a video editor watching AI replace video editors. Here's what I built instead." — Contradiction
+- Post 2: "My first client paid me $50. My 40th pays 10x that. Here's what changed." — Bold number + story
+- Post 3: "3 systems. 40 clients. 0 employees. Here's how." — Bold number + framework
+- Post 4: [Written Tuesday]
+- Post 5: [Written Tuesday]
 
-Hook formula used most: [formula name]
+Hook formula used most: Bold number + proof (Posts 2 + 3). Secondary: Contradiction + confession (Post 1).
 
 ---
 
 ## Script Writer Decisions
-*Updated by: Script Writer agent (Monday–Tuesday)*
+*Updated by: Script Writer agent — COMPLETED 2026-09-28 08:XX PKT (Monday)*
 
-Scripts completed: [ ] Post 1  [ ] Post 2  [ ] Post 3  [ ] Post 4  [ ] Post 5
-Avg word count: [N] words
-Any voice deviations flagged: [None / describe]
+Scripts completed: [✅] Post 1  [✅] Post 2  [✅] Post 3  [ ] Post 4  [ ] Post 5
+Avg word count: ~225 words
+Any voice deviations flagged: None — short sentences, no filler words, punchy format maintained across all 3 posts.
 
 ---
 
 ## Designer Decisions
-*Updated by: Designer agent (Monday–Tuesday)*
+*Updated by: Designer agent — COMPLETED 2026-09-28 08:XX PKT (Monday)*
 
 Design vibes chosen:
-- Post 1: [vibe — e.g., "Late night founder"]
-- Post 2: [vibe]
-- Post 3: [vibe]
-- Post 4: [vibe]
-- Post 5: [vibe]
+- Post 1: "Late night founder energy. Disruptive. Self-aware." — Cyan accent
+- Post 2: "Raw founder truth. Not a highlight reel. Earned." — Minimal white, no glow
+- Post 3: "Clean authority. Framework energy. Save-worthy." — Cyan accent
+- Post 4: [Written Tuesday]
+- Post 5: [Written Tuesday]
 
-Cover text issues flagged: [None / describe]
+Cover text issues flagged: None. All briefs include locked typography spec + GPT image prompt.
 
 ---
 
