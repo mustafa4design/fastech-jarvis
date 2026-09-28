@@ -11,9 +11,9 @@ description: Shared working memory for all JARVIS agents. Every agent reads and 
 ---
 
 ## Active Week
-Week of: Sep 28 - Oct 4, 2026
+Week of: Sep 28 - Oct 2, 2026
 Posts planned: 5 LinkedIn posts (Mon–Fri)
-Status: [✅] Research → [ ] Plan → [ ] Hooks → [ ] Scripts → [ ] Design → [ ] Published
+Status: [✅] Research → [✅] Plan → [ ] Hooks → [ ] Scripts → [ ] Design → [ ] Published
 
 ---
 
@@ -30,16 +30,17 @@ Avoid this week (too stale): Old LinkedIn engagement pods & poll formats (360Bre
 ## Manager Decisions
 *Updated by: Manager agent (every Monday 7AM PKT)*
 
-Week plan confirmed: [Y/N]
+Week plan confirmed: Y
 Post priority order:
-1. Monday — [topic] — [pillar]
-2. Tuesday — [topic] — [pillar]
-3. Wednesday — [topic] — [pillar]
-4. Thursday — [topic] — [pillar]
-5. Friday — [topic] — [pillar]
+1. Monday Sep 28 — AI automates my job / I built what's next — Build-in-public + Bold opinion
+2. Tuesday Sep 29 — 0 to 40 clients at 20, the real story — Personal story
+3. Wednesday Sep 30 — 3 systems, 40 clients, 0 employees — Agency/systems thinking
+4. Thursday Oct 1 — 561% personal vs company page reach — Brand strategy
+5. Friday Oct 2 — Multiplayer AI + FASTECH week update — Build-in-public
 
-Hook format to use most this week (from analytics): [format]
-Pillar to push this week (highest performer): [pillar]
+Hook format to use most this week (from analytics): Bold number + proof ("From 0 to X in Y. Here's how.")
+Secondary hook: Contradiction + confession ("I'm [most threatened person]. Here's what I'm doing instead.")
+Pillar to push this week (highest performer): Build-in-public (Mon + Fri) · Personal story (Tue) · Agency/systems (Wed) · Brand strategy (Thu)
 
 ---
 
