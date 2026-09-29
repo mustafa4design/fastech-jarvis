@@ -88,12 +88,58 @@ HOOK 10: 40 clients with no team. Not a flex. Here's how the math actually works
 ---
 
 ## POST 4: 561% personal vs company page reach
-*(Tuesday — written Tuesday)*
+**Topic:** My personal LinkedIn gets 561% more reach than FASTECH's company page. Here's what the data changed.
+**Hook formula:** Proof + bold data point
+
+HOOK 01: 561% more reach. That's the gap between my face and FASTECH's logo on LinkedIn.
+HOOK 02: I ran the same post on my personal page and FASTECH's company page. One got 8x the views. Here's why.
+HOOK 03: Personal brand vs company page on LinkedIn. I ran both. The gap shocked me.
+HOOK 04: My personal LinkedIn gets 561% more reach than FASTECH's company page. Same content. Same week.
+HOOK 05: Everyone told me to build the FASTECH brand. I built mine instead. Here's what the data showed.
+HOOK 06: LinkedIn rewards people, not logos. Here's the proof from my own two accounts.
+HOOK 07: The biggest mistake agency founders make on LinkedIn. I made it for 6 months.
+HOOK 08: Company pages are dead on LinkedIn. Here's the data from my own experiment.
+HOOK 09: Your face is worth 561% more reach than your logo on LinkedIn. Here's what changed when I switched.
+HOOK 10: I stopped hiding behind the FASTECH logo. Here's what happened to my reach in 30 days.
+
+**Top 3:**
+- Hook 04 (Bold data point + "same content, same week" eliminates every excuse)
+- Hook 09 ("your face is worth" — turns stat into insight, saves-optimized)
+- Hook 05 (Contradiction + outcome — strong for brand strategy pillar)
+
+---
+**FINAL PICK: Hook 04**
+> "My personal LinkedIn gets 561% more reach than FASTECH's company page. Same content. Same week."
+
+**REASON:** Specific stat + "same content, same week" makes it undeniable. Forces the reader to ask why. Maximum save signal — brand strategy frameworks get bookmarked.
 
 ---
 
 ## POST 5: Multiplayer AI + FASTECH week update
-*(Tuesday — written Tuesday)*
+**Topic:** Building Multiplayer AI while running a 40-client agency. Week 5 honest update.
+**Hook formula:** Build-in-public narrative
+
+HOOK 01: Running an agency pays the bills. Building Multiplayer AI is the bet. Week 5 of holding both.
+HOOK 02: Monday: 3 FASTECH calls. Tuesday: Multiplayer AI feature sprint. Wednesday: 4 hours of sleep. Week 5.
+HOOK 03: I'm running a 40-client agency and building an AI startup at the same time. Here's what that actually looks like.
+HOOK 04: Everyone says pick one. I didn't. Week 5 building Multiplayer AI while running FASTECH.
+HOOK 05: Building Multiplayer AI + running FASTECH. Week 5 — what shipped, what broke, what I learned.
+HOOK 06: Two tracks. One person. Week 5 of the most chaotic and exciting thing I've ever done.
+HOOK 07: FASTECH funds the dream. Multiplayer AI is the dream. Week 5 of living in the tension.
+HOOK 08: What happens when a 20-year-old founder runs an agency, builds a startup, and studies CS at the same time. Week 5.
+HOOK 09: I haven't chosen between FASTECH and Multiplayer AI. Here's week 5 of not choosing.
+HOOK 10: Shipped a feature. Closed a client. Missed a deadline. Week 5 update from the trenches.
+
+**Top 3:**
+- Hook 01 ("pays the bills" vs "the bet" — immediate tension, two parallel truths)
+- Hook 07 (Reframes tension as purposeful — "funds the dream / IS the dream")
+- Hook 10 (Raw specificity — "shipped, closed, missed" feels unfiltered)
+
+---
+**FINAL PICK: Hook 01**
+> "Running an agency pays the bills. Building Multiplayer AI is the bet. Week 5 of holding both."
+
+**REASON:** Immediate tension. Two parallel realities. "The bet" signals risk and ambition without posturing. Strongest Friday emotional resonance — end-of-week vulnerability outperforms all other formats.
 
 ---
 

@@ -13,7 +13,7 @@ description: Shared working memory for all JARVIS agents. Every agent reads and 
 ## Active Week
 Week of: Sep 28 - Oct 2, 2026
 Posts planned: 5 LinkedIn posts (Mon–Fri)
-Status: [✅] Research → [✅] Plan → [✅] Hooks (Mon) → [✅] Scripts (Mon) → [✅] Design (Mon) → [ ] Published
+Status: [✅] Research → [✅] Plan → [✅] Hooks (Mon+Tue) → [✅] Scripts (Mon+Tue) → [✅] Design (Mon+Tue) → [ ] Published
 
 ---
 
@@ -51,19 +51,19 @@ Final hooks chosen:
 - Post 1: "I'm a video editor watching AI replace video editors. Here's what I built instead." — Contradiction
 - Post 2: "My first client paid me $50. My 40th pays 10x that. Here's what changed." — Bold number + story
 - Post 3: "3 systems. 40 clients. 0 employees. Here's how." — Bold number + framework
-- Post 4: [Written Tuesday]
-- Post 5: [Written Tuesday]
+- Post 4: "My personal LinkedIn gets 561% more reach than FASTECH's company page. Same content. Same week." — Proof + bold data point
+- Post 5: "Running an agency pays the bills. Building Multiplayer AI is the bet. Week 5 of holding both." — Build-in-public narrative
 
-Hook formula used most: Bold number + proof (Posts 2 + 3). Secondary: Contradiction + confession (Post 1).
+Hook formula used most: Bold number + proof (Posts 2, 3, 4). Secondary: Contradiction + confession (Post 1). Build-in-public narrative (Post 5).
 
 ---
 
 ## Script Writer Decisions
 *Updated by: Script Writer agent — COMPLETED 2026-09-28 08:XX PKT (Monday)*
 
-Scripts completed: [✅] Post 1  [✅] Post 2  [✅] Post 3  [ ] Post 4  [ ] Post 5
-Avg word count: ~225 words
-Any voice deviations flagged: None — short sentences, no filler words, punchy format maintained across all 3 posts.
+Scripts completed: [✅] Post 1  [✅] Post 2  [✅] Post 3  [✅] Post 4  [✅] Post 5
+Avg word count: ~215 words
+Any voice deviations flagged: None — short sentences, no filler words, punchy format maintained across all 5 posts.
 
 ---
 
@@ -74,10 +74,10 @@ Design vibes chosen:
 - Post 1: "Late night founder energy. Disruptive. Self-aware." — Cyan accent
 - Post 2: "Raw founder truth. Not a highlight reel. Earned." — Minimal white, no glow
 - Post 3: "Clean authority. Framework energy. Save-worthy." — Cyan accent
-- Post 4: [Written Tuesday]
-- Post 5: [Written Tuesday]
+- Post 4: "Data that shocks. Clean authority. Save-worthy." — Cover: 561%, Cyan accent on number
+- Post 5: "Founder in the trenches. Raw. Transparent. Building in public." — Cover: WEEK 5, Cyan accent
 
-Cover text issues flagged: None. All briefs include locked typography spec + GPT image prompt.
+Cover text issues flagged: None. All 5 briefs include locked typography spec + GPT image prompt.
 
 ---
 
