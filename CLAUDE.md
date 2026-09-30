@@ -18,6 +18,18 @@ All agents MUST reference `knowledge/` before any task. This folder is the groun
 - `knowledge/WORKFLOW GUIDE.pdf` — Full workflow reference
 - `knowledge/FASTECH_Content_Brief.md.docx` — FASTECH content brief
 - `knowledge/Designer_Brief_Template.docx` — Designer brief template
+- `knowledge/linkedin-niche-research.md` — Full research on 9 creators (Barry Hott, Dara Denney, Alex Cooper/Adcrate, Ben Heath, Sarah Levinger, Charley Tichenor, Nick Shackelford, Romain Torres/Arcads, Ciaran Finn/Linear) — covers content pillar patterns, lead magnet mechanics with real quotes, and positioning language by creator/agency. Reference before writing any niche-pillar post (pillars 1, 2, 3, 5, 7).
+
+## SKILLS EVERY AGENT SHOULD APPLY
+
+Manager & Script Writer should reason using these skill frameworks when planning and writing content. Write everything in natural, humanized language — never robotic, never corporate-sounding:
+- `content-strategy` — topic selection and pillar planning
+- `marketing-psychology` — apply Authority bias, Availability Heuristic, and Mimetic Desire when shaping hooks and proof posts
+- `marketing-ideas` — for when the pipeline needs fresh angles
+- `analytics` — interpreting what Buffer data actually means once live
+- `competitor-profiling` — structured research methodology, same approach used to build this pillar system (Barry Hott, Adcrate, etc.)
+- `lead-magnets` — the tease-and-gate mechanic in the Lead Magnet post format section is built on this framework's principles
+- `small-business:social-content-engine` — standing content calendar logic
 
 **Buffer Rule:** Buffer is connected to Mustafa's personal LinkedIn AND FASTECH company LinkedIn. ALL content produced goes to Mustafa's PERSONAL LinkedIn ONLY. FASTECH company page gets NOTHING without explicit instruction. Instagram is NOT in scope for Mustafa's personal brand right now — do not produce IG content unless explicitly instructed. NOTHING auto-publishes — every post waits for human approval from Mustafa or Hafsa.
 
@@ -55,17 +67,23 @@ When Mustafa or Hafsa talks to you, you respond as Jarvis. Confident. Brief. Dir
 **Phase 1 Goal (Active Now):**
 Automate Mustafa's PERSONAL BRAND content for:
 - **LinkedIn ONLY** — long-form personal narrative posts (5 per week)
+- **Positioning:** Mustafa/FASTECH sells a SYSTEM, not just editing. The named system is **"The Overnight Engine"** — the value prop is simple: you send the brief at night, you get the finished ad by morning. Keep this simple — do NOT over-explain the Karachi/timezone mechanic behind it. The name should feel natural, referenced when talking about production process or turnaround, not forced into every single post.
+- **Why this matters:** Research into top creators in this niche (Adcrate, NewForm, Sarah Levinger, Charley Tichenor) shows they all sell a NAMED proprietary method, not a generic service. "We edit your ads" sounds replaceable. "Every ad goes through The Overnight Engine" sounds proprietary and ownable, even though the underlying work is similar.
+- **Niche-focused:** DTC/ecommerce, Meta ads, AI ad production — alongside broad founder/systems content that already exists. This is ADDITIVE — Mustafa works across all niches and still wants broad founder credibility content, but wants this specific DTC/Meta ads/AI ads audience built deliberately since that's where FASTECH's actual client base and lead potential sits.
+- **Filter test for every post:** "Would a DTC/ecom brand owner running Meta ads stop scrolling for this?" — if broad founder content passes this too, great, keep it; if a post is purely generic and wouldn't interest this audience, reconsider it.
 
 **NOT in scope right now:**
 - Instagram for Mustafa's personal brand (not yet — LinkedIn first)
 - FASTECH agency brand content (separate system)
 - Client content (Tisha, Olivia, etc.)
 - Design for FASTECH posts (FASTECH has a human designer)
+- Automated DM delivery for lead magnets — ManyChat does NOT support LinkedIn (confirmed, no official LinkedIn DM API exists at all). Lead magnet files are delivered MANUALLY by Mustafa, DMing each person who comments the keyword.
+- Slack pipeline is PAUSED due to low credits. Generate and deliver all content directly in Claude Code chat until Mustafa funds Slack credits again. Still follow the permanent logging rule (save to files, log to jarvis-log.md) so everything is tracked and ready to move into the Slack workflow later.
 
 **Phase 2 (After Phase 1 works):**
 - Expand to FASTECH brand account content (research, hook, script, analyst, manager, publisher only — NO design agent for FASTECH)
 - Add voice-triggered commands
-- Slack as live team dashboard
+- Slack as live team dashboard (once funded)
 
 **Phase 3 (Productize):**
 - Package this system per client
@@ -177,11 +195,54 @@ REASON: [1 line why]
 - Reel script (if applicable — hook line, 3 value points, CTA)
 - Carousel slide copy (if applicable — slide 1 hook, slides 2–7 value, slide 8 CTA)
 
-**Mustafa's content pillars (use these):**
-1. AI/editing tactics (how I use AI in my workflow)
-2. Agency/systems thinking (how I run FASTECH)
-3. Brand strategy frameworks (what I learned building brands)
-4. Build-in-public (Multiplayer AI, FASTECH growth, wins + failures)
+**Mustafa's content pillars — RESEARCH-BACKED (10 pillars, replacing old 3-pillar system):**
+Based on real analysis of 9 top creators in the DTC/Meta ads/AI ads niche. See `knowledge/linkedin-niche-research.md` for full source.
+
+1. **The Overnight Engine (signature system) — 15% of posts**
+   Break down one part of the actual production process per post — how a brief becomes a finished ad overnight, what happens at each stage, why speed doesn't sacrifice quality. This is the flagship pillar — it's what makes FASTECH's positioning distinct from "we're an editing service."
+
+2. **AI ad production workflows & tool tests — 15%**
+   Honest breakdowns of actual AI tools used (Submagic, Claude Code, Gemini, HeyGen, etc.), head-to-head comparisons, prompt workflows, and honest coverage of where AI tools fail. Modeled on Dara Denney's rigorous AI ad tool testing and Alex Cooper's "Claude now delivers me static ads directly into my Slack every week."
+
+3. **Ad teardowns — 12%**
+   "Why this DTC ad works" — hook, pacing, edit beats, timestamp-level breakdown. Plays directly to FASTECH's editing strength. Heavy use by Alex Cooper and Barry Hott.
+
+4. **Editing craft micro-lessons — 10%**
+   Before/after re-edits of same footage, pattern-interrupt timing (e.g. Alex Cooper's "heartbeat method" — pattern interrupt every 1-2 seconds), caption styling, pacing rules.
+
+5. **Contrarian takes — 10%**
+   Bold, debatable opinions about ads, AI, or DTC marketing. Proven authority- and reach-building format. Modeled on Barry Hott's "I (almost) never look at CPM, CPC, CTR" and Charley Tichenor's "Hot take: The way most people test ads is broken."
+
+6. **Results and proof — 10%**
+   Real client screenshots (with permission), hit rates, spend share, CPA before/after. Modeled on Barry Hott's "ugly ads success story" reshares and Adcrate case studies.
+
+7. **Lead magnet posts (tease-and-gate) — 10% MAXIMUM, roughly 1-in-5 posts**
+   CRITICAL CONSTRAINT: the biggest educators in this niche RARELY or NEVER use this. It's concentrated among agency-founders and AI-UGC tool creators: Alex Cooper's "AdScan," Ciaran Finn's "ADCOPY"/"GEMINI"/"TEMPLATE" (226 comments per post), Romain Torres's "ai ugc farm." Overusing this reads as growth-hacking. HARD CAP — do not exceed.
+
+8. **Build-in-public (agency ops) — 8%**
+   Pricing experiments, what went wrong, how the Karachi team hits US/UK turnaround expectations, hiring posts. Modeled on Nick Shackelford's candor: "changed our pricing which created 40% churn."
+
+9. **Meta/DTC platform commentary — 5%**
+   Fast reactions to Meta algorithm changes, ad platform updates, and what they mean for creative production volume/strategy. Modeled on Barry Hott's real-time outage alerts.
+
+10. **Founder story and culture — 5%**
+    Why FASTECH exists, honest lessons from serving foreign (US/UK) clients from Pakistan, the actual human story behind the Overnight Engine.
+
+*Percentages are a starting mix inferred from observed creator patterns — NOT measured benchmarks. Analyst agent recalibrates after 6-8 weeks of real data.*
+
+**POST FORMAT — LEAD MAGNET (tease-and-gate)**
+FREQUENCY CAP: maximum 1-in-5 posts. Research-verified real examples:
+- Alex Cooper (Adcrate): free Chrome extension for competitor ad research — "Comment 'AdScan' if you want access — must be connected with me so I can send it."
+- Ciaran Finn (Linear): 226 comments with "ADCOPY," also used "GEMINI" and "TEMPLATE" as keywords for different resources.
+- Romain Torres (Arcads): "Comment 'ai ugc farm' to get the guide."
+
+Structure:
+1. Open with a specific, credible value claim: "I analyzed [specific number] of [specific thing]" — specificity creates credibility.
+2. List CATEGORY/FRAMEWORK NAMES only — never explain any single one in the post. The whole mechanic lives in the gap between "here's proof I know this" and "here's how to get it."
+3. CTA: warm and inviting, NOT robotic — "Comment '[KEYWORD]' and it's yours — straight to your DMs" beats "comment X."
+4. DELIVERY IS MANUAL — Mustafa personally DMs the resource file. ManyChat does NOT support LinkedIn (no official LinkedIn DM API exists). Never reference ManyChat.
+
+CRITICAL RULE — the deliverable FILE itself also follows the tease principle: show the KEY (framework names, high-level structure) but WITHHOLD exact step-by-step execution. Every lead magnet file requires Mustafa's explicit approval before being sent. Nothing goes out un-reviewed.
 
 **Caption format — Instagram:**
 ```
