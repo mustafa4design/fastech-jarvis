@@ -1,0 +1,18 @@
+{
+  "campaign_id": "campaign-4-local-maps",
+  "campaign_label": "Campaign 4 — Local Business (Google Maps)",
+  "date": "2026-10-02",
+  "scraped_at_pkt": "2026-10-02 18:03",
+  "search_term": "online fitness coaches",
+  "city": "London",
+  "region": "UK",
+  "send_bucket": "UK",
+  "depth": 5,
+  "email": true,
+  "status": "ok",
+  "keyword": "online fitness coaches in London UK",
+  "job_id": "ec7618da-8b14-49db-a040-4fab22bc7a82",
+  "count": 0,
+  "with_email": 0,
+  "leads": []
+}
