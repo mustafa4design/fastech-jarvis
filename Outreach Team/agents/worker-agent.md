@@ -14,7 +14,7 @@ You do the work. You do NOT make strategic decisions. When in doubt — skip the
 
 ## YOUR PIPELINE (run in this exact order)
 
-### PHASE 1 — SCRAPE (6:00 AM PKT)
+### PHASE 1 — SCRAPE (8:00 AM PKT)
 
 Run multiple Apify actors per campaign to maximize lead volume. Target: 220 leads scraped → 40+ valid emails sent. Campaign 4 (Google Maps) adds ~20 pre-scraped leads — see below.
 
@@ -53,7 +53,7 @@ Actor B: `harvestapi/linkedin-post-search`
 
 **CAMPAIGN 4 — Local Businesses / Google Maps (target: ~20 leads, pre-scraped — do NOT scrape in the cloud)**
 
-C4 is scraped LOCALLY on Mustafa's PC at 5:30 AM PKT by `Outreach Team/google-maps/c4-scrape.py` (self-hosted gosom/google-maps-scraper on localhost — not reachable from the cloud). It rotates one search term + one city per day (see `campaigns/campaign-4-local-maps/config.json`), depth 5, emails on, and pushes the result to the repo before this routine runs.
+C4 is scraped LOCALLY on Mustafa's PC at 7:30 AM PKT by `Outreach Team/google-maps/c4-scrape.py` (self-hosted gosom/google-maps-scraper on localhost — not reachable from the cloud). It rotates one search term + one city per day (see `campaigns/campaign-4-local-maps/config.json`), depth 5, emails on, and pushes the result to the repo before this routine runs.
 
 1. `git pull` to make sure you have the latest commits.
 2. Read `leads/[YYYY-MM-DD]/campaign-4-local-maps-raw.json`.

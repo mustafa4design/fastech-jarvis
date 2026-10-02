@@ -200,8 +200,8 @@ Lead with their specific pain — ad creative fatigue, needing more video variat
 
 **Expected reply rate:** 3–6%
 
-**Scraper:** Self-hosted `gosom/google-maps-scraper` (v1.18.1) in Docker on Mustafa's PC (`localhost:8080`). The cloud Phase 1 routine can't reach localhost, so C4 is **pre-scraped locally at 5:30 AM PKT (Mon–Thu)** by `google-maps/c4-scrape.py`. The script pushes `leads/[date]/campaign-4-local-maps-raw.json` to GitHub. Cloud Phase 1 picks it up at 6:00 AM PKT and filters, enriches, writes and logs it like C1–C3.
-**Requirement:** Mustafa's PC must be on with Docker Desktop running at 5:30 AM PKT. If it isn't, Phase 1 reports "C4 pre-scrape missing" to #outreach-errors and runs C1–C3 as normal.
+**Scraper:** Self-hosted `gosom/google-maps-scraper` (v1.18.1) in Docker on Mustafa's PC (`localhost:8080`). The cloud Phase 1 routine can't reach localhost, so C4 is **pre-scraped locally at 7:30 AM PKT (Mon–Thu)** by `google-maps/c4-scrape.py`. The script pushes `leads/[date]/campaign-4-local-maps-raw.json` to GitHub. Cloud Phase 1 picks it up at 8:00 AM PKT and filters, enriches, writes and logs it like C1–C3.
+**Requirement:** Mustafa's PC must be on with Docker Desktop running at 7:30 AM PKT. If it isn't, Phase 1 reports "C4 pre-scrape missing" to #outreach-errors and runs C1–C3 as normal.
 
 **Settings:** Depth 5, emails on, one search term + one city per day.
 
@@ -243,7 +243,7 @@ Rotation: term = day % 8, city = day % 27. Every term × city pair (216) gets us
 
 ```
 STEP 1: APIFY scrapes leads based on campaign config (C1–C3)
-         + C4 Google Maps leads pre-scraped locally at 5:30 AM PKT (read from repo)
+         + C4 Google Maps leads pre-scraped locally at 7:30 AM PKT (read from repo)
          ↓
 STEP 2: Filter leads — remove Pakistan, India, info@, marketing@, no-website leads
          ↓
@@ -513,7 +513,7 @@ Google Sheet: [link to tab]
 
 The system does NOT run at one fixed time. It runs in **phases** timed to US/UK business hours.
 
-**Phase 1 — Lead Scraping (runs at 6:00 AM PKT)**
+**Phase 1 — Lead Scraping (runs at 8:00 AM PKT)**
 - Apify scrapes leads for today
 - Worker filters, removes bad leads
 - Firecrawl reads websites
@@ -635,7 +635,7 @@ When Claude Code reads this file, build in this exact order:
 4. Create `campaigns/campaign-1-hiring-signal/config.json` — Campaign 1 config
 5. Create `campaigns/campaign-2-personal-brand/config.json` — Campaign 2 config
 5b. Create `campaigns/campaign-3-dtc-ads/config.json` — Campaign 3 config
-5c. Create `campaigns/campaign-4-local-maps/config.json` + `google-maps/c4-scrape.py` — Campaign 4 config + local pre-scrape (local scheduled task, 5:30 AM PKT Mon–Thu)
+5c. Create `campaigns/campaign-4-local-maps/config.json` + `google-maps/c4-scrape.py` — Campaign 4 config + local pre-scrape (local scheduled task, 7:30 AM PKT Mon–Thu)
 6. Create `google-sheets/sheets-sync.js` — Google Sheets logging script
 7. Create `memory/outreach-log.md` — empty log file with header
 8. Set up Claude Routines for all 5 phases (times listed above)

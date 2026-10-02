@@ -6,13 +6,13 @@
   "expected_reply_rate": "3-6%",
   "run_days": "Mon-Thu (same days as Phase 1)",
 
-  "description": "Ecommerce, DTC, coaching and lifestyle brands found via Google Maps. Scraped LOCALLY on Mustafa's PC by the self-hosted gosom/google-maps-scraper (Docker, localhost:8080) because the cloud Phase 1 routine cannot reach localhost. The local pre-scrape runs at 5:30 AM PKT and pushes raw leads to GitHub; cloud Phase 1 at 6:00 AM PKT filters, enriches, writes and logs them like Campaigns 1-3.",
+  "description": "Ecommerce, DTC, coaching and lifestyle brands found via Google Maps. Scraped LOCALLY on Mustafa's PC by the self-hosted gosom/google-maps-scraper (Docker, localhost:8080) because the cloud Phase 1 routine cannot reach localhost. The local pre-scrape runs at 7:30 AM PKT and pushes raw leads to GitHub; cloud Phase 1 at 8:00 AM PKT filters, enriches, writes and logs them like Campaigns 1-3.",
 
   "google_maps": {
     "scraper": "gosom/google-maps-scraper:v1.18.1 (local Docker, http://localhost:8080)",
     "scraper_kit_path": "C:\\Users\\Admin\\Documents\\Downloads\\google-maps-scraper-kit-master\\google-maps-scraper-kit-master",
     "local_script": "Outreach Team/google-maps/c4-scrape.py",
-    "local_schedule": "5:30 AM PKT, Mon-Thu (local scheduled task on Mustafa's PC)",
+    "local_schedule": "7:30 AM PKT, Mon-Thu (local scheduled task on Mustafa's PC)",
     "depth": 5,
     "email": true,
     "max_time_seconds": 900,
