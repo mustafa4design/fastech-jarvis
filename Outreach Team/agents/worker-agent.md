@@ -18,17 +18,30 @@ You do the work. You do NOT make strategic decisions. When in doubt — skip the
 
 Run multiple Apify actors per campaign to maximize lead volume. Target: 220 leads scraped → 40+ valid emails sent. Campaign 4 (Google Maps) adds ~20 pre-scraped leads — see below.
 
-**CAMPAIGN 1 — Hiring Signal (target: 80 leads)**
+**CAMPAIGN 1 — Hiring Signal (target: 40 relevant leads, HARD BUDGET $1.00 per run)**
 
-Actor A: `curious_coder/linkedin-jobs-scraper`
-- Keywords: "video editor", "content manager", "social media manager", "content creator"
-- Location: United States, United Kingdom
-- maxItems: 50, datePosted: past-week
+Full spec: `campaigns/campaign-1-hiring-signal/config.json` → `apify`. Summary:
 
-Actor B: `misceres/indeed-scraper`
-- Query: "video editor" OR "content manager" OR "social media manager"
-- Location: "United States"
-- maxItems: 40
+**Budget guard (mandatory):** Call `APIFY_USERS_ME_LIMITS_GET` before the first C1 call and record `monthlyUsageUsd`. Re-check after every C1 call (including any Phase 3a email finding for C1 leads). Stop C1 the moment C1 spend reaches **$1.00**. Pass `maxTotalChargeUsd` on every call.
+
+**BANNED:** `curious_coder/linkedin-jobs-scraper` — it ignores title/location and returns generic listings. Never use it.
+
+Source A — LinkedIn: Composio `APIFY_SEARCH_LINKEDIN_JOBS`
+- jobTitles: `"video editor"`, `"content manager"`, `"social media manager"`, `"YouTube editor"`, `"short form video editor"`, `"video content creator"` (quoted = exact phrase)
+- locations: `United States`, `United Kingdom` · postedLimit: `week` · sortBy: `date` · maxItems: 10 · maxTotalChargeUsd: 0.30
+- If HTTP 403 "full-permission-actor-not-approved": post once to #outreach-errors ("Approve harvestapi/linkedin-job-search in Apify console") and continue with Source B only.
+
+Source B — Indeed: Composio `APIFY_SCRAPE_INDEED_JOBS` — ONE title per call (no OR queries), one call per country
+- titles: `video editor`, `content manager`, `social media manager`, `YouTube editor` × country `us` and `uk`
+- datePosted: `7` · limit: 25 · maxTotalChargeUsd: 0.05 per call
+
+**Strict filter — apply to every listing BEFORE any enrichment (drop on ANY failure):**
+1. Job title matches `title_must_match_regex` (video editor / YouTube editor / reels or short-form editor / content manager / social media manager / video producer / video content creator)
+2. Job title does NOT match `title_must_not_match_regex` (intern, assistant, retail, cashier, driver, etc.)
+3. Location is in the US or UK
+4. Company is not a staffing agency (list in config) and has ≤200 employees
+5. Posted within 7 days
+Dedupe by company + title. Log kept/dropped counts per source in the run log. Never spend Firecrawl or email-finder credit on a dropped listing.
 
 **CAMPAIGN 2 — Personal Brand (target: 80 leads)**
 
@@ -223,7 +236,18 @@ https://fastechpak.netlify.app
 - "Feel free to reach out"
 - "Looking forward to hearing from you"
 
-Save each email to `emails/[YYYY-MM-DD]/[lead-id]-email.md`
+**Save each draft to the Google Sheet — column S ("Email Draft") of the lead's row in today's tab.** This is the ONLY copy the send phases use. `emails/` is gitignored, so files there never reach the Phase 2/3/4 containers.
+
+Column S format (exactly — the send phases parse it):
+```
+Subject: [subject line]
+
+[full email body, from the "Hey [Name]," line through the signature]
+```
+Write drafts for GREEN **and** YELLOW leads (YELLOW drafts wait for manual approval). Leave S blank for RED.
+Write S in the same batched Sheet update as the rest of the row (`GOOGLESHEETS_VALUES_UPDATE`, range `'[DD-Mon-YYYY]'!A[row]:S[row]`). Make sure row 1 of the tab has header `S1 = Email Draft`.
+Before finishing Phase 1, read column S back for every GREEN row and confirm it is non-empty. A GREEN row with an empty S is a pipeline error → post to #outreach-errors.
+Optionally also save a local copy to `emails/[YYYY-MM-DD]/[lead-id]-email.md` (not authoritative).
 
 ### DEDUPLICATION — PRE-SEND CHECK (run before EVERY send)
 
@@ -260,6 +284,12 @@ For each GREEN lead (personal email only — never send to role addresses):
 | C4: Seattle / Denver / Sydney | US-West bucket — 9:30 PM PKT |
 | C4: EU cities / Dublin / Dubai | UK bucket — UK send phase |
 
+**SEND THE PHASE 1 DRAFT EXACTLY — NO REWRITING (send phases 2/3/4):**
+1. Read today's Sheet tab, columns A:S. Column S of the lead's row is the email Phase 1 wrote.
+2. Parse S: the first line `Subject: ...` is the subject; everything after the first blank line is the body.
+3. Send that subject and body **verbatim**. Do not edit, shorten, re-personalise or regenerate it.
+4. If S is empty or can't be parsed → do NOT write a new email. Do NOT send. Set R = "No Phase 1 draft in column S — held", leave J = "No", and post the lead ID to #outreach-errors.
+
 **Gmail send rules:**
 - From: mustafaghauri218@gmail.com
 - Subject line: sounds human, NOT like a cold email
@@ -290,6 +320,7 @@ For each lead (sent OR skipped), write a row to today's Google Sheets tab:
 | P | Reply Received? |
 | Q | Status (GREEN / RED / YELLOW / BLUE) |
 | R | Notes |
+| S | Email Draft — `Subject: ...` line, blank line, full body. Written in Phase 1 (Phase 4 step), sent verbatim by Phase 2/3/4. Blank for RED. |
 
 **Color coding:**
 - GREEN = email sent successfully (personal email found and sent)
@@ -297,8 +328,8 @@ For each lead (sent OR skipped), write a row to today's Google Sheets tab:
 - YELLOW = role email only — written but NOT sent (needs manual approval)
 - BLUE = lead replied (update when reply detected)
 
-Use Google Drive MCP (read_file_content, update_file) with Spreadsheet ID: `107hqHj-Q-8e1oph76wf0kew5xzs_gbnGMaOBcHLGCyE`
-If Drive MCP fails: save backup to `leads/[YYYY-MM-DD]/sheet-backup.json`
+Write cells with Composio **`GOOGLESHEETS_VALUES_UPDATE`** (spreadsheet_id `107hqHj-Q-8e1oph76wf0kew5xzs_gbnGMaOBcHLGCyE`, range like `'02-Oct-2026'!I111:L111`, `value_input_option: USER_ENTERED`). Read with `GOOGLESHEETS_VALUES_GET`. These are under the Composio MCP — load them via `COMPOSIO_SEARCH_TOOLS` / `COMPOSIO_MULTI_EXECUTE_TOOL`. The Google Drive MCP CANNOT write cells; don't use it for the Sheet.
+Only if Composio Sheets fails: save backup to `leads/[YYYY-MM-DD]/sheet-backup.json` AND post to #outreach-errors so the row gets synced.
 
 ---
 

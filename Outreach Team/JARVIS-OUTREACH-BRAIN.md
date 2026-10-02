@@ -438,6 +438,7 @@ Max **3 follow-ups** per lead. Then stop. Never contact again.
 | P | Reply Received? |
 | Q | Status |
 | R | Notes |
+| S | Email Draft (`Subject:` line + body). Written by Phase 1; Phases 2–4 send it verbatim, never rewrite. |
 
 ### Color Coding
 - 🟢 **GREEN** = Good lead. Email sent successfully.

@@ -8,25 +8,52 @@
   "description": "Targets companies actively posting jobs for video editor / content manager / social media manager. These companies have budget, urgent need, and are already looking for what FASTECH does.",
 
   "apify": {
-    "actors": [
-      "apify/linkedin-jobs-scraper",
-      "apify/indeed-scraper"
+    "budget_usd_per_run": 1.00,
+    "budget_rule": "Hard cap for ALL C1 Apify spend in one run (scrape + any Phase 3a email finding for C1 leads). Check APIFY_USERS_ME_LIMITS_GET monthlyUsageUsd before the first C1 call and after each call; stop C1 the moment (current - start) >= 1.00. Pass maxTotalChargeUsd on EVERY call.",
+    "banned_actors": {
+      "curious_coder/linkedin-jobs-scraper": "Ignores title/location input and returns generic listings (2026-10-02: 249 irrelevant jobs, ~$0.50 wasted). Never use."
+    },
+    "sources": [
+      {
+        "name": "LinkedIn Jobs",
+        "composio_tool": "APIFY_SEARCH_LINKEDIN_JOBS",
+        "actor": "harvestapi/linkedin-job-search",
+        "pricing": "$0.001 per job + $0.001 per run",
+        "input": {
+          "jobTitles": ["\"video editor\"", "\"content manager\"", "\"social media manager\"", "\"YouTube editor\"", "\"short form video editor\"", "\"video content creator\""],
+          "locations": ["United States", "United Kingdom"],
+          "postedLimit": "week",
+          "sortBy": "date",
+          "maxItems": 10,
+          "maxTotalChargeUsd": 0.30
+        },
+        "note": "One-time setup: this actor needs 'full permission' approval in the Apify console (Actor page -> Approve permissions). Until approved it returns HTTP 403 — log it to #outreach-errors and continue with Indeed only."
+      },
+      {
+        "name": "Indeed",
+        "composio_tool": "APIFY_SCRAPE_INDEED_JOBS",
+        "actor": "valig/indeed-jobs-scraper",
+        "pricing": "~$0.10 per 1,000 jobs + ~$0.001 per run",
+        "input_per_call": {
+          "title": "<ONE exact title per call — the actor does not support OR queries>",
+          "country": "us | uk (one call per country)",
+          "datePosted": "7",
+          "limit": 25,
+          "maxTotalChargeUsd": 0.05
+        },
+        "titles": ["video editor", "content manager", "social media manager", "YouTube editor"]
+      }
     ],
-    "search_keywords": [
-      "video editor",
-      "content manager",
-      "social media manager",
-      "YouTube editor",
-      "content creator",
-      "video producer",
-      "reels editor"
-    ],
-    "filters": {
-      "locations": ["US", "UK"],
-      "exclude_locations": ["Pakistan", "India"],
+    "strict_filters": {
+      "title_must_match_regex": "(?i)\\b(video editor|video editing|youtube editor|reels editor|short[- ]form (video )?editor|content manager|content marketing manager|social media manager|head of social|video content creator|video producer)\\b",
+      "title_must_not_match_regex": "(?i)\\b(intern|internship|assistant|trainee|volunteer|unpaid|teacher|tutor|cashier|retail|warehouse|driver|nurse|sales associate|account executive|property|construction)\\b",
+      "allowed_countries": ["United States", "US", "USA", "United Kingdom", "UK", "England", "Scotland", "Wales", "Northern Ireland"],
+      "exclude_locations": ["Pakistan", "India", "Bangladesh"],
+      "exclude_staffing_agencies": ["Robert Half", "Insight Global", "TEKsystems", "Jobot", "Aquent", "Creative Circle", "Randstad", "Adecco", "Kforce", "Hays", "Michael Page", "Reed", "Vitamin T", "24 Seven", "Mondo", "Actalent", "Kelly"],
       "company_size_max": 200,
       "posted_within_days": 7,
-      "job_type": "any"
+      "dedupe_by": "company name + job title (keep the newest)",
+      "rule": "Drop every listing that fails ANY filter BEFORE enrichment. Never spend Firecrawl or email-finder credit on a listing that fails. Log the kept/dropped count per source."
     },
     "max_leads": 40
   },
