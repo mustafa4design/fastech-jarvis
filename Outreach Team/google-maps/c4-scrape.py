@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """Campaign 4 — Local Businesses (Google Maps) pre-scrape.
 
-Runs LOCALLY on Mustafa's PC at 5:30 AM PKT (Mon-Thu) via a local scheduled task,
+Runs LOCALLY on Mustafa's PC at 7:30 AM PKT (Mon-Thu) via a local scheduled task,
 because the cloud Phase 1 routine cannot reach the self-hosted scraper on localhost.
 
 Picks today's search term + city from the rotation in
 campaigns/campaign-4-local-maps/config.json, runs one job on the local
 gosom/google-maps-scraper (http://localhost:8080), and writes
 leads/[YYYY-MM-DD]/campaign-4-local-maps-raw.json, then commits + pushes it so the
-6:00 AM PKT cloud Phase 1 can filter / enrich / write / log the leads.
+8:00 AM PKT cloud Phase 1 can filter / enrich / write / log the leads.
 
 Filtering is NOT done here — the Worker Agent applies the C4 rules in Phase 2.
 On failure it still writes the raw file with status="failed" so Phase 1 can report it.

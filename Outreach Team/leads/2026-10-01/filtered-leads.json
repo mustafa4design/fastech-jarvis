@@ -1,0 +1,1433 @@
+[
+ {
+  "lead_id": "20261001-001",
+  "name": "Flexport",
+  "website": "https://www.flexport.com/",
+  "location": "Chicago, IL",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (2968) - excluded"
+ },
+ {
+  "lead_id": "20261001-002",
+  "name": "PulteGroup",
+  "website": "http://www.pultegroup.com",
+  "location": "Atlanta Metropolitan Area",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (7733) - excluded"
+ },
+ {
+  "lead_id": "20261001-003",
+  "name": "Amerail Systems Hotel Renovations",
+  "website": "http://www.amerailsys.com",
+  "location": "Greater Pittsburgh Region",
+  "campaign": "1-Hiring",
+  "status": "YELLOW",
+  "notes": "Role email only - info@amerailsys.com"
+ },
+ {
+  "lead_id": "20261001-004",
+  "name": "Pointer Marketplace",
+  "website": "https://joinpointer.com",
+  "location": "Los Angeles, CA",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "No email found on website"
+ },
+ {
+  "lead_id": "20261001-005",
+  "name": "Dragons Group",
+  "website": "https://www.dragons-group.com",
+  "location": "New York, NY",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "No name - skipped"
+ },
+ {
+  "lead_id": "20261001-006",
+  "name": "Seint",
+  "website": "http://www.seintofficial.com",
+  "location": "Greater St. George Area",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (399) - excluded"
+ },
+ {
+  "lead_id": "20261001-007",
+  "name": "Effy Jewelry",
+  "website": "http://effyjewelry.com",
+  "location": "New York City Metropolitan Area",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (1149) - excluded"
+ },
+ {
+  "lead_id": "20261001-008",
+  "name": "Tanium",
+  "website": "http://www.tanium.com",
+  "location": "Durham, NC",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (2307) - excluded"
+ },
+ {
+  "lead_id": "20261001-009",
+  "name": "Airbnb",
+  "website": "http://airbnb.com",
+  "location": "San Francisco, CA",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (72846) - excluded"
+ },
+ {
+  "lead_id": "20261001-010",
+  "name": "Tripadvisor",
+  "website": "http://www.tripadvisor.com",
+  "location": "New York, NY",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (5711) - excluded"
+ },
+ {
+  "lead_id": "20261001-011",
+  "name": "Hearst Magazines",
+  "website": "http://www.hearst.com/magazines",
+  "location": "New York, NY",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (10029) - excluded"
+ },
+ {
+  "lead_id": "20261001-012",
+  "name": "Soho House & Co",
+  "website": "http://www.sohohouse.com/careers",
+  "location": "Brooklyn, NY",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (6627) - excluded"
+ },
+ {
+  "lead_id": "20261001-013",
+  "name": "OluKai",
+  "website": "http://olukai.com/",
+  "location": "Irvine, CA",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "No name - skipped"
+ },
+ {
+  "lead_id": "20261001-014",
+  "name": "NBCUniversal",
+  "website": "http://www.NBCUniversal.com",
+  "location": "New York, NY",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (42668) - excluded"
+ },
+ {
+  "lead_id": "20261001-015",
+  "name": "The Flex",
+  "website": "https://theflex.global/",
+  "location": "San Marino, CA",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "No name - skipped"
+ },
+ {
+  "lead_id": "20261001-016",
+  "name": "FM",
+  "website": "http://www.fm.co",
+  "location": "Fort Worth, TX",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (2181) - excluded"
+ },
+ {
+  "lead_id": "20261001-017",
+  "name": "Conair LLC",
+  "website": "http://www.conair.com",
+  "location": "Stamford, CT",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (2131) - excluded"
+ },
+ {
+  "lead_id": "20261001-018",
+  "name": "Evlo AI",
+  "website": "https://www.evlo.ai/",
+  "location": "Austin, TX",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "No email found on website; no name found"
+ },
+ {
+  "lead_id": "20261001-019",
+  "name": "Tom First",
+  "website": "http://www.drinkculturepop.com",
+  "location": "Watertown, MA",
+  "campaign": "1-Hiring",
+  "status": "GREEN",
+  "notes": "Personal email found via LinkedIn email finder (Phase 3a)"
+ },
+ {
+  "lead_id": "20261001-020",
+  "name": "Home Chef",
+  "website": "https://www.homechef.com/",
+  "location": "Chicago, IL",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (2792) - excluded"
+ },
+ {
+  "lead_id": "20261001-021",
+  "name": "Arash Hashemi",
+  "website": "https://kaizenfoodcompany.com/",
+  "location": "North Miami Beach, FL",
+  "campaign": "1-Hiring",
+  "status": "GREEN",
+  "notes": "Personal email found via LinkedIn email finder (Phase 3a)"
+ },
+ {
+  "lead_id": "20261001-022",
+  "name": "Kendo Brands, Inc.",
+  "website": "http://www.kendobrands.com",
+  "location": "San Francisco, CA",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (870) - excluded"
+ },
+ {
+  "lead_id": "20261001-023",
+  "name": "Sunday Swagger",
+  "website": "https://www.sundayswagger.com",
+  "location": "Yorba Linda, CA",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "No email found on website"
+ },
+ {
+  "lead_id": "20261001-024",
+  "name": "Adria Solutions Ltd",
+  "website": "https://www.adriasolutions.co.uk/",
+  "location": "Manchester Area, United Kingdom",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "No name - skipped"
+ },
+ {
+  "lead_id": "20261001-025",
+  "name": "Elite Associates",
+  "website": "http://www.eliteassociates.co.uk",
+  "location": "London Area, United Kingdom",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (530) - excluded"
+ },
+ {
+  "lead_id": "20261001-026",
+  "name": "Busuu",
+  "website": "https://business.busuu.com/",
+  "location": "Greater London, England, United Kingdom",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (415) - excluded"
+ },
+ {
+  "lead_id": "20261001-027",
+  "name": "Reuben's Retreat",
+  "website": "http://www.reubensretreat.org",
+  "location": "Glossop, England, United Kingdom",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "No email found on website; no name found"
+ },
+ {
+  "lead_id": "20261001-028",
+  "name": "Emma - we are hiring!",
+  "website": "https://emma-app.com",
+  "location": "Islington, England, United Kingdom",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "No email found on website; no name found"
+ },
+ {
+  "lead_id": "20261001-029",
+  "name": "Ambela",
+  "website": "https://www.ambela.com",
+  "location": "Cardiff, Wales, United Kingdom",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "No email found on website; no name found"
+ },
+ {
+  "lead_id": "20261001-030",
+  "name": "Progresso Search",
+  "website": "http://www.progresso-search.com",
+  "location": "Greater London, England, United Kingdom",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Recruiter/staffing agency posting on behalf of undisclosed client - not direct employer"
+ },
+ {
+  "lead_id": "20261001-031",
+  "name": "Holdens",
+  "website": "https://holdens.agency",
+  "location": "Manchester, England, United Kingdom",
+  "campaign": "1-Hiring",
+  "status": "YELLOW",
+  "notes": "Role email only - hello@holdens.agency"
+ },
+ {
+  "lead_id": "20261001-032",
+  "name": "Artfarm",
+  "website": "http://artfarm.com",
+  "location": "London, England, United Kingdom",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "No name - skipped"
+ },
+ {
+  "lead_id": "20261001-033",
+  "name": "Intralot",
+  "website": "http://www.intralot.com",
+  "location": "London, England, United Kingdom",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (1363) - excluded"
+ },
+ {
+  "lead_id": "20261001-034",
+  "name": "HR Star | B Corp certified",
+  "website": "http://www.hr-star.co.uk",
+  "location": "London Area, United Kingdom",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "No name - skipped"
+ },
+ {
+  "lead_id": "20261001-035",
+  "name": "MrQ",
+  "website": "www.MrQ.com",
+  "location": "St Albans, England, United Kingdom",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (206) - excluded"
+ },
+ {
+  "lead_id": "20261001-036",
+  "name": "Future (Decanter)",
+  "website": "http://www.futureplc.com",
+  "location": "London, England, United Kingdom",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (3881) - excluded"
+ },
+ {
+  "lead_id": "20261001-037",
+  "name": "Blu Digital",
+  "website": "http://www.blu-digital.co.uk",
+  "location": "London Area, United Kingdom",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "No name - skipped"
+ },
+ {
+  "lead_id": "20261001-038",
+  "name": "HairGym",
+  "website": "https://thehairgym.co.uk/",
+  "location": "London Area, United Kingdom",
+  "campaign": "1-Hiring",
+  "status": "YELLOW",
+  "notes": "Role email only - info@thehairgym.co.uk"
+ },
+ {
+  "lead_id": "20261001-039",
+  "name": "Partington's Holiday Parks",
+  "website": "https://www.partingtons.com/",
+  "location": "Poulton-Le-Fylde, England, United Kingdom",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "No email found on website; no name found"
+ },
+ {
+  "lead_id": "20261001-040",
+  "name": "FLIGHTSTORY",
+  "website": "http://www.flightstory.com",
+  "location": "London Area, United Kingdom",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (362) - excluded"
+ },
+ {
+  "lead_id": "20261001-041",
+  "name": "Sphere Digital Recruitment Group",
+  "website": "https://www.spheredigitalrecruitment.com/",
+  "location": "London, England, United Kingdom",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "No name - skipped"
+ },
+ {
+  "lead_id": "20261001-042",
+  "name": "Better Placed",
+  "website": "http://www.betterplaced.com",
+  "location": "Manchester, England, United Kingdom",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Recruiter/staffing agency posting on behalf of undisclosed client - not direct employer"
+ },
+ {
+  "lead_id": "20261001-043",
+  "name": "Addington Place at Cape Coral",
+  "website": "",
+  "location": "Cape Coral, FL",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "No website found"
+ },
+ {
+  "lead_id": "20261001-044",
+  "name": "Fox Corporation",
+  "website": "https://www.foxcorporation.com/",
+  "location": "Los Angeles, CA",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Role unrelated to video/content/social hiring signal (Indeed OR-query not honored by actor) - skipped"
+ },
+ {
+  "lead_id": "20261001-045",
+  "name": "SPOT HOLDING COMPANY LLC",
+  "website": "",
+  "location": "Thornton, CO",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "No website found"
+ },
+ {
+  "lead_id": "20261001-046",
+  "name": "Nashville Soccer Club",
+  "website": "http://www.nashvillesc.com",
+  "location": "Nashville, TN",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "No email found on website; no name found"
+ },
+ {
+  "lead_id": "20261001-047",
+  "name": "A New Leaf",
+  "website": "https://www.turnanewleaf.org",
+  "location": "Mesa, AZ",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Role unrelated to video/content/social hiring signal (Indeed OR-query not honored by actor) - skipped"
+ },
+ {
+  "lead_id": "20261001-048",
+  "name": "Writopia Lab",
+  "website": "",
+  "location": "New York, NY",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Role unrelated to video/content/social hiring signal (Indeed OR-query not honored by actor) - skipped"
+ },
+ {
+  "lead_id": "20261001-049",
+  "name": "SKG Texas",
+  "website": "https://www.skgtexas.com/",
+  "location": "Austin, TX",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Role unrelated to video/content/social hiring signal (Indeed OR-query not honored by actor) - skipped"
+ },
+ {
+  "lead_id": "20261001-050",
+  "name": "Cardone Ventures",
+  "website": "https://cardoneventures.com/careers/",
+  "location": "Scottsdale, AZ",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (350) - excluded"
+ },
+ {
+  "lead_id": "20261001-051",
+  "name": "News Corp",
+  "website": "http://www.newscorp.com",
+  "location": "New York, NY",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Role unrelated to video/content/social hiring signal (Indeed OR-query not honored by actor) - skipped"
+ },
+ {
+  "lead_id": "20261001-052",
+  "name": "The TCW Group, Inc.",
+  "website": "https://www.tcw.com",
+  "location": "New York, NY",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (700) - excluded"
+ },
+ {
+  "lead_id": "20261001-053",
+  "name": "TRC",
+  "website": "http://www.trccompanies.com",
+  "location": "Denver, CO",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Role unrelated to video/content/social hiring signal (Indeed OR-query not honored by actor) - skipped"
+ },
+ {
+  "lead_id": "20261001-054",
+  "name": "1Password",
+  "website": "https://1password.com/",
+  "location": "San Francisco, CA",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Role unrelated to video/content/social hiring signal (Indeed OR-query not honored by actor) - skipped"
+ },
+ {
+  "lead_id": "20261001-055",
+  "name": "TRM Labs",
+  "website": "",
+  "location": "United States",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Role unrelated to video/content/social hiring signal (Indeed OR-query not honored by actor) - skipped"
+ },
+ {
+  "lead_id": "20261001-056",
+  "name": "Razer",
+  "website": "https://www.razer.com",
+  "location": "California",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (3000) - excluded"
+ },
+ {
+  "lead_id": "20261001-057",
+  "name": "Landmark Management",
+  "website": "",
+  "location": "Plano, TX",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "No website found"
+ },
+ {
+  "lead_id": "20261001-058",
+  "name": "Legends Boxing - Bountiful",
+  "website": "",
+  "location": "Bountiful, UT",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "No website found"
+ },
+ {
+  "lead_id": "20261001-059",
+  "name": "DSV",
+  "website": "https://www.dsv.com/",
+  "location": "Lancaster, TX",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Role unrelated to video/content/social hiring signal (Indeed OR-query not honored by actor) - skipped"
+ },
+ {
+  "lead_id": "20261001-060",
+  "name": "Teladoc Health",
+  "website": "http://www.teladochealth.com",
+  "location": "New York, NY",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (7500) - excluded"
+ },
+ {
+  "lead_id": "20261001-061",
+  "name": "Washington Metropolitan Area Transit Authority",
+  "website": "https://www.wmata.com/about/careers/",
+  "location": "Washington, DC",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (10000) - excluded"
+ },
+ {
+  "lead_id": "20261001-062",
+  "name": "Ocala",
+  "website": "",
+  "location": "Ocala, FL",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "No website found"
+ },
+ {
+  "lead_id": "20261001-063",
+  "name": "Harvard Bioscience",
+  "website": "https://www.harvardbioscience.com",
+  "location": "Saint Paul, MN",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Role unrelated to video/content/social hiring signal (Indeed OR-query not honored by actor) - skipped"
+ },
+ {
+  "lead_id": "20261001-064",
+  "name": "Howard Hanna Real Estate Services",
+  "website": "https://www.howardhanna.com",
+  "location": "Mayfield Heights, OH",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (7500) - excluded"
+ },
+ {
+  "lead_id": "20261001-065",
+  "name": "Danielle Gosthe",
+  "website": "http://www.theredcarrot.com",
+  "location": "Remote (US)",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Founder name found (Danielle Gosthe) but no email published - contact form only"
+ },
+ {
+  "lead_id": "20261001-066",
+  "name": "BD",
+  "website": "http://bd.com/careers",
+  "location": "San Diego, CA",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Role unrelated to video/content/social hiring signal (Indeed OR-query not honored by actor) - skipped"
+ },
+ {
+  "lead_id": "20261001-067",
+  "name": "Capgemini",
+  "website": "https://www.capgemini.com",
+  "location": "Atlanta, GA",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Role unrelated to video/content/social hiring signal (Indeed OR-query not honored by actor) - skipped"
+ },
+ {
+  "lead_id": "20261001-068",
+  "name": "World Wide Technology",
+  "website": "https://www.wwt.com",
+  "location": "Remote (US)",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (10000) - excluded"
+ },
+ {
+  "lead_id": "20261001-069",
+  "name": "Hoodymartz LLC",
+  "website": "",
+  "location": "Detroit, MI",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "No website found"
+ },
+ {
+  "lead_id": "20261001-070",
+  "name": "Mattel, Inc.",
+  "website": "https://about.mattel.com/",
+  "location": "East Aurora, NY",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (7500) - excluded"
+ },
+ {
+  "lead_id": "20261001-071",
+  "name": "Giles Subaru",
+  "website": "",
+  "location": "Lafayette, LA",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Role unrelated to video/content/social hiring signal (Indeed OR-query not honored by actor) - skipped"
+ },
+ {
+  "lead_id": "20261001-072",
+  "name": "Community Housing Improvement Program, Inc.",
+  "website": "",
+  "location": "Paradise, CA",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "No website found"
+ },
+ {
+  "lead_id": "20261001-073",
+  "name": "RE/MAX Ultimate",
+  "website": "",
+  "location": "United States",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Role unrelated to video/content/social hiring signal (Indeed OR-query not honored by actor) - skipped"
+ },
+ {
+  "lead_id": "20261001-074",
+  "name": "DMD Real Estate Photography",
+  "website": "",
+  "location": "Utah",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "No website found"
+ },
+ {
+  "lead_id": "20261001-075",
+  "name": "Schomp Automotive Group",
+  "website": "http://www.schomp.com",
+  "location": "Greenwood Village, CO",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (700) - excluded"
+ },
+ {
+  "lead_id": "20261001-076",
+  "name": "Eko",
+  "website": "https://www.ekohealth.com",
+  "location": "Emeryville, CA",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "No email found on website; no name found"
+ },
+ {
+  "lead_id": "20261001-077",
+  "name": "Getinge / Paragonix Technologies, Inc.",
+  "website": "https://www.getinge.com/int/company/careers",
+  "location": "Augusta, ME",
+  "campaign": "1-Hiring",
+  "status": "RED",
+  "notes": "Company >200 employees (10000) - excluded"
+ },
+ {
+  "lead_id": "20261001-078",
+  "name": "Salome Savage",
+  "website": "https://www.prismaticheartagency.com/book-online",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "No email found on website"
+ },
+ {
+  "lead_id": "20261001-079",
+  "name": "تربية الدجاج بالمغرب",
+  "website": "",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "No website found"
+ },
+ {
+  "lead_id": "20261001-080",
+  "name": "Jimmy Ta",
+  "website": "",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "No website found"
+ },
+ {
+  "lead_id": "20261001-081",
+  "name": "Jennifer Soulier",
+  "website": "https://brand.jennifersoulier.com/etre-choisie",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "YELLOW",
+  "notes": "Generic 'mail@' alias on personal domain - treated as role email, not firstname format"
+ },
+ {
+  "lead_id": "20261001-082",
+  "name": "Content Creator.com",
+  "website": "http://direct.me/contentcreators/",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "Not a direct-fit ICP lead / low-quality site for outreach - skipped for quality"
+ },
+ {
+  "lead_id": "20261001-083",
+  "name": "Numadeo • L’Agence Personal Branding #1",
+  "website": "http://www.numadeo.com/",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "No email found on website; no name found"
+ },
+ {
+  "lead_id": "20261001-084",
+  "name": "Founderz",
+  "website": "https://t.mtrbio.com/founderz",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "Not a direct-fit ICP lead / low-quality site for outreach - skipped for quality"
+ },
+ {
+  "lead_id": "20261001-085",
+  "name": "small_boss.01",
+  "website": "",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "No website found"
+ },
+ {
+  "lead_id": "20261001-086",
+  "name": "Creator Academy",
+  "website": "https://plan.riseguide.com/en/auth?utm_source=smm&utm_platform=inst&utm_page=ig.creatoracademy&utm_site=bio",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "Not a direct-fit ICP lead / low-quality site for outreach - skipped for quality"
+ },
+ {
+  "lead_id": "20261001-087",
+  "name": "The Owner -  Real Estate Firm",
+  "website": "",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "No website found"
+ },
+ {
+  "lead_id": "20261001-088",
+  "name": "Greg Mahoney",
+  "website": "http://www.gregmahoney.com",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "No email found - contact form only (State Farm agent site)"
+ },
+ {
+  "lead_id": "20261001-089",
+  "name": "Centrum Edukacji Obywatelskiej",
+  "website": "https://nagrodasendlerowej.ceo.org.pl/",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "Not a business/personal-brand fit (nonprofit, unrelated niche)"
+ },
+ {
+  "lead_id": "20261001-090",
+  "name": "ChiefElectoralOfficer, Manipur",
+  "website": "https://ceomanipur.nic.in/",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "India-based (government account) - excluded"
+ },
+ {
+  "lead_id": "20261001-091",
+  "name": "Roy Vosters",
+  "website": "",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "No website found"
+ },
+ {
+  "lead_id": "20261001-092",
+  "name": "Jessica Trias",
+  "website": "http://www.insuredbyjessica.com/",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "No email found - contact form only (State Farm agent site)"
+ },
+ {
+  "lead_id": "20261001-093",
+  "name": "Coach",
+  "website": "https://on.coach.com/CxSTabbyTour",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "Large public corporation (Coach NY) - not ICP fit, not a small business decision maker"
+ },
+ {
+  "lead_id": "20261001-094",
+  "name": "Chief Electoral Officer Telangana",
+  "website": "https://www.facebook.com/CEOTelangana",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "India-based (government account) - excluded"
+ },
+ {
+  "lead_id": "20261001-095",
+  "name": "Marisol Johnson",
+  "website": "http://www.marisoljohnsoninsurance.com/",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "No email found - contact form only (State Farm agent site)"
+ },
+ {
+  "lead_id": "20261001-096",
+  "name": "The Diary Of A CEO - With Steven Bartlett",
+  "website": "https://link.thediaryofaceo.com/6oVEgzG",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "Major media brand, not ICP fit"
+ },
+ {
+  "lead_id": "20261001-097",
+  "name": "Creatorally",
+  "website": "https://creatorally.com/",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "YELLOW",
+  "notes": "Role email only - service@creatorally.com"
+ },
+ {
+  "lead_id": "20261001-098",
+  "name": "Multipassionate Creative Director",
+  "website": "https://www.skool.com/aidesign/about",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "Weak site (Skool community page) - no email, no verifiable business domain"
+ },
+ {
+  "lead_id": "20261001-099",
+  "name": "Job Creators Network",
+  "website": "https://www.newsweek.com/former-education-secretary-trump-right-department-education-has-go-opinion-2048199",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "Not a personal brand/business lead (advocacy org)"
+ },
+ {
+  "lead_id": "20261001-100",
+  "name": "Crafted by Creators",
+  "website": "https://creators.markable.ai",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "Not a direct-fit ICP lead / low-quality site for outreach - skipped for quality"
+ },
+ {
+  "lead_id": "20261001-101",
+  "name": "Justin Burns",
+  "website": "https://appsbuildathon.com/ticket",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "Not a direct-fit ICP lead / low-quality site for outreach - skipped for quality"
+ },
+ {
+  "lead_id": "20261001-102",
+  "name": "Military Coach",
+  "website": "https://workouts.madmuscles.com/funnel/advanced-military-307/step-one?camp_name=MilitaryCoachPage",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "Not a real individual - disclosed AI/funnel account"
+ },
+ {
+  "lead_id": "20261001-103",
+  "name": "Cheryl Porter Vocal Coach",
+  "website": "http://www.cherylportermethod.com/",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "Not a direct-fit ICP lead / low-quality site for outreach - skipped for quality"
+ },
+ {
+  "lead_id": "20261001-104",
+  "name": "Ashley Cannon",
+  "website": "https://agencyownercoaching.com/home",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "No email found on website"
+ },
+ {
+  "lead_id": "20261001-105",
+  "name": "Facebook for Creators",
+  "website": "https://creators.facebook.com/blog/introducing-new-facebook-creator-studio",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "Corporate brand account, not ICP fit"
+ },
+ {
+  "lead_id": "20261001-106",
+  "name": "Emilio Palomo tintacar startek tintado de lunas",
+  "website": "http://linktr.ee/emilio.palomo.oficial",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "Not a direct-fit ICP lead / low-quality site for outreach - skipped for quality"
+ },
+ {
+  "lead_id": "20261001-107",
+  "name": "SmithBook - Book Creator",
+  "website": "https://linktr.ee/smith.book",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "Not a direct-fit ICP lead / low-quality site for outreach - skipped for quality"
+ },
+ {
+  "lead_id": "20261001-108",
+  "name": "Joe Wicks",
+  "website": "https://podfollow.com/bupahealthorhype",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "Not a direct-fit ICP lead / low-quality site for outreach - skipped for quality"
+ },
+ {
+  "lead_id": "20261001-109",
+  "name": "pardon marikopo",
+  "website": "https://link.me/coach.kenny24",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "Unclear business fit / no website"
+ },
+ {
+  "lead_id": "20261001-110",
+  "name": "Supplement Founders Formula",
+  "website": "https://supplementfounder.com/?utm_source=instagram",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "No email found on website; no name found (paid landing page)"
+ },
+ {
+  "lead_id": "20261001-111",
+  "name": "The Coach: Men’s Health App",
+  "website": "http://get.the.coach/programs",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "App/product account, not an individual decision maker"
+ },
+ {
+  "lead_id": "20261001-112",
+  "name": "Nabil Gilani · Conseiller stratégique d'image & d'autorité",
+  "website": "https://stan.store/NabilGilani",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "Not a direct-fit ICP lead / low-quality site for outreach - skipped for quality"
+ },
+ {
+  "lead_id": "20261001-113",
+  "name": "Dan Harrison • Business Coach",
+  "website": "https://www.skool.com/LFG",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "Not a direct-fit ICP lead / low-quality site for outreach - skipped for quality"
+ },
+ {
+  "lead_id": "20261001-114",
+  "name": "The Founders Club",
+  "website": "http://foundersclubofficial.com",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "No email found on website; no name found"
+ },
+ {
+  "lead_id": "20261001-115",
+  "name": "Sean Greeley | Business For Fitness Entrepreneurs",
+  "website": "https://linktr.ee/seangreeley",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "Not a direct-fit ICP lead / low-quality site for outreach - skipped for quality"
+ },
+ {
+  "lead_id": "20261001-116",
+  "name": "Christian Boceda",
+  "website": "https://metodocbcoaching.com/consulenzagratuita1",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "No email found on website"
+ },
+ {
+  "lead_id": "20261001-117",
+  "name": "Jess Cunningham",
+  "website": "https://beliefcoding.com",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "YELLOW",
+  "notes": "Role email only - admin@beliefcoding.com; LinkedIn email finder found no additional email"
+ },
+ {
+  "lead_id": "20261001-118",
+  "name": "Cédric & Nico",
+  "website": "https://go.iconicpersonalbrand.fr/optin-insta",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "Not a direct-fit ICP lead / low-quality site for outreach - skipped for quality"
+ },
+ {
+  "lead_id": "20261001-119",
+  "name": "Katie",
+  "website": "http://www.wedprostudio.com",
+  "location": "Unknown (Instagram)",
+  "campaign": "2-PersonalBrand",
+  "status": "RED",
+  "notes": "No email found on website"
+ },
+ {
+  "lead_id": "20261001-120",
+  "name": "DTC Prophet",
+  "website": "http://dtcprophet.com",
+  "location": "Philadelphia",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "No email found on website (Substack); pseudonymous handle, no real name found"
+ },
+ {
+  "lead_id": "20261001-121",
+  "name": "Tim",
+  "website": "",
+  "location": "Florida, USA",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "No website found"
+ },
+ {
+  "lead_id": "20261001-122",
+  "name": "Polsia",
+  "website": "http://polsia.com",
+  "location": "San Francisco",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "Weak/unverifiable business site (linktree, bio-aggregator, or unrelated) - skipped"
+ },
+ {
+  "lead_id": "20261001-123",
+  "name": "Stefan Georgi",
+  "website": "https://stefanbrain.com",
+  "location": "Unknown",
+  "campaign": "3-DTCAds",
+  "status": "YELLOW",
+  "notes": "Role email only - support@stefanbrain.com"
+ },
+ {
+  "lead_id": "20261001-124",
+  "name": "Jax",
+  "website": "",
+  "location": "Unknown",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "No website found"
+ },
+ {
+  "lead_id": "20261001-125",
+  "name": "QUEEN PINN",
+  "website": "https://instagram.com/datz_queen_pinn",
+  "location": "Las Vegas, NV",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "Weak/unverifiable business site (linktree, bio-aggregator, or unrelated) - skipped"
+ },
+ {
+  "lead_id": "20261001-126",
+  "name": "Michael Godzic",
+  "website": "https://vencire.com",
+  "location": "New York, NY",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "Weak/unverifiable business site (linktree, bio-aggregator, or unrelated) - skipped"
+ },
+ {
+  "lead_id": "20261001-127",
+  "name": "Joel Jackson",
+  "website": "http://www.mylifeforce.com",
+  "location": "Los Angeles",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "No email found on website"
+ },
+ {
+  "lead_id": "20261001-128",
+  "name": "Victoria Onyeje, PharmD",
+  "website": "https://youtube.com/@wealthyfreelancers",
+  "location": "Unknown",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "Weak/unverifiable business site (linktree, bio-aggregator, or unrelated) - skipped"
+ },
+ {
+  "lead_id": "20261001-129",
+  "name": "ENDANG SULISTIAWATI",
+  "website": "",
+  "location": "Unknown",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "Duplicate/no website"
+ },
+ {
+  "lead_id": "20261001-130",
+  "name": "Sadaf Ambreen",
+  "website": "",
+  "location": "Unknown",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "Competitor - runs own social media management agency (Pakistan-pattern name, excluded regardless)"
+ },
+ {
+  "lead_id": "20261001-131",
+  "name": "iotabot.com",
+  "website": "",
+  "location": "Unknown",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "Not a direct-fit DTC/ecom buyer lead - skipped for quality"
+ },
+ {
+  "lead_id": "20261001-132",
+  "name": "Celia Rosetta",
+  "website": "",
+  "location": "Unknown",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "Not DTC/ads niche (financial adviser marketing)"
+ },
+ {
+  "lead_id": "20261001-133",
+  "name": "Koffivi Woglo",
+  "website": "",
+  "location": "Unknown",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "Not DTC/ecom decision maker (WordPress dev sharing a workflow)"
+ },
+ {
+  "lead_id": "20261001-134",
+  "name": "Kartik Chourasiya",
+  "website": "",
+  "location": "Pakistan/India",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "India-based - excluded"
+ },
+ {
+  "lead_id": "20261001-135",
+  "name": "Rihil Sanghani",
+  "website": "",
+  "location": "Unknown",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "Employee at Accenture, not a decision maker"
+ },
+ {
+  "lead_id": "20261001-136",
+  "name": "Jane Le",
+  "website": "",
+  "location": "Unknown",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "Sells ad accounts, different service - not ICP fit"
+ },
+ {
+  "lead_id": "20261001-137",
+  "name": "Sohaib Alizaid",
+  "website": "",
+  "location": "Unknown",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "Niche mismatch (dental lead-gen agency) and competitor positioning"
+ },
+ {
+  "lead_id": "20261001-138",
+  "name": "Fei Wu",
+  "website": "",
+  "location": "Unknown",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "Not DTC/ads relevant (Adobe Express workflow post)"
+ },
+ {
+  "lead_id": "20261001-139",
+  "name": "Kellie Holt",
+  "website": "",
+  "location": "Unknown",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "Not DTC/ecom relevant (B2B lead gen story)"
+ },
+ {
+  "lead_id": "20261001-140",
+  "name": "Taha Creatives",
+  "website": "",
+  "location": "Unknown",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "Competitor - AI ad production agency"
+ },
+ {
+  "lead_id": "20261001-141",
+  "name": "Ria Biswas",
+  "website": "",
+  "location": "Pakistan/India",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "India-based - excluded"
+ },
+ {
+  "lead_id": "20261001-142",
+  "name": "Ryan Rigney",
+  "website": "",
+  "location": "Unknown",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "Not a direct-fit DTC/ecom buyer lead - skipped for quality"
+ },
+ {
+  "lead_id": "20261001-143",
+  "name": "Sa'd Ashi",
+  "website": "",
+  "location": "Unknown",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "LinkedIn email finder found no email; no verifiable 'ASHI' brand website located"
+ },
+ {
+  "lead_id": "20261001-144",
+  "name": "Mykhailo Naumenko",
+  "website": "",
+  "location": "Unknown",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "Competitor - freelance DTC video editor, not a buyer"
+ },
+ {
+  "lead_id": "20261001-145",
+  "name": "Francis Macaalay",
+  "website": "",
+  "location": "Unknown",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "Competitor - freelance video editor, not a buyer"
+ },
+ {
+  "lead_id": "20261001-146",
+  "name": "Lexi Williams",
+  "website": "",
+  "location": "Unknown",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "Competitor - runs own Meta creative agency/system"
+ },
+ {
+  "lead_id": "20261001-147",
+  "name": "Molly Pelletier",
+  "website": "https://www.mollypelletier.com/",
+  "location": "Unknown (US)",
+  "campaign": "3-DTCAds",
+  "status": "GREEN",
+  "notes": "Personal email found via LinkedIn email finder (Phase 3a)"
+ },
+ {
+  "lead_id": "20261001-148",
+  "name": "Leo Benichou",
+  "website": "",
+  "location": "Unknown",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "Competitor - runs own AI creative agency (Whim Creative)"
+ },
+ {
+  "lead_id": "20261001-149",
+  "name": "Ross Jones",
+  "website": "",
+  "location": "Unknown",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "Competitor - runs own paid ads agency"
+ },
+ {
+  "lead_id": "20261001-150",
+  "name": "Matthew Garrepy",
+  "website": "",
+  "location": "Unknown",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "Not DTC/ads relevant (conference recap)"
+ },
+ {
+  "lead_id": "20261001-151",
+  "name": "Patrick Nommensen",
+  "website": "",
+  "location": "Unknown",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "ByteDance executive, not a buyer"
+ },
+ {
+  "lead_id": "20261001-152",
+  "name": "Light Ñkëmkã",
+  "website": "",
+  "location": "Unknown",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "Student dev post, not relevant"
+ },
+ {
+  "lead_id": "20261001-153",
+  "name": "Kewin Cauã Cortez",
+  "website": "",
+  "location": "Unknown",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "Competitor - freelance video editor"
+ },
+ {
+  "lead_id": "20261001-154",
+  "name": "Ogundijo David",
+  "website": "",
+  "location": "Unknown",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "Competitor - freelance AI UGC video editor"
+ },
+ {
+  "lead_id": "20261001-155",
+  "name": "Vijit Prabhu",
+  "website": "",
+  "location": "Pakistan/India",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "India-based - excluded"
+ },
+ {
+  "lead_id": "20261001-156",
+  "name": "Mai Pham",
+  "website": "",
+  "location": "Unknown",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "Vietnam hiring post, not relevant"
+ },
+ {
+  "lead_id": "20261001-157",
+  "name": "Hassan Barki",
+  "website": "",
+  "location": "Pakistan/India",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "Pakistan-based - excluded"
+ },
+ {
+  "lead_id": "20261001-158",
+  "name": "Muhammad Awais Ali",
+  "website": "",
+  "location": "Pakistan/India",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "Pakistan-based (name/agency pattern) - excluded"
+ },
+ {
+  "lead_id": "20261001-159",
+  "name": "Tara Lynn",
+  "website": "",
+  "location": "Unknown",
+  "campaign": "3-DTCAds",
+  "status": "RED",
+  "notes": "Competitor - freelance media buyer"
+ }
+]

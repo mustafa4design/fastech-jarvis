@@ -1,0 +1,31 @@
+# Runs the open-source Google Maps scraper (gosom/google-maps-scraper) locally.
+# Web/API mode on http://localhost:8080. The image has NO built-in auth, so we bind
+# to 127.0.0.1 ONLY — that localhost binding is the security boundary. Do not change
+# the port mapping to 0.0.0.0 / a public interface without putting an auth proxy in front.
+
+services:
+  google-maps-scraper:
+    # Pinned to a known-good release for reproducibility (bump deliberately).
+    # The published image is linux/amd64. On Apple Silicon (M1/M2/M3) it runs under
+    # emulation; if it won't start, UNCOMMENT the 'platform' line below.
+    image: gosom/google-maps-scraper:v1.18.1
+    # platform: linux/amd64
+    container_name: gmaps-scraper
+    restart: unless-stopped     # comes back by itself after Docker Desktop / PC restarts
+    shm_size: "2gb"             # Chromium crashes (SIGSEGV) with Docker's 64 MB default
+    mem_limit: "4g"             # cap the container; NOTE the Docker VM itself only has ~3.6 GB
+                                # (WSL default), so raise WSL memory in %UserProfile%\.wslconfig
+                                # for this limit to be the real ceiling
+    # Chromium flags: the image launches Chromium with --disable-dev-shm-usage, --no-sandbox
+    # and --disable-gpu already (hardcoded in gosom's scrapemate; confirmed in `docker logs`).
+    # v1.18.1 has no CLI/env option to add flags, so there is nothing to set here.
+    command: ["-web", "-data-folder", "/gmapsdata"]
+    ports:
+      - "127.0.0.1:8080:8080"   # localhost only — see warning above
+    volumes:
+      - gmaps_data:/gmapsdata    # job results persist here
+      - gmaps_cache:/opt         # Playwright browser cache (faster restarts)
+
+volumes:
+  gmaps_data:
+  gmaps_cache:

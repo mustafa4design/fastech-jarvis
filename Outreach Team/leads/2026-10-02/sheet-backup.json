@@ -1,0 +1,15 @@
+{
+  "sheet_id": "107hqHj-Q-8e1oph76wf0kew5xzs_gbnGMaOBcHLGCyE",
+  "tab": "02-Oct-2026",
+  "reason": "No Google Sheets cell-write tool available in this session (only Drive file-metadata update, not cell/range writes). Logging update here for manual sync.",
+  "updates": [
+    {
+      "lead_id": "20261002-110",
+      "J_email_sent": "Yes",
+      "K_send_time_local": "8:30 AM GMT/BST",
+      "L_send_time_pkt": "1:30 PM PKT",
+      "I_framework": "TROJAN HORSE",
+      "Q_status": "GREEN"
+    }
+  ]
+}
