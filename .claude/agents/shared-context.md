@@ -91,12 +91,21 @@ Buffer staging status: [Pending Hafsa / Staged / Approved]
 ---
 
 ## Analyst Findings
-*Updated by: Analyst agent (every Saturday 8PM PKT)*
+*Updated by: Analyst agent (every Saturday 8PM PKT) — WEEK OF SEP 28 – OCT 2, 2026*
 
-Winning hook format last week: Bold number format (40 clients + 0 employees)
-Winning pillar last week: Agency/systems thinking
-Top post: "I had 40 clients and 0 employees. Not by accident." (213 words)
-Key recommendation for next week: Unblock Post #1 publishing in Buffer to get baseline performance data. Use same Bold number hook format for Post #2. Track reposts/comments/impressions as North Star metrics.
+**Status:** Pre-launch Phase 2 — 5 posts prepared, Buffer staging blocked since Sep 30
+**Posts prepared this week:** 5 LinkedIn posts
+- Post 1: Contrarian take (ad testing vs teardown) — Bold claim hook
+- Post 2: Overnight Engine explainer — Scene-based hook
+- Posts 3–5: Ad teardown, Lead magnet, Founder story
+**Pillar distribution:** 1 (Overnight Engine), 3 (Ad teardowns), 5 (Contrarian), 7 (Lead magnet), 10 (Founder story)
+**Hook formats used:** Contrarian bold claim (Post 1), Scene-based/real moment (Post 2), Mix of others (3–5)
+**Winning format last week:** Bold number (40 clients + 0 employees) — NOT repeated this week intentionally (pillar diversity strategy)
+**Top post to date:** "I had 40 clients and 0 employees. Not by accident." (from previous week, still not published)
+
+**KEY BLOCKER:** Publishing pipeline stuck at Hafsa Buffer staging. All 5 posts staged in Slack #scripts Sep 30 07:05 PKT. No forward movement for 3 days.
+**Critical recommendation:** UNBLOCK BUFFER STAGING IMMEDIATELY. Get Post #1 live this weekend. Collect baseline engagement data (reposts, comments, impressions). Reschedule other posts if Sep 30 slots expired.
+**Secondary rec:** Establish publishing SLA with Hafsa (stage by Wed 7AM) or switch to auto-publish model.
 
 ---
 
