@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-05",
+  "campaign": "campaign-1-hiring-signal",
+  "sources": {
+    "linkedin_jobs": {
+      "status": "failed",
+      "error": "HTTP 403 full-permission-actor-not-approved (harvestapi/linkedin-job-search). Approve at https://console.apify.com/actors/zn01OAlzP853oqn4Z?approvePermissions=true"
+    },
+    "indeed": {
+      "status": "partial",
+      "calls_succeeded": 7,
+      "calls_failed": 1,
+      "failed_call": "content manager / uk — Apify actor returned invalid expirationDate type (schema bug), failed twice, not retried further"
+    }
+  },
+  "apify_spend_usd": 0.0300,
+  "apify_budget_cap_usd": 1.00,
+  "raw_leads_after_strict_filter": 13,
+  "leads": [
+    {"id": "20261005-001", "company": "650NED & Super Owners Society", "title": "Content Creator & Video Editor", "location": "Newport Pagnell, United Kingdom", "status": "RED", "notes": "No website found"},
+    {"id": "20261005-002", "company": "Curate Group", "title": "In-house Video Editor", "location": "London, United Kingdom", "website": "curategroup.co.uk", "status": "RED", "notes": "No decision maker name found"},
+    {"id": "20261005-003", "company": "Detroit Red Wings", "title": "Social Media Seasonal Video Editor", "location": "Detroit, United States", "website": "detroitredwings.com", "status": "RED", "notes": "Company too large (NHL franchise)"},
+    {"id": "20261005-004", "company": "Jackson Carter Design Build, Inc.", "decision_maker": "Erin Sandona", "title": "President", "job_title": "Content Creator / Multimedia Producer / Social Media Manager", "location": "Mount Prospect, United States", "website": "jcdesignbuild.com", "email": "team@jcdesignbuild.com", "status": "YELLOW", "notes": "Role email only, hold for approval"},
+    {"id": "20261005-005", "company": "MiNDS Cowork", "title": "Content Creator & Social Media", "location": "Miami, United States", "status": "RED", "notes": "Website resolved to unrelated Caracas company"},
+    {"id": "20261005-006", "company": "Oasis Cars Ltd", "title": "Social Media Manager & Content Creator", "location": "Vigo, United Kingdom", "status": "RED", "notes": "Ambiguous company match, could not confirm website"},
+    {"id": "20261005-007", "company": "Passion Exteriors", "title": "Part-Time Videographer & Video Editor", "location": "Des Moines, United States", "status": "RED", "notes": "No website found"},
+    {"id": "20261005-008", "company": "SKO Compounds", "title": "Social Media Video Editor", "location": "Beverly Hills, United States", "website": "sko-compounds.com", "status": "RED", "notes": "No decision maker name found"},
+    {"id": "20261005-009", "company": "Winners Edge Consulting", "decision_maker": "Dr. Tory Robson", "title": "Lead Coach", "job_title": "Social Media Manager", "location": "Chanhassen, United States", "website": "winnersedgeconsulting.com", "email": "winnersedgeconsulting@gmail.com", "status": "YELLOW", "notes": "Role/business email only, hold for approval"},
+    {"id": "20261005-010", "company": "Revelwood", "title": "Digital and Content Marketing Manager", "location": "Florham Park, United States", "website": "revelwood.com", "status": "RED", "notes": "No decision maker name found, likely >200 employees"},
+    {"id": "20261005-011", "company": "Elite Guard Power Washing", "decision_maker": "Kyle Updegrave", "title": "Founder & Owner", "job_title": "Part-Time Videographer & Video Editor", "location": "Massillon, United States", "website": "theeliteguard.com", "email": "kyle@theeliteguard.com", "status": "GREEN", "notes": "Personal email confirmed"},
+    {"id": "20261005-012", "company": "biodesigns, Inc.", "decision_maker": "Randall Alley", "title": "Owner", "job_title": "Social Media Marketing/Optimization, Video Editor/Content Manager", "location": "Westlake Village, United States", "website": "biodesigns.com", "status": "RED", "notes": "No email found on website"},
+    {"id": "20261005-013", "company": "JHS Pedals", "decision_maker": "Josh Scott", "title": "Founder", "job_title": "Vertical Short Form Video Editor + Creative PA", "location": "Grandview, United States", "website": "jhspedals.info", "status": "RED", "notes": "Company too large (global brand, retail + manufacturing)"}
+  ],
+  "summary": {"GREEN": 1, "YELLOW": 2, "RED": 10}
+}
