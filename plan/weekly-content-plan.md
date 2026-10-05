@@ -1,105 +1,82 @@
-# Weekly Content Plan
-*Manager agent · Every Monday 7AM PKT*
+# Weekly Content Plan — Oct 5–9, 2026
+**Manager agent · Generated 2026-10-05 07:00 PKT**
+**Platform:** LinkedIn ONLY · 5 posts · Mon–Fri
 
 ---
 
-## WEEK OF: Sep 28 – Oct 2, 2026
-**Generated:** 2026-09-28 07:00 PKT
-**Total Posts:** 5 (LinkedIn only)
-**Platform:** LinkedIn ONLY
+## WEEK OF: Oct 5–9, 2026
+**TOTAL POSTS:** 5 (LinkedIn)
 
 ---
 
-## MON Sep 28 — LinkedIn: Bold Opinion / Build-in-Public
-**Topic:** I'm a video editor watching AI automate my job. Here's what I'm building instead.
-**Hook format:** Contradiction + confession (unexpected angle from the person most threatened)
-**Pillar:** Build-in-public (Multiplayer AI) + Bold opinion
-**Angle from research:** TREND #2 — Agentic AI video editing. Mustafa is uniquely positioned: he's the video editor founder building the tool that automates video editors. No one else can say this.
-**Why Monday:** Re-activates algorithm after weekend. Bold, polarizing stance drives early comments.
-**Saves signal:** Medium — opinion posts drive comments more than saves
-**Target:** 10+ early comments in first 2 hours to trigger algorithm push
+MON Oct 5 — LinkedIn: **"LinkedIn's Algorithm Punishes Most Creators (And They Don't Know It)"** · Contrarian bold take
+- Pillar: #5 (Contrarian takes)
+- Hook format: Bold claim + data reveal
+- Hook: "LinkedIn penalized my competitors in 2026. Same content. Same posting cadence. One thing different."
+- Angle: Depth Score shift — 30-second read beats 50 quick likes. Long-form narrative wins. Most creators still optimizing for vanity metrics.
+- Research source: Trend #3 (Depth Score, 2% text-only vs 6.6% document engagement)
+- Why Monday: Bold opinion re-activates the algorithm after weekend gap. Contrarian take drives comments.
+
+TUE Oct 6 — LinkedIn: **"I'm 20. I Stopped Cold Emailing 3 Months Ago. Here's What Replaced It."** · Personal story
+- Pillar: #10 (Founder story and culture)
+- Hook format: Number + personal story reveal
+- Hook: "I'm 20. I stopped cold emailing 3 months ago. Here's what replaced it."
+- Angle: Personal brand inbound converts at 14.6% vs 1.7% cold email. Starting young is an unfair advantage. The story of switching to content-led inbound.
+- Research source: Trend #5 (14.6% inbound vs 1.7% cold email)
+- Why Tuesday: Personal story = highest LinkedIn engagement. Relatable angle for young founders.
+
+WED Oct 7 — LinkedIn: **"I Tested 50 DTC Ad Creatives This Month. 3 Scaled. Here's The Framework."** · Value framework
+- Pillar: #2 (AI ad production workflows & tool tests)
+- Hook format: Bold number + system reveal (saves-optimized)
+- Hook: "I tested 50 DTC ad creatives this month. Only 3 scaled. Here's the framework that predicted which ones would."
+- Angle: "The Creative Verdict System" — variables (hook, format, duration), signals (CTR, frequency, dwell), decision (scale/pause/retest). 10–25 variants per campaign. First 3 seconds = main variable.
+- Research source: Trend #4 (Meta ads creative volume, 3x lower CPM fatigue with 10–25 variants)
+- Why Wednesday: Framework/list = peak saves window. Most save-worthy post of the week.
+
+THU Oct 8 — LinkedIn: **"Most Agencies Can't Turn A Brief Into A Finished Ad By Tomorrow. We Do It Every Day."** · System breakdown
+- Pillar: #1 (The Overnight Engine — signature system)
+- Hook format: Credibility claim + system walkthrough
+- Hook: "Most agencies can't turn a brief into a finished ad by tomorrow. We do it every day. Here's the system."
+- Angle: Break down Stage 1 of the Overnight Engine — the brief intake layer. What info you need, how AI processes it, why most agencies fail at this step. Positions FASTECH as systematic, not just fast.
+- Research source: Opportunity #4 (Overnight Engine positioning series — Week 1: brief intake)
+- Why Thursday: Proof/case study format. High repost potential. System posts travel.
+
+FRI Oct 9 — LinkedIn: **"I Taught An AI To Make Editorial Decisions For My Agency. No Coding Required."** · Build-in-public
+- Pillar: #2 (AI workflows) + #8 (Build-in-public)
+- Hook format: Contradiction + workflow reveal
+- Hook: "I taught an AI to make editorial decisions for my agency. No coding required. Here's what changed."
+- Angle: Agentic editing walkthrough for non-technical founders. How FASTECH uses agentic editing in the Overnight Engine. Brief → agent analyzes → agent picks cuts → agent paces → finished ad. 60–80% production time reduction. Update on what this means for Multiplayer AI.
+- Research source: Trend #1 (Agentic video editing — 47% productivity spike, 60–80% time reduction)
+- Why Friday: Build-in-public/founder reflection. Honest, behind-the-scenes tone. End-of-week vulnerability window.
 
 ---
 
-## TUE Sep 29 — LinkedIn: Personal Narrative / Story
-**Topic:** From 0 to 40 clients at 20. Here's the real story (not the highlight reel).
-**Hook format:** Bold number + personal story ("From 0 to 40 clients. Here's what they don't tell you.")
-**Pillar:** Personal story (highest LinkedIn engagement performer)
-**Angle from research:** GAP #3 + Analyst recommendation — Bold number format was top performer last week. Personal story = highest engagement pillar historically.
-**Why Tuesday:** Peak LinkedIn engagement day for narrative content. People read long-form after settling into the week.
-**Saves signal:** High — personal proof posts get saved for reference
-**Target:** Highest engagement post of the week
+## HOOK FORMAT PRIORITY THIS WEEK
+- Primary: Bold number + system reveal (Posts 2, 3) — highest historical performance
+- Secondary: Contradiction + workflow reveal (Posts 1, 5)
+- Tertiary: Credibility claim + proof (Post 4)
+
+## PILLAR DISTRIBUTION
+- #1 Overnight Engine: 1 post (Thu)
+- #2 AI workflows: 2 posts (Wed + Fri)
+- #5 Contrarian: 1 post (Mon)
+- #8 Build-in-public: 1 post (Fri, combined)
+- #10 Founder story: 1 post (Tue)
+
+## SAVES-OPTIMIZED POST
+Wednesday — "The Creative Verdict System" framework. List format, named system, actionable steps.
+
+## BUILD-IN-PUBLIC POST
+Friday — Agentic editing + Overnight Engine update. Connects Multiplayer AI arc.
 
 ---
 
-## WED Sep 30 — LinkedIn: Value Framework / List (Saves-Optimized)
-**Topic:** The 3 systems that let me run 40 clients with 0 employees.
-**Hook format:** Bold number + framework ("3 systems. 40 clients. 0 employees. No luck.")
-**Pillar:** Agency/systems thinking
-**Angle from research:** GAP #3 — Nobody is transparent about the exact systems behind a 40-client solo agency. Mustafa has lived proof.
-**Why Wednesday:** Peak saves window. Framework posts get bookmarked for future reference. Wednesday posts get highest document saves on LinkedIn.
-**Saves signal:** Very high — numbered systems = highest-save format on LinkedIn
-**Target:** Most saved post of the week
-
----
-
-## THU Oct 1 — LinkedIn: Before/After Proof / Case Study
-**Topic:** My personal LinkedIn gets 10x more reach than FASTECH's company page. The data that changed my entire strategy.
-**Hook format:** Proof + bold data point ("Personal profile. 561% more reach. Same content. Here's why.")
-**Pillar:** Brand strategy frameworks
-**Angle from research:** TREND #4 + GAP #2 — 561% personal vs company page reach gap is a massive proof point. Young founders don't know this. Mustafa can teach it.
-**Why Thursday:** High repost potential (contrarian data point). People share proof posts on Thu before the Friday scroll drop.
-**Saves signal:** High — data-backed frameworks save well
-**Target:** Highest repost/share count of the week
-
----
-
-## FRI Oct 2 — LinkedIn: Build-in-Public / Founder Reflection
-**Topic:** Building Multiplayer AI while running a 40-client agency. Here's where we are.
-**Hook format:** Build-in-public narrative ("I'm running FASTECH and building Multiplayer AI at the same time. Week [N] update.")
-**Pillar:** Build-in-public (Multiplayer AI YC journey)
-**Angle from research:** No one in Mustafa's audience has insight into Multiplayer AI. Transparency about the YC build + agency balancing act is unique content nobody else can post.
-**Why Friday:** End-of-week vulnerability performs well. People engage emotionally with "founder in the trenches" content on Fridays.
-**Saves signal:** Medium — story-driven, personal
-**Target:** Authentic engagement, profile view lift
-
----
-
-## PIPELINE SUMMARY
-
-| Day | Topic | Hook Format | Pillar | Priority |
-|-----|-------|-------------|--------|----------|
-| Mon Sep 28 | AI automates my job — I built what's next | Contradiction | Build-in-public | 1 |
-| Tue Sep 29 | 0 to 40 clients at 20 | Bold number + story | Personal story | 2 |
-| Wed Sep 30 | 3 systems, 40 clients, 0 employees | Bold number + framework | Agency/systems | 3 |
-| Thu Oct 1 | 561% reach: personal vs company page | Data proof | Brand strategy | 4 |
-| Fri Oct 2 | Multiplayer AI + FASTECH — week update | Build-in-public | Build-in-public | 5 |
-
----
-
-## HOOK FORMAT TO USE THIS WEEK
-**Primary:** Bold number + proof ("From 0 to X in Y. Here's how.")
-**Secondary:** Contradiction + confession ("I'm [person most threatened]. Here's what I'm doing instead.")
-**Basis:** Analyst confirmed bold number format outperformed all others. Researcher confirms same pattern trending on LinkedIn this week.
-
----
-
-## PILLAR PRIORITY THIS WEEK
-1. **Build-in-public** — Multiplayer AI context gives unique credibility. Use Mon + Fri.
-2. **Personal story** — Highest engagement historically. Use Tue.
-3. **Agency/systems** — Proven pillar, high saves. Use Wed.
-4. **Brand strategy** — Data-backed, high repost. Use Thu.
+## PUBLISHING BLOCKER NOTE
+**5 posts from last week (Sep 28 – Oct 4) were written but NEVER published** (Buffer staging stuck at Hafsa). Those posts remain valid — Mustafa/Hafsa should either stage them this week or shelve and start fresh from this plan. Recommend: publish this week's posts on schedule, don't stack unpublished backlog.
 
 ---
 
 ## STATUS
-- [ ] Hooks written (Hook Writer)
-- [ ] Scripts written (Script Writer)
-- [ ] Design briefs written (Designer)
-- [ ] Wednesday batch delivered (Publisher)
-- [ ] Staged in Buffer (Hafsa)
-- [ ] Approved and live
+Pipeline: [ ] Plan ✅ → [ ] Hooks → [ ] Scripts → [ ] Design → [ ] Review → [ ] Buffer → [ ] Published
 
----
-
-*Next plan: Monday 2026-10-05 07:00 PKT*
+*Next plan: Monday Oct 12, 2026 @ 7:00 AM PKT*
