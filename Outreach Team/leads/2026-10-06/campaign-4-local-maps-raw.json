@@ -1,0 +1,16 @@
+{
+  "campaign_id": "campaign-4-local-maps",
+  "campaign_label": "Campaign 4 — Local Business (Google Maps)",
+  "date": "2026-10-06",
+  "scraped_at_pkt": "2026-10-06 22:24",
+  "search_term": "content creators agency",
+  "city": "Bristol",
+  "region": "UK",
+  "send_bucket": "UK",
+  "depth": 5,
+  "email": true,
+  "status": "failed",
+  "error": "[WinError 2] The system cannot find the file specified",
+  "count": 0,
+  "leads": []
+}
