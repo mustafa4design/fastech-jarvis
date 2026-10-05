@@ -1,147 +1,95 @@
-# Hooks This Week — Sep 28–Oct 2, 2026
-*Hook Writer · Monday Sep 28, 2026*
+# Hooks This Week — Oct 5–9, 2026
+*Hook Writer · Monday Oct 5, 2026*
 
 ---
 
-## POST 1: AI automates my job — I built what's next
-**Topic:** I'm a video editor watching AI automate my job. Here's what I'm building instead.
-**Hook formula:** Contradiction + confession
+## POST 1: LinkedIn Algorithm Depth Score — Contrarian Take
+**Topic:** The LinkedIn algorithm changed. Most creators are still playing the 2024 game.
+**Pillar:** #5 (Contrarian takes)
+**Hook formula:** Contradiction + data contrast
 
-HOOK 01: I'm a video editor watching AI replace video editors. Here's what I built instead.
-HOOK 02: AI just automated my job. So I built the tool that did it.
-HOOK 03: I'm the person most threatened by AI video editing. Here's my advantage.
-HOOK 04: Everyone told me to pivot away from video editing. I went deeper into it.
-HOOK 05: I spent 3 years building a video editing agency. Then AI showed up.
-HOOK 06: Most video editors are scared of AI. I built a company around it.
-HOOK 07: 3 years editing videos. AI can now do it in 10 minutes. Here's what I did next.
-HOOK 08: The tool I'm building is the same tool that's replacing me.
-HOOK 09: I'm a video editor. AI is my biggest competitor. And my biggest asset.
-HOOK 10: What happens when a video editor builds the AI that replaces him?
+HOOK 01: LinkedIn penalized my competitors in 2026. Same content. Same posting cadence. One thing different.
+HOOK 02: 5,000 likes on a post that gets 2% reach. 50 likes on a post that hits 6%. I'll take the 50.
+HOOK 03: I switched to long-form LinkedIn posts 8 weeks ago. Engagement didn't drop. It 3x'd.
+HOOK 04: Most creators are optimizing for likes. LinkedIn is now grading on reading time.
+HOOK 05: 2% engagement. That's what text-only LinkedIn posts average now. Here's what actually works.
+HOOK 06: Everyone I know is writing shorter posts on LinkedIn. I went the opposite direction.
+HOOK 07: The LinkedIn algorithm changed. Most people posting right now don't know it.
+HOOK 08: Your hook isn't the problem. LinkedIn is ignoring your post before anyone reads it.
+HOOK 09: I stopped chasing viral on LinkedIn. The algorithm started rewarding me instead.
+HOOK 10: The creators dominating LinkedIn right now aren't posting more. They're writing differently.
 
 **Top 3:**
-- Hook 01 (Contradiction + identity — stops scroll, positions as self-aware founder)
-- Hook 08 (Meta paradox — strong curiosity gap, very shareable)
-- Hook 07 (Time-to-value + story setup — number-driven proof)
+- Hook 02 (Data contrast + counterintuitive math — forces re-read, implies system)
+- Hook 07 (Curiosity gap + urgency — "most people don't know" drives comments)
+- Hook 03 (Proof-based + number-backed — credible, specific)
+
+---
+**FINAL PICK: Hook 02**
+> "5,000 likes on a post that gets 2% reach. 50 likes on a post that hits 6%. I'll take the 50."
+
+**REASON:** Counterintuitive math shocks the reader. Forces re-read to check the logic. Implies a hidden system behind the choice. Strong Monday open — drives contrarian reactions and comments.
+
+---
+
+## POST 2: I Stopped Cold Emailing at 20
+**Topic:** Personal story — switched from cold outbound to LinkedIn inbound. Data-backed.
+**Pillar:** #10 (Founder story and culture)
+**Hook formula:** Bold data contrast + personal reveal
+
+HOOK 01: I'm 20. I stopped cold emailing 3 months ago. Here's what replaced it.
+HOOK 02: Cold email gave me my first clients. Then I stopped. My pipeline didn't die. It doubled.
+HOOK 03: I spent 6 months cold emailing. One LinkedIn post brought in more leads than all of it.
+HOOK 04: Inbound vs outbound. I ran the numbers. I'll never cold email again.
+HOOK 05: Most founders my age are still cold emailing. I figured out why that's the wrong move.
+HOOK 06: My first cold email got 0 replies. My 200th got 3. One LinkedIn post got 12.
+HOOK 07: 14.6% of my LinkedIn followers convert to leads. Cold email hits 1.7%. The math is obvious.
+HOOK 08: I deleted my cold email templates 3 months ago. Here's what happened to my pipeline.
+HOOK 09: Everyone says cold email still works. I stopped doing it. Grew the agency anyway.
+HOOK 10: I'm 20, running an agency from Karachi, competing for US/UK clients. Cold email wasn't the play.
+
+**Top 3:**
+- Hook 07 (Data contrast — research-backed, 14.6% vs 1.7% is shocking, "math is obvious" is confident)
+- Hook 01 (Simple, direct, age-specific — personal and relatable)
+- Hook 06 (Number progression + punchline — compressed story)
+
+---
+**FINAL PICK: Hook 07**
+> "14.6% of my LinkedIn followers convert to leads. Cold email hits 1.7%. The math is obvious."
+
+**REASON:** Research-backed data contrast. Specificity creates credibility. "The math is obvious" is confident without being arrogant — invites the reader to agree. Sets up the full personal story in the post body.
+
+---
+
+## POST 3: The Creative Verdict System
+**Topic:** DTC ad creative testing framework — saves-optimized. Named system with 3 layers.
+**Pillar:** #2 (AI ad production workflows & tool tests)
+**Hook formula:** Bold number + system reveal (saves-optimized)
+
+HOOK 01: I tested 50 DTC ad creatives this month. Only 3 scaled. Here's the framework that predicted which ones would.
+HOOK 02: 3 out of 50 ad creatives scaled. I found the pattern. Here it is.
+HOOK 03: Most DTC brands test 5 creatives per campaign. The winners run 20–25. Here's why.
+HOOK 04: The first 3 seconds determine 80% of ad performance. Here's the system I use to test them.
+HOOK 05: I built a scorecard for Meta ads. Now I know if a creative will scale before I spend a dollar.
+HOOK 06: 10 ad creatives or 25? I ran the numbers. 25 every time. Here's the math.
+HOOK 07: Running Meta ads without a creative testing system is burning money. Here's the one I use.
+HOOK 08: My clients tested 5 ads per campaign. I pushed them to 25. CPM fatigue dropped 3x.
+HOOK 09: I've reviewed hundreds of DTC ads. Only 3 patterns actually scale. Here they are.
+HOOK 10: Ad creative testing isn't random. It's a framework. Most brands never figure that out.
+
+**Top 3:**
+- Hook 01 (Specific numbers — 50 tested, 3 scaled — "predicted" implies system superiority, saves-optimized)
+- Hook 05 (Aspirational claim — "know before spending a dollar" — strong save signal)
+- Hook 08 (Real result + proof — CPM fatigue stat is credible)
 
 ---
 **FINAL PICK: Hook 01**
-> "I'm a video editor watching AI replace video editors. Here's what I built instead."
+> "I tested 50 DTC ad creatives this month. Only 3 scaled. Here's the framework that predicted which ones would."
 
-**REASON:** Contradiction hook with clear identity signal. Positions Mustafa as the person most qualified to talk about AI video editing — because he's the one it threatens. Forces the reader to wonder: what did he build?
-
----
-
-## POST 2: 0 to 40 clients at 20 — the real story
-**Topic:** From 0 to 40 clients at 20. The real story (not the highlight reel).
-**Hook formula:** Bold number + personal story
-
-HOOK 01: From 0 to 40 clients at 20. Here's what they don't put in the highlight reel.
-HOOK 02: I'm 20. I run a 40-client agency. Here's the part nobody talks about.
-HOOK 03: 40 clients at 20. The real story behind the LinkedIn number.
-HOOK 04: It took me 3 years to get to 40 clients. Here's the honest version.
-HOOK 05: Everyone asks how I got 40 clients. Nobody asks what it actually cost.
-HOOK 06: 0 clients at 17. 40 clients at 20. Here's the unfair advantage I used.
-HOOK 07: I started FASTECH with $0, no team, no connections. Here's what 40 clients later taught me.
-HOOK 08: 3 years. 40 clients. Here's what the algorithm doesn't show you about building an agency.
-HOOK 09: My first client paid me $50. My 40th pays 10x that. Here's what changed.
-HOOK 10: From 0 to 40 clients at 20. Not luck. Here's the system.
-
-**Top 3:**
-- Hook 09 (Specific price point evolution — real proof, story arc setup)
-- Hook 06 (Journey arc + "unfair advantage" — creates intrigue)
-- Hook 01 (Bold number + authenticity signal — "highlight reel" hook is proven)
-
----
-**FINAL PICK: Hook 09**
-> "My first client paid me $50. My 40th pays 10x that. Here's what changed."
-
-**REASON:** Concrete numbers create instant proof. The $50 → $500 arc sets up a real story. "What changed" is a curiosity gap that forces the click. More specific than any generic "0 to 40" hook.
+**REASON:** Specific numbers (50 tested, 3 scaled) create immediate credibility. "Predicted" implies a system that's smarter than the market. Classic save-optimized hook — framework content gets bookmarked. Highest saves potential of the week.
 
 ---
 
-## POST 3: 3 systems, 40 clients, 0 employees
-**Topic:** The 3 systems that let me run 40 clients with 0 employees.
-**Hook formula:** Bold number + framework
-
-HOOK 01: 3 systems. 40 clients. 0 employees. Here's how.
-HOOK 02: I run 40 clients without a single employee. Here are the 3 systems that make it possible.
-HOOK 03: Everyone told me to hire. I built systems instead. 40 clients later, here's why I was right.
-HOOK 04: 40 clients. 0 employees. 3 systems. Not magic — here's the actual breakdown.
-HOOK 05: The #1 reason agencies plateau: they hire before they systematize.
-HOOK 06: I scaled to 40 clients before I hired anyone. Here's the exact playbook.
-HOOK 07: 0 employees. 40 clients. Here's the 3-system framework I use.
-HOOK 08: Most agencies hire at 5 clients. I built systems at 5 clients. Here's the difference at 40.
-HOOK 09: 3 systems that let me say yes to 40 clients without burning out.
-HOOK 10: 40 clients with no team. Not a flex. Here's how the math actually works.
-
-**Top 3:**
-- Hook 01 (Triple number hook — punchy, clear, maximum saves signal)
-- Hook 08 (Contradiction + specific comparison — strong story setup)
-- Hook 04 (Direct + specificity — "not magic" builds trust)
-
----
-**FINAL PICK: Hook 01**
-> "3 systems. 40 clients. 0 employees. Here's how."
-
-**REASON:** Triple number hook. Three data points in five words. Maximum saves signal — frameworks get bookmarked. "Here's how" is the cleanest possible promise. No wasted words.
-
----
-
-## POST 4: 561% personal vs company page reach
-**Topic:** My personal LinkedIn gets 561% more reach than FASTECH's company page. Here's what the data changed.
-**Hook formula:** Proof + bold data point
-
-HOOK 01: 561% more reach. That's the gap between my face and FASTECH's logo on LinkedIn.
-HOOK 02: I ran the same post on my personal page and FASTECH's company page. One got 8x the views. Here's why.
-HOOK 03: Personal brand vs company page on LinkedIn. I ran both. The gap shocked me.
-HOOK 04: My personal LinkedIn gets 561% more reach than FASTECH's company page. Same content. Same week.
-HOOK 05: Everyone told me to build the FASTECH brand. I built mine instead. Here's what the data showed.
-HOOK 06: LinkedIn rewards people, not logos. Here's the proof from my own two accounts.
-HOOK 07: The biggest mistake agency founders make on LinkedIn. I made it for 6 months.
-HOOK 08: Company pages are dead on LinkedIn. Here's the data from my own experiment.
-HOOK 09: Your face is worth 561% more reach than your logo on LinkedIn. Here's what changed when I switched.
-HOOK 10: I stopped hiding behind the FASTECH logo. Here's what happened to my reach in 30 days.
-
-**Top 3:**
-- Hook 04 (Bold data point + "same content, same week" eliminates every excuse)
-- Hook 09 ("your face is worth" — turns stat into insight, saves-optimized)
-- Hook 05 (Contradiction + outcome — strong for brand strategy pillar)
-
----
-**FINAL PICK: Hook 04**
-> "My personal LinkedIn gets 561% more reach than FASTECH's company page. Same content. Same week."
-
-**REASON:** Specific stat + "same content, same week" makes it undeniable. Forces the reader to ask why. Maximum save signal — brand strategy frameworks get bookmarked.
-
----
-
-## POST 5: Multiplayer AI + FASTECH week update
-**Topic:** Building Multiplayer AI while running a 40-client agency. Week 5 honest update.
-**Hook formula:** Build-in-public narrative
-
-HOOK 01: Running an agency pays the bills. Building Multiplayer AI is the bet. Week 5 of holding both.
-HOOK 02: Monday: 3 FASTECH calls. Tuesday: Multiplayer AI feature sprint. Wednesday: 4 hours of sleep. Week 5.
-HOOK 03: I'm running a 40-client agency and building an AI startup at the same time. Here's what that actually looks like.
-HOOK 04: Everyone says pick one. I didn't. Week 5 building Multiplayer AI while running FASTECH.
-HOOK 05: Building Multiplayer AI + running FASTECH. Week 5 — what shipped, what broke, what I learned.
-HOOK 06: Two tracks. One person. Week 5 of the most chaotic and exciting thing I've ever done.
-HOOK 07: FASTECH funds the dream. Multiplayer AI is the dream. Week 5 of living in the tension.
-HOOK 08: What happens when a 20-year-old founder runs an agency, builds a startup, and studies CS at the same time. Week 5.
-HOOK 09: I haven't chosen between FASTECH and Multiplayer AI. Here's week 5 of not choosing.
-HOOK 10: Shipped a feature. Closed a client. Missed a deadline. Week 5 update from the trenches.
-
-**Top 3:**
-- Hook 01 ("pays the bills" vs "the bet" — immediate tension, two parallel truths)
-- Hook 07 (Reframes tension as purposeful — "funds the dream / IS the dream")
-- Hook 10 (Raw specificity — "shipped, closed, missed" feels unfiltered)
-
----
-**FINAL PICK: Hook 01**
-> "Running an agency pays the bills. Building Multiplayer AI is the bet. Week 5 of holding both."
-
-**REASON:** Immediate tension. Two parallel realities. "The bet" signals risk and ambition without posturing. Strongest Friday emotional resonance — end-of-week vulnerability outperforms all other formats.
-
----
-
-*Hook formula used most this week: Bold number + proof*
-*Secondary formula: Contradiction + confession*
+*Hook formula used most this week: Data contrast + system reveal*
+*Secondary formula: Bold number + proof*
+*Posts 4 and 5 hooks to be written Tuesday morning.*

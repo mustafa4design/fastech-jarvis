@@ -1,24 +1,60 @@
 # Post 03 — LinkedIn
-**Pillar:** 3 — Ad teardown
-**Day:** Wednesday, Oct 02 2026
-**Hook format:** Specific observation + credibility claim
+**Pillar:** 2 — AI ad production workflows & tool tests
+**Day:** Wednesday, Oct 7 2026
+**Hook format:** Bold number + system reveal (saves-optimized)
+**Hook:** "I tested 50 DTC ad creatives this month. Only 3 scaled. Here's the framework that predicted which ones would."
 
 ---
 
-I watched the same Facebook ad 14 times to figure out why it had a 4.2% CTR.
+I tested 50 DTC ad creatives this month.
 
-It was for a $38 skincare serum. Shot on an iPhone. No voiceover. No fancy transition. The kind of ad most brands would reject in review.
+Only 3 scaled.
 
-But it worked. And here's exactly why:
+Here's the framework that predicted which ones would before the data came back.
 
-The first 2 seconds were someone's hand picking up the bottle — not a product shot. A real hand, a real table, real lighting that wasn't trying to look professional. The viewer's brain didn't clock it as an ad yet.
+—
 
-Second: no pause. The edit never let the eye settle. Cut every 1.5 seconds, not on beats — on information. New angle, new texture, new skin close-up. Each cut answered a question before the viewer could ask it.
+Most teams look at ROAS on day 7 and make a call.
 
-Third: the text overlay didn't sell. It described. "Day 3." "Day 7." "Week 3." Progress without a claim. The viewer's brain filled in the conclusion.
+That's not a testing framework. That's hope.
 
-CTR doesn't live in the product. It lives in those first 2 seconds before someone decides to keep watching.
+—
 
-The brands that crack this stop asking "what should we say" and start asking "what should they see first."
+The Creative Verdict System has 3 layers:
 
-When you review your ads, how deep are you going on the first 2 seconds?
+**Variables** — what you're actually testing
+Hook format. First 3 seconds. Video duration. UGC vs produced.
+Test one variable at a time. Not all of them at once.
+
+**Signals** — what the data tells you by day 3
+CTR. Frequency. Dwell time on the opening seconds.
+Not ROAS. Not revenue. Not day 7 numbers.
+
+High CTR + low dwell = hook works, content doesn't.
+Low CTR + high dwell = content is good, hook is weak.
+
+**Decision** — what you do with it
+Scale. Pause. Retest.
+Not gut feel. Not "it looks good." The signal tells you.
+
+—
+
+The 3 ads that scaled this month?
+
+All had a pattern interrupt in the first 2 seconds.
+
+All used exact customer language — not polished copy.
+
+All hit CTR above 2.5% by day 2.
+
+That's not luck. That's the signal saying go.
+
+—
+
+Run 10–25 variants per campaign. Not 5.
+
+More variants = more signals = fewer surprises on day 14.
+
+—
+
+How are you currently deciding which creatives to kill?

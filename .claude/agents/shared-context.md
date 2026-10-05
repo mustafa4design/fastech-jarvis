@@ -13,7 +13,7 @@ description: Shared working memory for all JARVIS agents. Every agent reads and 
 ## Active Week
 Week of: Oct 5 - Oct 11, 2026
 Posts planned: 5 LinkedIn posts (Mon–Fri)
-Status: [✅] Research → [✅] Plan → [ ] Hooks → [ ] Scripts → [ ] Design → [ ] Published
+Status: [✅] Research → [✅] Plan → [✅] Hooks (1-3) → [✅] Scripts (1-3) → [✅] Design (1-3) → [ ] Published
 
 ---
 
@@ -46,39 +46,40 @@ Build-in-public post: Friday (Agentic editing + Multiplayer AI update)
 ---
 
 ## Hook Writer Decisions
-*Updated by: Hook Writer agent — COMPLETED 2026-09-28 08:XX PKT (Monday)*
+*Updated by: Hook Writer agent — COMPLETED 2026-10-05 08:00 PKT (Monday)*
 
-Final hooks chosen:
-- Post 1: "I'm a video editor watching AI replace video editors. Here's what I built instead." — Contradiction
-- Post 2: "My first client paid me $50. My 40th pays 10x that. Here's what changed." — Bold number + story
-- Post 3: "3 systems. 40 clients. 0 employees. Here's how." — Bold number + framework
-- Post 4: "My personal LinkedIn gets 561% more reach than FASTECH's company page. Same content. Same week." — Proof + bold data point
-- Post 5: "Running an agency pays the bills. Building Multiplayer AI is the bet. Week 5 of holding both." — Build-in-public narrative
+Final hooks chosen (Posts 1–3, Monday batch):
+- Post 1: "5,000 likes on a post that gets 2% reach. 50 likes on a post that hits 6%. I'll take the 50." — Contradiction + data contrast
+- Post 2: "14.6% of my LinkedIn followers convert to leads. Cold email hits 1.7%. The math is obvious." — Bold data contrast + personal reveal
+- Post 3: "I tested 50 DTC ad creatives this month. Only 3 scaled. Here's the framework that predicted which ones would." — Bold number + system reveal (saves-optimized)
 
-Hook formula used most: Bold number + proof (Posts 2, 3, 4). Secondary: Contradiction + confession (Post 1). Build-in-public narrative (Post 5).
+Posts 4–5 hooks: to be written Tuesday morning.
+Hook formula used most: Data contrast (Posts 1, 2). Bold number + system reveal (Post 3).
 
 ---
 
 ## Script Writer Decisions
-*Updated by: Script Writer agent — COMPLETED 2026-09-28 08:XX PKT (Monday)*
+*Updated by: Script Writer agent — COMPLETED 2026-10-05 08:00 PKT (Monday)*
 
-Scripts completed: [✅] Post 1  [✅] Post 2  [✅] Post 3  [✅] Post 4  [✅] Post 5
-Avg word count: ~215 words
-Any voice deviations flagged: None — short sentences, no filler words, punchy format maintained across all 5 posts.
+Scripts completed: [✅] Post 1  [✅] Post 2  [✅] Post 3  [ ] Post 4  [ ] Post 5
+Avg word count: ~185 words (Posts 1–3)
+Any voice deviations flagged: None — short sentences, no filler words, no banned words (genuinely/honestly/straightforward), punchy format maintained.
+Post 1 angle: LinkedIn Depth Score contrarian — algorithm measures reads, not likes. Calls out outdated optimization.
+Post 2 angle: Personal story — 14.6% vs 1.7% data contrast. Karachi founder narrative. Inbound > outbound.
+Post 3 angle: The Creative Verdict System — 3-layer framework (Variables, Signals, Decision). Named system, saves-optimized format.
 
 ---
 
 ## Designer Decisions
-*Updated by: Designer agent — COMPLETED 2026-09-28 08:XX PKT (Monday)*
+*Updated by: Designer agent — COMPLETED 2026-10-05 08:00 PKT (Monday)*
 
-Design vibes chosen:
-- Post 1: "Late night founder energy. Disruptive. Self-aware." — Cyan accent
-- Post 2: "Raw founder truth. Not a highlight reel. Earned." — Minimal white, no glow
-- Post 3: "Clean authority. Framework energy. Save-worthy." — Cyan accent
-- Post 4: "Data that shocks. Clean authority. Save-worthy." — Cover: 561%, Cyan accent on number
-- Post 5: "Founder in the trenches. Raw. Transparent. Building in public." — Cover: WEEK 5, Cyan accent
+Design vibes chosen (Posts 1–3):
+- Post 1: "Cold authority. Data-driven. Quietly unsettling." — Cover: "5,000 LIKES. 2% REACH." — Cyan accent on reach %
+- Post 2: "Raw founder truth. Not a highlight reel. Earned." — Cover: "14.6% VS 1.7%" — Minimal white, no glow (restrained)
+- Post 3: "Clean authority. Framework energy. This is worth bookmarking." — Cover: "THE CREATIVE VERDICT SYSTEM" — Cyan under VERDICT
 
-Cover text issues flagged: None. All 5 briefs include locked typography spec + GPT image prompt.
+Posts 4–5 briefs: to be written Tuesday.
+Cover text issues flagged: None. All 3 briefs include locked typography spec (Montserrat Black / Inter Regular / JetBrains Mono) + GPT image prompt.
 
 ---
 

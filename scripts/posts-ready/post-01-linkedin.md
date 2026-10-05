@@ -1,24 +1,68 @@
 # Post 01 — LinkedIn
 **Pillar:** 5 — Contrarian take
-**Day:** Monday, Sep 30 2026
-**Hook format:** Bold claim that inverts a common assumption
+**Day:** Monday, Oct 5 2026
+**Hook format:** Contradiction + data contrast
+**Hook:** "5,000 likes on a post that gets 2% reach. 50 likes on a post that hits 6%. I'll take the 50."
 
 ---
 
-Most DTC brands spend more on testing ads than on making them better.
+5,000 likes on a post that gets 2% reach.
+50 likes on a post that hits 6%.
 
-I've watched brands run $50k months on Meta, cycling through 30 new creatives every week, because the last 30 didn't work.
+I'll take the 50.
 
-Nobody asks why.
+—
 
-The briefing is the same. The hook structure is the same. The editor gets a new face, new product shot — and produces the same ad that already failed.
+Last month I started tracking something most LinkedIn creators ignore.
 
-More volume didn't fix a broken process. It just made the waste scale faster.
+Not likes. Not impressions.
 
-Here's what I've seen actually work: one winning ad, pulled apart frame by frame. What happened in the first 2 seconds. Where people clicked away. What the editor did that made someone stop. Then rebuild — deliberately — from that.
+Dwell time.
 
-Speed matters. But iteration without understanding is just burning budget on loop.
+How long someone actually reads your post.
 
-The agencies winning right now aren't making more ads. They're making better briefs.
+—
 
-What's your current ratio of new creatives to actual teardowns of existing ones?
+LinkedIn has a metric called the Depth Score.
+
+Not public. Not in your analytics dashboard.
+
+But it's the real reason some posts spread and others die quietly.
+
+—
+
+A 2-sentence take gets 500 likes and goes nowhere.
+
+A 300-word post gets 40 likes and doubles your reach.
+
+Because LinkedIn now measures reads, not scrolls.
+
+—
+
+Most creators are still writing short takes.
+
+Optimizing for engagement bait.
+
+Writing for the quick like.
+
+The algorithm stopped caring about that months ago.
+
+—
+
+I switched to long-form narrative posts this quarter.
+
+Engagement rate up. Reach up. Follower quality up.
+
+Vanity metrics? Lower. I don't care.
+
+—
+
+The people writing deep are quietly winning.
+
+The people chasing fast reactions are getting penalized.
+
+Nobody told them the rules changed.
+
+—
+
+Are you writing for LinkedIn's actual algorithm right now — or the one from 2024?
