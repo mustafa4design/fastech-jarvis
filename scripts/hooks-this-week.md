@@ -93,3 +93,65 @@ HOOK 10: Ad creative testing isn't random. It's a framework. Most brands never f
 *Hook formula used most this week: Data contrast + system reveal*
 *Secondary formula: Bold number + proof*
 *Posts 4 and 5 hooks to be written Tuesday morning.*
+
+---
+
+## POST 4: Overnight Engine — Brief Intake Layer
+**Topic:** How the Overnight Engine starts before editing begins — the brief intake layer that makes same-night turnaround repeatable.
+**Pillar:** #1 (The Overnight Engine — signature system)
+**Hook formula:** Credibility claim + system walkthrough
+
+HOOK 01: Clients send us a brief at 11 PM. They get a finished ad by 8 AM. This is the intake system that makes it possible.
+HOOK 02: Most agencies can't turn a brief into a finished ad by tomorrow. We do it every day. Here's the system.
+HOOK 03: The reason your ads take 3 days to turn around isn't your editors. It's the first 10 minutes after the brief arrives.
+HOOK 04: A 3-minute brief becomes a finished ad by morning. Here's exactly how.
+HOOK 05: We've delivered overnight ads to 40+ clients without missing a single turnaround. This is the intake layer behind it.
+HOOK 06: The editing starts after the thinking is done. Most agencies don't separate these. We do.
+HOOK 07: From brief to finished ad in one night. Not magic. Here's the system.
+HOOK 08: I spent 6 months diagnosing why agencies miss overnight deadlines. It's never the editing.
+HOOK 09: Our editors never touch a timeline before the ad is 80% decided. Here's the intake layer that makes that possible.
+HOOK 10: The Overnight Engine doesn't start in the timeline. It starts the moment the brief arrives.
+
+**Top 3:**
+- Hook 01 (Concrete timestamps — 11 PM to 8 AM — creates vivid credibility. "Intake system" signals there's more.)
+- Hook 09 (Bold claim — "80% decided before editing" — implies a proprietary system, high save signal)
+- Hook 10 (Narrative tension — inverts expectations — makes the reader want to know how)
+
+---
+**FINAL PICK: Hook 01**
+> "Clients send us a brief at 11 PM. They get a finished ad by 8 AM. This is the intake system that makes it possible."
+
+**REASON:** Specific timestamps create vivid credibility — the reader can visualize the scenario. "Intake system" signals there's real methodology behind the claim. Forces the reader to want the mechanics. Perfect Thursday proof-post open.
+
+---
+
+## POST 5: Agentic Editing for Non-Technical Founders
+**Topic:** How FASTECH automated editorial decision-making using AI without writing code — build-in-public with Multiplayer AI connection.
+**Pillar:** #2 (AI workflows) + #8 (Build-in-public)
+**Hook formula:** Contradiction + workflow reveal
+
+HOOK 01: I'm a founder, not a developer. I built an agentic editing system anyway. Here's how.
+HOOK 02: I taught an AI to make editorial decisions for my agency. No coding required. Here's what changed.
+HOOK 03: 60–80% less production time. Same ad quality. One change: AI makes editorial decisions now.
+HOOK 04: Video editors are still cutting manually in 2026. We're not. Here's the agentic workflow.
+HOOK 05: I replaced the editorial decision layer in my agency with AI. Took 3 weeks. No engineers needed.
+HOOK 06: Brief goes in. Finished ad comes out. Here's what happens in between when AI handles the decisions.
+HOOK 07: I watched my editor pause for 40 minutes on a single cut choice. That's when I built the agentic system.
+HOOK 08: Everyone talks about "using AI for editing." Nobody explains how to automate the decisions. Here's ours.
+HOOK 09: Agentic editing isn't robots replacing editors. It's AI handling the pattern-matching so editors handle the creativity.
+HOOK 10: I run a video editing agency. I automated 60% of the editorial decision layer. Here's how I did it without writing code.
+
+**Top 3:**
+- Hook 07 (Hyper-specific moment — "40 minutes on a single cut" — emotional, vivid, strong Scene hook)
+- Hook 09 (Reframes the concept, addresses the fear, positions Mustafa as a thoughtful operator not a hype merchant)
+- Hook 01 (Contradiction + personal — founder not developer — relatable, Mustafa's voice perfectly)
+
+---
+**FINAL PICK: Hook 07**
+> "I watched my editor pause for 40 minutes on a single cut choice. That's when I built the agentic system."
+
+**REASON:** Hyper-specific moment creates a visual story. "40 minutes on a single cut" makes the problem visceral and relatable to any agency owner. "That's when I built" shows founder initiative over complaint. Opens the Friday build-in-public post with the perfect Scene structure.
+
+---
+
+*Hook formula summary (full week): Data contrast (Posts 1, 2), Bold number + system (Posts 3, 4), Specific moment + build-in-public (Post 5)*

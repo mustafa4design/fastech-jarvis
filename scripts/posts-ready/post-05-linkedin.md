@@ -1,26 +1,51 @@
 # Post 05 — LinkedIn
-**Pillar:** 10 — Founder story and culture
-**Day:** Friday, Oct 04 2026
-**Hook format:** Confession / honest admission
+**Topic:** Agentic Editing for Non-Technical Founders + Multiplayer AI Build-in-Public
+**Pillar:** #2 (AI workflows) + #8 (Build-in-public)
+**Scheduled:** Friday Oct 9, 2026 · 9:00 AM PKT
+**Hook:** I watched my editor pause for 40 minutes on a single cut choice.
 
 ---
 
-I used to hide where FASTECH was based.
+I watched my editor pause for 40 minutes on a single cut choice.
 
-US/UK clients, so I assumed Karachi would be the dealbreaker. I'd say "our team" without saying where the team was. I thought the work would speak before the location became an issue.
+That's when I built the agentic system.
 
-Then a client found out and thanked me for it.
+---
 
-He said: "I didn't realize why you always delivered before I woke up. Now it makes sense."
+He was staring at two clips. Same moment. Different angles.
 
-That's the moment I stopped treating our timezone as a liability to manage and started treating it as the actual product.
+The right answer was in the brief. But briefs are written in human language, not editor logic.
 
-US brand sends the brief Tuesday evening. Karachi team picks it up Wednesday morning — their time — and works through the day. The client wakes up Wednesday morning to finished assets.
+He wasn't slow. He was solving a problem that shouldn't have been his problem.
 
-We're not faster than agencies in their timezone. We're running in parallel with a 9-10 hour head start, every single day.
+---
 
-The Overnight Engine isn't a brand name for something clever. It's just what happens when you're honest about where you work and build a process around it.
+I started mapping every decision my editors made in a single edit.
 
-Geography is only a disadvantage if you pretend it isn't there.
+Redundancy removal. Hook timing. Pacing structure. B-roll selection.
 
-How many things in your business are you framing as liabilities that might actually be features?
+Every one of those decisions follows a pattern. Not every time — but 70–80% of the time.
+
+That's learnable. That's automatable.
+
+---
+
+Now the workflow looks like this:
+
+Brief arrives → AI analyzes footage → AI identifies key moments and flags redundant clips → AI maps pacing structure → Editor receives a pre-organized decision map → Editor executes the final cut
+
+Production time: down 60–80%.
+
+No engineers. Claude. A few structured prompts. Three weeks of testing.
+
+---
+
+The editor still makes the creative call on the 20% that matters.
+
+But they're not spending 40 minutes on pattern recognition anymore.
+
+This is exactly what Multiplayer AI is built on — making editorial intelligence accessible to founders who don't code.
+
+---
+
+What decisions in your business look like creativity but are actually just pattern recognition?

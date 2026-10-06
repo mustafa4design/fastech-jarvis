@@ -13,7 +13,7 @@ description: Shared working memory for all JARVIS agents. Every agent reads and 
 ## Active Week
 Week of: Oct 5 - Oct 11, 2026
 Posts planned: 5 LinkedIn posts (Mon–Fri)
-Status: [✅] Research → [✅] Plan → [✅] Hooks (1-3) → [✅] Scripts (1-3) → [✅] Design (1-3) → [ ] Published
+Status: [✅] Research → [✅] Plan → [✅] Hooks (1-5) → [✅] Scripts (1-5) → [✅] Design (1-5) → [ ] Published
 
 ---
 
@@ -53,15 +53,17 @@ Final hooks chosen (Posts 1–3, Monday batch):
 - Post 2: "14.6% of my LinkedIn followers convert to leads. Cold email hits 1.7%. The math is obvious." — Bold data contrast + personal reveal
 - Post 3: "I tested 50 DTC ad creatives this month. Only 3 scaled. Here's the framework that predicted which ones would." — Bold number + system reveal (saves-optimized)
 
-Posts 4–5 hooks: to be written Tuesday morning.
-Hook formula used most: Data contrast (Posts 1, 2). Bold number + system reveal (Post 3).
+Posts 4–5 hooks: WRITTEN — Tuesday Oct 6, 2026
+- Post 4: "Clients send us a brief at 11 PM. They get a finished ad by 8 AM. This is the intake system that makes it possible." — Credibility claim + system reveal
+- Post 5: "I watched my editor pause for 40 minutes on a single cut choice. That's when I built the agentic system." — Specific moment + build-in-public open
+Hook formula used most (full week): Data contrast (Posts 1, 2), Bold number + system (Post 3, 4), Specific moment hook (Post 5)
 
 ---
 
 ## Script Writer Decisions
 *Updated by: Script Writer agent — COMPLETED 2026-10-05 08:00 PKT (Monday)*
 
-Scripts completed: [✅] Post 1  [✅] Post 2  [✅] Post 3  [ ] Post 4  [ ] Post 5
+Scripts completed: [✅] Post 1  [✅] Post 2  [✅] Post 3  [✅] Post 4  [✅] Post 5
 Avg word count: ~185 words (Posts 1–3)
 Any voice deviations flagged: None — short sentences, no filler words, no banned words (genuinely/honestly/straightforward), punchy format maintained.
 Post 1 angle: LinkedIn Depth Score contrarian — algorithm measures reads, not likes. Calls out outdated optimization.
@@ -78,8 +80,10 @@ Design vibes chosen (Posts 1–3):
 - Post 2: "Raw founder truth. Not a highlight reel. Earned." — Cover: "14.6% VS 1.7%" — Minimal white, no glow (restrained)
 - Post 3: "Clean authority. Framework energy. This is worth bookmarking." — Cover: "THE CREATIVE VERDICT SYSTEM" — Cyan under VERDICT
 
-Posts 4–5 briefs: to be written Tuesday.
-Cover text issues flagged: None. All 3 briefs include locked typography spec (Montserrat Black / Inter Regular / JetBrains Mono) + GPT image prompt.
+Posts 4–5 briefs: WRITTEN — Tuesday Oct 6, 2026
+- Post 4: "Machine precision / quiet authority" — Cover: "BRIEF IN. AD OUT. OVERNIGHT." — Cyan on OVERNIGHT
+- Post 5: "Quiet disruption / builder confidence" — Cover: "AI MAKES THE EDIT DECISIONS. I WRITE THE PROMPTS." — Cyan on AI
+Cover text issues flagged: None. All 5 briefs include locked typography spec (Montserrat Black / Inter Regular / JetBrains Mono) + GPT image prompt.
 
 ---
 
