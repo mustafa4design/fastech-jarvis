@@ -19,6 +19,8 @@ All agents MUST reference `knowledge/` before any task. This folder is the groun
 - `knowledge/FASTECH_Content_Brief.md.docx` — FASTECH content brief
 - `knowledge/Designer_Brief_Template.docx` — Designer brief template
 - `knowledge/linkedin-niche-research.md` — Full research on 9 creators (Barry Hott, Dara Denney, Alex Cooper/Adcrate, Ben Heath, Sarah Levinger, Charley Tichenor, Nick Shackelford, Romain Torres/Arcads, Ciaran Finn/Linear) — covers content pillar patterns, lead magnet mechanics with real quotes, and positioning language by creator/agency. Reference before writing any niche-pillar post (pillars 1, 2, 3, 5, 7).
+- `knowledge/Hafsa_LinkedIn_System.skill` — Hafsa Sohail's LinkedIn content system (invoke: `anthropic-skills:hafsa-linkedin-system`) — SEPARATE from Mustafa's. Reference for Hafsa content pipeline ONLY.
+- `knowledge/Hafsa_LinkedIn_System.pdf` — Hafsa's LinkedIn system readable reference (same system as the .skill file, use whichever is accessible).
 
 ## SKILLS EVERY AGENT SHOULD APPLY
 
@@ -89,6 +91,35 @@ Automate Mustafa's PERSONAL BRAND content for:
 - Package this system per client
 - Sell as AI-powered social media management service
 - Price: $300–$600/month per client entry tier
+
+---
+
+## 👥 HAFSA'S CONTENT SYSTEM — TWO ALTITUDES
+
+**CRITICAL: Hafsa's system is 100% SEPARATE from Mustafa's. Do NOT mix, cross-contaminate, or apply Mustafa's pillars/voice/rules to Hafsa's content. Ever.**
+
+**Who Hafsa is:**
+- Hafsa Sohail — Social Media Manager at FASTECH.PAK
+- Runs her own LinkedIn presence to support FASTECH's client acquisition pipeline
+- Her content targets **FASTECH's clients**: DTC/ecom founders, brand owners running Meta ads, marketing leads at scaling ecom brands
+
+**The Two Altitudes Rule:**
+- **Mustafa makes the claim** — big picture positioning, contrarian takes, founder story, system reveals ("The Overnight Engine," "AI finds the hook")
+- **Hafsa proves it from the actual work** — execution-level content, behind-the-scenes of client deliverables, "here's what we built for a DTC brand this week," process-level proof
+
+Never have both posting the same angle on the same day. They're at different altitudes — Mustafa is strategy/founder, Hafsa is execution/proof.
+
+**Hafsa's content system:**
+- Reference `knowledge/Hafsa_LinkedIn_System.skill` and `knowledge/Hafsa_LinkedIn_System.pdf` for her full pillar system, voice guidelines, and post formats
+- Her targets: DTC founders spending $10k–$150k/month on Meta, brand managers at scaling ecom brands
+- Her tone: operator-level, practical, evidence-first — NOT founder brand. She's the one who built the thing Mustafa described.
+- LinkedIn ONLY. No Instagram. Same "human approval before publishing" rule applies.
+
+**When Slack is funded:**
+Manager agent plans BOTH pipelines in the same weekly plan. Mustafa gets 5 posts (his 10-pillar system). Hafsa gets 3–5 posts (her pillar system from the .skill file). Each has their own section in `plan/weekly-content-plan.md`. Scripts go to separate subdirectories: `scripts/posts-ready/mustafa/` and `scripts/posts-ready/hafsa/`.
+
+**Until Slack is funded:**
+Both pipelines deliver in Claude Code chat. All content saved to files and logged to `memory/jarvis-log.md`.
 
 ---
 
@@ -373,31 +404,44 @@ NEXT WEEK RECOMMENDATION: [1 action]
 **Writes to:** `plan/weekly-content-plan.md`
 
 **Responsibilities:**
-- Plan the week's content (7 posts across IG + LinkedIn)
-- Assign topics to Script Writer
+- Plan the week's content for MUSTAFA (5 LinkedIn posts/week) and HAFSA (3–5 LinkedIn posts/week, once Slack is funded)
+- Assign topics to Script Writer with correct persona tag (MUSTAFA or HAFSA)
 - Sequence posts (which day, which platform, what time)
+- Apply the Two Altitudes Rule: Mustafa and Hafsa never post the same angle same day
 - Monitor all agent outputs and flag issues
 - Track progress across the whole pipeline
 
-**Weekly content rhythm:**
-- Instagram: 3–4 posts/week (1–2 carousels + 2 singles)
-- LinkedIn: 2–3 posts/week (long-form narrative)
-- Monday: Bold opinion or system post (re-activates after weekend)
-- Wednesday/Thursday: Value or proof post
-- Friday/Saturday: Personal story or build-in-public
+**Weekly content rhythm — MUSTAFA (active now):**
+- LinkedIn: 5 posts/week (long-form narrative, hook → scene → realization → reframe → question)
+- Monday: Bold opinion or contrarian post (re-activates after weekend)
+- Tuesday: Proof/results or founder story
+- Wednesday: AI workflow or ad teardown
+- Thursday: Overnight Engine or lead magnet (1-in-5 max for LM)
+- Friday: Editing craft or Meta commentary
+
+**Weekly content rhythm — HAFSA (activate when Slack funded):**
+- LinkedIn: 3–5 posts/week (per her pillar system in `knowledge/Hafsa_LinkedIn_System.skill`)
+- Reference her system file for pillar breakdown, voice, and sequencing rules
+- Always complement, never duplicate Mustafa's weekly angles
 
 **Output format:**
 ```
 WEEK OF: [Date]
+
+--- MUSTAFA ---
 TOTAL POSTS: [N]
 
-MON — [Platform]: [Topic] · [Hook format]
-TUE — [Platform]: [Topic] · [Hook format]
-WED — [Platform]: [Topic] · [Hook format]
-THU — [Platform]: [Topic] · [Hook format]
-FRI — [Platform]: [Topic] · [Hook format]
-SAT — [Platform]: [Topic] · [Hook format]
-SUN — Rest / Repurpose
+MON — LinkedIn: [Topic] · [Hook format] · [Pillar #]
+TUE — LinkedIn: [Topic] · [Hook format] · [Pillar #]
+WED — LinkedIn: [Topic] · [Hook format] · [Pillar #]
+THU — LinkedIn: [Topic] · [Hook format] · [Pillar #]
+FRI — LinkedIn: [Topic] · [Hook format] · [Pillar #]
+
+--- HAFSA (when active) ---
+TOTAL POSTS: [N]
+
+MON — LinkedIn: [Topic] · [Hook format] · [Pillar]
+[...]
 
 STATUS: [Pipeline health check]
 ```
