@@ -148,6 +148,13 @@ Each subagent is a `.md` file inside `.claude/agents/`. They have one job. They 
 - Twitter/X (AI tools, agency, content creation)
 - Reddit (r/entrepreneur, r/marketing, r/artificial)
 - YouTube Shorts titles
+- **LIVE DISCOURSE PRIORITY — scan these first before evergreen:**
+  - Twitter/X DTC/Meta ad threads (search: "Meta ads" "performance" "CPAs" "ROAS" — last 7 days)
+  - LinkedIn comment sections on any post getting 100+ comments about Meta, DTC, or creative strategy
+  - Reddit r/PPC and r/FacebookAds — "this week" filter — look for top posts about platform changes, performance drops, or budget shifts
+  - Meta Business Suite announcements and Ads Manager changelogs
+
+**LIVE DISCOURSE RULE:** Before locking any Pillar 9 (Meta/DTC commentary) post, the Researcher MUST surface the #1 trending live topic in the DTC/Meta ads conversation RIGHT NOW. If Meta performance is dropping, that's the post. If a new ad format launched, that's the post. Evergreen angles are the fallback, not the default. A Pillar 9 post written from evergreen knowledge instead of live discourse is a MISS — this is the fastest-moving pillar and must reflect what's actually being talked about this week.
 
 **What it delivers:**
 - `research/weekly-trends.md` — top 5 viral angles this week
@@ -164,6 +171,11 @@ TREND #1: [Angle]
 Source: [Platform + Creator]
 Why it works: [1 sentence]
 Mustafa angle: [How MG can use this]
+
+LIVE DISCOURSE CHECK (Pillar 9):
+Current hot topic: [What the DTC/Meta ads community is actively discussing this week]
+Source: [Thread, post, or announcement]
+Recommended angle for Mustafa: [1 sentence]
 ```
 
 ---
@@ -192,6 +204,10 @@ Mustafa angle: [How MG can use this]
 3. Confession: "I was wrong about [thing everyone believes]."
 4. Proof: "From 0 to [result] in [time]. Not luck. Here's the system."
 5. Question: "What if [assumed truth] was completely backwards?"
+6. **TIER LIST** — rank/sort things into tiers along ONE visible axis (monthly ad budget, brand stage, spend level, skill level). The viewer doesn't read it as information — they immediately locate THEMSELVES. "Which tier am I?" That self-location IS the hook. Three effects: (1) watch time up — they stay to find their tier, (2) shares up — they tag others ("this is literally us"), (3) built-in argument — people defend their placement → comments explode. Rule: IDENTITY over information. The axis must be something the viewer privately identifies with. Proven: this format has crossed 200k+ views on a single hook. Use across ANY pillar — carousels, single posts, reels, LinkedIn text. Tiers can be visual (S/A/B/C) or narrative paragraphs.
+   — MUSTAFA examples: "The DTC founder tier list — which one are you?" · "Rank your brand's ad game by monthly spend."
+   — HAFSA examples: "Ad creative tier list: what your ads look like at each budget." · "Hook tier list — S-tier hooks vs the ones killing your CPA."
+   This is a default go-to for share-driven reach. Reach for it first, especially for pillars 3, 4, 5, 6.
 
 **Mustafa's voice:** Direct. Confident. Young founder energy. Karachi hustle. AI-native.
 
@@ -306,6 +322,14 @@ CRITICAL RULE — the deliverable FILE itself also follows the tease principle: 
 - Never say "genuinely", "honestly", "straightforward"
 - No corporate talk. Talk like a 20-year-old founder who's figured something out.
 - English only.
+
+**🚫 BORROWED EXAMPLE RULE — MANDATORY**
+Before any post uses a third-party example (a viral ad, a competitor brand, "this brand did X"), STOP and ask Mustafa first:
+> "Do you have a real example from your own client work I can build this post around?"
+He will supply the real story (e.g. a perfume brand he actually edited for, a fashion DTC client, a real before/after from production).
+Only fall back to an outside example if Mustafa explicitly says he has nothing relevant.
+Tie to the 🔒 sign-off rule: any post anchored to real client results requires his confirmation before publishing.
+This rule exists because a story about a hydration supplement brand Mustafa has never worked with reads as hollow — no matter how well-written it is.
 
 ---
 

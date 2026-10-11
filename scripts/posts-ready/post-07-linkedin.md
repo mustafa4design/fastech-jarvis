@@ -1,81 +1,45 @@
 # Post 07 — LinkedIn
-**Topic:** DTC Ad Teardown — Timestamp-Level Breakdown
-**Pillar:** #3 (Ad teardowns)
-**Scheduled:** Tuesday Oct 13, 2026 · 9:00 AM PKT
-**Hook:** This DTC ad has 4M+ views and a 3.2x ROAS. Here's why it worked at every timestamp.
+**Topic:** Ad Teardown — [REAL CLIENT EXAMPLE NEEDED]
+**Pillar:** 3 (Ad teardowns)
+**Scheduled:** Tuesday Oct 13, 2026 · 8:00 AM PKT
+**Status:** 🔴 ON HOLD — DO NOT PUBLISH
 
 ---
 
-This DTC ad has 4M+ views and a 3.2x ROAS.
+## ⚠️ HOLD — REAL EXAMPLE REQUIRED
 
-Here's why it worked at every timestamp.
+This post was drafted around a 4M-view hydration supplement ad. Mustafa has never worked with a hydration brand. That story is hollow and should not go live.
 
----
+**Before rewriting this post, Jarvis must ask Mustafa:**
 
-The ad is for a hydration supplement brand.
+> "Do you have a real example from your own client work I can build Tuesday's ad teardown around? Could be any DTC brand you've actually edited for — a perfume brand, a fashion brand, a supplement brand you actually worked with. Even one ad you're proud of the edit on. Tell me what you remember and I'll build the post around it."
 
-It opens on a pair of surgical gloves pouring a packet into water.
+**What to do when Mustafa replies:**
+1. Use his real example as the anchor — specific brand, specific result, what the ad was
+2. Apply the Pillar 3 format: hook, pacing, edit beats, timestamp-level breakdown
+3. Re-flag with 🔒 if the post references specific ROAS/CPA numbers
+4. Replace this file with the rewritten version
+5. Update the Mustafa Week 2 HTML artifact with the new post
 
-No product shot. No logo. No brand name in the first frame.
-
----
-
-**0:00–0:03 — The character hook**
-
-"POV you're a surgeon and your patient is dehydrated."
-
-Not a claim about the product. A character the viewer gets placed inside of.
-
-CTR on this ad runs above 4%. That's because the first second makes the viewer feel like a specific person.
-
-Most DTC ads open with the product. This opens with identity.
+**Why this rule exists:**
+Real examples = real credibility. A story about a brand Mustafa has never touched reads as content for content's sake — no matter how technically correct the teardown is. The whole point of Pillar 3 is that Mustafa IS the person who built this. If he can't own the story, it's not his post.
 
 ---
 
-**0:03–0:08 — The belief shift**
+## DRAFT FRAMEWORK (fill in after Mustafa provides the real example)
 
-"40% of adults are chronically dehydrated."
+**Hook formula:** Specificity + result
+> "This [specific type] ad for [brand] had [specific result]. Here's what made it work at every cut."
 
-Dwell time holds here because it's a claim that feels personal. If you're watching a hydration supplement ad, this line is about you.
+**Structure:**
+1. Hook — specific result that makes them read on
+2. Opening frame — what makes this ad different at first glance
+3. Timestamp breakdown — 3–5 key moments where the edit makes or breaks the ad
+4. The pattern — what principle connects all of them
+5. Question — "What's the one edit decision that changed the performance on your best-performing ad?"
 
-The edit slows down here. Deliberately. The pacing change signals: pay attention.
-
----
-
-**0:08–0:15 — The prescription, not the testimonial**
-
-"I started recommending this to every patient."
-
-Not a customer review. A professional prescription.
-
-This is the authority reframe. The viewer stops being a consumer and starts being a patient being advised.
+**🔒 Flag:** If post references specific ROAS, CPA, or click-through numbers → needs Mustafa sign-off before publishing.
 
 ---
 
-**0:15–0:22 — Product introduction, earned**
-
-The product finally appears. At second 15.
-
-By this point the viewer has already been given a reason to trust the category. The product reveal feels like a logical conclusion, not a sales pitch.
-
----
-
-**0:22–0:28 — No urgency CTA**
-
-"Link in bio."
-
-No discount. No countdown. No "limited time offer."
-
-The story did all the work. Hard CTAs at this point would break the frame.
-
----
-
-The creative question most DTC brands are asking: "How do I show the product?"
-
-The better question: "What character can I put the viewer inside of in the first second?"
-
-Everything else in the edit follows from that answer.
-
----
-
-What character would your best customer recognize themselves in?
+*Post on hold per BORROWED EXAMPLE RULE (added Oct 2026). Reinstated when Mustafa provides real client example.*

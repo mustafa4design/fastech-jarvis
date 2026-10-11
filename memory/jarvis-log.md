@@ -20,6 +20,8 @@
 2026-10-12 15:00 PKT | Script Writer | Hafsa Week 1 LinkedIn posts written (Oct 12–16) | 3 posts: (H1) Process transparency — behind the brief 11:47 PM story, (H2) Creative volume — 20+ variants framework 🔒, (H3) Buyer education — 3 questions to ask any agency | scripts/posts-ready/hafsa-post-01 through hafsa-post-03-linkedin.md
 2026-10-12 15:05 PKT | JARVIS | PDF exports built and published as Artifacts | Mustafa_Week2_LinkedIn artifact + Hafsa_Week1_LinkedIn artifact — both with 🔒 flags, hooks, full captions, print-ready layout | scratchpad/mustafa-week2.html, scratchpad/hafsa-week1.html
 
+2026-10-12 16:30 PKT | JARVIS | Three content-system changes applied | (1) TIER LIST hook formula added to Hook Writer (CLAUDE.md + researcher.md); (2) Borrowed Example Rule added to Script Writer section in CLAUDE.md; (3) Researcher agent updated with LIVE DISCOURSE PRIORITY scanning for DTC/Meta performance trends; post-07 marked ON HOLD pending real client example from Mustafa; post-10 rewritten around live "Meta performance dropping" angle; Mustafa Week 2 PDF artifact updated | CLAUDE.md, .claude/agents/researcher.md, scripts/posts-ready/post-07-linkedin.md, scripts/posts-ready/post-10-linkedin.md, scratchpad/mustafa-week2.html
+
 ## PENDING SETUP
 - Slack bot token: needs real xoxb- token → update .mcp.json
 - Channels to create manually: #jarvis-hq, #research, #scripts, #design, #analytics, #publishing, #general

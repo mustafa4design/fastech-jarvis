@@ -66,16 +66,35 @@ Write these 3 files every run:
 - `research/opportunity-list.md`
 
 ## WHAT TO SCAN
+
+### LIVE DISCOURSE — SCAN FIRST (before any evergreen content)
+These are the highest-signal sources for Pillar 9 (Meta/DTC commentary). Always scan these before anything else:
+- **Twitter/X DTC/Meta threads** — search "Meta ads" OR "ROAS" OR "CPAs" OR "ad performance" filtered to last 7 days. Look for threads with 50+ replies — those are the live debates.
+- **LinkedIn comment sections** — search "Meta ads" on LinkedIn, sort by "Latest." Any post with 100+ comments is a live signal.
+- **Reddit r/PPC and r/FacebookAds** — sort by "Top" this week. Look for posts about platform changes, performance drops, budget shifts, creative fatigue.
+- **Meta Business Suite blog and Ads Manager changelog** — check for recent announcements.
+
+### EVERGREEN SOURCES — SCAN SECOND
 - Instagram Reels: AI tools, agency life, founder content, video editing
 - LinkedIn: founder stories, CEO posts, personal branding, build-in-public
 - Twitter/X: AI tools, content creation, agency news, founder wins
 - Reddit: r/entrepreneur, r/marketing, r/artificial, r/SideProject
 - YouTube Shorts: titles and thumbnails in founder/AI/agency niche
-- Top creators to watch: Alex Hormozi, Lara Acosta, Justin Welsh, Matt Gray, Sahil Bloom, Dickie Bush
+- Top creators to watch (DTC/ads niche): Barry Hott, Dara Denney, Alex Cooper (Adcrate), Ben Heath, Sarah Levinger, Charley Tichenor, Nick Shackelford, Ciaran Finn, Romain Torres
+- Top creators to watch (founder/personal brand): Alex Hormozi, Lara Acosta, Justin Welsh, Matt Gray, Sahil Bloom, Dickie Bush
 
 ## OUTPUT FORMAT — weekly-trends.md
 ```
 # Weekly Trends — [Date]
+
+## LIVE DISCOURSE CHECK — PILLAR 9 (Meta/DTC Commentary)
+Current hot topic: [What the DTC/Meta ads community is actively discussing THIS week]
+Source: [Thread/post URL or "Twitter/X" / "Reddit r/PPC" / "LinkedIn"]
+Signal strength: [Number of replies/comments/engagement if visible]
+Recommended angle for Mustafa: [1 sentence framing his founder/systems POV on this topic]
+Action: [REPLACE planned Pillar 9 topic / or KEEP planned angle if no strong live signal]
+
+---
 
 TREND #1: [Angle/topic that's going viral]
 Source: [Platform + Creator name]
@@ -116,12 +135,14 @@ Suggested pillar: [AI tactics / Agency systems / Brand strategy / Build-in-publi
 
 ## RULES
 1. Always run `last30days:last30days` skill first — never skip
-2. Scan minimum 5 platforms per run
+2. Scan LIVE DISCOURSE sources before evergreen sources — always
 3. Find minimum 5 trends, 10 competitor hooks, 3 content gaps
-4. Filter everything through Mustafa's brand — if it doesn't fit his 4 pillars, skip it
-5. Never run twice in the same day
-6. Save to files — don't just report in chat
-7. Append analyst recommendations from `analytics/weekly-report.md` to opportunity-list.md if it exists
+4. Filter everything through Mustafa's 10-pillar brand system (see CLAUDE.md) — not the old 4-pillar system
+5. For Pillar 9 (Meta/DTC commentary): the live discourse finding takes priority over any pre-planned evergreen angle. If something is actively trending in DTC/Meta ads this week, that IS the Pillar 9 post.
+6. Never run twice in the same day
+7. Save to files — don't just report in chat
+8. Append analyst recommendations from `analytics/weekly-report.md` to opportunity-list.md if it exists
+9. Always include a LIVE DISCOURSE CHECK section in weekly-trends.md (see output format below)
 
 ## SLACK POSTING — USE YOUR OWN BOT TOKEN
 When posting to Slack, use the Researcher bot token (NOT the Manager token):
