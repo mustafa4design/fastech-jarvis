@@ -1,39 +1,46 @@
 # Hafsa Post 02 — LinkedIn
-**Topic:** Briefing 20+ Creative Variants Without Losing Your Mind
+**Topic:** The DTC creative briefing tier list — which one is your team?
 **Pillar:** Creative volume / Production process
 **Scheduled:** Wednesday Oct 14, 2026 · 9:00 AM PKT
 **Audience:** DTC founders scaling Meta ad creative volume
-**🔒 Flag:** YES — contains specific volume number. Needs Mustafa sign-off before posting.
+**Hook format:** TIER LIST (identity hook → process reveal → operator insight)
+**🔒 Flag:** Light — references "a DTC client" implicitly via FASTECH examples. No specific client name or metrics. Lower risk than original draft.
 
 ---
 
-We briefed 20+ creative variants for a DTC client last week.
+The DTC creative briefing tier list.
 
-Here's the process that kept it from being chaos.
-
----
-
-Most teams treat 20 variants like a special project.
-
-Extra meetings. Extra timelines. Extra spreadsheets.
-
-We treat it like a Tuesday.
-
-The difference isn't speed — it's structure.
+Which one is your team?
 
 ---
 
-We don't brief 20 individual ads.
+**S-tier** — 4 hook directions. Variable map per direction. 16–20 variants from 4 briefs. Total briefing time: under 4 hours.
 
-We brief 4 hook directions.
+**A-tier** — 8–10 variants. Decent template. Some structure, but still writing a new doc for each variant.
+
+**B-tier** — 5 variants. One Notion paragraph. Revision happens because the brief was incomplete.
+
+**C-tier** — A voice memo and "make it feel premium." 1–2 variants. The revision cycle takes longer than the edit.
+
+---
+
+C-tier and B-tier aren't slow because they lack good editors.
+
+They're slow because they're briefing 20 individual ads one at a time.
+
+S-tier doesn't do that.
+
+---
+
+S-tier doesn't brief 20 variants.
+
+It briefs 4 hook directions.
 
 Within each direction, variables are isolated:
-- One variant changes the opening audio
+- One changes the opening audio
 - One changes caption style and placement
-- One changes the pacing structure in the first 4 seconds
-- One changes the B-roll selection
-
-Each direction is one brief.
+- One changes pacing in the first 4 seconds
+- One changes B-roll selection
 
 Four briefs produce 16–20 variants.
 
@@ -57,4 +64,4 @@ Because the framework doesn't require starting from zero for each one.
 
 ---
 
-How long does it currently take your team to brief 10+ variants?
+Which tier is your briefing system right now?
