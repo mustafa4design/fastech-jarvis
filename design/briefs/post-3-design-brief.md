@@ -1,35 +1,18 @@
 # Design Brief — Post 3
-**Post:** 3 systems, 40 clients, 0 employees
-**Platform:** LinkedIn
-**Date:** Wednesday Sep 30, 2026
+**Post:** Creative Testing Velocity Framework · Wed Oct 14, 2026
+**Written by:** Designer agent · 2026-10-12 08:00 PKT
 
 ---
 
-POST: 3 systems, 40 clients, 0 employees
-
-VISUAL CONCEPT: Clean authority. Three numbers dominate. Systems thinking energy — structured, not chaotic.
-
-COVER TEXT: 3 SYSTEMS. 40 CLIENTS. 0 EMPLOYEES.
-
-SUBTITLE: Here's the exact breakdown.
-
-COLOR MOOD: Dark / Cyan accent (#00e5ff)
-
-VIBE: "Clean authority. Framework energy. This is a post people save."
-
-CANVA NOTE: Three-number headline should feel like a formula. Equal weight on all three numbers. Cyan glow on the numbers only. The subtitle should reinforce that this is a breakdown — promise of value.
+POST: Post 3 — Variables → Signal → Decision (Oct 14)
+VISUAL CONCEPT: Clean named system — three terms in sequence with arrows. The layout communicates "system" before a word is read.
+COVER TEXT: VARIABLES → SIGNAL → DECISION
+SUBTITLE: 20+ creatives tested. 3 winners found.
+COLOR MOOD: Dark, structural, cyan accent on the arrows between the three terms
+VIBE: "systematic operator authority — the person who built the machine, not just uses it"
+CANVA NOTE: Horizontal three-part layout. "VARIABLES" — "→" — "SIGNAL" — "→" — "DECISION" in Montserrat Black 900. Arrow connectors in #00e5ff cyan. Below: "20+ creatives tested. 3 winners found." in small grey Inter Regular. Watermark bottom right JetBrains Mono.
 
 ---
 
-## GPT IMAGE PROMPT
-
-Generate a dark minimalist LinkedIn post image. Background: pure black #020810. Center text: 3 SYSTEMS. 40 CLIENTS. 0 EMPLOYEES. in Montserrat Black, white, massive size. Subtitle: Here's the exact breakdown. in small grey Inter text below. Bottom right: @mustafaghauri._ watermark in JetBrains Mono. Cyan glow effect #00e5ff behind main text. Grain texture overlay 3%. No stock photos. No faces. Typography only.
-
----
-
-## TYPOGRAPHY (LOCKED — DO NOT CHANGE)
-| Role | Font | Weight |
-|---|---|---|
-| Headline | Montserrat Black | 900 |
-| Subtitle | Inter Regular | 400 |
-| Watermark | JetBrains Mono | 400 |
+GPT IMAGE PROMPT:
+"Generate a dark minimalist LinkedIn post image. Background: pure black #020810. Center text: 'VARIABLES → SIGNAL → DECISION' in Montserrat Black, white, massive size — all on one line with cyan arrows. The arrows (→) should glow in #00e5ff cyan. Subtitle below: '20+ creatives tested. 3 winners found.' in small grey Inter Regular. Bottom right: @mustafaghauri._ watermark in JetBrains Mono. Cyan glow effect #00e5ff radiating from the arrows. Grain texture overlay 3%. No stock photos. No faces. Typography only."

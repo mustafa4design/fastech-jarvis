@@ -55,29 +55,35 @@ Agent writing priority: Posts 1–3 Monday, Posts 4–5 Tuesday. ALL done by Tue
 ---
 
 ## Hook Writer Decisions
-*Updated by: Hook Writer agent — READY FOR WRITING 2026-10-12*
+*Updated by: Hook Writer agent — COMPLETED 2026-10-12 08:00 PKT (Posts 1–3) · Posts 4–5 Tuesday*
 
-Final hooks: [HOOK WRITER TO WRITE]
-Posts 1–5 hooks: PENDING
-Hook formula priority this week: [BASED ON MANAGER PLAN]
+Post 1 final hook: "CPMs up 20%. ROAS down 3%. The math still works — barely. Here's what breaks it." (Data reveal + flip)
+Post 2 final hook: "A US client emailed at 2 AM Karachi time. Needed a finished ad by morning. I had 6 hours." (Personal scene)
+Post 3 final hook: "Variables → Signal → Decision. The 3-step framework I use to test 20+ ad creatives per week without burning budget." (Named system)
+Posts 4–5 hooks: PENDING (Tuesday)
+All 10 options + final picks saved to: scripts/hooks-this-week.md
 
 ---
 
 ## Script Writer Decisions
-*Updated by: Script Writer agent — READY FOR WRITING 2026-10-12*
+*Updated by: Script Writer agent — COMPLETED 2026-10-12 08:00 PKT (Posts 1–3) · Posts 4–5 Tuesday*
 
-Scripts status: PENDING
-Posts 1–5 angles: [SCRIPT WRITER TO WRITE]
-Voice checklist: [SHORT SENTENCES, NO FILLER, NO "GENUINELY"/"HONESTLY", PUNCHY]
+Post 1 script: Meta cost contrarian — CPMs/ROAS data, creative fatigue is the real risk → scripts/posts-ready/post-1-linkedin.md
+Post 2 script: Karachi origin story — 2 AM scene, Overnight Engine discovered not invented → scripts/posts-ready/post-2-linkedin.md ⚠️ MUSTAFA VERIFY: confirm 2 AM scene is real before publishing
+Post 3 script: Variables → Signal → Decision framework — 20+ creatives, early signal metrics, 48–72hr decision → scripts/posts-ready/post-3-linkedin.md
+Posts 4–5 scripts: PENDING (Tuesday)
+Voice checklist: ✅ Short sentences · ✅ No "genuinely/honestly/straightforward" · ✅ Young founder energy · ✅ English only
 
 ---
 
 ## Designer Decisions
-*Updated by: Designer agent — READY FOR BRIEFING 2026-10-12*
+*Updated by: Designer agent — COMPLETED 2026-10-12 08:00 PKT (Posts 1–3) · Posts 4–5 Tuesday*
 
-Design vibes: [DESIGNER TO BRIEF]
-Posts 1–5 design briefs: PENDING
-Typography locked: Montserrat Black (headlines), Inter Regular (body), JetBrains Mono (watermark)
+Post 1 design: Data contrast layout — "+20% CPM" vs "−3% ROAS" side-by-side, dark, cyan glow → design/briefs/post-1-design-brief.md
+Post 2 design: "2 AM. KARACHI." hero text, warm amber accent, late-night founder energy → design/briefs/post-2-design-brief.md
+Post 3 design: "VARIABLES → SIGNAL → DECISION" horizontal sequence, cyan arrows, structural authority → design/briefs/post-3-design-brief.md
+Posts 4–5 design briefs: PENDING (Tuesday)
+Typography: ✅ Montserrat Black 900 (headlines) · ✅ Inter Regular 400 (body) · ✅ JetBrains Mono 400 (watermark)
 
 ---
 

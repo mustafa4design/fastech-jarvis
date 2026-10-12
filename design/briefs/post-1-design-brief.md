@@ -1,35 +1,18 @@
 # Design Brief — Post 1
-**Post:** AI automates my job — I built what's next
-**Platform:** LinkedIn
-**Date:** Monday Sep 28, 2026
+**Post:** Meta Cost Contrarian Take · Mon Oct 12, 2026
+**Written by:** Designer agent · 2026-10-12 08:00 PKT
 
 ---
 
-POST: AI automates my job — I built what's next
-
-VISUAL CONCEPT: Dark tech energy — a founder staring into disruption and building through it. Not fear. Ownership.
-
-COVER TEXT: I BUILT THE TOOL REPLACING ME
-
-SUBTITLE: Multiplayer AI — video editing, reimagined
-
-COLOR MOOD: Dark / Cyan accent (#00e5ff)
-
-VIBE: "Late night founder energy. Disruptive. Self-aware."
-
-CANVA NOTE: Use a full-bleed dark background template. Headline in Montserrat Black at maximum size. Cyan glow behind the text only — not background fill. JetBrains Mono handle bottom-right, small.
+POST: Post 1 — Meta CPMs +20%, ROAS -3% (Oct 12)
+VISUAL CONCEPT: Raw data contrast — two numbers side by side that defy expectations. The visual IS the argument.
+COVER TEXT: CPMs UP 20%
+SUBTITLE: ROAS down 3%. The math still holds.
+COLOR MOOD: Dark, high contrast, cyan accent on the percentage numbers
+VIBE: "data drop at midnight — the founder who did the math so you don't have to"
+CANVA NOTE: Two-column stat layout. Left: "+20% CPM" in massive white Montserrat Black 900. Right: "−3% ROAS" slightly smaller. Below both: "The math still works. Barely." in small grey Inter Regular. Watermark bottom right in JetBrains Mono.
 
 ---
 
-## GPT IMAGE PROMPT
-
-Generate a dark minimalist LinkedIn post image. Background: pure black #020810. Center text: I BUILT THE TOOL REPLACING ME in Montserrat Black, white, massive size. Subtitle: Multiplayer AI — video editing, reimagined in small grey Inter text below. Bottom right: @mustafaghauri._ watermark in JetBrains Mono. Cyan glow effect #00e5ff behind main text. Grain texture overlay 3%. No stock photos. No faces. Typography only.
-
----
-
-## TYPOGRAPHY (LOCKED — DO NOT CHANGE)
-| Role | Font | Weight |
-|---|---|---|
-| Headline | Montserrat Black | 900 |
-| Subtitle | Inter Regular | 400 |
-| Watermark | JetBrains Mono | 400 |
+GPT IMAGE PROMPT:
+"Generate a dark minimalist LinkedIn post image. Background: pure black #020810. Center layout: two large contrasting numbers — '+20% CPM' on the left in Montserrat Black, white, massive size, and '−3% ROAS' on the right, slightly smaller. Below both numbers: 'The math still works. Barely.' in small grey Inter Regular. Bottom right: @mustafaghauri._ watermark in JetBrains Mono. Cyan glow effect #00e5ff behind the number text. Grain texture overlay 3%. No stock photos. No faces. Typography only."
