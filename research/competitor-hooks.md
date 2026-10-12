@@ -1,5 +1,5 @@
-# Competitor Hooks — Week of Oct 5–11, 2026
-**Research scan:** LinkedIn top creators in AI, agency, founder, and DTC niches. Updated 2026-10-05 06:30 PKT.
+# Competitor Hooks — Week of Oct 12–18, 2026
+**Research scan:** DTC/Meta ads/personal brand creators. Updated 2026-10-12 06:30 PKT.
 
 ---
 
