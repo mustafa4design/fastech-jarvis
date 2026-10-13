@@ -1,46 +1,21 @@
 # Design Brief — Post 5
-**Post:** Multiplayer AI + FASTECH: Week 5 Build-in-Public Update
-**Platform:** LinkedIn
-**Scheduled:** Friday Oct 2, 2026 · 8:00 AM PKT
+**Post:** Multiplayer AI Build-in-Public (Fri Oct 16)
+**Written by:** Designer agent · 2026-10-13 08:00 PKT
 
 ---
 
-## Visual Direction
+**VISUAL CONCEPT:** A single dialogue line rendered as the hero element — raw, intimate, build-in-public energy. The actual quote from the editor is the design.
 
-**VISUAL CONCEPT:** Two tracks, one founder. Clean typographic split — "FASTECH" and "MULTIPLAYER AI" as parallel tracks feeding into "WEEK 5." Tension made visual.
+**COVER TEXT:** "WHY AM I STILL DRAGGING CLIPS?"
 
-**COVER TEXT:** WEEK 5
+**COLOR MOOD:** Dark background, white headline, cyan accent on the quote marks. Quiet and personal.
 
-**SUBTITLE:** the agency + the startup
+**VIBE:** Late-night build-in-public. Real > polished. YC applicant energy.
 
-**COLOR MOOD:** Dark background, cyan glow behind "WEEK 5," cool grey on subtitle and track labels
-
-**VIBE:** "Founder in the trenches. Raw. Transparent. Building in public."
+**CANVA NOTE:** Full-bleed dark card. Giant quote marks in cyan #00e5ff (JetBrains Mono). The editor's line in Montserrat Black, white, slightly smaller than usual — let the quote feel intimate, not shouted. Subtitle: "Building Multiplayer AI" in Inter Regular, grey, below. Watermark bottom right.
 
 ---
 
-## Typography (LOCKED — no exceptions)
+**GPT IMAGE PROMPT:**
 
-| Element | Font | Weight |
-|---------|------|--------|
-| WEEK 5 | Montserrat Black | 900 |
-| Subtitle | Inter Regular | 400 |
-| Track labels + Watermark | JetBrains Mono | 400 |
-
----
-
-## Canva Notes
-
-- Full-bleed #020810 background
-- "WEEK 5" massive, centered, Montserrat Black, white
-- "the agency + the startup" — Inter Regular, grey (#888), small, directly below
-- Optional: two micro-labels above main text — "FASTECH" left-aligned and "MULTIPLAYER AI" right-aligned, JetBrains Mono, very small, grey — representing the two parallel tracks
-- Cyan radial glow behind WEEK 5 (#00e5ff)
-- Bottom-right corner: @mustafaghauri._ in JetBrains Mono, small, grey
-- No images. No stock photos. No faces. Typography only.
-
----
-
-## GPT Image Prompt
-
-Generate a dark minimalist LinkedIn post image. Background: pure black #020810. Center text: WEEK 5 in Montserrat Black, white, massive size. Subtitle: the agency + the startup in small grey Inter text below. Bottom right: @mustafaghauri._ watermark in JetBrains Mono. Cyan glow effect #00e5ff behind main text. Grain texture overlay 3%. No stock photos. No faces. Typography only.
+Generate a dark minimalist LinkedIn post image. Background: pure black #020810. Giant opening quotation mark in cyan #00e5ff, Montserrat Black, top left. Center text: "WHY AM I STILL DRAGGING CLIPS?" in Montserrat Black, white, large but not massive — intimate scale. Closing quotation mark in cyan bottom right of the quote. Subtitle below: "Building Multiplayer AI — text-native video editing" in small grey Inter Regular text. Bottom right: @mustafaghauri._ watermark in JetBrains Mono. Cyan glow effect #00e5ff behind quote marks only. Grain texture overlay 3%. No stock photos. No faces. Typography only.

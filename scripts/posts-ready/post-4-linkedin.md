@@ -1,46 +1,51 @@
 # Post 4 — LinkedIn
-**Topic:** 561% personal vs company page reach — Brand strategy
-**Scheduled:** Thursday Oct 1, 2026 · 8:00 AM PKT
-**Hook formula:** Proof + bold data point
-**Pillar:** Brand strategy frameworks
+**Publish date:** Thursday, Oct 15, 2026 · 9:00 AM PKT
+**Pillar:** #1 The Overnight Engine + #6 Results and Proof
+**Hook format:** Speed contrast + system positioning
+**Written by:** Script Writer agent · 2026-10-13 08:00 PKT
+
+⚠️ MUSTAFA VERIFY: Note from Script Writer — this post uses a general DTC client scenario (fashion brand with dead creative). If you have a real specific client story — a brand that ran stale creatives because their old agency was slow — replace the scene with that. Real detail always beats general.
 
 ---
 
-My personal LinkedIn gets 561% more reach than FASTECH's company page. Same content. Same week.
+Creative fatigue kills in 7–14 days. I built a system that delivers in 8 hours. Here's why that gap changes everything.
 
-I posted identical content on both accounts.
+—
 
-My personal profile: 12,000+ impressions.
-FASTECH's company page: 2,100 impressions.
+A DTC brand came to me in a panic.
 
-Same post. Same topic. Same day.
+Their best Meta creative had died — ROAS collapsed, frequency too high, CPM spiking.
 
-I'd spent 6 months building FASTECH's page. Logos. Banners. Branded copy. Professional tone.
+They'd caught it on day 10.
 
-Nobody came.
+They'd already emailed their agency.
 
-Then I wrote a 200-word story about pitching my first client at 18. Posted it personally.
+Response time: 2 weeks.
 
-40 comments in 2 hours.
+They ran dead creative for 21 days straight. Not by choice. By default.
 
-The algorithm doesn't care about your logo.
+—
 
-LinkedIn gives personal profiles 561% more reach than company pages.
+That's not a creative problem. That's a production problem.
 
-Not because the content is different.
-Because people trust people.
+On Meta, every day of dead creative is wasted spend.
 
-Faces get engagement. Logos get scrolled past.
+When your agency is still "reviewing concepts" at day 14, you're already losing to the brand that refreshed on day 8.
 
-Here's what changed when I stopped hiding behind FASTECH's logo:
+I built The Overnight Engine for exactly this.
 
-→ Inbound inquiries: 1/month → 5/week
-→ DMs referencing my story, not my services
-→ FASTECH's credibility grew because mine grew first
+Brief in at 11 PM. Finished ad before their morning standup.
 
-The founder is the brand.
-The company is the proof.
+—
 
-If you're an agency owner posting from a company page and wondering why nobody engages — this is your answer.
+Creative velocity isn't a nice-to-have anymore. It's the whole game.
 
-Are you building your personal brand or your company brand first? The answer might be costing you 561% of your reach.
+The brands winning on Meta aren't making better ads.
+
+They're replacing dead ones faster.
+
+8-hour turnaround doesn't just save money. It changes how you compete.
+
+—
+
+How long does your agency take to turn a brief into a live ad?

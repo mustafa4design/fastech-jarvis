@@ -70,4 +70,48 @@ REASON: Named framework = saves magnet. Three specific steps teased without expl
 
 ---
 
+## POST 4 — Overnight Engine Speed Positioning (Thu Oct 15)
+**Topic:** Meta creative lifespan = 7–14 days. Most agencies take 2 weeks. We take 8 hours.
+**Hook format:** Speed contrast + system positioning
+
+HOOK 01: Creative dies in 7 days. Your agency needs 14 days to respond. Do the math.
+HOOK 02: I watched a brand run dead creatives for 3 weeks while their agency was "in production." That's not an editing problem. That's a speed problem.
+HOOK 03: Meta creative lifespan: 7–14 days. Average agency turnaround: 2 weeks. The gap = wasted spend.
+HOOK 04: The real Meta crisis isn't rising CPMs. It's that most agencies can't replace dying creatives fast enough.
+HOOK 05: Brief sent Monday. Finished ad: Tuesday morning. Meanwhile their competitor is still waiting on a 2-week agency timeline.
+HOOK 06: 7 days. That's how long your best-performing Meta creative lives before fatigue kills it. What's your agency's turnaround?
+HOOK 07: Everyone's talking about Meta costs. Nobody's talking about the agency speed problem that makes costs worse.
+HOOK 08: Creative fatigue kills in 7–14 days. I built a system that delivers in 8 hours. Here's why that gap changes everything.
+HOOK 09: Your ad died on day 9. Your agency is still "in review." This is the actual Meta problem in 2026.
+HOOK 10: One DTC brand I work with used to wait 10–14 days for new creatives. Now they get them before breakfast. Here's what changed.
+
+---
+TOP 3: Hook 08, Hook 03, Hook 06
+FINAL PICK: Hook 08 — "Creative fatigue kills in 7–14 days. I built a system that delivers in 8 hours. Here's why that gap changes everything."
+REASON: Numbers create instant credibility (7–14 days vs 8 hours). "Changes everything" frames this as systemic, not just a service pitch. Positions FASTECH as the live-market answer to the exact anxiety DTC founders have right now.
+
+---
+
+## POST 5 — Multiplayer AI Build-in-Public (Fri Oct 16)
+**Topic:** My editor stopped touching the timeline. She edits by speaking now.
+**Hook format:** Specific behavioral moment + workflow reveal
+
+HOOK 01: My editor paused the session and said: "I just want to speak the edit. Why am I still dragging clips?" Two months later — she doesn't.
+HOOK 02: She stopped opening Premiere last month. She talks to the AI now. It edits.
+HOOK 03: I'm building a tool where editors never touch a timeline again. Here's where we are.
+HOOK 04: Every DTC editor I've talked to wants the same thing. Not faster editing. No editing at all.
+HOOK 05: My editor told me Premiere felt like typing with oven mitts. Now she speaks the cut.
+HOOK 06: I asked my editor what she'd change about her workflow. She said: "Everything that isn't the actual creative decision."
+HOOK 07: 2 months ago: Premiere, timeline, drag clips. Today: speaks the edit. AI executes. Zero timeline.
+HOOK 08: Text-based video editing just became real in our studio. My editor doesn't drag clips anymore — she describes what she wants.
+HOOK 09: There's a moment when your editor stops fighting the tool and starts trusting it. We hit that moment last week.
+HOOK 10: I'm building Multiplayer AI — AI-native video editing. Here's what the first real shift looks like from the inside.
+
+---
+TOP 3: Hook 01, Hook 07, Hook 10
+FINAL PICK: Hook 01 — "My editor paused the session and said: 'I just want to speak the edit. Why am I still dragging clips?' Two months later — she doesn't."
+REASON: Opens mid-scene with real dialogue — maximum specificity and intimacy. "She doesn't" as the final beat lands like a punch with a breath before it. Strongest build-in-public hook format on LinkedIn. Shows rather than tells.
+
+---
+
 *Posts 4–5 hooks written Tuesday Oct 13.*

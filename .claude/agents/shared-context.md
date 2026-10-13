@@ -13,7 +13,7 @@ description: Shared working memory for all JARVIS agents. Every agent reads and 
 ## Active Week
 Week of: Oct 12 - Oct 18, 2026
 Posts planned: 5 LinkedIn posts (Mon–Fri)
-Status: [ ] Research → [ ] Plan → [ ] Hooks (1-5) → [ ] Scripts (1-5) → [ ] Design (1-5) → [ ] Published
+Status: [✅] Research → [✅] Plan → [✅] Hooks (1-5) → [✅] Scripts (1-5) → [✅] Design (1-5) → [ ] Published
 
 ---
 
@@ -60,7 +60,9 @@ Agent writing priority: Posts 1–3 Monday, Posts 4–5 Tuesday. ALL done by Tue
 Post 1 final hook: "CPMs up 20%. ROAS down 3%. The math still works — barely. Here's what breaks it." (Data reveal + flip)
 Post 2 final hook: "A US client emailed at 2 AM Karachi time. Needed a finished ad by morning. I had 6 hours." (Personal scene)
 Post 3 final hook: "Variables → Signal → Decision. The 3-step framework I use to test 20+ ad creatives per week without burning budget." (Named system)
-Posts 4–5 hooks: PENDING (Tuesday)
+Posts 4–5 hooks: COMPLETE (Tuesday Oct 13)
+Post 4 final hook: "Creative fatigue kills in 7–14 days. I built a system that delivers in 8 hours. Here's why that gap changes everything." (Speed contrast + system positioning)
+Post 5 final hook: "My editor paused the session and said: 'I just want to speak the edit. Why am I still dragging clips?' Two months later — she doesn't." (Behavioral moment + workflow reveal)
 All 10 options + final picks saved to: scripts/hooks-this-week.md
 
 ---
@@ -71,7 +73,9 @@ All 10 options + final picks saved to: scripts/hooks-this-week.md
 Post 1 script: Meta cost contrarian — CPMs/ROAS data, creative fatigue is the real risk → scripts/posts-ready/post-1-linkedin.md
 Post 2 script: Karachi origin story — 2 AM scene, Overnight Engine discovered not invented → scripts/posts-ready/post-2-linkedin.md ⚠️ MUSTAFA VERIFY: confirm 2 AM scene is real before publishing
 Post 3 script: Variables → Signal → Decision framework — 20+ creatives, early signal metrics, 48–72hr decision → scripts/posts-ready/post-3-linkedin.md
-Posts 4–5 scripts: PENDING (Tuesday)
+Post 4 script: Overnight Engine speed positioning — creative fatigue 7–14 days vs 8hr turnaround → scripts/posts-ready/post-4-linkedin.md ⚠️ MUSTAFA VERIFY: replace general DTC scene with real client story if available
+Post 5 script: Multiplayer AI build-in-public — editor speaks the cut, YC application angle → scripts/posts-ready/post-5-linkedin.md
+Posts 4–5 scripts: COMPLETE (Tuesday Oct 13)
 Voice checklist: ✅ Short sentences · ✅ No "genuinely/honestly/straightforward" · ✅ Young founder energy · ✅ English only
 
 ---
@@ -82,7 +86,9 @@ Voice checklist: ✅ Short sentences · ✅ No "genuinely/honestly/straightforwa
 Post 1 design: Data contrast layout — "+20% CPM" vs "−3% ROAS" side-by-side, dark, cyan glow → design/briefs/post-1-design-brief.md
 Post 2 design: "2 AM. KARACHI." hero text, warm amber accent, late-night founder energy → design/briefs/post-2-design-brief.md
 Post 3 design: "VARIABLES → SIGNAL → DECISION" horizontal sequence, cyan arrows, structural authority → design/briefs/post-3-design-brief.md
-Posts 4–5 design briefs: PENDING (Tuesday)
+Post 4 design: "7–14 DAYS OR 8 HOURS." two-column speed contrast, red strikethrough left, cyan glow right → design/briefs/post-4-design-brief.md
+Post 5 design: Editor quote as hero — "WHY AM I STILL DRAGGING CLIPS?" dark intimate build-in-public card → design/briefs/post-5-design-brief.md
+Posts 4–5 design briefs: COMPLETE (Tuesday Oct 13)
 Typography: ✅ Montserrat Black 900 (headlines) · ✅ Inter Regular 400 (body) · ✅ JetBrains Mono 400 (watermark)
 
 ---

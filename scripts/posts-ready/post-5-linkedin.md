@@ -1,41 +1,49 @@
 # Post 5 — LinkedIn
-**Topic:** Multiplayer AI + FASTECH week update — Build-in-public
-**Scheduled:** Friday Oct 2, 2026 · 8:00 AM PKT
-**Hook formula:** Build-in-public narrative
-**Pillar:** Build-in-public (Multiplayer AI YC journey)
+**Publish date:** Friday, Oct 16, 2026 · 9:00 AM PKT
+**Pillar:** #8 Build-in-Public (Agency Ops) + #2 AI Ad Production Workflows
+**Hook format:** Specific behavioral moment + workflow reveal
+**Written by:** Script Writer agent · 2026-10-13 08:00 PKT
 
 ---
 
-Running an agency pays the bills. Building Multiplayer AI is the bet. Week 5 of holding both.
+My editor paused the session and said: "I just want to speak the edit. Why am I still dragging clips?"
 
-Monday: 3 client calls, 2 revision rounds, 1 FASTECH rebrand kicked off.
+Two months later — she doesn't.
 
-Tuesday: Multiplayer AI feature sprint — collaborative timeline syncing, two users, one edit session.
+—
 
-Wednesday: 4 hours of sleep.
+It was a Thursday afternoon.
 
-Most people say pick one.
+She was mid-cut on a DTC fashion ad. Six-track timeline. Clips stacked everywhere.
 
-The agency or the startup. The safe play or the bet.
+She stopped dragging. Put her hands down. Said it almost to herself.
 
-I can't choose right now. FASTECH pays for everything — the tools, the team, the server costs. Multiplayer AI is what I'm building for the next decade.
+I heard it. Wrote it in my notes.
 
-So I carry both.
+—
 
-5 weeks in, here's what holding both taught me:
+That was the brief for Multiplayer AI.
 
-The agency makes me better at the startup.
-Client problems = real product feedback. Every broken workflow we fix at FASTECH becomes a feature in Multiplayer AI.
+Not: "make editing faster."
 
-The startup makes me better at the agency.
-Building AI-native tools means I understand my clients' future before they do.
+Not: "reduce timeline complexity."
 
-The chaos is the curriculum.
+The brief was: what if the editor never had to open a timeline at all?
 
-This week's numbers:
-→ Multiplayer AI: collaborative sync shipped, 3 beta users onboarded, 2 gave brutal feedback (we love it)
-→ FASTECH: 4 active clients, 2 new inquiries, 1 full rebrand kicked off
+Two months of building later — that's where we are.
 
-Not easy. Not stopping.
+She speaks the cut. Describes the pacing, the sequence, the moment she wants to land. AI executes.
 
-If you're building something on the side right now — what almost made you quit this week? And what kept you going?
+No drag. No timeline. No Premiere.
+
+—
+
+The creative decision is still hers. The execution is not.
+
+That's the line we care about.
+
+We're applying to YC in January. This is why.
+
+—
+
+What part of your workflow do you wish you could just speak aloud and skip?
