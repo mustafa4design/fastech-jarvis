@@ -1,0 +1,25 @@
+{
+  "campaign": "campaign-1-hiring-signal",
+  "date": "2026-10-14",
+  "sources": {
+    "linkedin_jobs": {
+      "status": "blocked",
+      "reason": "harvestapi/linkedin-job-search returned HTTP 403 full-permission-actor-not-approved. Not approved in Apify console yet. No charge incurred.",
+      "approval_url": "https://console.apify.com/actors/zn01OAlzP853oqn4Z?approvePermissions=true"
+    },
+    "indeed": {
+      "status": "ok",
+      "calls": 8,
+      "succeeded": 6,
+      "failed": 2,
+      "failed_reason": "Apify actor output schema validation error on 'expirationDate' field (video editor/uk, YouTube editor/uk) - actor-side data bug, not budget related",
+      "raw_items": 126
+    }
+  },
+  "strict_filter_results": {
+    "kept_after_title_location_staffing_dedupe": 42,
+    "kept_after_website_required": 8,
+    "final_after_size_and_competitor_judgment": 4
+  },
+  "note": "LinkedIn Jobs source skipped (pending Apify actor approval). Indeed-only run. Full raw dataset and drop reasons kept in campaign-1-hiring-signal-dropped.json. This file holds only the leads that survived the C1 strict filter, pre-Phase-2-enrichment."
+}
