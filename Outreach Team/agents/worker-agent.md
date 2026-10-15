@@ -45,9 +45,16 @@ Dedupe by company + title. Log kept/dropped counts per source in the run log. Ne
 
 **CAMPAIGN 2 — Personal Brand (target: 80 leads)**
 
-Actor A: `apify/instagram-profile-scraper`
-- Handles/usernames: search profiles with bio keywords: "founder", "CEO", "coach", "creator", "personal brand", "agency owner"
+Actor A: Instagram user search — Composio `APIFY_SEARCH_INSTAGRAM` (searchType `user`)
+- Bio-keyword terms: "founder", "CEO", "coach", "creator", "personal brand", "agency owner"
+- **Hashtag terms (same search, one term per call, searchLimit 10, maxTotalChargeUsd 0.05):** `dtcbrand`, `ecommercefounder`, `personalbranding`, `metaads`, `contentcreator`, `ugccreator`, `dtcfounder`, `ecommercebrand`, `videomarketing`. If a single-word term errors, retry once with its spaced form from `campaigns/campaign-2-personal-brand/config.json` (e.g. "dtc brand"), then skip it. No separate hashtag scraper.
+- Hashtag-sourced leads must have **5,000+ followers** AND an email in the bio OR an external URL — drop the rest before enrichment.
 - maxItems: 40
+
+**C2 extra filters (all C2 leads):**
+- **Skip EU leads** — any lead in an EU member state → RED, Notes: "EU — excluded". The UK is not in the EU: keep UK leads.
+- Skip Bangladesh as well as Pakistan/India.
+- **Personal emails only** — firstname@domain, name.surname@domain, or the creator's personal Gmail/Outlook → GREEN. Role inboxes (info@, hello@, contact@, support@, team@, admin@, sales@, marketing@ …) → RED, Notes: "Generic email only". **No YELLOW queue for C2.**
 
 Actor B: `curious_coder/linkedin-profile-scraper`
 - Bio keywords: "founder", "CEO", "coach", "personal brand", "creator"
@@ -66,7 +73,7 @@ Actor B: `harvestapi/linkedin-post-search`
 
 **CAMPAIGN 4 — Local Businesses / Google Maps (target: ~20 leads, pre-scraped — do NOT scrape in the cloud)**
 
-C4 is scraped LOCALLY on Mustafa's PC at 7:30 AM PKT by `Outreach Team/google-maps/c4-scrape.py` (self-hosted gosom/google-maps-scraper on localhost — not reachable from the cloud). It rotates one search term + one city per day (see `campaigns/campaign-4-local-maps/config.json`), depth 5, emails on, and pushes the result to the repo before this routine runs.
+C4 is scraped LOCALLY on Mustafa's PC at **10:00 PM PKT the night before** (Sun–Wed nights, for Mon–Thu Phase 1 runs) by `Outreach Team/google-maps/c4-scrape.py`. The file is written to the NEXT day's folder, so at 8:00 AM PKT Phase 1 reads `leads/[TODAY]/` as normal. (Self-hosted gosom/google-maps-scraper on localhost — not reachable from the cloud). It rotates one search term + one city per day (see `campaigns/campaign-4-local-maps/config.json`), depth 5, emails on, and pushes the result to the repo before this routine runs.
 
 1. `git pull` to make sure you have the latest commits.
 2. Read `leads/[YYYY-MM-DD]/campaign-4-local-maps-raw.json`.

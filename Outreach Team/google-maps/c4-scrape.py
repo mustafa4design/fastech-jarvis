@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
 """Campaign 4 — Local Businesses (Google Maps) pre-scrape.
 
-Runs LOCALLY on Mustafa's PC at 7:30 AM PKT (Mon-Thu) via a local scheduled task,
-because the cloud Phase 1 routine cannot reach the self-hosted scraper on localhost.
+Runs LOCALLY on Mustafa's PC at 10:00 PM PKT the night before each Phase 1 run
+(Sun-Wed nights, Windows task "FASTECH-C4-Scrape"), because the cloud Phase 1
+routine cannot reach the self-hosted scraper on localhost.
 
-Picks today's search term + city from the rotation in
-campaigns/campaign-4-local-maps/config.json, runs one job on the local
-gosom/google-maps-scraper (http://localhost:8080), and writes
-leads/[YYYY-MM-DD]/campaign-4-local-maps-raw.json, then commits + pushes it so the
+Target date = the next Phase 1 day: run at/after 12:00 PKT it targets TOMORROW,
+run before noon it targets TODAY (manual morning runs still work). It picks that
+date's search term + city from the rotation in campaigns/campaign-4-local-maps/config.json,
+runs one job on the local gosom/google-maps-scraper (http://localhost:8080), and writes
+leads/[TARGET-DATE]/campaign-4-local-maps-raw.json, then commits + pushes it so the
 8:00 AM PKT cloud Phase 1 can filter / enrich / write / log the leads.
 
 Filtering is NOT done here — the Worker Agent applies the C4 rules in Phase 2.
@@ -15,7 +17,7 @@ On failure it still writes the raw file with status="failed" so Phase 1 can repo
 
 Usage:
   python c4-scrape.py              # scrape today's rotation, commit + push
-  python c4-scrape.py --dry-run    # print today's term/city only
+  python c4-scrape.py --dry-run    # print the target date's term/city only
   python c4-scrape.py --no-git     # scrape + write file, skip commit/push
 """
 import argparse, csv, io, json, subprocess, sys, time, urllib.request
@@ -119,15 +121,17 @@ def main():
     cfg = json.loads(CONFIG.read_text(encoding="utf-8"))
     gm = cfg["google_maps"]
     now = datetime.now(PKT)
-    term, city = pick(cfg, now.date())
-    print(f"Today ({now:%Y-%m-%d} PKT): '{term}' in {city['name']} [{city['region']}]")
+    target = now.date() + timedelta(days=1 if now.hour >= 12 else 0)
+    term, city = pick(cfg, target)
+    print(f"Target {target:%Y-%m-%d} (run {now:%Y-%m-%d %H:%M} PKT): "
+          f"'{term}' in {city['name']} [{city['region']}]")
     if args.dry_run:
         return
 
-    out = OUTREACH / "leads" / f"{now:%Y-%m-%d}" / "campaign-4-local-maps-raw.json"
+    out = OUTREACH / "leads" / f"{target:%Y-%m-%d}" / "campaign-4-local-maps-raw.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     result = {"campaign_id": cfg["campaign_id"], "campaign_label": cfg["sheet_campaign_label"],
-              "date": f"{now:%Y-%m-%d}", "scraped_at_pkt": now.strftime("%Y-%m-%d %H:%M"),
+              "date": f"{target:%Y-%m-%d}", "scraped_at_pkt": now.strftime("%Y-%m-%d %H:%M"),
               "search_term": term, "city": city["name"], "region": city["region"],
               "send_bucket": city["send_bucket"], "depth": gm["depth"], "email": gm["email"]}
     try:

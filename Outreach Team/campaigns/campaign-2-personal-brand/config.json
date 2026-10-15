@@ -25,9 +25,44 @@
       "YouTuber",
       "podcaster"
     ],
+    "instagram_search": {
+      "composio_tool": "APIFY_SEARCH_INSTAGRAM",
+      "searchType": "user",
+      "hashtag_terms": [
+        "dtcbrand",
+        "ecommercefounder",
+        "personalbranding",
+        "metaads",
+        "contentcreator",
+        "ugccreator",
+        "dtcfounder",
+        "ecommercebrand",
+        "videomarketing"
+      ],
+      "hashtag_terms_spaced_fallback": {
+        "dtcbrand": "dtc brand",
+        "ecommercefounder": "ecommerce founder",
+        "personalbranding": "personal branding",
+        "metaads": "meta ads",
+        "contentcreator": "content creator",
+        "ugccreator": "ugc creator",
+        "dtcfounder": "dtc founder",
+        "ecommercebrand": "ecommerce brand",
+        "videomarketing": "video marketing"
+      },
+      "per_term": {"searchLimit": 10, "maxTotalChargeUsd": 0.05},
+      "note": "Run the hashtag terms through the SAME Instagram user search C2 already uses (no separate hashtag scraper). One term per call. Single-word terms have returned a validation error before (2026-10-02) - if a term errors, retry once with its spaced fallback, then skip it.",
+      "hashtag_lead_filters": {
+        "min_followers": 5000,
+        "must_have": "email in bio OR an external URL in the profile",
+        "email_rule": "Personal email only (firstname@domain, name.surname@domain, or a personal Gmail/Outlook). Role inboxes (info@, hello@, contact@, support@, team@, admin@, sales@, marketing@ ...) = RED, not YELLOW - no manual-approval queue for C2."
+      }
+    },
     "filters": {
       "locations": ["US", "UK"],
-      "exclude_locations": ["Pakistan", "India"],
+      "exclude_locations": ["Pakistan", "India", "Bangladesh"],
+      "exclude_eu": true,
+      "exclude_eu_rule": "Skip any lead located in an EU member state (Austria, Belgium, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden). The UK is NOT in the EU - UK leads are kept. Notes: 'EU - excluded'.",
       "active_within_days": 30,
       "company_size_max": 50
     },
@@ -81,7 +116,10 @@
   "filtering_rules": {
     "skip_if_pakistan": true,
     "skip_if_india": true,
+    "skip_if_bangladesh": true,
+    "skip_if_eu": true,
     "skip_if_generic_email": true,
+    "personal_email_only": true,
     "skip_if_no_website": true,
     "skip_if_inactive_30_days": true
   }
