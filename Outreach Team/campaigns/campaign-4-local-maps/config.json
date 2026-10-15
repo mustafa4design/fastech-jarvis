@@ -6,7 +6,7 @@
   "expected_reply_rate": "3-6%",
   "run_days": "Mon-Thu (same days as Phase 1)",
 
-  "description": "Ecommerce, DTC, coaching and lifestyle brands found via Google Maps. Scraped LOCALLY on Mustafa's PC by the self-hosted gosom/google-maps-scraper (Docker, localhost:8080) because the cloud Phase 1 routine cannot reach localhost. The local pre-scrape runs at 10:00 PM PKT the night before (Sun-Wed) and pushes raw leads to GitHub under the NEXT day's date; cloud Phase 1 at 8:00 AM PKT filters, enriches, writes and logs them like Campaigns 1-3.",
+  "description": "Ecommerce and DTC brands, online coaching businesses, and digital marketing / social media / personal brand agencies found via Google Maps. Scraped LOCALLY on Mustafa's PC by the self-hosted gosom/google-maps-scraper (Docker, localhost:8080) because the cloud Phase 1 routine cannot reach localhost. The local pre-scrape runs at 10:00 PM PKT the night before (Sun-Wed) and pushes raw leads to GitHub under the NEXT day's date; cloud Phase 1 at 8:00 AM PKT filters, enriches, writes and logs them like Campaigns 1-3.",
 
   "google_maps": {
     "scraper": "gosom/google-maps-scraper:v1.18.1 (local Docker, http://localhost:8080)",
@@ -22,16 +22,15 @@
     "output_file": "Outreach Team/leads/[YYYY-MM-DD]/campaign-4-local-maps-raw.json",
 
     "rotation": {
-      "rule": "One search term + one city per run. day_index = date.toordinal(). term = search_terms[day_index % 8], city = cities[day_index % 27]. 8 and 27 share no factors, so every term x city pair (216) is covered before any repeats.",
+      "rule": "One search term + one city per run. day_index = date.toordinal(). term = search_terms[day_index % 7], city = cities[day_index % 27]. 7 and 27 share no factors, so every term x city pair (189) is covered before any repeats.",
       "search_terms": [
-        "ecommerce beauty brands",
-        "personal brand coaches",
-        "DTC skincare brands",
-        "online fitness coaches",
-        "lifestyle brands",
-        "ecommerce fashion brands",
-        "wellness brands",
-        "content creators agency"
+        "digital marketing agency",
+        "social media marketing agency",
+        "content creation studio",
+        "ecommerce brand",
+        "DTC brand",
+        "online coaching business",
+        "personal brand agency"
       ],
       "cities": [
         {"name": "New York",    "query": "New York NY",        "region": "US",    "lat": "40.7128",  "lon": "-74.0060",  "send_bucket": "US-East"},
@@ -67,11 +66,11 @@
   },
 
   "target_personas": [
-    "Ecommerce beauty, skincare, fashion and lifestyle brand founders",
-    "DTC brand owners",
-    "Personal brand coaches and online fitness coaches",
-    "Wellness brand founders",
-    "Creator-focused businesses (NOT video production competitors)"
+    "Ecommerce and DTC brand founders",
+    "Digital marketing and social media marketing agency owners (white-label video partner angle)",
+    "Personal brand agency owners",
+    "Online coaching business owners",
+    "Content creation studios that do NOT produce video in-house (video/production studios are competitors - skip)"
   ],
 
   "target_decision_maker": {
@@ -80,7 +79,7 @@
   },
 
   "email_framework_preference": "EGO_BOOST or PAIN_POINT",
-  "email_angle": "Reference their actual brand, product line or coaching offer from their website. Angle: brands like theirs live or die on short-form video (Reels, TikTok, product videos, ads) and most small teams can't produce enough of it. Never pitch generic 'video editing services'.",
+  "email_angle": "Reference their actual brand, product line, coaching offer or agency services from their website. Brands and coaches: they live or die on short-form video (Reels, TikTok, product videos, ads) and most small teams can't produce enough of it. Agencies (digital marketing / social media / personal brand): FASTECH as their white-label video team - they sell it, FASTECH edits overnight. Never pitch generic 'video editing services'.",
 
   "filtering_rules": {
     "skip_generic_emails": ["info@", "marketing@", "support@", "hello@"],

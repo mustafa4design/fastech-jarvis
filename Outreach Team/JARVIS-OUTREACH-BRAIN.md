@@ -194,7 +194,7 @@ Lead with their specific pain — ad creative fatigue, needing more video variat
 ---
 
 ### CAMPAIGN 4 — LOCAL BUSINESSES (Google Maps)
-**What it targets:** Ecommerce, DTC, coaching, fitness, wellness and lifestyle brands that are listed on Google Maps in major US, UK, EU and other cities.
+**What it targets:** Ecommerce and DTC brands, online coaching businesses, and digital marketing / social media / personal brand agencies listed on Google Maps in major US, UK, EU and other cities.
 
 **Why:** A steady supply of new brand owners that the LinkedIn/Instagram scrapers miss. It's free: the scraper is self-hosted and doesn't use Apify credit.
 
@@ -206,14 +206,13 @@ Lead with their specific pain — ad creative fatigue, needing more video variat
 **Settings:** Depth 5, emails on, one search term + one city per day.
 
 **Search terms (rotate daily):**
-- "ecommerce beauty brands"
-- "personal brand coaches"
-- "DTC skincare brands"
-- "online fitness coaches"
-- "lifestyle brands"
-- "ecommerce fashion brands"
-- "wellness brands"
-- "content creators agency"
+- "digital marketing agency"
+- "social media marketing agency"
+- "content creation studio"
+- "ecommerce brand"
+- "DTC brand"
+- "online coaching business"
+- "personal brand agency"
 
 **Cities (rotate daily):**
 - US: New York, Los Angeles, Chicago, Miami, Austin, Seattle, Denver, Atlanta, Boston, Houston
@@ -221,7 +220,7 @@ Lead with their specific pain — ad creative fatigue, needing more video variat
 - EU: Amsterdam, Berlin, Paris, Barcelona, Rome, Stockholm, Copenhagen, Dublin, Zurich
 - OTHER: Dubai, Toronto, Sydney
 
-Rotation: term = day % 8, city = day % 27. Every term × city pair (216) gets used before any pair repeats.
+Rotation: term = day % 7, city = day % 27. Every term × city pair (189) gets used before any pair repeats.
 
 **Rules:**
 - Skip info@, marketing@, support@, hello@ (and other role inboxes). **C4 role emails are RED, not YELLOW.**
