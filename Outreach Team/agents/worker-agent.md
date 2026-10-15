@@ -287,9 +287,9 @@ For each GREEN lead (personal email only — never send to role addresses):
 | London (BST, Apr–Sep) | 12:30 PM PKT |
 | Dubai / UAE | 7:30 AM PKT |
 | Unknown | Default to 6:30 PM PKT (EST) |
-| C4: Chicago / Austin / Houston / Toronto | US-East bucket — 6:30 PM PKT |
-| C4: Seattle / Denver / Sydney | US-West bucket — 9:30 PM PKT |
-| C4: EU cities / Dublin / Dubai | UK bucket — UK send phase |
+| C4: Chicago / Austin / Houston | US-East bucket — 6:30 PM PKT |
+| C4: Seattle / Denver | US-West bucket — 9:30 PM PKT |
+| C4: UK cities | UK bucket — UK send phase |
 
 **SEND THE PHASE 1 DRAFT EXACTLY — NO REWRITING (send phases 2/3/4):**
 1. Read today's Sheet tab, columns A:S. Column S of the lead's row is the email Phase 1 wrote.

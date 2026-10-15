@@ -194,7 +194,7 @@ Lead with their specific pain — ad creative fatigue, needing more video variat
 ---
 
 ### CAMPAIGN 4 — LOCAL BUSINESSES (Google Maps)
-**What it targets:** Ecommerce and DTC brands, online coaching businesses, and digital marketing / social media / personal brand agencies listed on Google Maps in major US, UK, EU and other cities.
+**What it targets:** Ecommerce and DTC brands, online coaching businesses, and digital marketing / social media / personal brand agencies listed on Google Maps in major US and UK cities.
 
 **Why:** A steady supply of new brand owners that the LinkedIn/Instagram scrapers miss. It's free: the scraper is self-hosted and doesn't use Apify credit.
 
@@ -217,10 +217,9 @@ Lead with their specific pain — ad creative fatigue, needing more video variat
 **Cities (rotate daily):**
 - US: New York, Los Angeles, Chicago, Miami, Austin, Seattle, Denver, Atlanta, Boston, Houston
 - UK: London, Manchester, Birmingham, Edinburgh, Bristol
-- EU: Amsterdam, Berlin, Paris, Barcelona, Rome, Stockholm, Copenhagen, Dublin, Zurich
-- OTHER: Dubai, Toronto, Sydney
+- US and UK only. EU and other regions were removed on 2026-10-16.
 
-Rotation: term = day % 7, city = day % 27. Every term × city pair (189) gets used before any pair repeats.
+Rotation: term = day % 7, city = day % 15. Every term × city pair (105) gets used before any pair repeats.
 
 **Rules:**
 - Skip info@, marketing@, support@, hello@ (and other role inboxes). **C4 role emails are RED, not YELLOW.**
@@ -230,7 +229,7 @@ Rotation: term = day % 7, city = day % 27. Every term × city pair (189) gets us
 - First name must come from the personal email or the website's About/Team page. No name → RED.
 - Logged to the same Google Sheet, in the same daily tab. **Column H = "Campaign 4 — Local Business (Google Maps)"**
 
-**Send timing:** each city maps to an existing send phase. US-East takes NY, Chicago, Miami, Austin, Atlanta, Boston, Houston and Toronto. UK takes the UK and EU cities plus Dubai. US-West takes LA, Seattle, Denver and Sydney.
+**Send timing:** each city maps to an existing send phase. US-East takes NY, Chicago, Miami, Austin, Atlanta, Boston and Houston. UK takes the 5 UK cities. US-West takes LA, Seattle and Denver.
 
 **Decision maker:** Founder / Owner / CEO / the coach themselves.
 

@@ -22,7 +22,7 @@
     "output_file": "Outreach Team/leads/[YYYY-MM-DD]/campaign-4-local-maps-raw.json",
 
     "rotation": {
-      "rule": "One search term + one city per run. day_index = date.toordinal(). term = search_terms[day_index % 7], city = cities[day_index % 27]. 7 and 27 share no factors, so every term x city pair (189) is covered before any repeats.",
+      "rule": "One search term + one city per run. day_index = date.toordinal(). term = search_terms[day_index % 7], city = cities[day_index % 15]. 7 and 15 share no factors, so every term x city pair (105) is covered before any repeats. US and UK cities only (EU and other regions removed 2026-10-16).",
       "search_terms": [
         "digital marketing agency",
         "social media marketing agency",
@@ -47,21 +47,9 @@
         {"name": "Manchester",  "query": "Manchester UK",      "region": "UK",    "lat": "53.4808",  "lon": "-2.2426",   "send_bucket": "UK"},
         {"name": "Birmingham",  "query": "Birmingham UK",      "region": "UK",    "lat": "52.4862",  "lon": "-1.8904",   "send_bucket": "UK"},
         {"name": "Edinburgh",   "query": "Edinburgh UK",       "region": "UK",    "lat": "55.9533",  "lon": "-3.1883",   "send_bucket": "UK"},
-        {"name": "Bristol",     "query": "Bristol UK",         "region": "UK",    "lat": "51.4545",  "lon": "-2.5879",   "send_bucket": "UK"},
-        {"name": "Amsterdam",   "query": "Amsterdam",          "region": "EU",    "lat": "52.3676",  "lon": "4.9041",    "send_bucket": "UK"},
-        {"name": "Berlin",      "query": "Berlin",             "region": "EU",    "lat": "52.5200",  "lon": "13.4050",   "send_bucket": "UK"},
-        {"name": "Paris",       "query": "Paris",              "region": "EU",    "lat": "48.8566",  "lon": "2.3522",    "send_bucket": "UK"},
-        {"name": "Barcelona",   "query": "Barcelona",          "region": "EU",    "lat": "41.3874",  "lon": "2.1686",    "send_bucket": "UK"},
-        {"name": "Rome",        "query": "Rome",               "region": "EU",    "lat": "41.9028",  "lon": "12.4964",   "send_bucket": "UK"},
-        {"name": "Stockholm",   "query": "Stockholm",          "region": "EU",    "lat": "59.3293",  "lon": "18.0686",   "send_bucket": "UK"},
-        {"name": "Copenhagen",  "query": "Copenhagen",         "region": "EU",    "lat": "55.6761",  "lon": "12.5683",   "send_bucket": "UK"},
-        {"name": "Dublin",      "query": "Dublin Ireland",     "region": "EU",    "lat": "53.3498",  "lon": "-6.2603",   "send_bucket": "UK"},
-        {"name": "Zurich",      "query": "Zurich",             "region": "EU",    "lat": "47.3769",  "lon": "8.5417",    "send_bucket": "UK"},
-        {"name": "Dubai",       "query": "Dubai UAE",          "region": "OTHER", "lat": "25.2048",  "lon": "55.2708",   "send_bucket": "UK"},
-        {"name": "Toronto",     "query": "Toronto Canada",     "region": "OTHER", "lat": "43.6532",  "lon": "-79.3832",  "send_bucket": "US-East"},
-        {"name": "Sydney",      "query": "Sydney Australia",   "region": "OTHER", "lat": "-33.8688", "lon": "151.2093",  "send_bucket": "US-West"}
+        {"name": "Bristol",     "query": "Bristol UK",         "region": "UK",    "lat": "51.4545",  "lon": "-2.5879",   "send_bucket": "UK"}
       ],
-      "send_bucket_note": "The Phase 2/3/4 send routines pick leads by timezone = US-East / UK / US-West. C4 leads get their city's send_bucket written into the timezone field so they are picked up without changing the send routines. EU + Dubai go out in the UK phase (late morning / midday local). Central US + Toronto go with US-East (7:30 AM local). Sydney goes with US-West (~2:30-3:30 AM local, sitting at the top of the inbox by morning)."
+      "send_bucket_note": "The Phase 2/3/4 send routines pick leads by timezone = US-East / UK / US-West. C4 leads get their city's send_bucket written into the timezone field so they are picked up without changing the send routines. UK cities go out in the UK phase. Central US (Chicago, Austin, Houston) goes with US-East (7:30 AM local). LA, Seattle and Denver go with US-West."
     }
   },
 
