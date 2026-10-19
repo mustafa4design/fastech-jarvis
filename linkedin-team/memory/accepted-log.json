@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "name": "Brad Johnson",
+    "linkedin_url": "https://linkedin.com/in/brad-johnson/",
+    "accepted_date": "2026-10-19",
+    "dm_sent": false,
+    "dm_date": null,
+    "dm_text": null
+  }
+]

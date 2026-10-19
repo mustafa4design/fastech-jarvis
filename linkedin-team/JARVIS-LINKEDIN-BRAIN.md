@@ -83,15 +83,35 @@ Keep under 300 characters.
 
 ---
 
-## MESSENGER DM TEMPLATE (after accept)
+## OUTREACH SEQUENCE — FULL PATTERN
+
+Same logic as email outreach. Every lead goes through all steps:
+
 ```
-Hey [Name]! Thanks for connecting.
+Step 1 → Connection sent (with note if quota allows, without note if limit hit)
+Step 2 → They accept → DM fires within 3 hours (automated)
+Step 3 → They reply → Mustafa follows up manually to book call
+```
 
-I noticed [specific thing about their brand/content/recent post]. 
+Never skip steps. Never send a generic blast.
 
-We help DTC brands like [similar brand] turn their products into scroll-stopping video content that actually converts.
+## MESSENGER DM TEMPLATE (after accept)
 
-Would it make sense to hop on a quick 15-min call this week?
+Pull name, role, company from lead queue JSON.
+Reference website: https://fastechads.netlify.app/ (portfolio + free creative fatigue calculator)
+
+```
+Hey [First Name]! Thanks for connecting.
+
+Noticed you're [role] at [Company] — [one specific observation about their brand/niche].
+
+Built something you might find useful: a free Creative Fatigue Calculator that tells you when your Meta ads are burning out before CPAs spike — fastechads.netlify.app
+
+We also help DTC brands produce scroll-stopping video ads overnight through our Overnight Engine. Brief in at night, finished ad by morning.
+
+Happy to chat if you're ever looking to move faster on creative.
+
+— Mustafa
 ```
 
 ---

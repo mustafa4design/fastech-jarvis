@@ -34,36 +34,47 @@ Also run on demand: *"Jarvis, check LinkedIn accepts"*
 
 ## DM TEMPLATE
 
-Personalize based on their role and company from the lead queue file.
+This is Step 2 of the outreach sequence:
+- Step 1: Connection sent (with personalized note if quota allows, without note if limit hit)
+- Step 2: They accept → THIS DM fires within 3 hours
 
+Pull their name, role, and company from `leads/YYYY-MM-DD/connection-log.json`.
+Also reference the website: https://fastechads.netlify.app/ — has portfolio + free creative fatigue calculator.
+
+**Template:**
 ```
 Hey [First Name]! Thanks for connecting.
 
-I noticed [specific thing — their brand/recent post/product/niche].
+Noticed you're [their role] at [Company] — [one specific observation about their brand/niche/scale].
 
-We help DTC brands like [similar brand or just "yours"] turn their products into scroll-stopping video content that converts — through our Overnight Engine system.
+Built something you might find useful: a free Creative Fatigue Calculator that tells you when your Meta ads are burning out before CPAs spike — fastechads.netlify.app
 
-Would it make sense to hop on a quick 15-min call this week?
+We also help DTC brands produce scroll-stopping video ads overnight through our Overnight Engine. Brief in at night, finished ad by morning.
+
+Happy to chat if you're ever looking to move faster on creative.
 
 — Mustafa
 ```
 
 **Personalization rules:**
-- Use their first name only
-- Reference something SPECIFIC — their company, product category, or a recent post if visible
-- Keep under 300 words
-- Never sound like a template (even though it is one)
-- Don't pitch immediately — open a conversation first
+- First name only
+- Pull role + company from lead queue JSON — never generic
+- One specific observation: supplement brand → "competitive space for paid creative," fashion DTC → "creative volume is everything at your stage," CMO → "you're probably testing 10+ creatives a week"
+- Lead with the free tool — value first, pitch second
+- Keep under 300 characters per message block (LinkedIn DM limit awareness)
+- Never sound templated
 
-**Example for CMO at a supplement brand:**
+**Example — CMO at supplement brand:**
 ```
 Hey Gytis! Thanks for connecting.
 
-Noticed Bioma Health is scaling hard — supplement DTC brands are one of the most competitive spaces for paid creative right now.
+Noticed Bioma Health is scaling hard — supplement DTC is one of the most creative-heavy spaces on Meta right now.
 
-We help brands like yours turn product demos and testimonials into high-converting Meta ads overnight — literally. Brief in at night, finished ad by morning.
+Built something useful: a free Creative Fatigue Calculator that flags when your ads are burning out before CPAs spike — fastechads.netlify.app
 
-Worth a quick 15-min call to see if it's a fit?
+We help brands like yours produce high-converting video ads overnight. Brief in at night, finished ad by morning.
+
+Worth a quick chat?
 
 — Mustafa
 ```
