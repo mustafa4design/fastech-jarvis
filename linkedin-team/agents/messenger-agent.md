@@ -12,11 +12,12 @@ Monitor for new connection accepts. When someone accepts → send personalized D
 
 LinkedIn has no webhook. So this agent polls on a schedule.
 
-**Daily flow:**
+**Polling flow (runs every 3 hours):**
 1. Open LinkedIn → My Network → Manage → Sent invitations (Accepted tab)
-2. Read the current accepted list
-3. Compare to `memory/accepted-log.json` (yesterday's known accepts)
-4. Any NEW name in the accepted list = they just accepted
+   URL: linkedin.com/mynetwork/invitation-manager/?filter=accepted
+2. Read the current accepted list (all names visible)
+3. Compare to `memory/accepted-log.json` (all known accepts logged so far)
+4. Any name NOT in the log = NEW accept → trigger DM immediately
 5. For each new accept → look up their data in `leads/YYYY-MM-DD/connection-log.json`
 6. Generate personalized DM using their role + company
 7. Send the DM via LinkedIn messaging
@@ -25,7 +26,8 @@ LinkedIn has no webhook. So this agent polls on a schedule.
 ---
 
 ## TRIGGER
-Run daily at **10:00 AM PKT** via scheduled task.
+Runs **every 3 hours** via scheduled task (e.g. 12AM, 3AM, 6AM, 9AM, 12PM, 3PM, 6PM, 9PM PKT).
+Goal: DM fires within 3 hours of acceptance — not next morning.
 Also run on demand: *"Jarvis, check LinkedIn accepts"*
 
 ---
