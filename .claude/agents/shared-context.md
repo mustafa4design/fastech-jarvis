@@ -13,8 +13,8 @@ description: Shared working memory for all JARVIS agents. Every agent reads and 
 ## Active Week
 Week of: Oct 19 - Oct 25, 2026
 Posts planned: 5 LinkedIn posts (Mon–Fri)
-Status: [ ] Research → [ ] Plan → [ ] Hooks (1-5) → [ ] Scripts (1-5) → [ ] Design (1-5) → [ ] Published
-CARRYOVER: Previous week's 5 posts (Oct 12–18) still unpublished in Buffer. CRITICAL BLOCKER remains unresolved.
+Status: [ ] Research → [✅] Plan → [ ] Hooks (1-5) → [ ] Scripts (1-5) → [ ] Design (1-5) → [ ] Published
+CARRYOVER: Previous week's 5 posts (Oct 12–18) still unpublished in Buffer. CRITICAL BLOCKER remains unresolved. Mustafa must choose publishing path by EOD Oct 19.
 
 ---
 
@@ -38,29 +38,29 @@ Avoid (too stale): Generic "AI edits faster" without DTC context, personal brand
 ---
 
 ## Manager Decisions
-*Updated by: Manager agent — COMPLETED 2026-10-12 07:00 PKT*
+*Updated by: Manager agent — COMPLETED 2026-10-20 07:00 PKT*
 
 Week plan status: ✅ COMPLETE — saved to `plan/weekly-content-plan.md`
 
-Post priority order:
-1. Mon Oct 12 — Meta cost contrarian (Pillar #5 + #9) · Hook: Data reveal + flip
-2. Tue Oct 13 — Origin story / Karachi founder narrative (Pillar #10) · Hook: Confession / scene
-3. Wed Oct 14 — Creative Testing Velocity framework (Pillar #2) · Hook: Bold number + named system
-4. Thu Oct 15 — Overnight Engine speed positioning (Pillar #1 + #6) · Hook: Speed contrast
-5. Fri Oct 16 — Multiplayer AI build-in-public (Pillar #8 + #2) · Hook: Behavioral moment
+Post priority order (Oct 19–23):
+1. Mon Oct 19 — Personal brand > company page contrarian (Pillar #5 + #10) · Hook: Contradiction flip
+2. Tue Oct 20 — Karachi founder advantage / Overnight Engine origin story (Pillar #10 + #1) · Hook: Personal scene / confession
+3. Wed Oct 21 — Budget-to-Testing-Velocity Framework (Pillar #2 + #6) · Hook: Bold number + named framework — SAVES-OPTIMIZED
+4. Thu Oct 22 — Creative fatigue data — before/after ROAS at day 7/10/14 (Pillar #6 + #1 + #9) · Hook: Before/after contrast
+5. Fri Oct 23 — Multiplayer AI build-in-public / AI bottleneck has shifted (Pillar #8 + #2) · Hook: Inverted AI hype + build reveal
 
 Hook format priority this week:
-1. Data reveal + contrarian flip (Mon)
-2. Confession / personal scene (Tue)
-3. Bold number + named system (Wed) — SAVES-OPTIMIZED
-4. Speed contrast + system positioning (Thu)
-5. Specific behavioral moment + workflow reveal (Fri)
+1. Contradiction flip (Mon) — re-activates after weekend
+2. Personal scene / confession (Tue) — personal story, highest LinkedIn engagement
+3. Bold number + named framework (Wed) — SAVES-OPTIMIZED
+4. Before/after contrast (Thu) — proof, high repost potential
+5. Inverted hype + build reveal (Fri) — build-in-public energy
 
-Pillar focus: #2 (AI workflows) most this week. #5 (contrarian) for Mon. #10 (founder) for Tue. No lead magnets this week (0/5).
+Pillar focus: #10 (founder) Mon+Tue. #2 (AI workflows) Wed+Fri. #6 (proof) Wed+Thu. No lead magnets (0/5).
 
 Agent writing priority: Posts 1–3 Monday, Posts 4–5 Tuesday. ALL done by Tuesday night.
 
-⚠️ BLOCKER NOTE: Previous week's posts never published. Buffer staging must be completed by Thu Oct 15 10AM PKT. Mustafa must contact Hafsa directly.
+⚠️ CRITICAL BLOCKER: Publishing pipeline broken 13+ days (Hafsa not staging). Mustafa must choose path by EOD Oct 19: (A) Call Hafsa, (B) Auto-publish, (C) LinkedIn native scheduling. Content pipeline WILL produce 5 posts this week regardless.
 
 ---
 
