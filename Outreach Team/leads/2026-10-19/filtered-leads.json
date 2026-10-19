@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-19",
+  "note": "Phase 2 output - leads that survived title/basic filters and were carried into Phase 3 Firecrawl enrichment, or were dropped immediately in Phase 2 before any enrichment spend. Final GREEN/YELLOW/RED status (post-Firecrawl) is in enriched-leads.json - this file reflects the Phase 2 decision only.",
+  "campaign_1_hiring_signal": {
+    "raw_items": 111,
+    "kept_after_title_match": 42,
+    "dropped_before_enrichment": 16,
+    "dropped_reasons": {
+      "no_company_name": 13,
+      "competitor_video_production": 1,
+      "large_corp_over_200_employees": 2
+    },
+    "sent_to_firecrawl_enrichment": 26
+  },
+  "campaign_2_personal_brand": {
+    "raw_items": 20,
+    "dropped_before_enrichment_eu_or_no_site": 6,
+    "sent_to_firecrawl_enrichment": 14
+  }
+}

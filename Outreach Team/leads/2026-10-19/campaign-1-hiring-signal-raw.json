@@ -1,0 +1,13 @@
+{
+  "campaign_id": "campaign-1-hiring-signal",
+  "date": "2026-10-19",
+  "sources": {
+    "APIFY_SEARCH_LINKEDIN_JOBS": {"status": "403 full-permission-actor-not-approved", "note": "Approve at https://console.apify.com/actors/zn01OAlzP853oqn4Z?approvePermissions=true - no spend incurred. Logged to #outreach-errors."},
+    "APIFY_SCRAPE_INDEED_JOBS": {"status": "ok", "calls": 8, "titles": ["video editor","content manager","social media manager","YouTube editor"], "countries": ["us","uk"], "raw_items_returned": 111, "note": "2 of 8 calls (content manager uk, social media manager uk) failed client-side schema validation on expirationDate field type - those items were not retrievable, no extra spend confirmed beyond the successful calls."}
+  },
+  "total_raw_items": 111,
+  "kept_after_title_regex_and_basic_filters": 42,
+  "dropped_at_title_regex_stage": 69,
+  "note": "Full raw 111-item dump processed in-session (not persisted verbatim here to control file size). The 42 items that passed title_must_match/must_not_match + initial company checks are carried into filtered-leads.json with final Phase 2/3 status. See memory/outreach-log.md and Slack #outreach-errors for the two Indeed call failures.",
+  "apify_spend_usd": 0.0242
+}

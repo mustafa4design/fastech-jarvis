@@ -1,0 +1,31 @@
+{
+  "campaign_id": "campaign-2-personal-brand",
+  "date": "2026-10-19",
+  "source": "APIFY_SEARCH_INSTAGRAM (searchType=user)",
+  "note": "Apify account-wide monthly cap ($5.00) was nearly exhausted after Campaign 1 (~$4.76 used). Only 1 batch of 4 bio-keyword terms (searchLimit 5 each) completed before the run was halted to protect the account. The 9 hashtag terms were NOT run - a parallel batch timed out mid-flight and was not retried once the near-cap situation was confirmed (see Slack #outreach-errors and memory/outreach-log.md).",
+  "terms_run": ["founder", "CEO", "coach", "personal brand"],
+  "terms_not_run": ["dtcbrand","ecommercefounder","personalbranding","metaads","contentcreator","ugccreator","dtcfounder","ecommercebrand","videomarketing"],
+  "apify_spend_usd_this_campaign": 0.0459,
+  "items": [
+    {"search_term":"founder","username":"founderzschool","fullName":"Founderz","followersCount":139272,"externalUrl":"https://t.mtrbio.com/founderz","businessCategoryName":"School"},
+    {"search_term":"founder","username":"foundersean","fullName":"Sean Greeley","followersCount":5000,"externalUrl":"https://linktr.ee/seangreeley","businessCategoryName":"Entrepreneur"},
+    {"search_term":"founder","username":"belief_coding","fullName":"BELIEF CODING","followersCount":46388,"externalUrl":"https://beliefcoding.com","businessCategoryName":null},
+    {"search_term":"founder","username":"thedanharrison","fullName":"Dan Harrison - Business Coach","followersCount":25349,"externalUrl":"https://www.skool.com/LFG","businessCategoryName":null},
+    {"search_term":"founder","username":"foundersformula_ig","fullName":"Supplement Founders Formula","followersCount":2094,"externalUrl":null,"businessCategoryName":null},
+    {"search_term":"CEO","username":"ceojustinburns","fullName":"Justin Burns","followersCount":32259,"externalUrl":"https://appsbuildathon.com/ticket","businessCategoryName":"Public figure"},
+    {"search_term":"CEO","username":"centrum_edukacji_obywatelskiej","fullName":"Centrum Edukacji Obywatelskiej","followersCount":778,"externalUrl":"https://nagrodasendlerowej.ceo.org.pl/","businessCategoryName":"Nonprofit Organization"},
+    {"search_term":"CEO","username":"wedproceo","fullName":"Wedding Industry Coach | Katie","followersCount":16471,"externalUrl":"http://www.wedprostudio.com","businessCategoryName":null},
+    {"search_term":"CEO","username":"thediaryofaceopodcast","fullName":"The Diary Of A CEO - With Steven Bartlett","followersCount":4101097,"externalUrl":"https://link.thediaryofaceo.com/5elQ8zi","businessCategoryName":null},
+    {"search_term":"CEO","username":"emilio.palomo.oficial","fullName":"Emilio Palomo tintacar startek tintado de lunas","followersCount":7173,"externalUrl":"http://linktr.ee/emilio.palomo.oficial","businessCategoryName":null},
+    {"search_term":"coach","username":"cherylporterdiva","fullName":"Cheryl Porter Vocal Coach","followersCount":5877199,"externalUrl":"http://www.cherylportermethod.com/","businessCategoryName":"Musician"},
+    {"search_term":"coach","username":"coach","fullName":"Coach","followersCount":8533636,"externalUrl":"https://urlgeni.us/spotify/nPAUNE","businessCategoryName":"Retail Company"},
+    {"search_term":"coach","username":"coach.kenny24","fullName":"pardon marikopo","followersCount":8088234,"externalUrl":"https://link.me/coach.kenny24","businessCategoryName":null},
+    {"search_term":"coach","username":"thebodycoach","fullName":"Joe Wicks","followersCount":4683271,"externalUrl":"https://podfollow.com/bupahealthorhype","businessCategoryName":null},
+    {"search_term":"coach","username":"christian.boceda","fullName":"Christian Boceda | Ritenzione e Inestetismi","followersCount":1522453,"externalUrl":"https://metodocbcoaching.com/consulenzagratuita1","businessCategoryName":null},
+    {"search_term":"personal brand","username":"jennifer.soulier.branding","fullName":"Coach Personal Branding","followersCount":10502,"externalUrl":"https://brand.jennifersoulier.com/etre-choisie","businessCategoryName":null},
+    {"search_term":"personal brand","username":"falah_24mo","fullName":"Chicken farming (Morocco)","followersCount":126,"externalUrl":null,"businessCategoryName":null},
+    {"search_term":"personal brand","username":"iam.adrianamorena","fullName":"Adriana-Morena | Productization & Growth Strategy","followersCount":3871,"externalUrl":"https://www.skool.com/aidesign/about","businessCategoryName":null},
+    {"search_term":"personal brand","username":"nabilgilani.conseil","fullName":"Nabil Gilani - Conseiller strategique d'image et d'autorite","followersCount":1915,"externalUrl":"https://stan.store/NabilGilani","businessCategoryName":null},
+    {"search_term":"personal brand","username":"romeoritchiex","fullName":"Romeo Ritchie","followersCount":null,"externalUrl":"https://x.com/romeoritchiex?s=11","businessCategoryName":null}
+  ]
+}
