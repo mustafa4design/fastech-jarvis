@@ -1,37 +1,65 @@
 # Post 1 — LinkedIn
-**Publish date:** Monday, Oct 12, 2026 · 9:00 AM PKT
-**Pillar:** #5 Contrarian Takes + #9 Meta/DTC Platform Commentary
-**Hook format:** Data reveal + contrarian flip
-**Written by:** Script Writer agent · 2026-10-12 08:00 PKT
+**Topic:** Personal brand > company page — the contrarian take
+**Pillar:** #5 (Contrarian) + #10 (Founder story)
+**Hook format:** Contradiction flip
+**Scheduled:** Mon Oct 19, 2026
 
 ---
 
-CPMs up 20%. ROAS down 3%. The math still works — barely. Here's what breaks it.
+FASTECH's company page: 400 impressions.
 
-My client pulled up her Meta dashboard in Q1. CPMs climbing month over month. She messaged me: "Are we done with Meta?"
+My personal profile: 4,000.
 
-No. But most people are reading the wrong numbers.
+Same post. Same day. I made a decision.
 
-Here's what the data actually shows.
+---
 
-CPMs are up 20% year-over-year. That part is real. But ROAS only dropped 3%.
+I used to think building the agency brand was the move.
 
-That gap isn't luck.
+Hired a designer for the company page. Wrote posts in third person. Posted consistently. Checked the analytics every Monday.
 
-Meta's algorithm got better at finding buyers. Each impression reaches a more qualified person. The auction costs more because the audience quality improved. You're paying more per click and getting a better click.
+400 people. Same number every week. Mostly bots.
 
-The brands that couldn't justify that cost? They left. Which means you're now competing against fewer, more serious advertisers.
+---
 
-Rising costs filtered out your weakest competition.
+Then I ran an experiment.
 
-But here's what actually breaks the math:
+Copied the same post. Put it on the company page Monday. Put it on my personal profile Thursday.
 
-Creative fatigue.
+Same content. Different voice.
 
-When your ads die in 7–14 days and you have no refresh ready — that's when 20% higher CPMs become 60% higher effective cost. You're paying more per impression AND your creative stopped converting.
+---
 
-The brands losing on Meta right now aren't losing because of CPMs. They're losing because their creative cycle is slower than their creative decay.
+4,000 impressions on my profile.
 
-The fix isn't a different platform. It's a faster testing system.
+400 on the company page.
 
-Are you reacting to Meta costs — or outrunning them?
+Not a fluke. I ran the test three more times. Same result every time.
+
+---
+
+The algorithm doesn't reward brands. It rewards people.
+
+Founder profiles reach 4–8x more than company pages. Not because the content is different — because a human voice travels further than a logo.
+
+LinkedIn already made this decision. I just followed the data.
+
+---
+
+I'm not building FASTECH's company page anymore.
+
+I'm building me.
+
+Because if you're a founder and you're investing more in your brand page than your personal profile, you're spending in the wrong place.
+
+The best distribution channel for your agency is your own story.
+
+---
+
+Where are you putting your energy right now — personal brand or company page?
+
+---
+
+*⚠️ MUSTAFA NOTE: Confirm the 400 vs 4,000 numbers are accurate from your own analytics before publishing.*
+
+*Script Writer · 2026-10-19 08:00 PKT*
