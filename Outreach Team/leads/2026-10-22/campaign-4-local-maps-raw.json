@@ -1,0 +1,35 @@
+{
+  "campaign_id": "campaign-4-local-maps",
+  "campaign_label": "Campaign 4 — Local Business (Google Maps)",
+  "date": "2026-10-22",
+  "scraped_at_pkt": "2026-10-21 22:00",
+  "search_term": "DTC brand",
+  "city": "Denver",
+  "region": "US",
+  "send_bucket": "US-West",
+  "depth": 5,
+  "email": true,
+  "status": "ok",
+  "keyword": "DTC brand in Denver CO",
+  "job_id": "c2355e7f-3d24-4a6d-ae18-1af04deea559",
+  "count": 1,
+  "with_email": 0,
+  "leads": [
+    {
+      "lead_id": "C4-01",
+      "title": "DTC Live",
+      "emails": [],
+      "phone": "",
+      "website": "https://www.dtc.live/",
+      "category": "Publisher",
+      "address": "1312 17th St #2702, Denver, CO 80202, United States",
+      "complete_address": "{\"borough\":\"Central\",\"street\":\"1312 17th St #2702\",\"city\":\"Denver\",\"postal_code\":\"80202\",\"state\":\"Colorado\",\"country\":\"US\"}",
+      "review_rating": "0.000000",
+      "review_count": "0",
+      "timezone": "America/Denver",
+      "owner": "{\"id\":\"113777983096247847679\",\"name\":\"DTC Live (Owner)\",\"link\":\"https://www.google.com/maps/contrib/113777983096247847679\"}",
+      "descriptions": "",
+      "link": "https://www.google.com/maps/place/DTC+Live/@39.7392,-104.9903,15z/data=!4m6!3m5!1s0x876c79ff15710a5d:0x6bb28db0b7b76f9a!8m2!3d39.7541032!4d-105.0002242!16s%2Fg%2F11xrkkwr_1?hl=en&entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D"
+    }
+  ]
+}
