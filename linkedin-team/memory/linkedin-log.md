@@ -60,3 +60,36 @@
 [2026-10-24 22:00 PKT] | Messenger | LinkedIn unreachable (proxy block) | 0 follow-ups sent | 0 new DMs sent | Brad Johnson DM pending — action needed from Mustafa
 
 ---
+
+### 2026-10-24 19:05 PKT | Connection Sender — Scheduled Run
+
+**STOPPED — Two blockers:**
+
+1. **No leads directory** — `linkedin-team/leads/` does not exist. Scout agent has not run since 2026-10-19. No connection-requests.json or leads.json available for today.
+
+2. **LinkedIn unreachable** — cloud session cannot reach linkedin.com (connection failed via proxy, same as Messenger run earlier today). Browser-based sending not possible from this environment.
+
+**Connections sent: 0**
+
+**Action needed — MANUAL (Mustafa):**
+1. LinkedIn connections must be sent manually from your browser until the cloud proxy block is resolved
+2. Scout agent needs to run to generate a new leads queue (`linkedin-team/leads/YYYY-MM-DD/connection-requests.json`)
+3. Available GREEN leads from previous campaigns (never contacted on LinkedIn):
+   - **DTC/Meta Ads (Campaign 3 — highest ICP fit):**
+     - Curtis Howland (VP Marketing, $4M+/mo Meta spend) — linkedin.com/in/curtishowland
+     - Antonio Ventre (Paid Ads, 7-8 fig DTC) — linkedin.com/in/antonioventre
+     - Austin Tanner (Co-Founder & CMO, Slate) — linkedin.com/in/austinttanner
+     - Estefania Freites (Creative Strategist, ecom) — linkedin.com/in/estefaniafreites
+     - Carina McLeod (CEO, eCommerce Nurse) — linkedin.com/in/carinamcleod
+     - Zach Schieffer (DTC repeat purchase specialist) — linkedin.com/in/zach-schieffer
+     - Ellad Kushnir (COO, Alison.ai AdTech) — linkedin.com/in/elladkushnir
+     - Jack Robson (builds teams for 7-9 fig brands) — linkedin.com/in/jack-robson-4a62321b4
+   - **Personal Brand (Campaign 2 — lower priority):**
+     - Rick Vanasse (Vistage Chair, Executive Coach) — linkedin.com/in/rick-vanasse-vistagechair
+     - Troy Heflin (Founder & CEO, ClarifyNorth) — linkedin.com/in/troy-heflin
+     - Chuck Gulledge (Executive Advisor) — linkedin.com/in/chuckgulledge
+     - David Brain (SaaS Founder) — linkedin.com/in/davidbrain1
+
+[2026-10-24 19:05 PKT] | Connection Sender | STOPPED — leads dir missing + LinkedIn proxy block | Sent: 0 | Skipped: 0 | Stopped early: yes — no leads file + linkedin.com unreachable from cloud
+
+---
