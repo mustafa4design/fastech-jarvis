@@ -93,3 +93,27 @@
 [2026-10-24 19:05 PKT] | Connection Sender | STOPPED — leads dir missing + LinkedIn proxy block | Sent: 0 | Skipped: 0 | Stopped early: yes — no leads file + linkedin.com unreachable from cloud
 
 ---
+
+### 2026-10-25 22:00 PKT | Messenger Agent — Scheduled Check
+
+**Part 1 — Follow-up check:**
+- Scanned accepted-log.json for dm_sent=true entries requiring 4-day follow-up
+- Result: 0 entries qualify (Brad Johnson — dm_sent=false, initial DM never sent — not eligible for follow-up)
+- Follow-ups sent: 0
+
+**Part 2 — Daily accept check:**
+- LinkedIn unreachable from cloud session (HTTP 000 / FAILED via proxy — same block as yesterday)
+- Could NOT check linkedin.com/mynetwork/connections/ for new accepts
+- Brad Johnson (accepted 2026-10-19, now 6 days ago) — initial DM STILL pending, dm_sent=false
+- DMs sent: 0
+
+**Action needed — MANUAL (Mustafa) — URGENT (Day 2 of same blocker):**
+1. Brad Johnson (Dir. Brand & Creative, Houston) accepted 6 days ago — initial DM still not sent
+   Send DM: "Hey Brad! Thanks for connecting. Noticed you're in brand and creative — the DTC creative space on Meta is moving fast right now. Built something useful: a free Creative Fatigue Calculator that flags when your ads burn out before CPAs spike — fastechads.netlify.app. We also help DTC brands produce scroll-stopping video ads overnight through our Overnight Engine. Brief in at night, finished ad by morning. Happy to chat if you're ever looking to move faster on creative. — Mustafa"
+2. After sending, mark dm_sent: true, dm_date: "2026-10-25" in accepted-log.json
+3. Also check connections list for any other accepts from the 2026-10-19 batch
+4. LinkedIn automation from cloud is blocked — Mustafa or Hafsa must handle DMs manually
+
+[2026-10-25 22:00 PKT] | Messenger | LinkedIn unreachable (proxy block, day 2) | 0 follow-ups sent | 0 new DMs sent | Brad Johnson DM URGENT — 6 days since accept
+
+---
