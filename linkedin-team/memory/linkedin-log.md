@@ -200,3 +200,17 @@
 [2026-10-26 22:00 PKT] | Messenger | LinkedIn unreachable (proxy block, Day 3) | 0 follow-ups sent | 0 new DMs sent | Brad Johnson DM CRITICAL — 7 days since accept
 
 ---
+
+### 2026-10-26 21:16 PKT | Connection Sender — Scheduled Run (2nd run today)
+
+**STOPPED — Same two blockers persist (Day 3):**
+
+1. **No leads directory** — `linkedin-team/leads/` still does not exist. Scout agent has not been run. This is Day 3 of missing leads queue.
+
+2. **LinkedIn unreachable** — HTTP 000 (CONNECT tunnel failed via proxy). Same persistent cloud block as 2026-10-24 and 2026-10-25.
+
+**Connections sent: 0**
+
+[2026-10-26 21:16 PKT] | Connection Sender | STOPPED — leads dir missing + LinkedIn proxy block (Day 3) | Sent: 0 | Skipped: 0 | Stopped early: yes
+
+---
