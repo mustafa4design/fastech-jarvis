@@ -1,75 +1,75 @@
-# Hooks This Week — Oct 19–23, 2026
-**Hook Writer agent · Monday Oct 19, 2026**
+# Hooks This Week — Oct 27–31, 2026
+**Hook Writer agent · Monday Oct 26, 2026**
 
 ---
 
-## POST 1 — Personal Brand > Company Page (Mon Oct 19)
-**Topic:** Founder personal profile vs. company page — contrarian reach data
-**Pillar:** #5 (Contrarian) + #10 (Founder story)
-**Hook format:** Contradiction flip
+## POST 1 — Creative Fatigue Is a Speed Problem (Mon Oct 27)
+**Topic:** DTC creative fatigue = 21-day death window. Testing velocity is the only answer.
+**Pillar:** #9 (Meta/DTC commentary) + #5 (Contrarian)
+**Hook format:** Bold data flip / Contradiction
 
-HOOK 01: "FASTECH's company page: 400 impressions. My personal profile: 4,000. Same post. Same day. I made a decision."
-HOOK 02: "I ran the same post on FASTECH's company page and my personal profile. 10x the reach on one of them. Guess which one I'm building."
-HOOK 03: "Every agency owner builds their brand page first. I did the opposite. Here's what the data said."
-HOOK 04: "Most founders are investing in the wrong channel. Your company page isn't your distribution. You are."
-HOOK 05: "The algorithm already made my strategy for me. Personal profiles reach 8x more than company pages. I just followed the math."
-HOOK 06: "400 impressions on FASTECH's page. 4,000 on mine. Same content. Different voice. That 10x gap changed how I think about brand."
-HOOK 07: "I stopped posting on FASTECH's LinkedIn company page. Leads didn't drop. Reach doubled. Here's why."
-HOOK 08: "The best distribution channel for my agency isn't my agency's page. It's my face."
-HOOK 09: "Your logo doesn't build clients. Your story does. One of them gets 8x the reach on LinkedIn."
-HOOK 10: "Company pages reach 400 people. Founder profiles reach 4,000. The math already chose your strategy. Are you following it?"
+HOOK 01: "DTC brands testing 3 creatives/month won in 2022. The same strategy in 2026 is statistically guaranteed to fail."
+HOOK 02: "In 2022: test 3 creatives a month, find winners. In 2026: same strategy, find nothing. The math changed."
+HOOK 03: "Your ad budget isn't the problem. Your creative velocity is."
+HOOK 04: "Everyone says 'test more creatives.' Nobody tells you how many more you actually need."
+HOOK 05: "In 2022, a winning ad ran for 90 days. In 2026, it dies in 21. Most brands didn't update the strategy."
+HOOK 06: "The brands winning on Meta in 2026 aren't spending more. They're producing faster."
+HOOK 07: "21 days. That's how long your best ad has before it's dead. Most agencies take 5 days to swap it."
+HOOK 08: "Creative fatigue is not an algorithm problem. It's a production speed problem."
+HOOK 09: "If your ad production cycle is 5 days, you will never keep up with creative fatigue. This is math, not strategy."
+HOOK 10: "Testing 3 ads a month used to be enough. Then the creative fatigue window collapsed from 90 days to 21. Nobody updated the playbook."
 
-TOP 3: #1 (data reveal, specific numbers, punchy — forces scroll), #6 (most specific, two numbers + insight), #10 (direct address, data-backed challenge)
+TOP 3: #2 (shortest, sharpest contrast, "the math changed" = irresistible curiosity gap), #5 (clear data reveal + problem named), #9 (confrontational, "this is math not strategy" = authority)
 ---
-**FINAL PICK: Hook #1**
-**REASON:** Shortest. Most specific. Three data points in three lines. The "I made a decision" ending creates immediate curiosity gap — what was the decision?
-
----
-
-## POST 2 — Overnight Engine Origin Story (Tue Oct 20)
-**Topic:** How FASTECH's 8-hour delivery started as a timezone constraint, not a strategy
-**Pillar:** #10 (Founder story) + #1 (Overnight Engine)
-**Hook format:** Personal scene / confession
-
-HOOK 01: "A UK client emailed at midnight London time. 'Need this finished before my 9 AM standup.' It was 5 AM in Karachi. I had 4 hours."
-HOOK 02: "I didn't build 8-hour delivery. A client's morning standup did."
-HOOK 03: "Most agencies see the timezone gap as the problem. I turned it into the product."
-HOOK 04: "In 2022, I thought being in Karachi was my biggest disadvantage. By 2023 it was my biggest edge."
-HOOK 05: "The Overnight Engine wasn't designed. It was forced by a deadline I couldn't miss."
-HOOK 06: "Every unfair advantage looks like a constraint from the outside."
-HOOK 07: "A UK client needed an ad before his morning standup. It was 5 AM in Karachi. I got to work. He got his ad. That became the system."
-HOOK 08: "I live 5 hours ahead of my clients. That sounds like a problem. It isn't."
-HOOK 09: "Speed wasn't a service feature I designed. It was a timezone I was born into."
-HOOK 10: "The best business model I ever built started as an inconvenience. A client email at 5 AM proved it."
-
-TOP 3: #1 (specific scene, real moment, vivid — highest engagement format on LinkedIn), #7 (full story arc in one hook), #6 (punchy, philosophical, reframe)
----
-**FINAL PICK: Hook #1**
-**REASON:** Sets the exact scene — time, place, constraint, deadline. LinkedIn's highest-performing format is the personal moment opener. This is it.
+**FINAL PICK: Hook #2**
+**REASON:** Three beats, zero fat. 2022 vs 2026 contrast is immediate. "The math changed" forces the click — they need to know what changed.
 
 ---
 
-## POST 3 — Budget-to-Testing-Velocity Framework (Wed Oct 21)
-**Topic:** How many creatives to test per spend level — the Velocity-to-Budget Ratio
-**Pillar:** #2 (AI workflows) + #6 (Results/proof)
-**Hook format:** Bold number + named framework (SAVES-OPTIMIZED)
+## POST 4 — The Creative Fatigue Decay Curve (Thu Oct 30)
+**Topic:** Day 7/Day 14/Day 21 ROAS timeline — and why 8-hour production changes the math
+**Pillar:** #1 (Overnight Engine) + #6 (Results/proof) + #9 (Meta/DTC commentary)
+**Hook format:** Before/after contrast (timeline-based)
 
-HOOK 01: "Testing 3 creatives per week at $30K/month Meta spend? Statistically, you're finding zero winners."
-HOOK 02: "Win rate on video ads: 12–18%. To find 2 winners at $30K/month, you need 15 tests per week. Most brands run 3."
-HOOK 03: "I mapped how many creatives you need to test at every budget level. $10K. $30K. $100K. Most brands are undercutting themselves."
-HOOK 04: "The Velocity-to-Budget Ratio: the one number that tells you if your creative testing volume matches your ad spend."
-HOOK 05: "Most DTC brands are spending at $30K/month and testing at $10K/month velocity. The gap is why ROAS isn't moving."
-HOOK 06: "12–18% of video ads win. Here's the math that tells you exactly how many you need to test for your budget level."
-HOOK 07: "Stop asking why your ROAS isn't improving. Start asking if you're testing enough creatives for your spend. Here's the formula."
-HOOK 08: "3 creatives a week won't win at $30K/month. 15 will. Here's the framework I use to map testing velocity to budget."
-HOOK 09: "$10K/month = 8–12 tests/week. $30K/month = 15–20. $100K/month = 30–50. The Velocity-to-Budget Ratio."
-HOOK 10: "Creative testing isn't about quality. It's about volume. Here's exactly how many ads you need to test per week at your budget."
+HOOK 01: "Your ad's ROAS at Day 7: strong. Day 14: declining. Day 21: dead. Most agencies take 5 days to swap it. We take 8 hours."
+HOOK 02: "Day 7: your ad is printing. Day 21: it's dead. The question is what happens in between."
+HOOK 03: "Every ad you've ever run has followed the same decay curve. Most brands don't know what it looks like."
+HOOK 04: "Your best ad has 21 days. Your agency's production cycle is 5. You're always behind."
+HOOK 05: "I mapped the ROAS decay curve for DTC ads. The problem isn't budget. It's timing."
+HOOK 06: "What kills DTC performance isn't ad spend — it's the gap between when an ad dies and when the replacement is ready."
+HOOK 07: "Day 1 to Day 21. Here's exactly how your ad ROAS moves — and why most brands are always 5 days too late."
+HOOK 08: "Most DTC brands don't know their creative fatigue curve. They just know performance 'dropped.'"
+HOOK 09: "The window between 'ad is dying' and 'new ad is ready' is where most DTC brands lose money."
+HOOK 10: "21-day fatigue window. 5-day agency cycle. That's 3 swaps maximum. At 15% win rate, you're statistically finding zero winners."
 
-TOP 3: #1 (gut-punch, specific, forces self-check), #9 (most concrete, shows the full framework in the hook, screenshot-worthy), #2 (data-backed urgency, forces math)
+TOP 3: #1 (clean timeline, before/after embedded, solution in the hook), #10 (most data-dense, math forces reread), #6 (names the exact loss — production gap)
 ---
 **FINAL PICK: Hook #1**
-**REASON:** Shortest gut-punch. "Statistically, you're finding zero winners" is the scroll-stop. Forces immediate self-assessment. #9 is saved as the opens-with-framework variant if Mustafa prefers showing the numbers upfront.
+**REASON:** Concrete, scannable timeline. Strong vs dead. The "we take 8 hours" ending plants curiosity + credibility in one line.
 
 ---
 
-*Saved: 2026-10-19 08:00 PKT · Hook Writer*
+## POST 5 — Multiplayer AI Build-in-Public (Fri Oct 31)
+**Topic:** Building a YC AI video editor while running a video editing agency — the real tension
+**Pillar:** #8 (Build-in-public) + #10 (Founder story)
+**Hook format:** Tension reveal / vulnerability
+
+HOOK 01: "I'm building an AI video editor while running a video editing agency. Most days, I don't know if one kills the other."
+HOOK 02: "Multiplayer AI is my YC application. FASTECH is my agency. I'm building software that automates what my team does."
+HOOK 03: "Everyone asks if Multiplayer AI will replace FASTECH. Honest answer: I don't know yet."
+HOOK 04: "I'm 20. Running an agency from Karachi. Building a YC startup. Studying CS. I left out the part where I sleep."
+HOOK 05: "Building an AI tool that automates video editing while manually editing videos for clients. The irony is not lost on me."
+HOOK 06: "The weirdest part of building Multiplayer AI? My best feature ideas come from running FASTECH."
+HOOK 07: "Most founders pivot away from the problem. I built a product directly into mine."
+HOOK 08: "FASTECH edits ads for clients. Multiplayer AI automates the editing. I'm both sides of the same trade."
+HOOK 09: "I don't know if Multiplayer AI kills FASTECH. But right now, one is making the other better."
+HOOK 10: "People ask: won't your AI tool replace your agency? I've stopped answering that question. Here's the honest version."
+
+TOP 3: #1 (pure tension, "kills the other" is dramatic and honest), #5 (the irony line is shareable and self-aware), #8 (clean paradox, conceptual strength)
+---
+**FINAL PICK: Hook #1**
+**REASON:** Raw tension in one line. Two things, one conflict, no resolution promised. Forces the read because the answer isn't given — it has to be earned.
+
+---
+
+*Saved: 2026-10-26 08:00 PKT · Hook Writer*

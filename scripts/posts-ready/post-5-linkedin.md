@@ -1,49 +1,65 @@
 # Post 5 — LinkedIn
-**Publish date:** Friday, Oct 16, 2026 · 9:00 AM PKT
-**Pillar:** #8 Build-in-Public (Agency Ops) + #2 AI Ad Production Workflows
-**Hook format:** Specific behavioral moment + workflow reveal
-**Written by:** Script Writer agent · 2026-10-13 08:00 PKT
+**Topic:** Building Multiplayer AI (YC applicant) while running FASTECH — the real tension
+**Pillar:** #8 (Build-in-public) + #10 (Founder story)
+**Hook format:** Tension reveal / vulnerability
+**Scheduled:** Fri Oct 31, 2026
 
 ---
 
-My editor paused the session and said: "I just want to speak the edit. Why am I still dragging clips?"
+I'm building an AI video editor while running a video editing agency.
 
-Two months later — she doesn't.
+Most days, I don't know if one kills the other.
 
-—
+---
 
-It was a Thursday afternoon.
+Multiplayer AI is my YC application.
 
-She was mid-cut on a DTC fashion ad. Six-track timeline. Clips stacked everywhere.
+FASTECH.PAK is my agency — 3 years, 40+ clients, video production for DTC brands.
 
-She stopped dragging. Put her hands down. Said it almost to herself.
+I'm literally building software that automates what my team does.
 
-I heard it. Wrote it in my notes.
+The irony isn't subtle.
 
-—
+---
 
-That was the brief for Multiplayer AI.
+When I started working on Multiplayer AI, I expected the conflict to be strategic.
 
-Not: "make editing faster."
+Would the product eventually replace the business?
 
-Not: "reduce timeline complexity."
+The real conflict turned out to be simpler.
 
-The brief was: what if the editor never had to open a timeline at all?
+Time.
 
-Two months of building later — that's where we are.
+CS classes at IoBM. 40+ active clients. A product that needs to ship. A YC application that needs to be right.
 
-She speaks the cut. Describes the pacing, the sequence, the moment she wants to land. AI executes.
+Every hour building is an hour not managing. Every hour managing is an hour not building.
 
-No drag. No timeline. No Premiere.
+---
 
-—
+But here's what running the agency taught me about the product:
 
-The creative decision is still hers. The execution is not.
+Every edge case in FASTECH's workflow becomes a feature requirement.
 
-That's the line we care about.
+Every thing the current tools can't do is a gap Multiplayer AI fills.
 
-We're applying to YC in January. This is why.
+When a client needs a re-edit at midnight, that's not just a production problem — it's a product insight.
 
-—
+The agency isn't competing with the product. It's the R&D lab.
 
-What part of your workflow do you wish you could just speak aloud and skip?
+---
+
+I don't know which one wins long term.
+
+I'm not sure that's the right question yet.
+
+Right now, one is making the other better.
+
+That's enough to keep building.
+
+---
+
+If you're building anything on the side while running your main thing — I want to hear it.
+
+---
+
+*Script Writer · 2026-10-26 08:25 PKT*

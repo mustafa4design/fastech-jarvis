@@ -1,21 +1,25 @@
 # Design Brief — Post 5
-**Post:** Multiplayer AI Build-in-Public (Fri Oct 16)
-**Written by:** Designer agent · 2026-10-13 08:00 PKT
+**Post:** Multiplayer AI Build-in-Public (Fri Oct 31)
+**Designer agent · 2026-10-26 08:34 PKT**
 
 ---
 
-**VISUAL CONCEPT:** A single dialogue line rendered as the hero element — raw, intimate, build-in-public energy. The actual quote from the editor is the design.
-
-**COVER TEXT:** "WHY AM I STILL DRAGGING CLIPS?"
-
-**COLOR MOOD:** Dark background, white headline, cyan accent on the quote marks. Quiet and personal.
-
-**VIBE:** Late-night build-in-public. Real > polished. YC applicant energy.
-
-**CANVA NOTE:** Full-bleed dark card. Giant quote marks in cyan #00e5ff (JetBrains Mono). The editor's line in Montserrat Black, white, slightly smaller than usual — let the quote feel intimate, not shouted. Subtitle: "Building Multiplayer AI" in Inter Regular, grey, below. Watermark bottom right.
+POST: Multiplayer AI Build-in-Public Tension Reveal
+VISUAL CONCEPT: Three-line personal identity stack — "BUILDING. EDITING. STUDYING." — raw founder energy, no decoration, just the tension in text
+COVER TEXT: "BUILDING. / EDITING. / STUDYING."
+COLOR MOOD: Dark — #020810 background, white dominant, single cyan #00e5ff accent dot per line
+VIBE: "late night founder energy" — personal, minimal, the typography carries the weight. Feels like a journal entry not a brand post.
+CANVA NOTE: Full dark background. Three stacked lines of Montserrat Black, left-aligned, each with a small cyan dot (#00e5ff) to the left. Lines: "BUILDING." / "EDITING." / "STUDYING." Large size, dominant. Below: small Inter Regular text in grey: "multiplayer ai. fastech.pak. iobm." No other elements. Sparse is the design.
 
 ---
 
 **GPT IMAGE PROMPT:**
 
-Generate a dark minimalist LinkedIn post image. Background: pure black #020810. Giant opening quotation mark in cyan #00e5ff, Montserrat Black, top left. Center text: "WHY AM I STILL DRAGGING CLIPS?" in Montserrat Black, white, large but not massive — intimate scale. Closing quotation mark in cyan bottom right of the quote. Subtitle below: "Building Multiplayer AI — text-native video editing" in small grey Inter Regular text. Bottom right: @mustafaghauri._ watermark in JetBrains Mono. Cyan glow effect #00e5ff behind quote marks only. Grain texture overlay 3%. No stock photos. No faces. Typography only.
+Generate a dark minimalist LinkedIn post image. Background: pure black #020810. Left-aligned layout, centered vertically. Three lines of text in Montserrat Black white, large size: line 1 'BUILDING.' with a small cyan dot '#00e5ff' to its left, line 2 'EDITING.' with a small cyan dot, line 3 'STUDYING.' with a small cyan dot. Generous line spacing between each. Below the three lines: small text in grey Inter Regular 'multiplayer ai. fastech.pak. iobm.' — much smaller than the headline stack. Bottom right: @mustafaghauri._ watermark in JetBrains Mono. Grain texture overlay 3%. No stock photos. No faces. No gradient. Typography only.
+
+---
+
+**TYPOGRAPHY (locked):**
+- Headline / Cover text: Montserrat Black 900
+- Body / Subtext: Inter Regular 400
+- Watermark: JetBrains Mono 400

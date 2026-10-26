@@ -1,51 +1,71 @@
 # Post 4 — LinkedIn
-**Publish date:** Thursday, Oct 15, 2026 · 9:00 AM PKT
-**Pillar:** #1 The Overnight Engine + #6 Results and Proof
-**Hook format:** Speed contrast + system positioning
-**Written by:** Script Writer agent · 2026-10-13 08:00 PKT
-
-⚠️ MUSTAFA VERIFY: Note from Script Writer — this post uses a general DTC client scenario (fashion brand with dead creative). If you have a real specific client story — a brand that ran stale creatives because their old agency was slow — replace the scene with that. Real detail always beats general.
+**Topic:** The creative fatigue decay curve — Day 7/14/21 ROAS timeline and the 8-hour production fix
+**Pillar:** #1 (Overnight Engine) + #6 (Results/proof) + #9 (Meta/DTC commentary)
+**Hook format:** Before/after contrast (timeline-based)
+**Scheduled:** Thu Oct 30, 2026
 
 ---
 
-Creative fatigue kills in 7–14 days. I built a system that delivers in 8 hours. Here's why that gap changes everything.
+Your ad's ROAS at Day 7: strong.
 
-—
+Day 14: declining.
 
-A DTC brand came to me in a panic.
+Day 21: dead.
 
-Their best Meta creative had died — ROAS collapsed, frequency too high, CPM spiking.
+Most agencies take 5 days to swap it.
 
-They'd caught it on day 10.
+We take 8 hours.
 
-They'd already emailed their agency.
+---
 
-Response time: 2 weeks.
+The creative fatigue curve isn't a surprise.
 
-They ran dead creative for 21 days straight. Not by choice. By default.
+Every DTC founder knows their best ads eventually die.
 
-—
+What most don't see is how fast it happens — and how much the production gap costs.
 
-That's not a creative problem. That's a production problem.
+---
 
-On Meta, every day of dead creative is wasted spend.
+Here's the decay timeline most brands are living:
 
-When your agency is still "reviewing concepts" at day 14, you're already losing to the brand that refreshed on day 8.
+Day 7 — CTR at peak. Audience is fresh. Algo rewards it. ROAS holds.
 
-I built The Overnight Engine for exactly this.
+Day 14 — Frequency creeping up. Same people seeing the same ad. Engagement drops. ROAS dips.
 
-Brief in at 11 PM. Finished ad before their morning standup.
+Day 21 — Audience burned. Hook rate collapses. Algorithm deprioritises. Performance dead.
 
-—
+Standard agency turnaround: 3–5 days.
 
-Creative velocity isn't a nice-to-have anymore. It's the whole game.
+That means 3–4 creative swaps max inside a single fatigue window.
 
-The brands winning on Meta aren't making better ads.
+---
 
-They're replacing dead ones faster.
+At 15–20% win rate on video ads, 3 swaps gives you near-zero statistical chance of finding a winner before your audience is burned.
 
-8-hour turnaround doesn't just save money. It changes how you compete.
+You're not running out of budget. You're running out of time.
 
-—
+---
 
-How long does your agency take to turn a brief into a live ad?
+8-hour production changes the math entirely.
+
+21-day window. 8-hour cycle.
+
+That's 18+ test slots — not 3.
+
+18 tests at 15% win rate = 2–3 winners per fatigue window.
+
+3 tests = 0.
+
+The Overnight Engine wasn't built for convenience.
+
+It was built because the decay curve made slow production a losing bet.
+
+---
+
+What's your current average ROAS drop between Week 1 and Week 3 of a creative?
+
+---
+
+*⚠️ MUSTAFA VERIFY: If you have a real client ROAS before/after example with Overnight Engine turnaround, anchor the "Scene" section to it — transforms this from a data post into a proof post. Replace the generic decay timeline with their actual numbers (with permission). This is the highest-leverage upgrade this post can get.*
+
+*Script Writer · 2026-10-26 08:20 PKT*

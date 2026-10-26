@@ -1,22 +1,25 @@
 # Design Brief — Post 1
-**Post:** Personal brand > company page — the contrarian take
-**Date:** Mon Oct 19, 2026
+**Post:** Creative Fatigue Is a Speed Problem (Mon Oct 27)
+**Designer agent · 2026-10-26 08:30 PKT**
 
 ---
 
-POST: Personal Brand vs Company Page — Contradiction Reveal
-VISUAL CONCEPT: Two numbers side-by-side in massive contrast — one dead, one alive. The visual IS the argument.
-COVER TEXT: 400 vs 4,000
-SUBTITLE: Same post. Same day.
-COLOR MOOD: Dark / High contrast — red left number (company page, dead), cyan right number (personal profile, alive)
-VIBE: Data-first authority — numbers so big the comparison is impossible to ignore
-CANVA NOTE: Split layout. Left side dim white "400" with label "COMPANY PAGE" in small grey Inter. Right side bright cyan "4,000" with label "MY PROFILE" in small white Inter. Both numbers in Montserrat Black 900, massive. Horizontal rule dividing them. Bottom watermark @mustafaghauri._
+POST: Creative Fatigue Speed Emergency
+VISUAL CONCEPT: Bold year-vs-year contrast — 2022 vs 2026 side-by-side stat reveal, "21 DAYS" as the hero number
+COVER TEXT: "21 DAYS."
+COLOR MOOD: Dark — #020810 background, white dominant, cyan #00e5ff accent on "21 DAYS"
+VIBE: "cold data drop" — stark, clinical, no decoration. The numbers are the design.
+CANVA NOTE: Split the canvas vertically. Left side: grey/dim text block "2022 · 90 DAYS" — smaller, receding. Right side: massive white "2026 · 21 DAYS" — dominant, cyan glow behind it. No imagery. No gradients beyond the glow.
 
 ---
 
-GPT IMAGE PROMPT:
-Generate a dark minimalist LinkedIn post image. Background: pure black #020810. Split layout: left side shows number "400" in Montserrat Black, dim white, faded, large size — label "COMPANY PAGE" in small Inter Regular grey text beneath. Right side shows "4,000" in Montserrat Black, bright cyan #00e5ff, glowing, same large size — label "MY PROFILE" in small white Inter Regular beneath. Thin vertical divider line between the two numbers in grey. Center top text: "Same post. Same day." in Inter Regular, small, muted grey. Bottom right: @mustafaghauri._ watermark in JetBrains Mono, grey. Cyan glow effect #00e5ff behind right number. Grain texture overlay 3%. No stock photos. No faces. Typography only.
+**GPT IMAGE PROMPT:**
+
+Generate a dark minimalist LinkedIn post image. Background: pure black #020810. Left half: dim grey text in Montserrat Black reading '2022' on top line, '90 DAYS' on second line — medium size, low contrast, receding. Right half: bright white text in Montserrat Black reading '2026' on top line, '21 DAYS' on second line — large, high contrast, dominant. Cyan glow effect #00e5ff behind '21 DAYS'. Thin vertical divider line between left and right in dark grey. Subtitle text in small grey Inter Regular centered at bottom: 'creative fatigue window collapsed'. Bottom right: @mustafaghauri._ watermark in JetBrains Mono. Grain texture overlay 3%. No stock photos. No faces. Typography only.
 
 ---
 
-*Designer agent · 2026-10-19 08:00 PKT*
+**TYPOGRAPHY (locked):**
+- Headline / Cover text: Montserrat Black 900
+- Body / Subtext: Inter Regular 400
+- Watermark: JetBrains Mono 400
