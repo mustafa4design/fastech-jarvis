@@ -145,6 +145,33 @@
 
 ---
 
+### 2026-10-26 19:22 PKT | Connection Sender — Scheduled Run
+
+**STOPPED — Same two blockers as previous days:**
+
+1. **No leads directory** — `linkedin-team/leads/` still does not exist. Scout agent has not been run. No connection-requests.json or leads.json available. This is Day 3 of missing leads.
+
+2. **LinkedIn unreachable** — HTTP 000 (CONNECT tunnel failed, response 403 via proxy). Same persistent proxy block as 2026-10-24 and 2026-10-25. Cloud session cannot reach linkedin.com.
+
+**Connections sent: 0**
+
+**Action needed — MANUAL (Mustafa) — Day 3 of same block:**
+1. Run Scout agent to generate a new leads queue (`linkedin-team/leads/YYYY-MM-DD/connection-requests.json`)
+2. Send connection requests manually from your browser — cloud automation is blocked from LinkedIn
+3. Available GREEN leads (Campaign 3 — DTC/Meta Ads, highest ICP fit — never contacted):
+   - Curtis Howland — linkedin.com/in/curtishowland
+   - Antonio Ventre — linkedin.com/in/antonioventre
+   - Austin Tanner — linkedin.com/in/austinttanner
+   - Estefania Freites — linkedin.com/in/estefaniafreites
+   - Carina McLeod — linkedin.com/in/carinamcleod
+   - Zach Schieffer — linkedin.com/in/zach-schieffer
+   - Ellad Kushnir — linkedin.com/in/elladkushnir
+   - Jack Robson — linkedin.com/in/jack-robson-4a62321b4
+
+[2026-10-26 19:22 PKT] | Connection Sender | STOPPED — leads dir missing + LinkedIn proxy block (day 3) | Sent: 0 | Skipped: 0 | Stopped early: yes
+
+---
+
 ### 2026-10-26 22:00 PKT | Messenger Agent — Scheduled Check
 
 **Part 1 — Follow-up check:**
