@@ -144,3 +144,32 @@
 [2026-10-25 22:00 PKT] | Messenger | LinkedIn unreachable (proxy block, day 2) | 0 follow-ups sent | 0 new DMs sent | Brad Johnson DM URGENT — 6 days since accept
 
 ---
+
+### 2026-10-26 22:00 PKT | Messenger Agent — Scheduled Check
+
+**Part 1 — Follow-up check:**
+- Scanned accepted-log.json for dm_sent=true entries requiring 4-day follow-up
+- Result: 0 entries qualify (Brad Johnson — dm_sent=false, initial DM never sent — not eligible for follow-up)
+- Follow-ups sent: 0
+
+**Part 2 — Daily accept check:**
+- LinkedIn STILL unreachable from cloud session (HTTP 000 / FAILED — proxy tunnel 403, Day 3 of same block)
+- Could NOT check linkedin.com/mynetwork/connections/ for new accepts
+- Brad Johnson (accepted 2026-10-19, now **7 days ago**) — initial DM STILL pending, dm_sent=false
+- DMs sent: 0
+
+**Status:**
+- This is Day 3 of the LinkedIn proxy block (first failed: 2026-10-24)
+- Brad Johnson has been waiting 7 days — window is getting cold
+- Cloud automation cannot resolve this — LinkedIn requires browser-based access only
+
+**Action needed — MANUAL (Mustafa) — CRITICAL:**
+1. **Brad Johnson** (Dir. Brand & Creative, Houston) accepted 7 days ago — initial DM URGENT
+   Send: "Hey Brad! Thanks for connecting. Noticed you're in brand and creative — the DTC creative space on Meta is moving fast right now. Built something useful: a free Creative Fatigue Calculator that flags when your ads burn out before CPAs spike — fastechads.netlify.app. We also help DTC brands produce scroll-stopping video ads overnight through our Overnight Engine. Brief in at night, finished ad by morning. Happy to chat if you're ever looking to move faster on creative. — Mustafa"
+2. After sending, update accepted-log.json: dm_sent: true, dm_date: "2026-10-26"
+3. Check connections list for any other new accepts from the 2026-10-19 batch (10 other people besides Brad)
+4. LinkedIn proxy block is persistent — not a transient failure. Cloud automation cannot reach LinkedIn.
+
+[2026-10-26 22:00 PKT] | Messenger | LinkedIn unreachable (proxy block, Day 3) | 0 follow-ups sent | 0 new DMs sent | Brad Johnson DM CRITICAL — 7 days since accept
+
+---
