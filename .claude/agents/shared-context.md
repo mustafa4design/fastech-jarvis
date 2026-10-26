@@ -40,29 +40,29 @@ Avoid: Generic "AI is faster," personal nostalgia, evergreen Meta advice without
 ---
 
 ## Manager Decisions
-*Updated by: Manager agent — COMPLETED 2026-10-20 07:00 PKT*
+*Updated by: Manager agent — COMPLETED 2026-10-26 07:00 PKT*
 
 Week plan status: ✅ COMPLETE — saved to `plan/weekly-content-plan.md`
 
-Post priority order (Oct 19–23):
-1. Mon Oct 19 — Personal brand > company page contrarian (Pillar #5 + #10) · Hook: Contradiction flip
-2. Tue Oct 20 — Karachi founder advantage / Overnight Engine origin story (Pillar #10 + #1) · Hook: Personal scene / confession
-3. Wed Oct 21 — Budget-to-Testing-Velocity Framework (Pillar #2 + #6) · Hook: Bold number + named framework — SAVES-OPTIMIZED
-4. Thu Oct 22 — Creative fatigue data — before/after ROAS at day 7/10/14 (Pillar #6 + #1 + #9) · Hook: Before/after contrast
-5. Fri Oct 23 — Multiplayer AI build-in-public / AI bottleneck has shifted (Pillar #8 + #2) · Hook: Inverted AI hype + build reveal
+Post priority order (Oct 27–31):
+1. Mon Oct 27 — Creative fatigue = speed problem (Pillar #9 + #5) · Hook: Bold data flip — COMEBACK POST · NEW SCRIPT NEEDED
+2. Tue Oct 28 — Overnight Engine origin story / UK midnight client (Pillar #10 + #1) · Hook: Personal scene · SCRIPT READY (post-2-linkedin.md)
+3. Wed Oct 29 — Velocity-to-Budget Ratio framework (Pillar #2 + #6) · Hook: Bold number + named framework — SAVES-OPTIMIZED · SCRIPT READY (post-3-linkedin.md)
+4. Thu Oct 30 — Creative fatigue decay curve ROAS before/after (Pillar #1 + #6 + #9) · Hook: Before/after contrast · NEW SCRIPT NEEDED
+5. Fri Oct 31 — Multiplayer AI build-in-public tension reveal (Pillar #8 + #10) · Hook: Tension reveal / vulnerability · NEW SCRIPT NEEDED
 
 Hook format priority this week:
-1. Contradiction flip (Mon) — re-activates after weekend
-2. Personal scene / confession (Tue) — personal story, highest LinkedIn engagement
+1. Bold data flip (Mon) — strong comeback after 3-week gap, live discourse
+2. Personal scene / confession (Tue) — highest LinkedIn engagement
 3. Bold number + named framework (Wed) — SAVES-OPTIMIZED
 4. Before/after contrast (Thu) — proof, high repost potential
-5. Inverted hype + build reveal (Fri) — build-in-public energy
+5. Tension reveal (Fri) — vulnerability + build-in-public energy
 
-Pillar focus: #10 (founder) Mon+Tue. #2 (AI workflows) Wed+Fri. #6 (proof) Wed+Thu. No lead magnets (0/5).
+Pillar focus: #9 + #5 (Mon), #10 + #1 (Tue), #2 + #6 (Wed), #1 + #6 + #9 (Thu), #8 + #10 (Fri). No lead magnets (0/5).
 
-Agent writing priority: Posts 1–3 Monday, Posts 4–5 Tuesday. ALL done by Tuesday night.
+Agent writing priority: Posts 1, 4, 5 are NEW (Hook Writer + Script Writer + Designer needed). Posts 2 + 3 already complete. Agents write Posts 1, 4, 5 Monday. ALL done by Tuesday night.
 
-⚠️ CRITICAL BLOCKER: Publishing pipeline broken 13+ days (Hafsa not staging). Mustafa must choose path by EOD Oct 19: (A) Call Hafsa, (B) Auto-publish, (C) LinkedIn native scheduling. Content pipeline WILL produce 5 posts this week regardless.
+⚠️ PUBLISHING: Buffer broken 17+ days. Mustafa must post DIRECTLY to LinkedIn (native scheduler). No Buffer. No Hafsa dependency. Posts 2 + 3 are ready now.
 
 ---
 
