@@ -214,3 +214,21 @@
 [2026-10-26 21:16 PKT] | Connection Sender | STOPPED — leads dir missing + LinkedIn proxy block (Day 3) | Sent: 0 | Skipped: 0 | Stopped early: yes
 
 ---
+
+### 2026-10-26 21:16 PKT | Messenger Agent — Manual Fire (delayed from 18:30 PKT)
+
+**Context:** Routine was scheduled for 18:30 PKT but laptop was off. Manually fired at 21:16 PKT.
+
+**Part 1 — Follow-up check:**
+- Scanned accepted-log.json: 1 entry (Brad Johnson), dm_sent=false — not eligible for follow-up
+- Follow-ups sent: 0
+
+**Part 2 — Accept check:**
+- LinkedIn **explicitly blocked by egress proxy** (connect_rejected — not a transient failure, the domain is not in the allowed list for this cloud session)
+- Cannot check connections or send any DMs from this environment
+- Brad Johnson (accepted 2026-10-19, **7 days ago**, dm_sent=false) — still waiting on manual send from Mustafa
+- DMs sent: 0
+
+**Root cause confirmed:** linkedin.com is not in the egress allowlist for this cloud session. This is not a network glitch — it requires Mustafa to add linkedin.com to allowed domains under Settings > Capabilities on claude.ai, OR handle LinkedIn tasks manually from his browser.
+
+[2026-10-26 21:16 PKT] | Messenger | Manual fire | LinkedIn egress-blocked (domain not allowed) | 0 follow-ups | 0 DMs | Brad Johnson CRITICAL — 7 days since accept — manual send required
