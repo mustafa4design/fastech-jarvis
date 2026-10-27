@@ -1,0 +1,16 @@
+{
+  "campaign_id": "campaign-4-local-maps",
+  "campaign_label": "Campaign 4 — Local Business (Google Maps)",
+  "date": "2026-10-28",
+  "scraped_at_pkt": "2026-10-27 22:56",
+  "search_term": "ecommerce brand",
+  "city": "Birmingham",
+  "region": "UK",
+  "send_bucket": "UK",
+  "depth": 5,
+  "email": true,
+  "status": "failed",
+  "error": "Google Maps scraper API not reachable on localhost:8080 (is Docker Desktop running?)",
+  "count": 0,
+  "leads": []
+}
