@@ -288,3 +288,31 @@
 4. **Brad Johnson** (accepted 2026-10-19, 8 days ago) — initial DM still UNSENT. Send manually ASAP.
 
 [2026-10-27 19:39 PKT] | Connection Sender | STOPPED — leads dir missing + LinkedIn proxy block (Day 4) | Sent: 0 | Skipped: 0 | Stopped early: yes — no leads file + linkedin.com egress-blocked
+
+---
+
+### 2026-10-28 22:00 PKT | Messenger Agent — Scheduled Check
+
+**Part 1 — Follow-up check:**
+- Scanned accepted-log.json: 1 entry (Brad Johnson), dm_sent=false — NOT eligible for follow-up (initial DM never sent)
+- Follow-ups sent: 0
+
+**Part 2 — Daily accept check:**
+- LinkedIn STILL unreachable from cloud session (Day 5 of proxy block — linkedin.com not in egress allowlist)
+- Could NOT check linkedin.com/mynetwork/connections/ for new accepts
+- Brad Johnson (accepted 2026-10-19, now **9 days ago**) — initial DM STILL pending, dm_sent=false
+- DMs sent: 0
+
+**Status:**
+- Day 5 of LinkedIn proxy block — same egress block as 2026-10-24 through 2026-10-27
+- Brad Johnson's accept window is now 9 days old — window is getting cold fast
+- Cloud automation cannot resolve this — requires manual action from Mustafa OR adding linkedin.com to egress allowlist in claude.ai Settings > Capabilities
+
+**Action needed — MANUAL (Mustafa) — URGENT Day 5:**
+1. **Brad Johnson** (Dir. Brand & Creative, Houston) accepted 9 days ago — send initial DM NOW
+   Text: "Hey Brad! Thanks for connecting. Noticed you're in brand and creative — the DTC creative space on Meta is moving fast right now. Built something useful: a free Creative Fatigue Calculator that flags when your ads burn out before CPAs spike — fastechads.netlify.app. We also help DTC brands produce scroll-stopping video ads overnight through our Overnight Engine. Brief in at night, finished ad by morning. Happy to chat if you're ever looking to move faster on creative. — Mustafa"
+2. After sending, update accepted-log.json: dm_sent: true, dm_date: "2026-10-28"
+3. Also check connections for any other accepts from the 2026-10-19 batch (Gytis, Benny, Camron, Claudia, Stephanie, Alex, Zachary, Ewelina, Betsy, JP)
+4. **To fix cloud automation permanently:** go to claude.ai → Settings → Capabilities → add linkedin.com to allowed network domains
+
+[2026-10-28 22:00 PKT] | Messenger | Scheduled check | LinkedIn proxy block Day 5 | 0 follow-ups sent | 0 DMs sent | Brad Johnson URGENT — 9 days since accept — manual send required
