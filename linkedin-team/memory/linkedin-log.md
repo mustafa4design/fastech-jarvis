@@ -344,3 +344,31 @@
 4. **Permanent fix:** claude.ai → Settings → Capabilities → add linkedin.com to allowed domains
 
 [2026-10-28 19:25 PKT] | Connection Sender | STOPPED — leads dir missing + LinkedIn proxy block (Day 5) | Sent: 0 | Skipped: 0 | Stopped early: yes
+
+---
+
+### 2026-10-29 22:00 PKT | Messenger Agent — Scheduled Check
+
+**Part 1 — Follow-up check:**
+- Scanned accepted-log.json: 1 entry (Brad Johnson), dm_sent=false — NOT eligible for follow-up (initial DM never sent)
+- Follow-ups sent: 0
+
+**Part 2 — Daily accept check:**
+- LinkedIn STILL unreachable from cloud session (HTTP 000 / FAILED — Day 6 of proxy block — linkedin.com not in egress allowlist)
+- Could NOT check linkedin.com/mynetwork/connections/ for new accepts
+- Brad Johnson (accepted 2026-10-19, now **10 days ago**) — initial DM STILL pending, dm_sent=false
+- DMs sent: 0
+
+**Status:**
+- Day 6 of LinkedIn proxy block — egress block has been persistent since 2026-10-24
+- Brad Johnson's accept window is now 10 days old — this is getting genuinely cold
+- The accept-log.json shows no other entries — other 10 people from the 2026-10-19 batch may have accepted without being logged
+
+**Action needed — MANUAL (Mustafa) — URGENT Day 6:**
+1. **Brad Johnson** (Dir. Brand & Creative, Houston) accepted 10 days ago — send initial DM NOW
+   Text: "Hey Brad! Thanks for connecting. Noticed you're in brand and creative — the DTC creative space on Meta is moving fast right now. Built something useful: a free Creative Fatigue Calculator that flags when your ads burn out before CPAs spike — fastechads.netlify.app. We also help DTC brands produce scroll-stopping video ads overnight through our Overnight Engine. Brief in at night, finished ad by morning. Happy to chat if you're ever looking to move faster on creative. — Mustafa"
+2. Also check connections for any other accepts from the 2026-10-19 batch (Gytis, Benny, Camron, Claudia, Stephanie, Alex, Zachary, Ewelina, Betsy, JP)
+3. After any DM sent, update accepted-log.json: dm_sent: true, dm_date: "2026-10-29"
+4. **Permanent fix:** claude.ai → Settings → Capabilities → add linkedin.com to allowed network domains
+
+[2026-10-29 22:00 PKT] | Messenger | Scheduled check | LinkedIn proxy block Day 6 | 0 follow-ups sent | 0 DMs sent | Brad Johnson URGENT — 10 days since accept — manual send required
