@@ -682,3 +682,31 @@
 3. **Permanent fix:** claude.ai → Settings → Capabilities → Network → add linkedin.com to allowed domains
 
 [2026-11-04 22:00 PKT] | Messenger | Scheduled check | LinkedIn proxy block Day 12 | 0 follow-ups sent | 0 DMs sent | Brad Johnson — 16 days since accept — manual send required
+
+---
+
+### 2026-11-04 19:15 PKT | Connection Sender — Scheduled Run
+
+**STOPPED — Both persistent blockers still active (Day 12):**
+
+1. **No leads directory** — `linkedin-team/leads/` still does not exist. Scout agent has not been run. This is Day 12 of missing leads queue.
+
+2. **LinkedIn unreachable** — HTTP 000 (FAILED via proxy). linkedin.com is not in the egress allowlist for this cloud session. Persistent block since 2026-10-24 (Day 12).
+
+**Connections sent: 0**
+
+**Action needed — MANUAL (Mustafa) — Day 12:**
+1. Run Scout agent to generate a new leads queue (`linkedin-team/leads/YYYY-MM-DD/connection-requests.json`)
+2. Send connection requests manually from your browser — GREEN leads waiting (Campaign 3):
+   - Curtis Howland — linkedin.com/in/curtishowland
+   - Antonio Ventre — linkedin.com/in/antonioventre
+   - Austin Tanner — linkedin.com/in/austinttanner
+   - Estefania Freites — linkedin.com/in/estefaniafreites
+   - Carina McLeod — linkedin.com/in/carinamcleod
+   - Zach Schieffer — linkedin.com/in/zach-schieffer
+   - Ellad Kushnir — linkedin.com/in/elladkushnir
+   - Jack Robson — linkedin.com/in/jack-robson-4a62321b4
+3. **Brad Johnson** (accepted 2026-10-19, now 16 days ago) — initial DM still UNSENT. Lead is very cold.
+4. **Permanent fix:** claude.ai → Settings → Capabilities → Network → add linkedin.com to allowed domains
+
+[2026-11-04 19:15 PKT] | Connection Sender | STOPPED — leads dir missing + LinkedIn proxy block (Day 12) | Sent: 0 | Skipped: 0 | Stopped early: yes — no leads file + linkedin.com egress-blocked
