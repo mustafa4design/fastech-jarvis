@@ -1,0 +1,27 @@
+{
+  "campaign_id": "campaign-1-hiring-signal",
+  "date": "2026-11-04",
+  "sources": {
+    "APIFY_SEARCH_LINKEDIN_JOBS": {
+      "status": "403 full-permission-actor-not-approved",
+      "note": "Approve at https://console.apify.com/actors/zn01OAlzP853oqn4Z?approvePermissions=true - no spend incurred. Logged to #outreach-errors."
+    },
+    "APIFY_SCRAPE_INDEED_JOBS": {
+      "status": "ok",
+      "calls": 8,
+      "titles": ["video editor", "content manager", "social media manager", "YouTube editor"],
+      "countries": ["us", "uk"],
+      "raw_items_returned": 161,
+      "note": "All 8 calls succeeded."
+    }
+  },
+  "total_raw_items": 161,
+  "kept_after_title_regex_and_basic_filters": 47,
+  "dropped_at_title_regex_stage": 114,
+  "deduped_by_company_and_title": 40,
+  "websites_found_on_scrape": 7,
+  "websites_found_via_websearch_fallback": 18,
+  "websites_still_missing": 15,
+  "note": "40 deduped leads carried into Phase 2/3. 25 had a usable website (7 direct, 18 via a web_search fallback for companies Indeed left blank). 15 with no discoverable website were dropped RED ('No website found'). Full 161-item raw dump processed in-session, not persisted verbatim here to control file size; see enriched-leads.json for per-lead outcomes.",
+  "apify_spend_usd_estimate": "~0.02 (well under the $1.00 C1 cap)"
+}

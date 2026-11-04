@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-04",
+  "note": "Phase 2 output - leads carried into Phase 3 Firecrawl enrichment (or dropped immediately for no website/no name/excluded location). Final GREEN/YELLOW/RED status is in enriched-leads.json.",
+  "campaign_1_hiring_signal": {
+    "raw_items": 161,
+    "kept_after_title_match_and_dedupe": 40,
+    "sent_to_firecrawl_enrichment": 25,
+    "dropped_no_website": 15
+  },
+  "campaign_2_personal_brand": {
+    "raw_profiles_deduped": 106,
+    "kept_after_hashtag_follower_and_proof_filter": 54,
+    "sent_to_firecrawl_enrichment": 54
+  },
+  "campaign_3_dtc_ads": {
+    "raw_authors_deduped": 45,
+    "kept_after_brand_owner_filter": 7,
+    "sent_to_firecrawl_enrichment": 2,
+    "sent_to_phase3a_linkedin_email_finder": 5
+  }
+}

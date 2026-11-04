@@ -1,0 +1,16 @@
+{
+  "campaign_id": "campaign-2-personal-brand",
+  "date": "2026-11-04",
+  "source": "APIFY_SEARCH_INSTAGRAM (searchType=user)",
+  "bio_keyword_terms_run": ["founder", "CEO", "coach", "creator", "personal brand"],
+  "bio_keyword_terms_errored_skipped": ["agency owner"],
+  "hashtag_terms_run_ok": ["ecommercefounder", "personalbranding", "metaads", "contentcreator", "ugccreator", "dtcfounder"],
+  "hashtag_terms_errored_both_forms_skipped": ["dtcbrand / dtc brand", "ecommercebrand / ecommerce brand", "videomarketing / video marketing"],
+  "note": "3 of 9 hashtag terms returned 'Instagram returned a result that does not match searchType=user' on both the single-word form and the spaced fallback form from campaign-2-personal-brand/config.json - skipped per rule. 1 bio keyword ('agency owner') hit the same error and was skipped (no fallback rule applies to bio keywords).",
+  "total_profiles_collected": 110,
+  "deduped_by_username": 106,
+  "kept_after_hashtag_follower5000_and_proof_filter": 54,
+  "dropped_hashtag_no_followers_or_proof": 46,
+  "dropped_no_website_no_email": 6,
+  "apify_spend_usd_estimate": "~1.2 (Instagram search is the most expensive Apify source used today)"
+}

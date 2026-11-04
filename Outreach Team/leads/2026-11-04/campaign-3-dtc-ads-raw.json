@@ -1,0 +1,12 @@
+{
+  "campaign_id": "campaign-3-dtc-ads",
+  "date": "2026-11-04",
+  "sources": {
+    "apify/tweet-scraper": {"status": "ok", "items": 10},
+    "harvestapi/linkedin-post-search": {"status": "ok", "items": 40, "queries": ["DTC ads", "ad creative", "Meta ads", "ecommerce video", "TikTok ads"]}
+  },
+  "total_raw_authors_deduped": 45,
+  "kept_after_brand_owner_filter": 7,
+  "dropped_freelancers_agencies_employees": 38,
+  "note": "Most LinkedIn post authors for these keywords were freelance video editors, copywriters, performance-marketing specialists and agency employees (i.e. FASTECH's peers/competitors, not clients) - dropped. Kept only authors whose bio reads as an actual brand founder/owner. Phase 3a (vulnv/linkedin-email-finder) run on the 5 LinkedIn-sourced leads with /in/ profile URLs - 0 emails found."
+}
