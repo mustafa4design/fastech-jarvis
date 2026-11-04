@@ -655,3 +655,30 @@
 4. **Permanent fix:** claude.ai → Settings → Capabilities → Network → add linkedin.com to allowed domains
 
 [2026-11-03 19:13 PKT] | Connection Sender | STOPPED — leads dir missing + LinkedIn proxy block (Day 11) | Sent: 0 | Skipped: 0 | Stopped early: yes — no leads file + linkedin.com egress-blocked
+
+---
+
+### 2026-11-04 22:00 PKT | Messenger Agent — Scheduled Check
+
+**Part 1 — Follow-up check:**
+- Scanned accepted-log.json: 1 entry (Brad Johnson), dm_sent=false — NOT eligible for follow-up (initial DM never sent)
+- Follow-ups sent: 0
+
+**Part 2 — Daily accept check:**
+- LinkedIn STILL unreachable from cloud session (HTTP 000 / FAILED — Day 12 of proxy block — linkedin.com not in egress allowlist)
+- Could NOT check linkedin.com/mynetwork/connections/ for new accepts
+- Brad Johnson (accepted 2026-10-19, now **16 days ago**) — initial DM STILL pending, dm_sent=false
+- DMs sent: 0
+
+**Status:**
+- Day 12 of LinkedIn proxy block — persistent since 2026-10-24
+- Brad Johnson accept window is 16 days old — lead is cold
+- Cloud automation has been unable to reach LinkedIn for 12 consecutive days
+- This will not resolve on its own — requires Mustafa to either fix egress settings or handle LinkedIn manually
+
+**Action needed — MANUAL (Mustafa):**
+1. Go to LinkedIn → check connections for any accepts from the 2026-10-19 batch (Gytis, Benny, Camron, Claudia, Stephanie, Alex, Zachary, Ewelina, Betsy, JP — and Brad Johnson)
+2. **Brad Johnson** (Dir. Brand & Creative, Houston) accepted 16 days ago — send DM manually now
+3. **Permanent fix:** claude.ai → Settings → Capabilities → Network → add linkedin.com to allowed domains
+
+[2026-11-04 22:00 PKT] | Messenger | Scheduled check | LinkedIn proxy block Day 12 | 0 follow-ups sent | 0 DMs sent | Brad Johnson — 16 days since accept — manual send required
