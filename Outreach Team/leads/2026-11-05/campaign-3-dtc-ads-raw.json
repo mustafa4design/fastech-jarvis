@@ -1,0 +1,37 @@
+{
+  "campaign": "3-DTCAds",
+  "sources_attempted": [
+    {"actor": "apify/tweet-scraper", "result": "Actor not found (404) — not the correct Apify actor ID. Retried with apidojo/tweet-scraper, which succeeded."},
+    {"actor": "apidojo/tweet-scraper", "input": {"searchTerms": ["DTC ads OR Meta ads OR TikTok ads OR ad creative OR ecommerce video"]}, "items_returned": 10, "cost_usd_approx": 0.004},
+    {"actor": "harvestapi/linkedin-post-search", "input": {"keywords": ["DTC ads", "ad creative", "Meta ads", "ecommerce video", "TikTok ads"]}, "items_returned": 0, "note": "Returned empty dataset — likely an input-schema mismatch (field name/shape for this actor not confirmed). No cost incurred. Not retried further due to Apify budget constraints this run."}
+  ],
+  "note": "C3 was not in the explicit worker instructions for this run's required campaigns (only C1/C2/C3 raw files were requested generically alongside C1/C2/C4), but config exists; given severe Apify budget constraints this run, C3 scrape was minimal — most of the 10 tweet-scraper results were off-topic noise (replies, retweets, unrelated politics/gossip). Only 2 passed relevance + geography + quality filtering.",
+  "raw_candidates": [
+    {
+      "handle": "markfzhuk",
+      "name": "Mark Zhuk | Local Meta Ads | Akoola",
+      "bio": "Jesus follower. Husband. Father of 2. I use Meta ads to build local monopolies for $2M+ home service companies.",
+      "location": "Seattle",
+      "followers": 6504,
+      "website": "https://akoola.com",
+      "tweet_context": "Reply tweet in a Meta-ads-adjacent thread, Nov 2026.",
+      "kept": true,
+      "fit_note": "Runs a Meta ads agency for home-service brands — plausible white-label video/creative production partner lead, not a DTC brand itself."
+    },
+    {
+      "handle": "digitaladguide",
+      "name": "Michael Diaz | Meta Ads",
+      "bio": "Black belt in Meta Ads (and BJJ). Showing you how to create winning ads on repeat. Personally spent $3.9M+ on Meta. Get daily coaching from me.",
+      "location": "Meta Ads Community (not a real geo)",
+      "followers": 1044,
+      "website": "http://skool.com/meta-ads-mastery",
+      "kept": true,
+      "fit_note": "Meta ads coach/community — no owned domain found, lower confidence; keep as low-priority candidate for enrichment."
+    }
+  ],
+  "dropped_noise": [
+    "luvumypineapple (Thai language, unrelated)", "aidannonx (political commentary)", "pandoks (unrelated reply)",
+    "Desh_bhakati (India, unrelated news)", "nawabonwheels (India, unrelated)", "anisur97 (Bangladesh, Fiverr freelancer selling tracking services — not an ICP target)",
+    "sullevol (2-word unrelated reply)", "TheKittenSpell (Indonesian spam/unrelated)"
+  ]
+}

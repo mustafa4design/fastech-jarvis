@@ -1,0 +1,117 @@
+{
+  "campaign": "1-Hiring",
+  "sources_attempted": ["APIFY_SEARCH_LINKEDIN_JOBS (harvestapi/linkedin-job-search)", "APIFY_SCRAPE_INDEED_JOBS (valig/indeed-jobs-scraper)"],
+  "source_errors": [
+    {
+      "source": "APIFY_SEARCH_LINKEDIN_JOBS",
+      "error": "HTTP 403 full-permission-actor-not-approved",
+      "action": "Posted to #outreach-errors with Apify console approval link; continued with Indeed only."
+    }
+  ],
+  "indeed_raw_count": 162,
+  "filter_funnel": {
+    "no_title_match": 83,
+    "title_excluded_keyword": 2,
+    "no_employer_name": 21,
+    "no_corporate_website": 33,
+    "staffing_or_recruiting_agency": 1,
+    "too_old_7days": 0,
+    "bad_country": 0,
+    "employees_over_200": 11,
+    "agency_contract_employment": 1,
+    "duplicates": 2,
+    "manually_dropped_competitor": 1
+  },
+  "manual_drops": [
+    {"company": "J2 Marketing", "reason": "Company's own description says it is 'an advertising and video production agency' with an in-house studio — a FASTECH competitor, not a client fit."}
+  ],
+  "data_corrections": [
+    {"indeed_employer_name": "CharlieHR", "corrected_to": "The John Locke Institute (JLI)", "reason": "Job description explicitly names 'The John Locke Institute (JLI)' as the hiring org; 'CharlieHR' appears to be the HR/ATS platform Indeed attributed as employer by error. Website corrected from charliehr.com to the Institute's own site at enrichment time."}
+  ],
+  "leads": [
+    {
+      "title": "Social Media Manager & Content Creator",
+      "company": "Abco Maintenance",
+      "company_website": "http://abcomaintenance.com/",
+      "location_city": "Rahway",
+      "location_country": "US",
+      "employees_count": "51 to 200",
+      "posted_date": "2026-11-03T06:00:00.000Z",
+      "job_url": "https://www.indeed.com/viewjob?jk=6052f75660b9286f",
+      "description_text": "Social Media Manager & Content Creator. Part time, NY/NJ market. Needs AI-powered tools for Reels, graphics, carousel posts. Facebook-first growth focus, Instagram secondary.",
+      "source": "indeed"
+    },
+    {
+      "title": "Social Media & Digital Content Manager",
+      "company": "Lucky Dog Animal Rescue",
+      "company_website": "http://luckydoganimalrescue.org/",
+      "location_city": "Arlington",
+      "location_country": "US",
+      "employees_count": "",
+      "posted_date": "2026-11-03T01:21:47.735Z",
+      "job_url": "https://www.indeed.com/viewjob?jk=ff741b74cbf5a73b",
+      "description_text": "Nonprofit animal rescue (LDAR), founded 2009, volunteer-powered 501(c)(3). Needs social/content manager across Instagram, TikTok, Facebook, LinkedIn plus influencer relationships.",
+      "source": "indeed"
+    },
+    {
+      "title": "Content Marketing Manager",
+      "company": "Drone Nerds",
+      "company_website": "http://dronenerds.com/",
+      "location_city": "Fort Lauderdale",
+      "location_country": "US",
+      "employees_count": "",
+      "posted_date": "2026-10-30T16:13:55.231Z",
+      "job_url": "https://www.indeed.com/viewjob?jk=704efd9e4e6138cd",
+      "description_text": "Drone Nerds, enterprise drone solutions provider. Needs Content Marketing Manager for lead-gen content, webinars, product launch campaigns; supervises Social Media Manager.",
+      "source": "indeed"
+    },
+    {
+      "title": "Freelance Video Editor",
+      "company": "Emma Technologies LTD",
+      "company_website": "http://www.emma-app.com",
+      "location_city": "Remote",
+      "location_country": "GB",
+      "employees_count": "11 to 50",
+      "posted_date": "2026-10-31T17:36:05.077Z",
+      "job_url": "https://uk.indeed.com/viewjob?jk=6a1dd56fdc231c04",
+      "description_text": "Emma (period-tracking / health app). Needs freelance video editor for multimedia content, color grading, Adobe suite.",
+      "source": "indeed"
+    },
+    {
+      "title": "BSL Video Editor",
+      "company": "RNID",
+      "company_website": "https://rnid.org.uk",
+      "location_city": "Remote",
+      "location_country": "GB",
+      "employees_count": "",
+      "posted_date": "2026-10-30T05:00:00.000Z",
+      "job_url": "https://uk.indeed.com/viewjob?jk=ba5c29e584055b6f",
+      "description_text": "RNID, UK deaf/hearing-loss charity (18M+ people supported). Needs BSL (British Sign Language) video editor, £40-42k FTE, 21hrs/week.",
+      "source": "indeed"
+    },
+    {
+      "title": "Video Editor (Facebook)",
+      "company": "KOMI Group Ltd",
+      "company_website": "https://komi.group/",
+      "location_city": "Manchester",
+      "location_country": "GB",
+      "employees_count": "51 to 200",
+      "posted_date": "2026-11-03T06:00:00.000Z",
+      "job_url": "https://uk.indeed.com/viewjob?jk=896a13527c0a5f05",
+      "description_text": "KOMI Group, 80+ owned social brands, 50M+ combined following, 4-5B monthly views. Needs video editor for Facebook social content, scripted shows.",
+      "source": "indeed"
+    },
+    {
+      "title": "Social Media Manager",
+      "company": "The John Locke Institute (JLI)",
+      "company_website": "https://www.charliehr.com (needs correction — see data_corrections)",
+      "location_city": "London",
+      "location_country": "GB",
+      "employees_count": "11 to 50",
+      "posted_date": "2026-11-02T06:00:00.000Z",
+      "job_url": "https://uk.indeed.com/viewjob?jk=6db30d3c1abc697f",
+      "description_text": "The John Locke Institute (JLI), small founder-led org (~15-20 people), education/essay-prize nonprofit. Needs Social Media Manager across Instagram, Facebook, LinkedIn for Summer Programmes, Global Essay Prize, new podcast/magazine launch.",
+      "source": "indeed"
+    }
+  ]
+}
