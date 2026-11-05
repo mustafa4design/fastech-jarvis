@@ -737,3 +737,31 @@
 3. **Permanent fix:** claude.ai → Settings → Capabilities → Network → add linkedin.com to allowed domains
 
 [2026-11-05 22:00 PKT] | Messenger | Scheduled check | LinkedIn proxy block Day 13 | 0 follow-ups sent | 0 DMs sent | Brad Johnson — 17 days since accept — manual send required
+
+---
+
+### 2026-11-05 19:17 PKT | Connection Sender — Scheduled Run
+
+**STOPPED — Same two persistent blockers (Day 12+):**
+
+1. **No leads directory** — `linkedin-team/leads/` is empty. Scout agent has not been run. No connection-requests.json or leads.json available.
+
+2. **LinkedIn unreachable** — HTTP 000 (CONNECT tunnel failed, response 403 via proxy). Same persistent egress block since 2026-10-24. Cloud session cannot reach linkedin.com.
+
+**Connections sent: 0**
+
+**Action needed — MANUAL (Mustafa):**
+1. Run Scout agent to generate a new leads queue (`linkedin-team/leads/YYYY-MM-DD/connection-requests.json`)
+2. Send connection requests manually from your browser — cloud cannot reach LinkedIn
+3. Available GREEN leads (Campaign 3 — DTC/Meta Ads, never contacted):
+   - Curtis Howland — linkedin.com/in/curtishowland
+   - Antonio Ventre — linkedin.com/in/antonioventre
+   - Austin Tanner — linkedin.com/in/austinttanner
+   - Estefania Freites — linkedin.com/in/estefaniafreites
+   - Carina McLeod — linkedin.com/in/carinamcleod
+   - Zach Schieffer — linkedin.com/in/zach-schieffer
+   - Ellad Kushnir — linkedin.com/in/elladkushnir
+   - Jack Robson — linkedin.com/in/jack-robson-4a62321b4
+4. **Brad Johnson** (accepted 2026-10-19, 17 days ago) — initial DM still UNSENT. Send manually ASAP — lead is very cold at this point.
+
+[2026-11-05 19:17 PKT] | Connection Sender | STOPPED — leads dir empty + LinkedIn proxy block (Day 12+) | Sent: 0 | Skipped: 0 | Stopped early: yes — no leads file + linkedin.com egress-blocked
