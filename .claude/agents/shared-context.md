@@ -64,16 +64,28 @@ Priority rules check: All 5 passed (personal story, bold Monday, saves-optimized
 ---
 
 ## Hook Writer Decisions
-*Updated by: Hook Writer agent — PENDING (runs Monday–Tuesday morning)*
+*Updated by: Hook Writer agent — COMPLETED 2026-11-09 08:00 PKT*
 
-Will generate 10 hook options per topic per research findings. Priority:
-1. Tier list format (self-location) — proven share multiplier
-2. Profitability math (65% data) — specific, causality
-3. Personal brand data (4k vs 400) — vulnerable, specific
-4. Holiday urgency (18 days to Black Friday) — time-bound
-5. Karachi story (timezone feature) — scene-based
+Generated 10 hook options per topic, filtered to top 3, picked 1 final per post. Formula rotation confirmed — no repeats.
 
-Final picks saved to: scripts/hooks-this-week.md
+**FINAL HOOK PICKS:**
+
+MON — "S-tier: 20+ new ads/month. A-tier: 10-15. B-tier: 5-10. C-tier: under 5. Which tier is your brand?"
+Formula: Tier list / self-location (#6). Self-location built into the hook. All 4 tiers with specific benchmarks visible before "see more" click.
+
+TUE — "Testing 20 creatives/month vs 5 creatives/month. The first group had 65% higher ROAS. Same platform, same budgets."
+Formula: Bold number / shock stat (#1). Controlled comparison — same platform, same budgets removes all excuses. 65% leads.
+
+WED — "Posted the same content to two accounts last week. Personal: 4,000 impressions. Company: 400."
+Formula: Story open (#8). "Last week" grounds it in real life. 4,000 vs 400 = immediate verifiable contrast. No explanation needed.
+
+THU — "Nov 15 is the cutoff. After that, you're not launching to learn. You're managing existing spend."
+Formula: Urgency reframe (#10). Specific date + strategic reframe inside the hook itself. DTC founders understand the shift immediately.
+
+FRI — "For the first year, I hid where we were based. Now it's the pitch."
+Formula: Confession (#3). 13 words. "I hid" is specific and vulnerable. "Now it's the pitch" creates massive curiosity gap.
+
+Full file: scripts/hooks-this-week.md
 
 ---
 
