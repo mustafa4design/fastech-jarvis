@@ -42,20 +42,24 @@ Avoid: Generic "testing matters," unverified benchmarks, iOS privacy takes (2026
 ---
 
 ## Manager Decisions
-*Updated by: Manager agent (Monday 7:00 AM PKT) — PENDING (runs after Researcher)*
+*Updated by: Manager agent (Monday 7:00 AM PKT) — COMPLETED 2026-11-09 07:00 PKT*
 
-COMING SOON (after research complete): 5 LinkedIn posts planned for Nov 9–15 per research priority ranking. Sequence:
-- Mon: Velocity tier list (SHARE-OPTIMIZED)
-- Tue: Profitability math 65% ROAS (DATA REVEAL)
-- Wed: Personal brand data (VULNERABLE + PROOF)
-- Thu: Holiday sprint framework (TIME-BOUND)
-- Fri: Karashi founder story (BUILD-IN-PUBLIC)
+5 LinkedIn posts planned for Nov 9–13, 2026. Plan saved to plan/weekly-content-plan.md.
 
-Hook format priority: Self-location (tier) → Data flip (65% ROAS) → Vulnerable data (4k vs 400) → Time-bound urgency (18 days) → Story/scene (Karachi).
+Sequence (confirmed against Researcher priority ranking):
+- Mon Nov 9: Velocity tier list (SHARE-OPTIMIZED) — Pillars #3+#6 — Hook: "Which creative testing tier are you in?"
+- Tue Nov 10: Profitability math 65% ROAS (DATA REVEAL) — Pillars #6+#9 — Hook: "65% higher ROAS. Only variable: testing volume."
+- Wed Nov 11: Personal brand data (VULNERABLE + PROOF) — Pillars #10+#5 — Hook: "Personal LinkedIn: 4k. FASTECH page: 400. Same post, same day."
+- Thu Nov 12: Holiday sprint framework (TIME-BOUND — EXPIRES NOV 15) — Pillars #9+#6 — Hook: "Black Friday Nov 27. 18 days. Here is your velocity target."
+- Fri Nov 13: Karachi founder story (BUILD-IN-PUBLIC) — Pillars #10+#1 — Hook: "Every unfair advantage looks like a constraint from outside."
 
-Pillar focus: #3 + #6 (Mon), #6 + #9 (Tue), #10 + #5 (Wed), #9 + #6 (Thu), #10 + #1 (Fri). No lead magnets (0/5).
+Hook format priority confirmed: Self-location (tier) → Data flip (65%) → Vulnerable data (4k vs 400) → Time-bound urgency (18 days) → Scene/story (Karachi).
+Lead magnets this week: 0/5 (hard cap compliant).
+Priority rules check: All 5 passed (personal story, bold Monday, saves-optimized Wed+Thu, build-in-public Friday, no consecutive days).
 
-**PUBLISHING PERMANENT CHANGE (CONFIRMED ONGOING):** Buffer closed. Hafsa unresponsive 31+ days (since Oct 7). Mustafa posts DIRECTLY to LinkedIn native scheduler. 1 post/day, 8–10 AM PKT. 2 min per post. No dependencies. Consistent daily posting required for algorithm recovery (40+ day gap = 50–70% reach loss).
+**PUBLISHING (PERMANENT):** Direct LinkedIn native scheduler. No Buffer (permanently offline). No Hafsa (unresponsive 31+ days). Mustafa posts 1 post/day, 8–10 AM PKT, 2 min per post. No dependencies.
+
+**ALGORITHM RECOVERY NOTE:** Tier list chosen for Post 1 specifically because shares = fastest algorithm recovery signal after 40-day gap. Consistent daily posting Nov 9–13 is non-negotiable for recovery.
 
 ---
 
@@ -152,3 +156,18 @@ If no posts go live by Nov 9: System enters seventh week. Recovery becomes mathe
 ---
 
 *This file is APPEND-ONLY. Every agent updates AFTER completing their task. Never overwrite sections — only add new week sections + append decisions.*
+
+---
+
+## DESIGN VIBES — WEEK ASSIGNMENTS
+
+| Post | Day | Topic | Vibe | Primary Accent |
+|------|-----|-------|------|-----------------|
+| 01 | MON | LinkedIn Depth Score (contrarian) | Late night founder | Cyan glow |
+| 02 | TUE | Why I dumped cold email (founder story) | Build-in-public raw | Green (winning path) + red (fading) |
+| 03 | WED | Creative Verdict System (AI frameworks) | AI aesthetic | Cyan + purple layers |
+| 04 | THU | The Overnight Engine intake layer | Late night founder + clean authority | Cyan timeline |
+| 05 | FRI | Agentic editing transformation | Build-in-public raw + AI aesthetic | Cyan transition |
+
+**Design system locked:** Montserrat Black 900 (headlines) / Inter 400 (body) / JetBrains Mono 400 (watermark). Dark glassmorphism. Background: #020810 or #0a0f1e. All briefs ready for Hafsa or AI image generation. Execution in `design/briefs/post-01 through post-05-design-brief.md`.
+
