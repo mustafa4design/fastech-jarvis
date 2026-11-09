@@ -929,3 +929,31 @@
 [2026-11-08 19:11 PKT] | Connection Sender | STOPPED — leads dir missing + LinkedIn proxy block (Day 15) | Sent: 0 | Skipped: 0 | Stopped early: yes — no leads file + linkedin.com egress-blocked
 
 ---
+
+### 2026-11-09 22:00 PKT | Messenger Agent — Scheduled Check
+
+**Part 1 — Follow-up check:**
+- Scanned accepted-log.json: 1 entry (Brad Johnson), dm_sent=false — NOT eligible for follow-up (initial DM never sent — follow-ups only apply after initial DM is sent)
+- Follow-ups sent: 0
+
+**Part 2 — Daily accept check:**
+- LinkedIn STILL unreachable from cloud session (HTTP 000 / FAILED — Day 17 of proxy block — linkedin.com not in egress allowlist)
+- Could NOT check linkedin.com/mynetwork/connections/ for new accepts
+- Brad Johnson (accepted 2026-10-19, now **21 days ago**) — initial DM STILL pending, dm_sent=false
+- DMs sent: 0
+
+**Status:**
+- Day 17 of LinkedIn proxy block — persistent since 2026-10-24
+- Brad Johnson accept window is 21 days old — lead is cold, window has passed
+- Other 10 people from 2026-10-19 batch (Gytis, Benny, Camron, Claudia, Stephanie, Alex, Zachary, Ewelina, Betsy, JP) may have also accepted — no visibility from cloud
+- Cloud automation has been unable to perform ANY LinkedIn actions for 17 consecutive days
+- **This scheduled task cannot function until LinkedIn egress is unblocked**
+
+**Recommended action — MUSTAFA:**
+1. **Fix the block:** claude.ai → Settings → Capabilities → Network → add linkedin.com to allowed domains. This is the only fix.
+2. **Brad Johnson** (Dir. Brand & Creative, Houston) — 21 days since accept, DM overdue:
+   > "Hey Brad! Thanks for connecting. Noticed you're in brand and creative — the DTC creative space on Meta is moving fast right now. Built something useful: a free Creative Fatigue Calculator that flags when your ads burn out before CPAs spike — fastechads.netlify.app. We also help DTC brands produce scroll-stopping video ads overnight through our Overnight Engine. Brief in at night, finished ad by morning. Happy to chat if you're ever looking to move faster on creative. — Mustafa"
+3. After sending, update accepted-log.json: dm_sent: true, dm_date: "2026-11-09"
+4. Also check connections for other accepts from the 2026-10-19 batch (10 other people — see names above)
+
+[2026-11-09 22:00 PKT] | Messenger | Scheduled check | LinkedIn proxy block Day 17 | 0 follow-ups sent | 0 DMs sent | Brad Johnson — 21 days since accept — task BLOCKED until egress unblocked
