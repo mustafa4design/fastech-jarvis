@@ -107,18 +107,20 @@ Scripts saved to: scripts/posts-ready/post-1-through-5-linkedin.md
 ---
 
 ## Designer Decisions
-*Updated by: Designer agent — PENDING (runs Monday–Tuesday morning)*
+*Updated by: Designer agent — COMPLETE 2026-11-09 08:30 PKT*
 
-Will create 5 design briefs per topics:
-1. Tier list — visual breakdown or narrative tiers (S/A/B/C)
-2. Profitability math — data card 65% + context
-3. Personal brand data — split 4k vs 400 contrast + insight
-4. Holiday sprint — timeline (Nov 9 → Nov 27) or velocity targets by spend
-5. Karachi story — time elements (5 AM, 4 hours, etc.) + minimal aesthetic
+5 design briefs written for Nov 9–13, 2026.
+
+1. Post 1 (Mon) — Velocity Tier List. 4-tier stacked layout (S/A/B/C). Cyan accent on S-tier. Leaderboard energy. Cover: "WHICH TIER IS YOUR BRAND?"
+2. Post 2 (Tue) — Profitability Math. "65%" dominates canvas in Montserrat Black. Cyan glow. Controlled comparison (20 vs 5) as subtext. Cover: "65% HIGHER ROAS"
+3. Post 3 (Wed) — Personal Brand Data. Two-column split. Left dim (400 · FASTECH PAGE). Right bright (4,000 · PERSONAL). Stark contrast visual. Cover: "4,000 vs 400"
+4. Post 4 (Thu) — Holiday Sprint. "NOV 15" header with cyan glow. 3-row velocity table by spend band ($10k/$30k/$100k+). Tactical urgency.
+5. Post 5 (Fri) — Karachi Founder Story. Two time zones side by side (5 PM LA / 6 AM Karachi). "THE OVERNIGHT ENGINE" as hero text at bottom with cyan glow.
 
 Typography: ✅ Montserrat Black 900 (headlines) · ✅ Inter Regular 400 (body) · ✅ JetBrains Mono 400 (watermark)
+All GPT image prompts included in briefs.
 
-Briefs saved to: design/briefs/post-1-through-5-design-brief.md
+Briefs saved to: design/briefs/post-1-design-brief.md through post-5-design-brief.md
 
 ---
 

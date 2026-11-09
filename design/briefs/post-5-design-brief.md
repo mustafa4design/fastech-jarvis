@@ -1,21 +1,27 @@
 # Design Brief — Post 5
-**Post:** Multiplayer AI Build-in-Public (Fri Oct 31)
-**Designer agent · 2026-10-26 08:34 PKT**
+**Post:** Karachi Founder Story — The Overnight Engine (Fri Nov 13)
+**Designer agent · 2026-11-09 08:00 PKT**
 
 ---
 
-POST: Multiplayer AI Build-in-Public Tension Reveal
-VISUAL CONCEPT: Three-line personal identity stack — "BUILDING. EDITING. STUDYING." — raw founder energy, no decoration, just the tension in text
-COVER TEXT: "BUILDING. / EDITING. / STUDYING."
-COLOR MOOD: Dark — #020810 background, white dominant, single cyan #00e5ff accent dot per line
-VIBE: "late night founder energy" — personal, minimal, the typography carries the weight. Feels like a journal entry not a brand post.
-CANVA NOTE: Full dark background. Three stacked lines of Montserrat Black, left-aligned, each with a small cyan dot (#00e5ff) to the left. Lines: "BUILDING." / "EDITING." / "STUDYING." Large size, dominant. Below: small Inter Regular text in grey: "multiplayer ai. fastech.pak. iobm." No other elements. Sparse is the design.
+POST: Built in Karachi. Clients in the US. The Timezone Gap Is the Moat.
+VISUAL CONCEPT: Two time zones — "5 PM · LOS ANGELES" on the left, "6 AM · KARACHI" on the right. The gap between them is the visual. Below: "THE OVERNIGHT ENGINE" as the named system reveal.
+COVER TEXT: "THE OVERNIGHT ENGINE"
+COLOR MOOD: Dark — #020810, white dominant, cyan #00e5ff on "OVERNIGHT ENGINE" and time zone labels
+VIBE: "quiet founder confidence" — late night / early morning energy. No hype. The timezone facts do the talking.
+CANVA NOTE: Horizontal two-column layout. Left: "5 PM" in large dim white Montserrat Black, below it small grey Inter Regular "LOS ANGELES · CLIENT SENDS BRIEF". Right: "6 AM" in large bright white Montserrat Black, below it small white Inter Regular "KARACHI · TEAM STARTS". Thin vertical center divider. Below both columns: full-width centered Montserrat Black white text "THE OVERNIGHT ENGINE" with cyan glow. Watermark bottom right.
 
 ---
 
 **GPT IMAGE PROMPT:**
 
-Generate a dark minimalist LinkedIn post image. Background: pure black #020810. Left-aligned layout, centered vertically. Three lines of text in Montserrat Black white, large size: line 1 'BUILDING.' with a small cyan dot '#00e5ff' to its left, line 2 'EDITING.' with a small cyan dot, line 3 'STUDYING.' with a small cyan dot. Generous line spacing between each. Below the three lines: small text in grey Inter Regular 'multiplayer ai. fastech.pak. iobm.' — much smaller than the headline stack. Bottom right: @mustafaghauri._ watermark in JetBrains Mono. Grain texture overlay 3%. No stock photos. No faces. No gradient. Typography only.
+Generate a dark minimalist LinkedIn post image. Background: pure black #020810.
+Top half: horizontal layout split by a thin center vertical line in dark grey.
+Left side: medium-large Montserrat Black text '5 PM' — dim white, slightly lower contrast. Below it: very small grey Inter Regular text 'LOS ANGELES · CLIENT SENDS BRIEF'.
+Right side: medium-large Montserrat Black text '6 AM' — bright white, higher contrast. Subtle cyan glow #00e5ff. Below it: very small white Inter Regular text 'KARACHI · TEAM STARTS'.
+Bottom half, below a horizontal divider: centered text 'THE OVERNIGHT ENGINE' in Montserrat Black white — prominent but not oversized. Cyan glow effect #00e5ff behind these words.
+Below that: very small grey Inter Regular text 'fastech.pak · karachi → worldwide'.
+Bottom right: @mustafaghauri._ watermark in JetBrains Mono. Grain texture overlay 3%. No stock photos. No faces. Typography only.
 
 ---
 

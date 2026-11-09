@@ -1,21 +1,29 @@
 # Design Brief — Post 4
-**Post:** The Creative Fatigue Decay Curve (Thu Oct 30)
-**Designer agent · 2026-10-26 08:32 PKT**
+**Post:** Holiday Sprint Velocity Framework (Thu Nov 12)
+**Designer agent · 2026-11-09 08:00 PKT**
 
 ---
 
-POST: Creative Fatigue Decay Curve — Day 7 / 14 / 21
-VISUAL CONCEPT: Three-column decay timeline — Day 7 (strong/white) → Day 14 (grey/fading) → Day 21 (red/dead) with "8 HOURS." as the cyan hero answer at the bottom
-COVER TEXT: "DAY 7 → DAY 21."
-COLOR MOOD: Dark — #020810 background, white-to-red decay across columns, cyan #00e5ff breakpoint line at bottom
-VIBE: "data autopsy" — clinical, precise, the visual tells the decay story before they read the post
-CANVA NOTE: Three equal columns. Each column: day number (small Inter Regular label at top), then status word in Montserrat Black (white for DAY 7: "STRONG", grey for DAY 14: "DECLINING", dark red for DAY 21: "DEAD"). Below all three columns: full-width cyan horizontal line #00e5ff. Below that: "8 HOURS." in large Montserrat Black white with cyan glow. Thin vertical dividers between columns.
+POST: Black Friday — Nov 15 Cutoff + Velocity Targets by Spend
+VISUAL CONCEPT: Countdown + budget-band velocity table. The visual communicates urgency through the Nov 15 date and tactical usefulness through the spend-tier breakdown.
+COVER TEXT: "NOV 15 CUTOFF"
+COLOR MOOD: Dark — #020810, white dominant, cyan accent on the date, faint red edge if possible to signal urgency
+VIBE: "tactical urgency" — calendar precision meets creative velocity. Clean but time-pressured.
+CANVA NOTE: Top section: large Montserrat Black "NOV 15" with cyan glow, below it small Inter Regular "Meta learning window closes". Then a minimal 3-row table with budget tiers: "$10k/mo → 2–3 creatives/wk" / "$30k/mo → 5–7/wk" / "$100k+/mo → 15–20+/wk". Bottom label: small cyan Inter Regular "Black Friday is Nov 27 · 18 days". Watermark bottom right.
 
 ---
 
 **GPT IMAGE PROMPT:**
 
-Generate a dark minimalist LinkedIn post image. Background: pure black #020810. Three equal vertical columns divided by thin dark grey lines. Column 1 (left): small label 'DAY 7' in grey Inter Regular at top, then 'STRONG' in large Montserrat Black white. Column 2 (center): small label 'DAY 14' in grey Inter Regular, then 'DECLINING' in large Montserrat Black medium grey. Column 3 (right): small label 'DAY 21' in grey Inter Regular, then 'DEAD' in large Montserrat Black dark red. Below all columns: full-width horizontal line in cyan #00e5ff. Below line: '8 HOURS.' in Montserrat Black white, large, with cyan glow effect #00e5ff. Small subtitle in grey Inter Regular: 'standard agency: 5 days · overnight engine: 8 hours'. Bottom right: @mustafaghauri._ watermark in JetBrains Mono. Grain texture overlay 3%. No stock photos. No faces. Typography only.
+Generate a dark minimalist LinkedIn post image. Background: pure black #020810.
+Top section: large white Montserrat Black text 'NOV 15' centered. Cyan glow effect #00e5ff behind 'NOV 15'. Below it: small grey Inter Regular text 'Meta learning window closes'.
+Middle section: three-row velocity table in minimal style. Each row has: spend band on left in small white Inter Regular, arrow in cyan, velocity target on right in small white Montserrat Black.
+Row 1: '$10k/mo' → '2–3 creatives/wk'
+Row 2: '$30k/mo' → '5–7/wk'
+Row 3: '$100k+/mo' → '15–20+/wk'
+Thin horizontal divider lines between rows in dark grey.
+Bottom: small cyan Inter Regular text 'BLACK FRIDAY NOV 27 · 18 DAYS'.
+Bottom right: @mustafaghauri._ watermark in JetBrains Mono. Grain texture overlay 3%. No stock photos. No faces. Typography only.
 
 ---
 
