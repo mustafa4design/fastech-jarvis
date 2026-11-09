@@ -1,71 +1,51 @@
-# Post 4 — LinkedIn
-**Topic:** The creative fatigue decay curve — Day 7/14/21 ROAS timeline and the 8-hour production fix
-**Pillar:** #1 (Overnight Engine) + #6 (Results/proof) + #9 (Meta/DTC commentary)
-**Hook format:** Before/after contrast (timeline-based)
-**Scheduled:** Thu Oct 30, 2026
+# POST 4 — HOLIDAY SPRINT VELOCITY
+**Day:** Thursday, Nov 12
+**Pillar:** #9 (Meta/DTC platform commentary) + #6 (Results proof)
+**Hook format:** Time-bound urgency — specific deadline forces action
+**Target engagement:** Saves + comments (tactical, time-sensitive)
 
 ---
 
-Your ad's ROAS at Day 7: strong.
+Black Friday is 15 days away. Meta's learning window closes in 6.
 
-Day 14: declining.
+Calendar math:
 
-Day 21: dead.
+Black Friday is November 27.
+Meta's algorithm needs roughly 14 days of learning before it can optimize properly.
+If you're not running by November 15, you're entering peak traffic with cold creatives.
 
-Most agencies take 5 days to swap it.
+No optimization. No learning data. Full peak CPMs.
 
-We take 8 hours.
+Most DTC brands haven't launched their holiday creative yet.
+Waiting on the final edit. Waiting for approvals.
+Waiting for it to feel finished.
 
----
+That window closes this week.
 
-The creative fatigue curve isn't a surprise.
+If you're launching now, here are the velocity targets by spend level based on the Admetrics formula:
 
-Every DTC founder knows their best ads eventually die.
+$10k per month: 2 to 3 new creatives live per week. Minimum.
 
-What most don't see is how fast it happens — and how much the production gap costs.
+$30k per month: 5 to 7 new creatives per week.
+Slower than this and you're burning peak CPMs with nothing learning.
 
----
+$100k per month: 15 to 20+ per week.
+At this spend level, creative fatigue is a daily problem, not a weekly one.
 
-Here's the decay timeline most brands are living:
+The brands that win Black Friday 2026 started in October.
 
-Day 7 — CTR at peak. Audience is fresh. Algo rewards it. ROAS holds.
+The second-best time to start is today, before November 15.
+After that date, the game shifts.
 
-Day 14 — Frequency creeping up. Same people seeing the same ad. Engagement drops. ROAS dips.
+You're no longer managing learning.
+You're managing spend.
 
-Day 21 — Audience burned. Hook rate collapses. Algorithm deprioritises. Performance dead.
+Those are two very different games.
 
-Standard agency turnaround: 3–5 days.
-
-That means 3–4 creative swaps max inside a single fatigue window.
-
----
-
-At 15–20% win rate on video ads, 3 swaps gives you near-zero statistical chance of finding a winner before your audience is burned.
-
-You're not running out of budget. You're running out of time.
-
----
-
-8-hour production changes the math entirely.
-
-21-day window. 8-hour cycle.
-
-That's 18+ test slots — not 3.
-
-18 tests at 15% win rate = 2–3 winners per fatigue window.
-
-3 tests = 0.
-
-The Overnight Engine wasn't built for convenience.
-
-It was built because the decay curve made slow production a losing bet.
+If you're launching creatives this week, what's your velocity target?
 
 ---
-
-What's your current average ROAS drop between Week 1 and Week 3 of a creative?
-
----
-
-*⚠️ MUSTAFA VERIFY: If you have a real client ROAS before/after example with Overnight Engine turnaround, anchor the "Scene" section to it — transforms this from a data post into a proof post. Replace the generic decay timeline with their actual numbers (with permission). This is the highest-leverage upgrade this post can get.*
-
-*Script Writer · 2026-10-26 08:20 PKT*
+**Hook source:** "Black Friday window closes Nov 15 for learning." (Nov 9–13 framework)
+**Data cite:** Admetrics velocity formula (1.5–3.0 creatives per week per $10k monthly spend)
+**Word count:** ~215
+**Note for Mustafa:** The Nov 15 learning deadline is based on the 14-day Meta learning window + Nov 27 Black Friday date. Confirm this is consistent with your direct Meta experience before posting.

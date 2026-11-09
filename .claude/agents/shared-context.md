@@ -78,16 +78,17 @@ Final picks saved to: scripts/hooks-this-week.md
 ---
 
 ## Script Writer Decisions
-*Updated by: Script Writer agent — PENDING (runs Monday–Tuesday morning)*
+*Updated by: Script Writer agent — COMPLETE 2026-11-09 08:00 PKT*
 
-Will write full captions per 5 topics:
-1. Velocity tier list (narrative or visual structure)
-2. Profitability math (Data → mechanism → implication)
-3. Personal brand data (Data reveal → insight → decision → implication)
-4. Holiday sprint (Timeline + velocity targets by spend level)
-5. Karachi story (Scene → realization → system reveal)
+5 LinkedIn posts written for Nov 9–13, 2026.
 
-Voice checklist: ✅ Short sentences · ✅ No "genuinely/honestly/straightforward" · ✅ Young founder energy · ✅ English only · ✅ No hashtags
+1. Post 1 (Mon) — Velocity Tier List. Hook: "The DTC creative velocity tier list. Which tier is your brand?" Tier D/C/B/A structure. Cites Motion 2026 data (65% ROAS gap). Pillar #3+#6. Target: shares + comments.
+2. Post 2 (Tue) — Profitability Math. Hook: "65% higher ROAS. The only variable was testing volume." Data reveal → mechanism → implication. Cites Motion 2026. Pillar #6+#9. Target: saves + reshares.
+3. Post 3 (Wed) — Personal Brand Data. Hook: "My personal account gets 10x more reach than the FASTECH company page." Vulnerable data (4k vs 400). Pillar #10+#5. Target: comments + shares.
+4. Post 4 (Thu) — Holiday Sprint. Hook: "Black Friday is 15 days away. Meta's learning window closes in 6." Time-bound urgency + velocity targets by spend level. Cites Admetrics formula. Pillar #9+#6. Target: saves + comments.
+5. Post 5 (Fri) — Karachi Advantage. Hook: "Built in Karachi. Clients in the US. The timezone gap is the moat." Scene → reframe → system reveal. Pillar #10+#1. Target: comments + profile visits.
+
+Voice checklist: ✅ Short sentences · ✅ No banned words · ✅ Young founder energy · ✅ English only · ✅ No hashtags · ✅ No AI tells · ✅ No "I" at hook start
 
 Scripts saved to: scripts/posts-ready/post-1-through-5-linkedin.md
 
