@@ -95,3 +95,5 @@
 [2026-11-02 07:00 PKT] | Manager | Weekly plan created | 5 LinkedIn posts planned (Nov 2–6) — ALL READY (carried from Oct 27–31 unposted queue): Mon creative fatigue data flip, Tue Overnight Engine origin, Wed Velocity-to-Budget framework, Thu decay curve ROAS, Fri Multiplayer AI build-in-public. PUBLISHING CHANGE: Buffer permanently closed, direct LinkedIn only. | plan/weekly-content-plan.md
 
 2026-11-03 08:00 PKT | Content Pipeline (Tue) | Pipeline check-in run. All 5 LinkedIn posts already written + designed from prior cycle (Oct 26 run). Zero new writing needed. Confirmed scripts/posts-ready/ and design/briefs/ complete. Slack notifications posted to #jarvis-hq, #scripts, #design. | scripts/posts-ready/post-1-through-5-linkedin.md + design/briefs/post-1-through-5-design-brief.md
+
+[2026-11-09 06:40 PKT] | Researcher | Weekly scan complete | 5 trends found, 8+ hooks, 3+ opportunities identified | research/weekly-trends.md, research/competitor-hooks.md, research/opportunity-list.md written

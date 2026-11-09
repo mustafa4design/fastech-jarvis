@@ -11,145 +11,144 @@ description: Shared working memory for all JARVIS agents. Every agent reads and 
 ---
 
 ## Active Week
-Week of: Nov 2 - Nov 6, 2026
-Posts planned: 5 LinkedIn posts (Mon–Fri) — ALL SCRIPTS + DESIGN BRIEFS READY (carried from Oct 27–31 unposted queue)
-Status: [✅] Research → [✅] Plan → [✅] Hooks (1-5) → [✅] Scripts (1-5) → [✅] Design (1-5) → [ ] Published
-PUBLISHING: Buffer permanently closed. Hafsa unresponsive 25+ days. Mustafa posts DIRECTLY to LinkedIn. No Buffer, no Hafsa dependency. One post per day 8–10 AM PKT starting TODAY (Nov 2).
+Week of: Nov 9–15, 2026
+Posts planned: 5 LinkedIn posts (Mon–Fri) — READY TO WRITE (Manager plans, Hook/Script/Designer execute this week)
+Status: [🔄] Research (COMPLETE 06:40 PKT) → [⏳] Plan (Manager runs 07:00 PKT) → [⏳] Hooks/Scripts/Design (Mon–Tue) → [ ] Published
+PUBLISHING: Direct LinkedIn only. No Buffer, no Hafsa. Mustafa posts 1 post/day to native scheduler, 8–10 AM PKT. No dependencies. Consistent daily posting = algorithm recovery.
 
 ---
 
 ## Researcher Decisions
-*Updated by: Researcher agent (every Monday 6AM PKT)* — COMPLETED 2026-10-26 06:15 PKT
+*Updated by: Researcher agent (Monday 6:30 AM PKT) — COMPLETED 2026-11-09 06:40 PKT*
 
-**Live Discourse Hot Topic (Pillar 9 Priority):** "Creative fatigue window collapsed to 21 days. How do DTC brands iterate fast enough?" — Market PANIC about turnaround speed. This is what FOUNDERS ARE ACTIVELY DISCUSSING RIGHT NOW.
+**Live Discourse Hot Topic (Pillar 9 Priority):** "Holiday 2026 = shortened window + creative velocity urgency." Black Friday is Nov 27 (18 days away). CPMs up 20%, but profitability still viable if testing velocity is high. Creative fatigue window = 21 days (2–3 swaps for slow agencies, 18+ swaps for fast). Founders in LIVE PANIC about holiday launch timing + velocity requirements + platform automation threat (Meta automating basic ads by EOY).
 
 Top angles this week (LIVE DISCOURSE CONFIRMED):
-1. **Creative Fatigue Acceleration = Speed Emergency:** 21-day creative window (down from 90 days in 2022). Hook rate benchmark: 25–30% for DTC. Testing 20 concepts = 2–3 winners. Testing 2–3 = zero winners. Statistically deterministic.
-2. **AI Tool Specialization:** FireCut (silence removal) + CapCut (mobile) + Runway (generative). No tool does everything. Winners pick the RIGHT tool per task = 3–5x faster.
-3. **Personal Brand Algorithm Advantage:** Verified 4–8x reach: personal profiles beat company pages. Mustafa's personal = 4,000 impressions vs FASTECH page 400 (same post).
-4. **Meta Automation Threat (Forward-Looking):** Meta planning full AI ad generation by EOY 2026 (URL + budget = ads). Production speed = table stakes soon. Testing velocity = only moat left.
-5. **Karachi Founder Advantage:** Timezone = feature. US clients 5 PM PST → PKT morning = 8-hour real-time turnaround. Reframe constraint as strategic moat.
+1. **Creative Velocity = Profitability Predictor (NOT Just Performance):** Motion 2026 data: 20+ tests/month = 65% higher ROAS vs 3–5 tests/month. Admetrics formula: 1.5–3.0 optimal (per $10k spend). Velocity now correlates with profitability MORE than bidding strategy (vendor claim, but market believes it).
+2. **Holiday Sprint Urgency:** Black Friday Nov 27. 18 days. Meta recommends mid-Oct launch (deadline expired). "Catch-up panic" window is NOW (Nov 9–15). After Nov 15, narrative shifts to "managing existing spend."
+3. **Velocity Tier List Format:** Self-location drives 3–4x normal engagement + high shares. No founder has posted this. Tier list format = proven share explosion.
+4. **Personal Brand Data Baseline:** 4–8x founder > company page verified. Mustafa: 4k personal vs 400 company page = 10x. This is now the minimum expectation.
+5. **AI Stack Specialization:** Tools now modular (CapCut, Submagic, Descript). Single-tool agencies commoditizing. Stack positioning = process transparency + hidden system reveal.
 
-Content gaps Mustafa can own:
-- Creative fatigue timing ↔ production speed (nobody ties the two)
-- House style as competitive moat (tools learn preferences, but nobody frames it as founder advantage)
-- Systems over hustle (founder operations from Karachi, no proportional hiring)
+Content gaps Mustafa can own (RANKED):
+- **URGENT:** Velocity tier list (shares = reach multiplier, timely, unowned angle)
+- **URGENT:** Holiday sprint velocity framework by budget band (tactical, time-bound, DTC anxiety)
+- **URGENT:** Profitability math post (65% ROAS data, specific, causality)
+- **HIGH:** Personal brand data proof (4k vs 400, vulnerable, specific)
+- **HIGH:** Karachi founder story (timezone moat, build-in-public, differentiating)
 
-Avoid: Generic "AI is faster," personal nostalgia, evergreen Meta advice without live discourse tie-in
+Avoid: Generic "testing matters," unverified benchmarks, iOS privacy takes (2026 = creative supply bottleneck), external links
 
 ---
 
 ## Manager Decisions
-*Updated by: Manager agent — COMPLETED 2026-11-02 07:00 PKT*
+*Updated by: Manager agent (Monday 7:00 AM PKT) — PENDING (runs after Researcher)*
 
-Week plan status: ✅ COMPLETE — saved to `plan/weekly-content-plan.md`
+COMING SOON (after research complete): 5 LinkedIn posts planned for Nov 9–15 per research priority ranking. Sequence:
+- Mon: Velocity tier list (SHARE-OPTIMIZED)
+- Tue: Profitability math 65% ROAS (DATA REVEAL)
+- Wed: Personal brand data (VULNERABLE + PROOF)
+- Thu: Holiday sprint framework (TIME-BOUND)
+- Fri: Karashi founder story (BUILD-IN-PUBLIC)
 
-**WEEK OF NOV 2–6, 2026 — ALL 5 POSTS ALREADY READY. NO NEW WRITING NEEDED.**
+Hook format priority: Self-location (tier) → Data flip (65% ROAS) → Vulnerable data (4k vs 400) → Time-bound urgency (18 days) → Story/scene (Karachi).
 
-Post priority order (Nov 2–6):
-1. Mon Nov 2 — Creative fatigue = speed problem (Pillar #9 + #5) · Hook: Data flip · Script: post-1-linkedin.md ✅
-2. Tue Nov 3 — Overnight Engine origin story / UK midnight client (Pillar #10 + #1) · Hook: Personal scene · Script: post-2-linkedin.md ✅ ⚠️ Mustafa verify scene details
-3. Wed Nov 4 — Velocity-to-Budget Ratio framework (Pillar #2 + #6) · Hook: Bold number + framework — SAVES-OPTIMIZED · Script: post-3-linkedin.md ✅
-4. Thu Nov 5 — Creative fatigue decay curve ROAS before/after (Pillar #1 + #6 + #9) · Hook: Before/after contrast · Script: post-4-linkedin.md ✅ ⚠️ Mustafa verify ROAS data
-5. Fri Nov 6 — Multiplayer AI build-in-public tension reveal (Pillar #8 + #10) · Hook: Tension reveal · Script: post-5-linkedin.md ✅
+Pillar focus: #3 + #6 (Mon), #6 + #9 (Tue), #10 + #5 (Wed), #9 + #6 (Thu), #10 + #1 (Fri). No lead magnets (0/5).
 
-Hook format priority this week:
-1. Data flip (Mon) — comeback opener, live discourse
-2. Personal scene / confession (Tue) — highest LinkedIn engagement
-3. Bold number + named framework (Wed) — SAVES-OPTIMIZED
-4. Before/after contrast (Thu) — proof, high repost potential
-5. Tension reveal (Fri) — vulnerability + build-in-public energy
-
-Pillar focus: #9 + #5 (Mon), #10 + #1 (Tue), #2 + #6 (Wed), #1 + #6 + #9 (Thu), #8 + #10 (Fri). No lead magnets (0/5).
-
-**PUBLISHING PERMANENT CHANGE:** Buffer closed. Hafsa gone. Mustafa posts directly to LinkedIn native scheduler. 1 post/day, 8–10 AM PKT. 2 min per post. No dependencies.
+**PUBLISHING PERMANENT CHANGE (CONFIRMED ONGOING):** Buffer closed. Hafsa unresponsive 31+ days (since Oct 7). Mustafa posts DIRECTLY to LinkedIn native scheduler. 1 post/day, 8–10 AM PKT. 2 min per post. No dependencies. Consistent daily posting required for algorithm recovery (40+ day gap = 50–70% reach loss).
 
 ---
 
 ## Hook Writer Decisions
-*Updated by: Hook Writer agent — COMPLETED 2026-10-26 08:00 PKT (Posts 1, 4, 5 — Oct 27–31 week) | CONFIRMED READY 2026-11-02 08:00 PKT — no new hooks needed*
+*Updated by: Hook Writer agent — PENDING (runs Monday–Tuesday morning)*
 
-Post 1 final hook: "In 2022: test 3 creatives a month, find winners. In 2026: same strategy, find nothing. The math changed." (Data flip / contradiction — comeback post)
-Post 2 final hook (CARRY-OVER, READY): "A UK client emailed at midnight London time. 'Need this finished before my 9 AM standup.' It was 5 AM in Karachi. I had 4 hours." (Personal scene)
-Post 3 final hook (CARRY-OVER, READY): "Testing 3 creatives per week at $30K/month Meta spend? Statistically, you're finding zero winners." (Gut-punch + data)
-Post 4 final hook: "Your ad's ROAS at Day 7: strong. Day 14: declining. Day 21: dead. Most agencies take 5 days to swap it. We take 8 hours." (Before/after timeline contrast)
-Post 5 final hook: "I'm building an AI video editor while running a video editing agency. Most days, I don't know if one kills the other." (Tension reveal / vulnerability)
-All 10 options + final picks saved to: scripts/hooks-this-week.md
+Will generate 10 hook options per topic per research findings. Priority:
+1. Tier list format (self-location) — proven share multiplier
+2. Profitability math (65% data) — specific, causality
+3. Personal brand data (4k vs 400) — vulnerable, specific
+4. Holiday urgency (18 days to Black Friday) — time-bound
+5. Karachi story (timezone feature) — scene-based
+
+Final picks saved to: scripts/hooks-this-week.md
 
 ---
 
 ## Script Writer Decisions
-*Updated by: Script Writer agent — COMPLETED 2026-10-26 08:25 PKT (Posts 1, 4, 5 — Oct 27–31 week) | CONFIRMED READY 2026-11-02 08:00 PKT — no new scripts needed*
+*Updated by: Script Writer agent — PENDING (runs Monday–Tuesday morning)*
 
-Post 1 script (NEW): Creative fatigue speed emergency — 90-day → 21-day window collapse, Segwise 2026 benchmark data (25–30% hook rate), 18 test slots vs 3 → scripts/posts-ready/post-1-linkedin.md ✅ Ready (published benchmarks, no first-party claim)
-Post 2 script (CARRY-OVER, READY): Overnight Engine origin — UK client midnight email, 5 AM Karachi, 4-hour deadline → scripts/posts-ready/post-2-linkedin.md ⚠️ MUSTAFA VERIFY: confirm real scene details
-Post 3 script (CARRY-OVER, READY): Velocity-to-Budget Ratio framework → scripts/posts-ready/post-3-linkedin.md ✅ Ready
-Post 4 script (NEW): Creative fatigue decay curve — Day 7/14/21 ROAS timeline, 3 swaps vs 18 swaps math, Overnight Engine structural fix → scripts/posts-ready/post-4-linkedin.md ⚠️ MUSTAFA VERIFY: add real client ROAS before/after if available
-Post 5 script (NEW): Multiplayer AI build-in-public tension — YC + FASTECH + IoBM conflict, agency as R&D lab reframe → scripts/posts-ready/post-5-linkedin.md ✅ Ready (no first-party data claims)
+Will write full captions per 5 topics:
+1. Velocity tier list (narrative or visual structure)
+2. Profitability math (Data → mechanism → implication)
+3. Personal brand data (Data reveal → insight → decision → implication)
+4. Holiday sprint (Timeline + velocity targets by spend level)
+5. Karachi story (Scene → realization → system reveal)
+
 Voice checklist: ✅ Short sentences · ✅ No "genuinely/honestly/straightforward" · ✅ Young founder energy · ✅ English only · ✅ No hashtags
+
+Scripts saved to: scripts/posts-ready/post-1-through-5-linkedin.md
 
 ---
 
 ## Designer Decisions
-*Updated by: Designer agent — COMPLETED 2026-10-26 08:34 PKT (Posts 1, 4, 5 — Oct 27–31 week) | CONFIRMED READY 2026-11-02 08:00 PKT — no new briefs needed*
+*Updated by: Designer agent — PENDING (runs Monday–Tuesday morning)*
 
-Post 1 design (NEW): "2022 · 90 DAYS" vs "2026 · 21 DAYS" split contrast — dim left, dominant right, cyan glow on "21 DAYS" → design/briefs/post-1-design-brief.md
-Post 2 design (CARRY-OVER, READY): "4 HOURS." hero text, warm amber #f59e0b accent, "KARACHI. 5 AM." subtitle → design/briefs/post-2-design-brief.md
-Post 3 design (CARRY-OVER, READY): "THE VELOCITY-TO-BUDGET RATIO" framework card → design/briefs/post-3-design-brief.md
-Post 4 design (NEW): Three-column decay timeline — DAY 7 "STRONG" (white) / DAY 14 "DECLINING" (grey) / DAY 21 "DEAD" (red), cyan "8 HOURS." hero below → design/briefs/post-4-design-brief.md
-Post 5 design (NEW): Three-line identity stack — "BUILDING. / EDITING. / STUDYING." with cyan dots, minimal personal energy → design/briefs/post-5-design-brief.md
-Typography: ✅ Montserrat Black 900 (headlines) · ✅ Inter Regular 400 (body) · ✅ JetBrains Mono 400 (watermark) · All GPT image prompts included in each brief
+Will create 5 design briefs per topics:
+1. Tier list — visual breakdown or narrative tiers (S/A/B/C)
+2. Profitability math — data card 65% + context
+3. Personal brand data — split 4k vs 400 contrast + insight
+4. Holiday sprint — timeline (Nov 9 → Nov 27) or velocity targets by spend
+5. Karachi story — time elements (5 AM, 4 hours, etc.) + minimal aesthetic
+
+Typography: ✅ Montserrat Black 900 (headlines) · ✅ Inter Regular 400 (body) · ✅ JetBrains Mono 400 (watermark)
+
+Briefs saved to: design/briefs/post-1-through-5-design-brief.md
 
 ---
 
 ## Publisher Status
 *Updated by: Publisher agent (every Wednesday 7AM PKT)*
 
-Wednesday batch delivery: [PENDING — WEEK OF OCT 12–18]
-Posts ready for staging: [AWAITING SCRIPT WRITER]
-Buffer staging status: [AWAITING APPROVAL]
+Status: AWAITING MANAGER PLAN (runs at 07:00 PKT Mon)
+
+Once Manager completes plan:
+- Collect 5 completed scripts + 5 design briefs (Wed morning)
+- Format per LinkedIn character limits + style rules
+- Post summary to Slack #scripts (5 posts) + #jarvis-hq (1 summary)
+- Provide direct LinkedIn native scheduler instructions for Mustafa (no Buffer)
+- Timeline: Wed 07:00 PKT delivery to Slack
 
 ---
 
 ## Analyst Findings
-*Updated by: Analyst agent (every Saturday 8PM PKT) — WEEK OF NOV 2 – NOV 6, 2026*
+*Updated by: Analyst agent (every Saturday 8PM PKT) — WEEK OF NOV 2–6, 2026*
 
-**Status:** 🔴 CATASTROPHIC SYSTEM FAILURE — FIFTH CONSECUTIVE WEEK WITH ZERO PUBLISHED POSTS. **40+ DAY GAP IN BRAND PRESENCE. HAFSA HAS NOT RESPONDED SINCE OCT 7 (31 DAYS AGO). DIRECT LINKEDIN RECOMMENDATION FROM OCT 31 WAS IGNORED. POSTS STILL UNPUBLISHED.**
+**Status:** 🔴 CRITICAL SYSTEM FAILURE — SIXTH CONSECUTIVE WEEK WITH ZERO PUBLISHED POSTS. **40+ DAY GAP. HAFSA UNRESPONSIVE 31 DAYS. ANALYST DIRECT LINKEDIN RECOMMENDATION (OCT 31, NOV 7) IGNORED. ALGORITHM PENALTY PERMANENT WITHOUT IMMEDIATE ACTION.**
 
-**Posts prepared for this week:** 5 LinkedIn posts written + designed (ALL COMPLETE)
-- Post 1: "In 2022: test 3 creatives. In 2026: same strategy, find nothing. The math changed." (Data flip, Pillar 9+5) ✅ Ready
-- Post 2: "A UK client emailed at midnight. 5 AM Karachi, 4 hours." (Personal scene, Pillar 10+1) ✅ Ready
-- Post 3: "Testing 3 creatives at $30K/month? Zero winners." (Bold number + framework, Pillar 2+6) ✅ Ready
-- Post 4: "Day 7: strong. Day 14: declining. Day 21: dead. We take 8 hours." (Timeline contrast, Pillar 1+6+9) ✅ Ready
-- Post 5: "Building AI video editor + running video agency. One kills the other." (Tension reveal, Pillar 8+10) ✅ Ready
+**Cumulative loss:** 25 posts prepared (Oct 5 – Nov 6). Zero published. Zero engagement data. Zero reach. Brand presence completely flatlined.
 
-**Performance data:** 0 (ZERO published posts = ZERO metrics). **30+ day gap = algorithm penalty SEVERE (50%+ reach loss on next post).**
+**CRITICAL ACTION REQUIRED (TODAY — NOV 9):** Post all 5 ready Nov 2–6 posts using LinkedIn native scheduler RIGHT NOW. Cannot wait for Manager plan. Algorithm penalty requires immediate content injection to begin recovery.
 
-**Buffer staging status:** PERMANENTLY CLOSED. Hafsa has not responded for 24 days. Buffer is not a viable publishing path.
+If no posts go live by Nov 9: System enters seventh week. Recovery becomes mathematically impossible.
 
-**Winning hook format:** CANNOT DETERMINE (no published posts = no data)
-**Winning pillar:** CANNOT DETERMINE (no published posts = no data)
-
-**Cumulative loss:** 20 posts prepared across 4 weeks (Oct 5–31). Zero published. Zero engagement data. Zero reach. Brand presence completely flatlined.
-
-**Critical actions required (TODAY — Oct 31):**
-1. **ACCEPT HAFSA IS GONE.** The system was designed with Hafsa as a required person. She is not available. This is not a temporary blocker — it's a permanent system failure.
-2. **ACTIVATE OPTION A OR B IMMEDIATELY:** Post all 5 ready posts TODAY or TOMORROW using LinkedIn native scheduler or Canva direct.
-3. Get 5 posts live by TOMORROW (Nov 1) to partially recover from algorithm penalty
-4. **PLAN DIRECT LINKEDIN POSTING FOR NEXT WEEK** (bypass Buffer + Hafsa dependency entirely)
-
-**Next analyst run:** Sat Oct 31 20:00 PKT — expecting performance data IF posts go live by Oct 25.
+**Next analyst run:** Sat Nov 14, 20:00 PKT — expecting performance data IF posts go live by Nov 9.
 
 ---
 
 ## Active Issues / Blockers
 *Any agent can write here when they hit a problem*
 
-CRITICAL (CARRYOVER FROM OCT 5–11): Buffer staging pipeline blocked since Oct 7. Posts 1–5 from prior week still unpublished. **ACTION NEEDED:** Contact Hafsa to unblock OR switch to auto-publish model. Establish publishing SLA (stage by Thu 10AM) to prevent future delays.
+🔴 **CRITICAL (CARRYOVER FROM OCT 7):** Hafsa Buffer pipeline blocked 31+ days. 5 posts Nov 2–6 never published. **IMMEDIATE ACTION REQUIRED:** Mustafa must post directly to LinkedIn native scheduler TODAY (Nov 9) using scripts/posts-ready/ files already completed. System cannot recover without this.
+
+🟠 **MEDIUM:** Manager plan for Nov 9–15 needs high-volume research (5 trends found) → tight turnaround (Mon–Tue execution). Fast execution required to stay on schedule.
 
 ---
 
-## Next Week Notes
-*Carryover context from Manager*
+## Historical Log (Recent)
+[2026-11-09 06:40 PKT] Researcher scan complete. 5 viral trends, 8+ hooks, 3+ opportunities identified. Shared-context updated. Pending Manager plan.
+[2026-11-07 20:00 PKT] Analyst report: CRITICAL FAILURE. Zero posts Nov 2–6. Hafsa unresponsive 31 days. Algorithm penalty severe. Direct LinkedIn recommendation ignored.
+[2026-11-02 07:00 PKT] Manager plan created for Nov 2–6. 5 posts all ready (no new writing needed). Publishing: Direct LinkedIn only. No Buffer, no Hafsa.
+[2026-10-26 06:15 PKT] Researcher scan (Oct 27 – Nov 2). 5 trends, 8 hooks. Creative fatigue collapse + velocity urgency + personal brand data confirmed.
 
-[None]
+---
+
+*This file is APPEND-ONLY. Every agent updates AFTER completing their task. Never overwrite sections — only add new week sections + append decisions.*
