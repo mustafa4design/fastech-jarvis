@@ -1,0 +1,49 @@
+{
+  "campaign": "1-Hiring",
+  "budget_guard": {
+    "monthly_usage_before_c1_usd": 4.267872537971635,
+    "monthly_usage_after_c1_usd": 4.295335868948968,
+    "c1_spend_usd": 0.027463330977333,
+    "hard_cap_usd": 1.0,
+    "account_monthly_cap_usd": 5.0,
+    "note": "Account was already at $4.27/$5.00 monthly cap BEFORE this run started (from prior days' usage). C1 itself only spent ~$0.03, well under its $1.00 cap, but left almost no headroom for C2/C3 - see run note."
+  },
+  "sources_attempted": [
+    "APIFY_SEARCH_LINKEDIN_JOBS (harvestapi/linkedin-job-search)",
+    "APIFY_SCRAPE_INDEED_JOBS (valig/indeed-jobs-scraper)"
+  ],
+  "source_errors": [
+    {
+      "source": "APIFY_SEARCH_LINKEDIN_JOBS",
+      "error": "HTTP 403 full-permission-actor-not-approved",
+      "action": "Posted to #outreach-errors with Apify console approval link; continued with Indeed only."
+    }
+  ],
+  "indeed_raw_count": 158,
+  "indeed_calls": [
+    {"title": "video editor", "country": "us", "count": 25},
+    {"title": "social media manager", "country": "us", "count": 25},
+    {"title": "content manager", "country": "us", "count": 25},
+    {"title": "social media manager", "country": "uk", "count": 25},
+    {"title": "content manager", "country": "uk", "count": 25},
+    {"title": "YouTube editor", "country": "us", "count": 2},
+    {"title": "YouTube editor", "country": "uk", "count": 6},
+    {"title": "video editor", "country": "uk", "count": 25}
+  ],
+  "filter_funnel": {
+    "no_title_match": 65,
+    "title_excluded_keyword": 1,
+    "no_employer_name": 20,
+    "no_corporate_website": 39,
+    "staffing_or_recruiting_agency": 0,
+    "employees_over_200": 16,
+    "bad_country": 0,
+    "duplicates": 3,
+    "kept_before_manual_review": 14
+  },
+  "manual_drops": [
+    {"company": "J2 Marketing", "reason": "Advertising and video production agency with in-house studio - FASTECH competitor, not a client fit."},
+    {"company": "Studiob", "reason": "Company hires its own YouTube/content editors in-house at scale and domain mismatch (studiob.com.mx vs London job location) - treated as a likely production studio / competitor, dropped out of caution."}
+  ],
+  "final_count": 12
+}

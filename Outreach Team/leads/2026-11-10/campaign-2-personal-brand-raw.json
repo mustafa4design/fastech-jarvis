@@ -1,0 +1,16 @@
+{
+  "campaign": "2-PersonalBrand",
+  "source": "APIFY_SEARCH_INSTAGRAM (searchType=user), hashtag terms only",
+  "terms_attempted": ["dtcbrand", "ecommercefounder", "personalbranding", "metaads", "contentcreator", "dtc brand", "ecommerce founder", "personal branding", "ugccreator", "dtcfounder", "ecommercebrand", "videomarketing"],
+  "terms_succeeded": ["metaads", "contentcreator", "dtc brand", "personal branding"],
+  "terms_failed_validation": ["dtcbrand", "ecommercefounder", "personalbranding", "ecommerce founder"],
+  "terms_not_attempted_budget_stop": ["ugccreator", "dtcfounder", "ecommercebrand", "videomarketing"],
+  "note": "Stopped after 4 successful terms (40 raw profiles) because Apify monthly usage hit $4.70/$5.00 with 3 actor jobs still finishing from a timed-out batch call. Posted warning to #outreach-errors and skipped remaining hashtag terms, Actor B (linkedin-profile-scraper), and all of Campaign 3 to protect the account's hard monthly cap. Single-word terms that failed were retried once with spaced fallback per worker-agent.md; 'ecommerce founder' spaced retry also failed validation and was skipped per rule.",
+  "raw_profile_count": 40,
+  "hashtag_lead_filter": {
+    "min_followers": 5000,
+    "must_have": "email in bio OR external URL",
+    "funnel": {"low_followers": 29, "no_email_no_url": 2, "duplicate": 0, "role_email": 0, "kept": 9}
+  },
+  "final_count": 9
+}
