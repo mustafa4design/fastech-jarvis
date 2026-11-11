@@ -1,0 +1,83 @@
+{
+  "campaign": "campaign-1-hiring-signal",
+  "date": "2026-11-11",
+  "sources": {
+    "linkedin_jobs": {
+      "composio_tool": "APIFY_SEARCH_LINKEDIN_JOBS",
+      "actor": "harvestapi/linkedin-job-search",
+      "status": "blocked",
+      "error": "HTTP 403 full-permission-actor-not-approved",
+      "approval_url": "https://console.apify.com/actors/zn01OAlzP853oqn4Z?approvePermissions=true",
+      "action_taken": "Posted once to #outreach-errors, continued with Indeed only (per spec)"
+    },
+    "indeed": {
+      "composio_tool": "APIFY_SCRAPE_INDEED_JOBS",
+      "actor": "valig/indeed-jobs-scraper",
+      "calls": 8,
+      "titles_x_countries": ["video editor/us", "video editor/uk", "content manager/us", "content manager/uk", "social media manager/us", "social media manager/uk", "YouTube editor/us", "YouTube editor/uk"],
+      "succeeded": 7,
+      "failed": 1,
+      "failed_call": "content manager/uk",
+      "failed_reason": "Apify actor returned data violating its own documented output schema (expirationDate returned as int instead of string on 3 items) - tool-side bug, not a filter/config issue. Retried once with identical result.",
+      "raw_items_returned": 132,
+      "datePosted_filter": "7",
+      "limit_per_call": 25
+    }
+  },
+  "apify_spend": {
+    "baseline_account_usage_usd": 4.72011490196809,
+    "usage_after_c1_usd": 4.747466392578916,
+    "c1_spend_usd": 0.0274,
+    "c1_budget_cap_usd": 1.00,
+    "note": "C1 stayed well under its own $1.00 cap. The binding constraint this run was the Apify FREE-plan account-wide $5.00/month cap (shared across C1+C2+C3), not the C1 sub-budget."
+  },
+  "phase1_filter_results": {
+    "raw_items": 132,
+    "kept_after_title_location_staffing_size_recency_filters": 41,
+    "dropped_counts_by_reason": {"title_no_match": 65, "company_too_large_known_employee_count": 33, "duplicate_company_title": 11, "title_excluded_keyword": 5, "posted_too_old": 2},
+    "note": "41 kept after strict Phase 1 filters; 1 further deduped (two Malooga Restaurant postings, different titles, same company) -> 40 unique company/person leads carried into Phase 2/3, matching the C1 sheet row count."
+  },
+  "kept_leads_with_job_context": [
+    {"employer_name": "Utah Mammoth", "job_title": "Jr. Video Editor", "city": "Sandy", "country": "United States"},
+    {"employer_name": "Husch Blackwell", "job_title": "Content Manager", "city": "Austin", "country": "United States"},
+    {"employer_name": "Currie Motors UK", "job_title": "Social Media Manager", "city": "Valparaiso", "country": "United States"},
+    {"employer_name": "Fireaway", "job_title": "Social Media Manager & Content Creator", "city": "", "country": "United Kingdom"},
+    {"employer_name": "LUXE MEDIA", "job_title": "Short-Form Video Editor (Remote)", "city": "Remote", "country": "United States"},
+    {"employer_name": "DOT Labs", "job_title": "Video Editor & Graphic Designer/VFX", "city": "Nashville", "country": "United States"},
+    {"employer_name": "LUKAS CONSULTING", "job_title": "Content Manager", "city": "Avon", "country": "United States"},
+    {"employer_name": null, "job_title": "Short Form Video Editor | Tech-Focused Social Page", "city": "Santa Monica", "country": "United States"},
+    {"employer_name": null, "job_title": "Video Producer", "city": "Remote", "country": "United States"},
+    {"employer_name": null, "job_title": "Video Editor", "city": "Remote", "country": "United States"},
+    {"employer_name": null, "job_title": "Short-Form Music Video Editor | after juno", "city": "Remote", "country": "United States"},
+    {"employer_name": null, "job_title": "AI Video Editor", "city": "Irvine", "country": "United States"},
+    {"employer_name": null, "job_title": "Social Media Manager & Content Creator", "city": "Urbandale", "country": "United States"},
+    {"employer_name": null, "job_title": "Content Manager, Original & Partnerships", "city": "El Segundo", "country": "United States"},
+    {"employer_name": null, "job_title": "Social Media Manager", "city": "Seattle", "country": "United States"},
+    {"employer_name": null, "job_title": "Client-Facing Social Media Manager & Strategist", "city": "Remote", "country": "United States"},
+    {"employer_name": "LiveViral Media", "job_title": "Freelance Video Editor (Remote)", "city": "Remote", "country": "United States", "website": "https://liveviralmedia.com"},
+    {"employer_name": "Maria Wendt", "job_title": "Video Editor (DaVinci Resolve)", "city": "Costa Mesa", "country": "United States", "website": "https://mariawendt.com"},
+    {"employer_name": "Videoshopping", "job_title": "Video Editor", "city": "Tampa", "country": "United States", "website": "https://www.videoshopping.com"},
+    {"employer_name": "Malooga Restaurant", "job_title": "Video Content Creator / Social Media Manager and Content Creator (2 postings, same company)", "city": "Narberth/Philadelphia", "country": "United States", "website": "https://www.maloogacatering.com"},
+    {"employer_name": "ICANTHUS", "job_title": "Content Marketing Manager", "city": "Remote", "country": "United States", "website": "https://www.icanthus.co.uk"},
+    {"employer_name": "Uncovered Group", "job_title": "Video Editor", "city": "London", "country": "United Kingdom", "website": "https://uncoveredgroup.com"},
+    {"employer_name": "Studiob", "job_title": "Senior Video Editor - Fixed-Term Contract", "city": "London", "country": "United Kingdom", "website": "https://studiob.net"},
+    {"employer_name": "CashmanKatz", "job_title": "Social Media Manager (Part-Time, Remote)", "city": "", "country": "United States", "website": "https://cashmankatz.com"},
+    {"employer_name": "Legalist", "job_title": "Content Marketing Manager", "city": "Remote", "country": "United States", "website": "https://www.legalist.com"},
+    {"employer_name": "Bennett Truck Center", "job_title": "Social Media Manager", "city": "San Antonio", "country": "United States", "website": "https://bennetttruckcenter.com"},
+    {"employer_name": "LISTER HEALTHCARE CORPORATION", "job_title": "Social Media Manager", "city": "Muscle Shoals", "country": "United States", "website": "https://listerhealthcaregroup.com"},
+    {"employer_name": "Hairaholic Salon", "job_title": "Social Media Manager", "city": "Mansfield", "country": "United States", "website": "http://www.hairaholicsalon.com"},
+    {"employer_name": "Feels Like Home", "job_title": "Social Media Manager", "city": "Dallas", "country": "United States", "website": "https://www.flho.com"},
+    {"employer_name": "Misuraca Orthodontics", "job_title": "Social Media Content Creator + Manager", "city": "Rogers", "country": "United States", "website": "https://www.misuracaorthodontics.com"},
+    {"employer_name": "Preferred Electric", "job_title": "Marketing & Social Media Manager", "city": "Bloomingdale", "country": "United States", "website": "https://preferred-electric.com"},
+    {"employer_name": "Bello Haven Hair Extensions", "job_title": "Social Media Manager", "city": "Johnstown", "country": "United States", "website": "https://www.bellohavenhairextensions.com"},
+    {"employer_name": "Pranzo Lounge & Grill", "job_title": "Social Media Manager", "city": "Stafford", "country": "United States", "website": "https://pranzolounge.com"},
+    {"employer_name": "The Venue Group", "job_title": "Group Social Media & Content Manager | Wedding Venues", "city": "", "country": "United Kingdom", "website": "https://www.thevenuegroup.co.uk"},
+    {"employer_name": "Network Music Venue", "job_title": "Social Media Manager", "city": "Sheffield", "country": "United Kingdom", "website": "https://www.networksheffield.co.uk"},
+    {"employer_name": "GLASS DOOR DESIGN TECH LTD", "job_title": "Social Media Manager", "city": "Bristol", "country": "United Kingdom", "website": "https://glassdoortech.com"},
+    {"employer_name": "West Six Urban Gardens", "job_title": "Social Media Manager", "city": "", "country": "United Kingdom", "website": "https://w6urbangardens.co.uk"},
+    {"employer_name": "Tandoori Pizza", "job_title": "Social Media Manager and Content Creator", "city": "San Ramon", "country": "United States", "website": "https://tandooripizza.com"},
+    {"employer_name": "Victoria Briggs - Realtor with The GCP Team at The Boulevard Company", "job_title": "Social Media Manager and Content Creator", "city": "Charleston", "country": "United States", "website": "https://victorianorthcuttbriggs.com"},
+    {"employer_name": "Poulson Leadership Consultants", "job_title": "Social Media Manager", "city": "Remote", "country": "United States", "website": "https://clarity-compass.com"}
+  ],
+  "note": "Full raw Indeed item dump (132 items incl. filtered-out listings) was processed in an ephemeral analysis sandbox this run and is not persisted verbatim here to keep repo size sane; every kept lead's outcome (GREEN/RED + reason) is in the Google Sheet tab '11-Nov-2026', which is the authoritative source of truth per the run instructions."
+}

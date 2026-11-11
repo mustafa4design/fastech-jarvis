@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-11",
+  "firecrawl_tool": "FIRECRAWL_SCRAPE (formats: [\"markdown\"], onlyMainContent: true)",
+  "campaign_1_firecrawled_companies": 24,
+  "campaign_1_firecrawl_notes": "Firecrawl free-tier rate limit is 15 req/min - hit it once on the first parallel batch of 12, recovered by running sequentially in small chunks of 2-3. All 24 C1 companies with a resolvable website were successfully scraped (homepage only, per spec).",
+  "green_leads_detail": [
+    {
+      "lead": "Preferred Electric",
+      "website": "https://preferred-electric.com",
+      "email": "amulizio@preferred-electric.com",
+      "email_type": "personal",
+      "first_name": "Anthony",
+      "decision_maker_title": "Principal",
+      "business_description": "Preferred Electric designs, builds, and installs electrical and low-voltage systems for commercial, industrial, healthcare and energy projects.",
+      "niche": "Commercial electrical contracting",
+      "social_proof": "50 years of experience; worked on the EMTOC Microgrid project with M.A. Mortenson and AlphaStruxure",
+      "source_signal": "Indeed job posting: 'Social Media Manager' / 'Marketing & Social Media Manager'",
+      "email_framework_used": "SIGNAL-BASED",
+      "found_via": "Homepage included an 'Our People' team directory with names, titles and direct emails"
+    },
+    {
+      "lead": "Poulson Leadership Consultants",
+      "website": "https://clarity-compass.com",
+      "email": "kim.martonik@clarity-compass.com",
+      "email_type": "personal",
+      "first_name": "Kimberley (goes by Kim per email handle)",
+      "decision_maker_title": "Principal/Founder",
+      "business_description": "Poulson Leadership Consultants offers leadership coaching, training and development, and custom programs for individuals and organizations.",
+      "niche": "Leadership consulting/coaching",
+      "social_proof": "Kimberley Martonik has 20+ years of experience, led teams through transformational change at a healthcare company with EUR17.3B revenue",
+      "source_signal": "Indeed job posting: 'Social Media Manager'",
+      "email_framework_used": "SIGNAL-BASED"
+    }
+  ],
+  "campaign_1_red_reasons_from_firecrawl": {
+    "no_email_found": ["LiveViral Media", "Maria Wendt", "Videoshopping", "Malooga Restaurant", "Legalist", "Bennett Truck Center", "LISTER HEALTHCARE CORPORATION", "Hairaholic Salon", "Feels Like Home", "Misuraca Orthodontics", "Bello Haven Hair Extensions", "Pranzo Lounge & Grill", "The Venue Group", "Network Music Venue", "GLASS DOOR DESIGN TECH LTD", "West Six Urban Gardens", "Victoria Briggs - Realtor"],
+    "firecrawl_failed_404": ["ICANTHUS"],
+    "large_org_discovered_during_enrichment": {
+      "Uncovered Group": "Social Media Agency of the Year, clients include KFC, Tesco, Nike, Bentley, Chelsea FC",
+      "Studiob": "Independent creative studio, clients include Disney, Netflix, Meta, Amazon, Google, LEGO, TikTok",
+      "CashmanKatz": "Emmy-award-winning agency, clients include BIC, Frontier, Iron Mountain, ASSA ABLOY",
+      "Tandoori Pizza": "Flagged as a possible multi-location chain, treated conservatively per quality-over-quantity rule"
+    }
+  },
+  "campaign_2_firecrawled_profiles": 7,
+  "campaign_2_firecrawl_detail": [
+    {"username": "foundersean", "url": "https://linktr.ee/seangreeley", "first_name_found": "Sean", "email_found": null, "niche": "Fitness business coaching"},
+    {"username": "thedanharrison", "url": "https://www.skool.com/LFG", "note": "Page returned empty/blocked (56 chars) - skool.com likely needs auth"},
+    {"username": "belief_coding", "url": "https://beliefcoding.com", "first_name_found": "Jessica (Cunningham)", "email_found": null, "niche": "Subconscious transformation coaching"},
+    {"username": "naailscales", "url": "https://linktr.ee/creativeecommerce", "first_name_found": null, "email_found": null, "niche": "Ecommerce CRO"},
+    {"username": "theprofessorsol", "url": "http://www.neurospicycommunity.com", "first_name_found": null, "email_found": null, "niche": "Neurodivergent coaching"},
+    {"username": "coachninawellness", "url": "https://holisticblueprint.health/holistic", "first_name_found": null, "email_found": null, "niche": "Holistic health/wellness"},
+    {"username": "aliscataldo", "url": "https://shopmy.us/aliscataldo", "first_name_found": "Alissa", "email_found": null, "niche": "Fashion/lifestyle content"}
+  ],
+  "campaign_2_result": "0 GREEN - all 7 shortlisted profiles only had a linktree/shopmy/skool link-aggregator page (no direct contact page), and none contained a published email address."
+}
