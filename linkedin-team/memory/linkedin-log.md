@@ -1150,3 +1150,22 @@
    - Jack Robson — linkedin.com/in/jack-robson-4a62321b4
 
 [2026-11-12 19:13 PKT] | Connection Sender | STOPPED — leads dir missing + LinkedIn proxy block (Day 19) | Sent: 0 | Skipped: 0 | Stopped early: yes — no leads file + linkedin.com egress-blocked
+
+---
+
+### 2026-11-13 19:51 PKT | Connection Sender — Scheduled Run
+
+**STOPPED — Both persistent blockers still active (Day 20):**
+
+1. **No leads directory** — `linkedin-team/leads/` does not exist. Scout agent has not been run. Day 20 of missing leads queue.
+
+2. **LinkedIn unreachable** — HTTP 000 / 403 CONNECT tunnel failed via proxy. linkedin.com is not in the egress allowlist for this cloud session. Persistent block since 2026-10-24 (Day 20).
+
+**Connections sent: 0**
+
+**Action needed — MANUAL (Mustafa):**
+1. **Permanent fix (required to unblock ALL automation):** claude.ai → Settings → Capabilities → Network → add linkedin.com to allowed domains
+2. Run Scout agent to generate a new leads queue
+3. Manual outreach in browser until fixed
+
+[2026-11-13 19:51 PKT] | Connection Sender | STOPPED — leads dir missing + LinkedIn proxy block (Day 20) | Sent: 0 | Skipped: 0 | Stopped early: yes — no leads file + linkedin.com egress-blocked
