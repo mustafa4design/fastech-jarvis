@@ -69,63 +69,58 @@ Priority rules: ✅ Personal story (Tue), ✅ Bold Monday, ✅ Saves-optimized W
 ---
 
 ## Hook Writer Decisions
-*Updated by: Hook Writer agent — COMPLETED 2026-11-09 08:00 PKT*
+*Updated by: Hook Writer agent — COMPLETED 2026-11-09 08:00 PKT | Friday hook updated 2026-11-16 08:00 PKT*
 
 Generated 10 hook options per topic, filtered to top 3, picked 1 final per post. Formula rotation confirmed — no repeats.
 
-**FINAL HOOK PICKS:**
+**FINAL HOOK PICKS (NOV 16–22):**
 
 MON — "S-tier: 20+ new ads/month. A-tier: 10-15. B-tier: 5-10. C-tier: under 5. Which tier is your brand?"
-Formula: Tier list / self-location (#6). Self-location built into the hook. All 4 tiers with specific benchmarks visible before "see more" click.
+Formula: Tier list / self-location (#6). CARRY-OVER.
 
-TUE — "Testing 20 creatives/month vs 5 creatives/month. The first group had 65% higher ROAS. Same platform, same budgets."
-Formula: Bold number / shock stat (#1). Controlled comparison — same platform, same budgets removes all excuses. 65% leads.
+TUE — "Posted the same content to two accounts last week. Personal: 4,000 impressions. Company: 400."
+Formula: Story open (#8). CARRY-OVER.
 
-WED — "Posted the same content to two accounts last week. Personal: 4,000 impressions. Company: 400."
-Formula: Story open (#8). "Last week" grounds it in real life. 4,000 vs 400 = immediate verifiable contrast. No explanation needed.
+WED — "Testing 20 creatives/month vs 5 creatives/month. The first group had 65% higher ROAS. Same platform, same budgets."
+Formula: Bold number / shock stat (#1). CARRY-OVER.
 
-THU — "Nov 15 is the cutoff. After that, you're not launching to learn. You're managing existing spend."
-Formula: Urgency reframe (#10). Specific date + strategic reframe inside the hook itself. DTC founders understand the shift immediately.
+THU — "For the first year, I hid where we were based. Now it's the pitch."
+Formula: Confession (#3). CARRY-OVER.
 
-FRI — "For the first year, I hid where we were based. Now it's the pitch."
-Formula: Confession (#3). 13 words. "I hid" is specific and vulnerable. "Now it's the pitch" creates massive curiosity gap.
+FRI — "The holiday season isn't won by the brands spending the most. It's won by the brands testing the most."
+Formula: Contrarian calm (#5). NEW — written 2026-11-16. 10 options generated, 3 filtered, 1 final picked. No "I" at start. Delivers the thesis before the click. High saves signal.
 
 Full file: scripts/hooks-this-week.md
 
 ---
 
 ## Script Writer Decisions
-*Updated by: Script Writer agent — COMPLETE 2026-11-09 08:00 PKT | Tuesday confirmed 2026-11-10 08:00 PKT*
+*Updated by: Script Writer agent — COMPLETE 2026-11-09 08:00 PKT | Friday script added 2026-11-16 08:00 PKT*
 
-5 LinkedIn posts written for Nov 9–13, 2026.
+NOV 16–22 scripts:
 
-1. Post 1 (Mon) — Velocity Tier List. Hook: "The DTC creative velocity tier list. Which tier is your brand?" Tier D/C/B/A structure. Cites Motion 2026 data (65% ROAS gap). Pillar #3+#6. Target: shares + comments.
-2. Post 2 (Tue) — Profitability Math. Hook: "65% higher ROAS. The only variable was testing volume." Data reveal → mechanism → implication. Cites Motion 2026. Pillar #6+#9. Target: saves + reshares.
-3. Post 3 (Wed) — Personal Brand Data. Hook: "My personal account gets 10x more reach than the FASTECH company page." Vulnerable data (4k vs 400). Pillar #10+#5. Target: comments + shares.
-4. Post 4 (Thu) — Holiday Sprint. Hook: "Black Friday is 15 days away. Meta's learning window closes in 6." Time-bound urgency + velocity targets by spend level. Cites Admetrics formula. Pillar #9+#6. Target: saves + comments.
-5. Post 5 (Fri) — Karachi Advantage. Hook: "Built in Karachi. Clients in the US. The timezone gap is the moat." Scene → reframe → system reveal. Pillar #10+#1. Target: comments + profile visits.
+1. Post 1 (Mon Nov 16) — Velocity Tier List. CARRY-OVER. File: post-1-linkedin.md
+2. Post 2 (Tue Nov 17) — Personal Brand Data 4k vs 400. CARRY-OVER. File: post-3-linkedin.md
+3. Post 3 (Wed Nov 18) — Profitability Math 65% ROAS. CARRY-OVER. File: post-2-linkedin.md
+4. Post 4 (Thu Nov 19) — Karachi Founder Story. CARRY-OVER. File: post-5-linkedin.md
+5. Post 5 (Fri Nov 20) — November CPM Spike. NEW — Hook: "The holiday season isn't won by the brands spending the most. It's won by the brands testing the most." Scene: two DTC founder responses to CPM spike. Realization: high CPMs punish low creative volume, not high creative volume. Reframe: creative supply is the problem, not budget. Pillar #9+#5. Target: saves + comments. File: scripts/posts-ready/nov20-fri-cpm-linkedin.md
 
 Voice checklist: ✅ Short sentences · ✅ No banned words · ✅ Young founder energy · ✅ English only · ✅ No hashtags · ✅ No AI tells · ✅ No "I" at hook start
-
-Scripts saved to: scripts/posts-ready/post-1-through-5-linkedin.md
 
 ---
 
 ## Designer Decisions
-*Updated by: Designer agent — COMPLETE 2026-11-09 08:30 PKT*
+*Updated by: Designer agent — COMPLETE 2026-11-09 08:30 PKT | Friday brief added 2026-11-16 08:00 PKT*
 
-5 design briefs written for Nov 9–13, 2026.
+NOV 16–22 design briefs:
 
-1. Post 1 (Mon) — Velocity Tier List. 4-tier stacked layout (S/A/B/C). Cyan accent on S-tier. Leaderboard energy. Cover: "WHICH TIER IS YOUR BRAND?"
-2. Post 2 (Tue) — Profitability Math. "65%" dominates canvas in Montserrat Black. Cyan glow. Controlled comparison (20 vs 5) as subtext. Cover: "65% HIGHER ROAS"
-3. Post 3 (Wed) — Personal Brand Data. Two-column split. Left dim (400 · FASTECH PAGE). Right bright (4,000 · PERSONAL). Stark contrast visual. Cover: "4,000 vs 400"
-4. Post 4 (Thu) — Holiday Sprint. "NOV 15" header with cyan glow. 3-row velocity table by spend band ($10k/$30k/$100k+). Tactical urgency.
-5. Post 5 (Fri) — Karachi Founder Story. Two time zones side by side (5 PM LA / 6 AM Karachi). "THE OVERNIGHT ENGINE" as hero text at bottom with cyan glow.
+1. Post 1 (Mon Nov 16) — Velocity Tier List. CARRY-OVER. File: design/briefs/post-1-design-brief.md
+2. Post 2 (Tue Nov 17) — Personal Brand Data. CARRY-OVER. File: design/briefs/post-3-design-brief.md
+3. Post 3 (Wed Nov 18) — Profitability Math. CARRY-OVER. File: design/briefs/post-2-design-brief.md
+4. Post 4 (Thu Nov 19) — Karachi Founder Story. CARRY-OVER. File: design/briefs/post-5-design-brief.md
+5. Post 5 (Fri Nov 20) — November CPM Spike. NEW — Cover: "VOLUME WINS NOVEMBER". Subtitle: "creative output beats CPM panic". Dark black #020810. Cyan glow #00e5ff. Calm operator energy — no red, no panic graphics, pure typography. GPT image prompt included. File: design/briefs/nov20-fri-cpm-design-brief.md
 
 Typography: ✅ Montserrat Black 900 (headlines) · ✅ Inter Regular 400 (body) · ✅ JetBrains Mono 400 (watermark)
-All GPT image prompts included in briefs.
-
-Briefs saved to: design/briefs/post-1-design-brief.md through post-5-design-brief.md
 
 ---
 
