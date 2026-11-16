@@ -42,24 +42,29 @@ Avoid: Generic "testing matters," unverified benchmarks, iOS privacy takes (2026
 ---
 
 ## Manager Decisions
-*Updated by: Manager agent (Monday 7:00 AM PKT) — COMPLETED 2026-11-09 07:00 PKT*
+*Updated by: Manager agent (Monday 7:00 AM PKT) — COMPLETED 2026-11-16 07:00 PKT*
 
-5 LinkedIn posts planned for Nov 9–13, 2026. Plan saved to plan/weekly-content-plan.md.
+**WEEK NOV 16–22 — CARRY-OVER + 1 NEW STRATEGY:**
+4 scripts + design briefs from Nov 9–13 (posts 1, 2, 3, 5) are complete and still valid. Post 4 (Black Friday Nov 15) expired. Using those carry-over posts Mon–Thu + writing 1 new Friday post (Nov CPM calm operator angle). Zero wasted token burn. Algorithm recovery starts Day 1.
 
-Sequence (confirmed against Researcher priority ranking):
-- Mon Nov 9: Velocity tier list (SHARE-OPTIMIZED) — Pillars #3+#6 — Hook: "Which creative testing tier are you in?"
-- Tue Nov 10: Profitability math 65% ROAS (DATA REVEAL) — Pillars #6+#9 — Hook: "65% higher ROAS. Only variable: testing volume."
-- Wed Nov 11: Personal brand data (VULNERABLE + PROOF) — Pillars #10+#5 — Hook: "Personal LinkedIn: 4k. FASTECH page: 400. Same post, same day."
-- Thu Nov 12: Holiday sprint framework (TIME-BOUND — EXPIRES NOV 15) — Pillars #9+#6 — Hook: "Black Friday Nov 27. 18 days. Here is your velocity target."
-- Fri Nov 13: Karachi founder story (BUILD-IN-PUBLIC) — Pillars #10+#1 — Hook: "Every unfair advantage looks like a constraint from outside."
+5 LinkedIn posts planned for Nov 16–22, 2026. Plan saved to plan/weekly-content-plan.md.
 
-Hook format priority confirmed: Self-location (tier) → Data flip (65%) → Vulnerable data (4k vs 400) → Time-bound urgency (18 days) → Scene/story (Karachi).
-Lead magnets this week: 0/5 (hard cap compliant).
-Priority rules check: All 5 passed (personal story, bold Monday, saves-optimized Wed+Thu, build-in-public Friday, no consecutive days).
+Sequence:
+- Mon Nov 16: Velocity tier list (CARRY-OVER) — Pillars #3+#6 — Hook: "S-tier: 20+ new ads/month. A-tier: 10-15. B-tier: 5-10. C-tier: under 5. Which tier is your brand?"
+- Tue Nov 17: Personal brand data 4k vs 400 (CARRY-OVER) — Pillars #10+#5 — Hook: "Posted the same content to two accounts last week. Personal: 4,000 impressions. Company: 400."
+- Wed Nov 18: Profitability math 65% ROAS (CARRY-OVER) — Pillars #6+#9 — Hook: "Testing 20 creatives/month vs 5 creatives/month. The first group had 65% higher ROAS."
+- Thu Nov 19: Karachi founder story (CARRY-OVER) — Pillars #10+#1 — Hook: "For the first year, I hid where we were based. Now it's the pitch."
+- Fri Nov 20: November CPM calm operator (NEW — Hook Writer + Script Writer to write) — Pillars #9+#5 — Hook: "Everyone panics when November CPMs spike. The brands that don't panic win."
 
-**PUBLISHING (PERMANENT):** Direct LinkedIn native scheduler. No Buffer (permanently offline). No Hafsa (unresponsive 31+ days). Mustafa posts 1 post/day, 8–10 AM PKT, 2 min per post. No dependencies.
+Hook format rotation: Self-location tier (#6) → Story contrast (#8) → Bold number (#1) → Confession (#3) → Contrarian calm (#5). No repeats.
+Lead magnets: 0/5 (hard cap compliant).
+Priority rules: ✅ Personal story (Tue), ✅ Bold Monday, ✅ Saves-optimized Wed, ✅ Build-in-public Thu.
 
-**ALGORITHM RECOVERY NOTE:** Tier list chosen for Post 1 specifically because shares = fastest algorithm recovery signal after 40-day gap. Consistent daily posting Nov 9–13 is non-negotiable for recovery.
+**HOOK WRITER + SCRIPT WRITER PRIORITY:** Write ONLY Friday's CPM post. Mon–Thu posts are already complete. Focus 100% effort on Friday. Deadline: Thursday EOD.
+
+**PUBLISHING (PERMANENT):** Direct LinkedIn native scheduler. No Buffer (permanently offline). No Hafsa (unresponsive 38+ days). Mustafa posts 1 post/day, 8–10 AM PKT, 2 min per post.
+
+**APPROVAL BLOCKER (CRITICAL):** 6 weeks, zero posts published. Posts are ready. The only action required from Mustafa is: open `scripts/posts-ready/post-1-through-5-linkedin.md`, copy Post 1, paste to LinkedIn, schedule for 8–10 AM PKT. Repeat daily Mon–Fri. Total time: 10 minutes for the week.
 
 ---
 
