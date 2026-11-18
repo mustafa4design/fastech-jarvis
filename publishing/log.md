@@ -96,3 +96,37 @@ Buffer permanently offline. Hafsa unresponsive. Direct posting workflow now perm
 
 **PUBLISHING NOTE:**
 Buffer permanently offline. All 5 posts ready for Mustafa to publish directly to LinkedIn. Post sequence critical: Mon–Fri 8–10 AM PKT. Tier list (Post 1) is algorithm recovery trigger. Thursday post has hard expiry (Nov 15 DTC learning window deadline).
+
+---
+
+## WEEK OF NOV 16–22, 2026 — ALGORITHM RECOVERY CONTINUATION
+
+**STATUS: ✅ BATCH DELIVERED TO SLACK · 2026-11-18 07:00 PKT (Wednesday Publisher delivery)**
+
+**CONTEXT:** Carry-over strategy in effect. Posts from Nov 9–13 (5 scripts + 5 design briefs ready) delayed due to approval bottleneck. Week 7 of zero publishing. Algorithm penalty: 70%+ reach suppression. Recovery critical — posts delivered directly to Slack, awaiting Mustafa approval for immediate posting.
+
+**ALL 5 POSTS READY — DIRECT LINKEDIN WORKFLOW:**
+- [2026-11-18 07:00 PKT] | LinkedIn | "DTC Creative Velocity Tier List" (Post 1 — Mon Nov 16) | Posted to #scripts + #jarvis-hq | Scheduled: Mon Nov 16 · 8:00 AM PKT | Status: Pending Mustafa/Hafsa approval
+- [2026-11-18 07:00 PKT] | LinkedIn | "Personal Brand vs Company Page: 10x Reach Gap" (Post 3 — Tue Nov 17) | Posted to #scripts | Scheduled: Tue Nov 17 · 8:00 AM PKT | Status: Pending Mustafa/Hafsa approval
+- [2026-11-18 07:00 PKT] | LinkedIn | "65% Higher ROAS — Testing Volume Math" (Post 2 — Wed Nov 18) | Posted to #scripts | Scheduled: Wed Nov 18 · 8:00 AM PKT | Status: Pending Mustafa/Hafsa approval
+- [2026-11-18 07:00 PKT] | LinkedIn | "Karachi Founder Story — The Overnight Engine" (Post 5 — Thu Nov 19) | Posted to #scripts | Scheduled: Thu Nov 19 · 8:00 AM PKT | Status: Pending Mustafa/Hafsa approval
+- [2026-11-18 07:00 PKT] | LinkedIn | "November CPM Spike — Calm Operator Positioning" (Fri Post — Fri Nov 20) | Posted to #scripts | Scheduled: Fri Nov 20 · 8:00 AM PKT | Status: Pending Mustafa/Hafsa approval
+
+**DESIGN BRIEFS:**
+✅ All 5 design briefs ready with visual concepts + GPT image prompts + typography locked (Montserrat Black 900, Inter Regular 400, JetBrains Mono 400)
+
+**PILLAR BREAKDOWN:**
+- Post 1: Pillars #3 (Ad teardowns) + #6 (Results proof) — Self-location tier list
+- Post 2: Pillars #10 (Founder story) + #5 (Contrarian takes) — Vulnerable data
+- Post 3: Pillars #6 (Results proof) + #9 (Meta commentary) — Data reveal
+- Post 4: Pillars #10 (Founder story) + #1 (Overnight Engine) — Scene-based reveal
+- Post 5: Pillars #9 (Meta commentary) + #5 (Contrarian takes) — Contrarian reframe
+
+**WORKFLOW:** NO BUFFER. NO HAFSA. Direct to LinkedIn native scheduler.
+1. Copy post from #scripts
+2. Reference design brief → build in Canva
+3. Paste caption + upload visual to LinkedIn
+4. Time: 2 min/post
+
+**PUBLISHING NOTE:**
+Buffer permanently offline. All 5 posts delivered to #scripts as of 2026-11-18 07:00 PKT. Carry-over posts from Nov 9–13 (originally written for publishing that week but delayed due to approval process). Posts resequenced for Nov 16–22 posting schedule. Each post scheduled 8:00 AM PKT Mon–Fri. Waiting for Mustafa/Hafsa approval to publish directly to LinkedIn. Algorithm recovery window critical — 48-hour delay = additional reach suppression penalty.
