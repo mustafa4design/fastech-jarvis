@@ -1557,3 +1557,30 @@
 3. Also check connections for other accepts from the 2026-10-19 batch (10 other people: Gytis, Benny, Camron, Claudia, Stephanie, Alex, Zachary, Ewelina, Betsy, JP)
 
 [2026-11-20 22:00 PKT] | Messenger | Scheduled check | LinkedIn proxy block Day 27 | 0 follow-ups sent | 0 DMs sent | Brad Johnson — 32 days since accept — task BLOCKED until egress unblocked
+
+---
+
+### 2026-11-20 19:14 PKT | Connection Sender — Scheduled Run
+
+**STOPPED — Both persistent blockers still active (Day 27):**
+
+1. **No leads directory** — `linkedin-team/leads/` is empty. Scout agent has not been run. This is Day 27 of missing leads queue.
+
+2. **LinkedIn unreachable** — linkedin.com is not in the egress allowlist for this cloud session. Persistent block since 2026-10-24 (Day 27). Cannot navigate to any LinkedIn URL from cloud.
+
+**Connections sent: 0**
+
+**Action needed — MANUAL (Mustafa):**
+1. **Permanent fix (required to unblock ALL automation):** claude.ai → Settings → Capabilities → Network → add linkedin.com to allowed domains
+2. Run Scout agent to generate a new leads queue (`linkedin-team/leads/YYYY-MM-DD/connection-requests.json`)
+3. Send connection requests manually from your browser — GREEN leads waiting (Campaign 3):
+   - Curtis Howland — linkedin.com/in/curtishowland
+   - Antonio Ventre — linkedin.com/in/antonioventre
+   - Austin Tanner — linkedin.com/in/austinttanner
+   - Estefania Freites — linkedin.com/in/estefaniafreites
+   - Carina McLeod — linkedin.com/in/carinamcleod
+   - Zach Schieffer — linkedin.com/in/zach-schieffer
+   - Ellad Kushnir — linkedin.com/in/elladkushnir
+   - Jack Robson — linkedin.com/in/jack-robson-4a62321b4
+
+[2026-11-20 19:14 PKT] | Connection Sender | STOPPED — leads dir empty + LinkedIn proxy block (Day 27) | Sent: 0 | Skipped: 0 | Stopped early: yes — no leads file + linkedin.com egress-blocked
