@@ -1584,3 +1584,23 @@
    - Jack Robson — linkedin.com/in/jack-robson-4a62321b4
 
 [2026-11-20 19:14 PKT] | Connection Sender | STOPPED — leads dir empty + LinkedIn proxy block (Day 27) | Sent: 0 | Skipped: 0 | Stopped early: yes — no leads file + linkedin.com egress-blocked
+
+---
+
+### 2026-11-21 18:31 PKT | Messenger Agent — Scheduled Check
+
+**Part 1 — Follow-up check:**
+- Scanned accepted-log.json: 1 entry (Brad Johnson), dm_sent=false — NOT eligible for follow-up (initial DM never sent)
+- Follow-ups sent: 0
+
+**Part 2 — Daily accept check:**
+- LinkedIn STILL unreachable from cloud session — Day 28 of proxy block (linkedin.com not in egress allowlist since 2026-10-24)
+- Could NOT check linkedin.com/mynetwork/connections/ for new accepts
+- Brad Johnson (accepted 2026-10-19, now **33 days ago**) — initial DM STILL pending, dm_sent=false
+- DMs sent: 0
+
+**Status:** Day 28 of LinkedIn proxy block. No DMs sent. No accepts checked. Brad Johnson DM 33 days overdue. Task cannot function until egress unblocked.
+
+**Fix required:** claude.ai → Settings → Capabilities → Network → add linkedin.com to allowed domains
+
+[2026-11-21 18:31 PKT] | Messenger | Scheduled check | LinkedIn proxy block Day 28 | 0 follow-ups sent | 0 DMs sent | Brad Johnson — 33 days since accept — task BLOCKED
