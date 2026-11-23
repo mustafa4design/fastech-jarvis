@@ -240,3 +240,62 @@ No formula repeated. Zero banned words. No AI tells.
 ---
 
 *Updated: 2026-11-16 08:00 PKT | Hook Writer agent | 1 new topic, 10 options, 3 survivors, 1 final pick*
+
+---
+
+# HOOKS THIS WEEK — Nov 23–29, 2026 (FRIDAY ONLY — BLACK FRIDAY)
+
+**Generated:** 2026-11-23 08:00 PKT by Hook Writer agent
+**Post:** Friday Nov 27 — Black Friday Live (Overnight Engine reveal)
+**Platform:** LinkedIn ONLY
+**Formula:** Scene-open (live moment) — new formula, no repeat of Mon–Thu
+
+---
+
+## POST 5 (FRI NOV 27) — BLACK FRIDAY LIVE
+
+**TOPIC:** Black Friday morning. The ads winning today were built last night. Overnight Engine reveal.
+**PLATFORM:** LinkedIn
+**CONTENT PILLAR:** #1 (Overnight Engine) + #8 (Build-in-public)
+**HOOK FORMULA:** Scene-open (live moment) — drops viewer directly into real time, Black Friday chaos framing
+
+---
+
+HOOK OPTION 01: "It's Black Friday. The ads winning today were written last night."
+HOOK OPTION 02: "Today is Black Friday. The creative that converts today wasn't made today."
+HOOK OPTION 03: "It's 8 AM. Black Friday. The briefing came in at 10 PM last night. The ad is already live."
+HOOK OPTION 04: "Black Friday is not won in the last 24 hours. It's won in the 72 hours before."
+HOOK OPTION 05: "While most brands are scrambling this morning, some already have their best ads in rotation. Built last night."
+HOOK OPTION 06: "The best-performing Black Friday ad isn't the one you launch this morning. It's the one you launched last week."
+HOOK OPTION 07: "It's Black Friday. Brands are scrambling. Some aren't. Here's the difference."
+HOOK OPTION 08: "Black Friday. Right now. Somewhere, a brand is watching ROAS roll in. Their ad was briefed last night."
+HOOK OPTION 09: "Every brand wants a Black Friday win. The ones getting it today didn't start this morning."
+HOOK OPTION 10: "Today is the biggest ad spend day of the year. The winning creatives went live yesterday."
+
+---
+
+**TOP 3:**
+Hook #01: "It's Black Friday. The ads winning today were written last night." — scene-open at maximum compression. Two sentences, full thesis delivered. "Written last night" = overnight engine in 3 words. No "I" at start. Strongest forward pull.
+Hook #03: "It's 8 AM. Black Friday. The briefing came in at 10 PM last night. The ad is already live." — time-stamped, staccato rhythm, builds the scene in 4 beats. Real and specific. Visual.
+Hook #08: "Black Friday. Right now. Somewhere, a brand is watching ROAS roll in. Their ad was briefed last night." — "right now" collapses time, makes it live and urgent. "ROAS roll in" is the DTC dream. Strong pull.
+
+**FINAL PICK:** Hook #01
+**REASON:** The manager target hook. Cleanest scene-open in the set. "It's Black Friday" establishes the live moment. "The ads winning today were written last night" is the Overnight Engine thesis in 8 words — before they click "see more." Creates a curiosity gap only the post can close. High saves potential on the highest DTC engagement day of the year.
+
+---
+
+## HOOK FORMULA ROTATION — NOV 23–29
+
+| Day | Formula Used | Final Hook |
+|-----|-------------|------------|
+| Mon | Contrarian calm (#5) | "The holiday season isn't won by the brands spending the most. It's won by the brands testing the most." |
+| Tue | Story contrast (#8) | "Posted the same content to two accounts last week. Personal: 4,000 impressions. Company: 400." |
+| Wed | Bold number / shock stat (#1) | "Testing 20 creatives/month vs 5 creatives/month. The first group had 65% higher ROAS. Same platform, same budgets." |
+| Thu | Self-location tier list (#6) | "S-tier: 20+ new ads/month. A-tier: 10-15. B-tier: 5-10. C-tier: under 5. Which tier is your brand?" |
+| Fri | Scene-open / live moment | "It's Black Friday. The ads winning today were written last night." |
+
+No formula repeated. Zero banned words. No AI tells.
+
+---
+
+*Updated: 2026-11-23 08:00 PKT | Hook Writer agent | 1 topic, 10 options, 3 survivors, 1 final pick*

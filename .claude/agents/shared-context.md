@@ -119,9 +119,14 @@ Priority rules: ✅ Personal story (Tue), ✅ Bold Monday, ✅ Saves-optimized W
 ---
 
 ## Hook Writer Decisions
-*Updated by: Hook Writer agent — COMPLETED 2026-11-09 08:00 PKT | Friday hook updated 2026-11-16 08:00 PKT*
+*Updated by: Hook Writer agent — COMPLETED 2026-11-09 08:00 PKT | Friday hook updated 2026-11-16 08:00 PKT | Black Friday hook added 2026-11-23 08:00 PKT*
 
 Generated 10 hook options per topic, filtered to top 3, picked 1 final per post. Formula rotation confirmed — no repeats.
+
+**FINAL HOOK PICKS (NOV 23–29) — BLACK FRIDAY ADDITION:**
+
+FRI (Nov 27) — "It's Black Friday. The ads winning today were written last night."
+Formula: Scene-open / live moment. NEW — written 2026-11-23. 10 options generated, 3 filtered, 1 final. Overnight Engine reveal on the highest DTC spend day of the year. No "I" start. Full thesis in 2 sentences before the click.
 
 **FINAL HOOK PICKS (NOV 16–22):**
 
@@ -145,7 +150,10 @@ Full file: scripts/hooks-this-week.md
 ---
 
 ## Script Writer Decisions
-*Updated by: Script Writer agent — COMPLETE 2026-11-09 08:00 PKT | Friday script added 2026-11-16 08:00 PKT*
+*Updated by: Script Writer agent — COMPLETE 2026-11-09 08:00 PKT | Friday script added 2026-11-16 08:00 PKT | Black Friday script added 2026-11-23 08:00 PKT*
+
+NOV 23–29 addition:
+- Post 5 (Fri Nov 27) — Black Friday Live. NEW — Hook: "It's Black Friday. The ads winning today were written last night." Scene: DTC brand, 11 PM brief, 5 AM delivery. Realization: whoever ships first wins. Reframe: speed = moat, not budget or platform hacks. Question: "What did your brand launch today?" ~160 words. Overnight Engine reveal. No specific client examples — FASTECH production process only. File: scripts/posts-ready/nov27-fri-blackfriday-linkedin.md
 
 NOV 16–22 scripts:
 
@@ -160,7 +168,10 @@ Voice checklist: ✅ Short sentences · ✅ No banned words · ✅ Young founder
 ---
 
 ## Designer Decisions
-*Updated by: Designer agent — COMPLETE 2026-11-09 08:30 PKT | Friday brief added 2026-11-16 08:00 PKT*
+*Updated by: Designer agent — COMPLETE 2026-11-09 08:30 PKT | Friday brief added 2026-11-16 08:00 PKT | Black Friday brief added 2026-11-23 08:00 PKT*
+
+NOV 23–29 addition:
+- Post 5 (Fri Nov 27) — Black Friday Live. NEW — Cover: "WRITTEN LAST NIGHT." (period intentional). Subtitle: "The Overnight Engine · Black Friday". Pure black #020810 bg, white Montserrat Black 900, cyan glow #00e5ff. Inverts the Black Friday red/orange energy — calm operator in the storm. GPT image prompt included. File: design/briefs/nov27-fri-blackfriday-design-brief.md
 
 NOV 16–22 design briefs:
 
