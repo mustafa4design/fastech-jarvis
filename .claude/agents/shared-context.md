@@ -69,6 +69,29 @@ Avoid: Generic "testing matters," unverified benchmarks, iOS privacy takes (2026
 ---
 
 ## Manager Decisions
+*Updated by: Manager agent (Monday 7:00 AM PKT) — COMPLETED 2026-11-23 07:00 PKT*
+
+**WEEK NOV 23–29 — BLACK FRIDAY WEEK:**
+4 carry-over posts (scripts + design complete from Nov 16–22) + 1 new Black Friday post. Total writing this week: 1 post only.
+
+Sequence:
+- Mon Nov 23: CPM Calm Operator (CARRY-OVER) — Pillar #9+5 — Hook: "The holiday season isn't won by the brands spending the most. It's won by the brands testing the most." — File: nov20-fri-cpm-linkedin.md
+- Tue Nov 24: Personal Brand Data 4k vs 400 (CARRY-OVER) — Pillar #10+5 — Hook: "Posted the same content to two accounts last week. Personal: 4,000 impressions. Company: 400." — File: post-3-linkedin.md
+- Wed Nov 25: Profitability Math 65% ROAS (CARRY-OVER) — Pillar #6+9 — Hook: "Testing 20 creatives/month vs 5 creatives/month. The first group had 65% higher ROAS." — File: post-2-linkedin.md
+- Thu Nov 26: Velocity Tier List (CARRY-OVER) — Pillar #3+6 — Hook: "S-tier: 20+ new ads/month. A-tier: 10-15. B-tier: 5-10. C-tier: under 5. Which tier is your brand?" — File: post-1-linkedin.md
+- Fri Nov 27 (Black Friday): Black Friday Live (NEW) — Pillar #1+8 — Hook: "It's Black Friday. The ads winning today were written last night." — Hook Writer + Script Writer to write today.
+
+Hook format rotation: Contrarian calm → Story contrast → Bold number → Self-location tier → Scene-open (live). No repeats.
+Lead magnets: 0/5. Hard cap compliant.
+Priority rules: ✅ Personal story (Tue) · ✅ Bold Monday · ✅ Saves-optimized Wed · ✅ Build-in-public Fri (Black Friday)
+
+**HOOK WRITER + SCRIPT WRITER:** Write ONLY Friday's Black Friday post. Mon–Thu posts are complete. Deadline: today (Monday). Brief: "It's Black Friday. The ads winning today were written last night." — Overnight Engine reveal, build-in-public, short, raw, founder energy. Ask Mustafa before any specific client reference.
+
+**PUBLISHING:** Direct LinkedIn native scheduler. 1 post/day 8–10 AM PKT Mon–Fri. No Buffer. No Hafsa. Mustafa schedules directly (10 min total).
+
+---
+
+## OLD Manager Decisions
 *Updated by: Manager agent (Monday 7:00 AM PKT) — COMPLETED 2026-11-16 07:00 PKT*
 
 **WEEK NOV 16–22 — CARRY-OVER + 1 NEW STRATEGY:**

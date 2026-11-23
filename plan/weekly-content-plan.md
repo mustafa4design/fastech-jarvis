@@ -1,146 +1,114 @@
-# Weekly Content Plan — Nov 16–22, 2026
-*Manager agent · Monday 7:00 AM PKT*
+# Weekly Content Plan
+*Manager agent · Every Monday 7AM PKT*
 
 ---
 
-## WEEK OF: Nov 16–22, 2026
-
-**STATUS:** 🔴 CRITICAL — Week 7. Zero posts published in 6 consecutive weeks. Algorithm penalty: permanent (70%+ reach loss). Approval process still undefined.
-
-**MANAGER DECISION — CARRY-OVER STRATEGY:**
-Posts 1, 2, 3, 5 from Nov 9–13 are scripts-complete + design-complete. Post 4 (Black Friday Nov 15) expired. Using 4 carry-over posts + 1 new Friday post. Zero additional writing time for Mon–Thu. Algorithm recovery starts DAY ONE.
+## WEEK OF: Nov 23–29, 2026
+**Generated:** 2026-11-23 07:00 PKT
+**Status:** ACTIVE — 4 carry-over posts (scripts + design briefs complete) + 1 new post (Black Friday live)
 
 ---
 
-## TOTAL POSTS: 5 (LinkedIn only)
+## SITUATION BRIEF
+
+Week 8. Zero posts published across 7 consecutive weeks (35 posts prepared, 0 live). Algorithm penalty: terminal. Black Friday is Fri Nov 27 — biggest DTC event of the year. Recovery window closing. This week must ship.
+
+**Decision:** Carry over 4 high-quality posts from Nov 16–22 (still fresh, scripts + design complete). Write 1 new Black Friday post for Friday. Total writing needed this week: 1 post only.
 
 ---
 
-### MON Nov 16 — LinkedIn
-**Topic:** DTC Creative Velocity Tier List
-**Status:** CARRY-OVER (script + design complete — `scripts/posts-ready/post-1-through-5-linkedin.md`)
-**Hook:** "S-tier: 20+ new ads/month. A-tier: 10-15. B-tier: 5-10. C-tier: under 5. Which tier is your brand?"
-**Hook format:** Self-location / Tier list (#6)
-**Pillar:** #3 (Ad teardowns/frameworks) + #6 (Results proof)
-**Goal:** Shares + comments — fastest algorithm recovery signal
-**Data cite:** Motion 2026 DTC Benchmark (65% ROAS gap)
-**Action required:** Mustafa posts directly to LinkedIn native scheduler, 8–10 AM PKT
+## — MUSTAFA —
+**TOTAL POSTS:** 5
 
 ---
 
-### TUE Nov 17 — LinkedIn
-**Topic:** Personal Brand Data Reveal (4,000 vs 400)
-**Status:** CARRY-OVER (script + design complete)
+**MON Nov 23 — LinkedIn**
+**Topic:** CPM Calm Operator — Holiday season won by testing, not spending
+**Hook:** "The holiday season isn't won by the brands spending the most. It's won by the brands testing the most."
+**Hook format:** Contrarian calm (#5)
+**Pillar:** #9 (Meta/DTC commentary) + #5 (Contrarian takes)
+**Status:** CARRY-OVER — Script: `scripts/posts-ready/nov20-fri-cpm-linkedin.md` · Design: `design/briefs/nov20-fri-cpm-design-brief.md`
+**Why Monday:** Perfectly timed for start of Black Friday week. Calm operator reframe is the right Monday energy — bold, contrarian, re-activates after weekend.
+
+---
+
+**TUE Nov 24 — LinkedIn**
+**Topic:** Personal Brand Data — 4k impressions (personal) vs 400 (company)
 **Hook:** "Posted the same content to two accounts last week. Personal: 4,000 impressions. Company: 400."
-**Hook format:** Story open / contrast (#8)
+**Hook format:** Story contrast (#8)
 **Pillar:** #10 (Founder story) + #5 (Contrarian takes)
-**Goal:** Comments + shares — vulnerable data drives conversation
-**Action required:** Mustafa posts directly to LinkedIn native scheduler, 8–10 AM PKT
+**Status:** CARRY-OVER — Script: `scripts/posts-ready/post-3-linkedin.md` · Design: `design/briefs/post-3-design-brief.md`
+**Why Tuesday:** Personal narrative is highest LinkedIn engagement format. Mustafa's own data = vulnerable + specific. No invented examples.
 
 ---
 
-### WED Nov 18 — LinkedIn
-**Topic:** Profitability Math — 65% Higher ROAS
-**Status:** CARRY-OVER (script + design complete)
+**WED Nov 25 — LinkedIn**
+**Topic:** Profitability Math — 65% higher ROAS, same platform, same budgets
 **Hook:** "Testing 20 creatives/month vs 5 creatives/month. The first group had 65% higher ROAS. Same platform, same budgets."
 **Hook format:** Bold number / shock stat (#1)
 **Pillar:** #6 (Results proof) + #9 (Meta commentary)
-**Goal:** Saves + reshares — peak saves window (Wednesday)
-**Data cite:** Motion 2026 benchmark
-**Action required:** Mustafa posts directly to LinkedIn native scheduler, 8–10 AM PKT
+**Status:** CARRY-OVER — Script: `scripts/posts-ready/post-2-linkedin.md` · Design: `design/briefs/post-2-design-brief.md`
+**Why Wednesday:** Peak saves window. Data reveal format drives saves more than any other post type. Mid-week algorithm distribution window.
 
 ---
 
-### THU Nov 19 — LinkedIn
-**Topic:** Karachi Founder Story — The Overnight Engine Origin
-**Status:** CARRY-OVER (script + design complete)
-**Hook:** "For the first year, I hid where we were based. Now it's the pitch."
-**Hook format:** Confession / vulnerability (#3)
-**Pillar:** #10 (Founder story) + #1 (Overnight Engine)
-**Goal:** Comments + profile visits — vulnerability drives engagement
-**Action required:** Mustafa posts directly to LinkedIn native scheduler, 8–10 AM PKT
+**THU Nov 26 — LinkedIn**
+**Topic:** DTC Creative Velocity Tier List — which tier is your brand?
+**Hook:** "S-tier: 20+ new ads/month. A-tier: 10-15. B-tier: 5-10. C-tier: under 5. Which tier is your brand?"
+**Hook format:** Self-location tier list (#6)
+**Pillar:** #3 (Ad teardowns/frameworks) + #6 (Results proof)
+**Status:** CARRY-OVER — Script: `scripts/posts-ready/post-1-linkedin.md` · Design: `design/briefs/post-1-design-brief.md`
+**Why Thursday:** Tier list format = proven share explosion (3–4x engagement). Day before Black Friday = peak DTC anxiety about creative volume. Perfect timing for self-location mechanic.
 
 ---
 
-### FRI Nov 20 — LinkedIn
-**Topic:** November CPM Spike — Calm Operator Positioning
-**Status:** NEW — Hook Writer + Script Writer must write this
-**Hook:** "Everyone panics when November CPMs spike. The brands that don't panic win. Here's our strategy this year."
-**Hook format:** Contrarian / calm in chaos (#5)
-**Pillar:** #9 (Meta/DTC commentary) + #5 (Contrarian takes)
-**Goal:** Saves + comments — DTC founder anxiety is live right now
-**Research basis:** Trend #4 + Live Discourse — Nov CPMs up 35-50%. Reddit r/PPC + Twitter/X DTC threads active.
-**Action required:** Hook Writer writes 10 hooks → Script Writer writes full post → deliver by Thursday EOD for Mustafa to post Friday 8–10 AM PKT
+**FRI Nov 27 (Black Friday) — LinkedIn**
+**Topic:** Black Friday Live — ads winning today were written last night
+**Hook:** "It's Black Friday. The ads winning today were written last night."
+**Hook format:** Scene-open (live moment)
+**Pillar:** #1 (Overnight Engine) + #8 (Build-in-public)
+**Status:** NEW — Hook Writer + Script Writer to write TODAY (Mon Nov 23)
+**Why Friday:** Black Friday is the biggest DTC day of the year. Mustafa posting live commentary on the biggest ad spend day = maximum relevance + authority. Overnight Engine reveal on the day it matters most. Build-in-public energy. High saves + comments.
+**Brief for Script Writer:** Open with the Black Friday moment. Scene: brands scrambling this morning, ads live. Realization: the work that wins today was already done. Reframe: speed is the moat — not spend, not platform hacks. Question: what did you launch today? Keep it short, raw, founder energy. No invented client examples — speak from production experience only. ⚠️ BORROWED EXAMPLE RULE: Ask Mustafa before referencing any specific client. If nothing, speak broadly from FASTECH production process.
 
 ---
 
-## PUBLISHING INSTRUCTIONS (MUSTAFA — READ THIS)
-
-**Method:** LinkedIn native scheduler ONLY. No Buffer. No Hafsa.
-**Time:** 8–10 AM PKT each day
-**Time per post:** ~2 minutes (copy from `scripts/posts-ready/post-1-through-5-linkedin.md`)
-**Mon–Thu posts:** Already written. Zero new work needed. Just copy and schedule.
-**Fri post:** Delivered by Thursday EOD.
-
-**🔴 PRIORITY ACTION — POST IMMEDIATELY:**
-Four posts from last week (Nov 9–13) are still valid, written, and designed. They're sitting in `scripts/posts-ready/`. Post them now starting Monday. Each post takes 2 minutes.
-
----
-
-## PILLAR BALANCE CHECK
-
-| Pillar | Posts | % |
-|--------|-------|---|
-| Pillar 1 — Overnight Engine | 1 (Thu) | 20% |
-| Pillar 3 — Ad teardowns/frameworks | 1 (Mon) | 20% |
-| Pillar 5 — Contrarian takes | 2 (Tue, Fri) | 40% |
-| Pillar 6 — Results proof | 2 (Mon, Wed) | 40% |
-| Pillar 9 — Meta/DTC commentary | 2 (Wed, Fri) | 40% |
-| Pillar 10 — Founder story | 2 (Tue, Thu) | 40% |
-
-Personal story: ✅ (Tuesday)
-Bold opinion/contrarian Monday: ✅ (Monday tier list = self-location bold claim)
-Saves-optimized Wed or Thu: ✅ (Wednesday — profitability math)
-Build-in-public: ✅ (Thursday — Karachi story)
-Lead magnets: 0/5 ✅ (hard cap compliant)
-
----
-
-## PRIORITY RULES STATUS
-
-- [x] Personal story appears once (Tuesday)
-- [x] Monday is bold/algorithm-activating (tier list)
-- [x] Saves-optimized post on Wednesday
-- [x] Build-in-public Friday equivalent (Thursday — Karachi story)
-- [x] No consecutive same pillar days
-- [x] Lead magnet hard cap: 0/5
-
----
-
-## HOOK FORMAT ROTATION
-
+## HOOK FORMAT ROTATION — NOV 23–29
 | Day | Format | Type |
 |-----|--------|------|
-| Mon | Self-location tier list | #6 |
-| Tue | Story open / contrast | #8 |
-| Wed | Bold number / shock stat | #1 |
-| Thu | Confession / vulnerability | #3 |
-| Fri | Contrarian calm | #5 |
+| Mon | Contrarian calm | #5 |
+| Tue | Story contrast | #8 |
+| Wed | Bold number/stat | #1 |
+| Thu | Self-location tier | #6 |
+| Fri | Scene-open (live) | New |
 
-No repeats. All 5 formulas distinct.
-
----
-
-## AGENT TASKS THIS WEEK
-
-| Agent | Task | Deadline |
-|-------|------|----------|
-| Hook Writer | Write 10 hooks for Friday CPM post, pick 1 | Monday EOD |
-| Script Writer | Write Friday CPM post full LinkedIn script | Tuesday EOD |
-| Designer | Write design brief for Friday CPM post | Tuesday EOD |
-| Publisher | Deliver Friday post to Slack by Wednesday 7AM | Wednesday 7AM PKT |
-| All agents | Mon–Thu posts are DONE. No action needed. | — |
+No repeats. ✅
 
 ---
 
-*Plan created: 2026-11-16 07:00 PKT · Manager agent*
+## PRIORITY RULES CHECK
+- ✅ Personal story appears (Tuesday)
+- ✅ Monday is bold/contrarian
+- ✅ Saves-optimized post on Wednesday
+- ✅ Build-in-public appears (Friday Black Friday)
+- ✅ Lead magnets: 0/5 (hard cap compliant)
+- ✅ Black Friday timing locked (Friday Nov 27)
+
+---
+
+## EXECUTION INSTRUCTIONS
+
+**What's already done:** Posts Mon–Thu (scripts + design briefs complete from last week). No writing needed.
+
+**What needs writing today (Mon Nov 23):**
+1. Hook Writer → 10 hook options for Black Friday post → filter to 1
+2. Script Writer → Full LinkedIn post for Fri Nov 27
+3. Designer → Design brief for Fri Nov 27 Black Friday post
+
+**Deadline:** All 5 posts complete by Tuesday night.
+
+**Publishing:** Direct LinkedIn native scheduler. 1 post/day, 8–10 AM PKT, Mon–Fri. No Buffer. No Hafsa dependencies. Mustafa schedules directly — 10 min total for the week.
+
+---
+
+*Generated by Manager agent · 2026-11-23 07:00 PKT*
