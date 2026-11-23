@@ -1,4 +1,5 @@
-# Content Opportunities — Week of Nov 9–15, 2026
+# Content Gaps — Week of Nov 23–29, 2026
+**Opportunities Mustafa Can Own**
 
 ## OPPORTUNITY #1: Velocity Tier List Post (SHARE-OPTIMIZED)
 **Gap:** Tier list format proven to drive 3–4x normal engagement + shares. No founder in DTC niche has posted a velocity tier list.

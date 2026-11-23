@@ -11,14 +11,41 @@ description: Shared working memory for all JARVIS agents. Every agent reads and 
 ---
 
 ## Active Week
-Week of: Nov 9–15, 2026
-Posts planned: 5 LinkedIn posts (Mon–Fri) — READY TO WRITE (Manager plans, Hook/Script/Designer execute this week)
-Status: [🔄] Research (COMPLETE 06:40 PKT) → [⏳] Plan (Manager runs 07:00 PKT) → [⏳] Hooks/Scripts/Design (Mon–Tue) → [ ] Published
-PUBLISHING: Direct LinkedIn only. No Buffer, no Hafsa. Mustafa posts 1 post/day to native scheduler, 8–10 AM PKT. No dependencies. Consistent daily posting = algorithm recovery.
+Week of: Nov 23–29, 2026
+Posts planned: 5 LinkedIn posts (Mon–Fri) — IN PLANNING (Manager to plan, Hook/Script/Designer execute this week)
+Status: [✅] Research (COMPLETE 01:10 PKT) → [⏳] Plan (Manager runs 07:00 PKT) → [⏳] Hooks/Scripts/Design (Mon–Tue) → [ ] Published
+PUBLISHING: Direct LinkedIn only. No Buffer, no Hafsa. Mustafa posts 1 post/day to native scheduler, 8–10 AM PKT. No dependencies. Consistent daily posting = algorithm recovery essential (44-day gap = terminal algorithm penalty).
+CRITICAL: Week 8 of zero publishing. Algorithm recovery window CLOSING. Approval blocker must be resolved NOW.
 
 ---
 
-## Researcher Decisions
+## Researcher Decisions (Week of Nov 23–29)
+*Updated by: Researcher agent (Sunday 01:10 AM PKT) — COMPLETED 2026-11-23 01:10 PKT*
+
+**Live Discourse Hot Topic (Pillar 9 Priority — URGENT):** Creative supply urgency amidst Black Friday sprint. Meta CPMs spiking (35-50% above average Nov/Dec). Founders panicking about 18-day Black Friday launch window. Discourse NOT about CPM tactics or bidding — it's about TESTING VELOCITY under pressure. Winning narrative: calm operators test MORE when CPMs spike, not less. Volume beats panic.
+
+**Top 5 angles this week (RESEARCH-BACKED, LIVE DISCOURSE CONFIRMED):**
+
+1. **Creative Testing Velocity = Profitability Predictor (NOT Just Performance)** — Motion 2026: 20+ tests/month = 65% higher ROAS vs 10+ tests. Brands testing 10+ concepts/month = 31% lower CPA than <5 concepts. Velocity now correlates with profitability MORE than bidding strategy.
+2. **Q4 CPM Seasonality + Calm Operator Mindset** — November CPMs 35-50% above average. Counterintuitive take = calm amidst chaos. "Everyone panics. The calm operators win." Saves-optimized.
+3. **Tier List Format (Velocity-Based)** — Self-location hook ("Which tier is YOUR brand?") = proven 3-4x engagement boost + share explosion. Zero saturation in Mustafa's niche. No founder has posted this yet.
+4. **Personal Brand Data Proof (8x Engagement Gap)** — Socialinsider Q1 2026: Personal 4.7% engagement vs company 1-2%. Personal = 65% distribution vs 5% company. Mustafa's data point: 4k impressions (personal) vs 400 (company). Real number from real accounts.
+5. **Founder-Led Ads Outperform Studio Ads (3.4x ROAS)** — Motion benchmark: Founder-led 3.4x ROAS, AI podcast-style 3.1x, static 2.4x, polished studio 2.1x. Permission to be raw. Authenticity wins.
+
+**Content gaps Mustafa can own (RANKED BY URGENCY):**
+- **🔴 URGENT:** Velocity tier list (shares = reach multiplier, timely, unowned angle in this niche)
+- **🔴 URGENT:** Q4 CPM calm operator angle (live panic window Nov 23-Dec 2, high saves signal, timely)
+- **🟠 HIGH:** Profitability math post (65% ROAS data, specific, causality, concrete)
+- **🟠 HIGH:** Personal brand data proof (4k vs 400, vulnerable, specific, strategic)
+- **🟠 HIGH:** Founder-led ad methodology (position FASTECH around founder-led creative wins)
+
+**Avoid:** Generic "testing matters," unverified benchmarks, iOS privacy takes (2026 = creative supply bottleneck, not attribution), external links, engagement bait.
+
+**Researcher note:** Tier list format = proven default for shares across all pillars. Use it first this week. No creator in the DTC/Meta ads niche has posted "testing velocity tier list by budget band" — this is completely unowned territory with proven engagement mechanics.
+
+---
+
+## OLD Researcher Decisions (Week of Nov 9–15)
 *Updated by: Researcher agent (Monday 6:30 AM PKT) — COMPLETED 2026-11-09 06:40 PKT*
 
 **Live Discourse Hot Topic (Pillar 9 Priority):** "Holiday 2026 = shortened window + creative velocity urgency." Black Friday is Nov 27 (18 days away). CPMs up 20%, but profitability still viable if testing velocity is high. Creative fatigue window = 21 days (2–3 swaps for slow agencies, 18+ swaps for fast). Founders in LIVE PANIC about holiday launch timing + velocity requirements + platform automation threat (Meta automating basic ads by EOY).
