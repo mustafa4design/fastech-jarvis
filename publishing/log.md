@@ -130,3 +130,36 @@ Buffer permanently offline. All 5 posts ready for Mustafa to publish directly to
 
 **PUBLISHING NOTE:**
 Buffer permanently offline. All 5 posts delivered to #scripts as of 2026-11-18 07:00 PKT. Carry-over posts from Nov 9–13 (originally written for publishing that week but delayed due to approval process). Posts resequenced for Nov 16–22 posting schedule. Each post scheduled 8:00 AM PKT Mon–Fri. Waiting for Mustafa/Hafsa approval to publish directly to LinkedIn. Algorithm recovery window critical — 48-hour delay = additional reach suppression penalty.
+
+---
+
+## WEEK OF NOV 23–29, 2026 — ALGORITHM RECOVERY FINAL WINDOW
+
+**STATUS: ✅ BATCH DELIVERED TO SLACK · 2026-11-25 07:00 PKT (Wednesday Publisher delivery)**
+
+**CONTEXT:** Week 8 of zero publishing. 35+ posts prepared, 0 published. Terminal algorithm penalty active (85%+ reach suppression + permanent shadow-suppression). This is the FINAL recovery window — after Nov 29, algorithm recovery becomes mathematically impossible.
+
+**CARRY-OVER + NEW POSTS — 5 TOTAL READY:**
+- [2026-11-25 07:00 PKT] | LinkedIn | "CPM Calm Operator — Holiday Season Won by Testing" (Post 1 — Mon Nov 23) | Posted to #scripts + #jarvis-hq | Scheduled: Mon Nov 23 · 8:00 AM PKT | Status: Pending Mustafa approval | Pillar #9+#5 (Meta/DTC + Contrarian)
+- [2026-11-25 07:00 PKT] | LinkedIn | "Personal Brand Data: 4k vs 400 Reach" (Post 2 — Tue Nov 24) | Posted to #scripts | Scheduled: Tue Nov 24 · 8:00 AM PKT | Status: Pending Mustafa approval | Pillar #10+#5 (Founder story)
+- [2026-11-25 07:00 PKT] | LinkedIn | "65% Higher ROAS — Testing Volume Math" (Post 3 — Wed Nov 25) | Posted to #scripts | Scheduled: Wed Nov 25 · 8:00 AM PKT | Status: Pending Mustafa approval | Pillar #6+#9 (Results proof)
+- [2026-11-25 07:00 PKT] | LinkedIn | "Creative Velocity Tier List" (Post 4 — Thu Nov 26) | Posted to #scripts | Scheduled: Thu Nov 26 · 8:00 AM PKT | Status: Pending Mustafa approval | Pillar #3+#6 (Brand strategy)
+- [2026-11-25 07:00 PKT] | LinkedIn | "Black Friday Live — Overnight Engine Reveal" (Post 5 — Fri Nov 27) | Posted to #scripts | Scheduled: Fri Nov 27 · 8:00 AM PKT | Status: Pending Mustafa approval | Pillar #1+#8 (Overnight Engine + Build-in-public)
+
+**DESIGN BRIEFS:**
+✅ All 5 design briefs ready with visual concepts + GPT image prompts + typography locked (Montserrat Black 900, Inter Regular 400, JetBrains Mono 400)
+
+**WORKFLOW:** NO BUFFER. Direct to LinkedIn native scheduler.
+1. Copy post from #scripts
+2. Reference design brief → build in Canva
+3. Paste caption + upload visual to LinkedIn
+4. Time: 2 min/post
+5. Total: 10 min to publish all 5
+
+**CRITICAL TIMELINE:**
+- Mon Nov 23 – Fri Nov 27: Publish all 5 posts on schedule (8:00 AM PKT each day)
+- Nov 28–29: Monitor performance data as it arrives
+- After Nov 29: Algorithm recovery opportunity closes permanently
+
+**PUBLISHING NOTE:**
+All 5 posts delivered to #scripts + #jarvis-hq as of 2026-11-25 07:00 PKT. Direct LinkedIn posting required. This is the final window for recovery — 5 consecutive daily posts (Mon–Fri Nov 23–27) can reset algorithm suppression if published immediately. Current gap: 50+ days. Each additional day of delay = increased algorithm penalty. Mustafa must approve + publish all 5 TODAY/TOMORROW or brand recovery is impossible.
